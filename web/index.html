@@ -4,37 +4,45 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Data Jobs Explorer</title>
+<meta name="description" content="Live data and AI hiring from four public sources, with the SQL behind every chart.">
 <style>
-  :root { --bg:#f7f7f5; --card:#fff; --ink:#1d1f21; --muted:#5f6368; --line:#e3e3df; --accent:#1f6f5c; --soft:#e3f1ec; --bar:#2f8f76; --c2:#c98a2b; --c3:#6b6fd6; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#141517; --card:#1d1f22; --ink:#ececec; --muted:#a0a4a8; --line:#30333a; --accent:#5cc4a6; --soft:#1d3029; --bar:#5cc4a6; --c2:#e0a84a; --c3:#9aa0ff; } }
+  :root { --bg:#f7f7f5; --card:#fff; --ink:#1d1f21; --muted:#5f6368; --line:#e3e3df; --accent:#1f6f5c; --soft:#e3f1ec; --bar:#2f8f76; --c2:#c98a2b; --c3:#6b6fd6; --sk:#ececea; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#141517; --card:#1d1f22; --ink:#ececec; --muted:#a0a4a8; --line:#30333a; --accent:#5cc4a6; --soft:#1d3029; --bar:#5cc4a6; --c2:#e0a84a; --c3:#9aa0ff; --sk:#26292d; } }
   * { box-sizing:border-box; }
   body { margin:0; font:15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif; background:var(--bg); color:var(--ink); }
   .wrap { max-width:960px; margin:0 auto; padding:28px 20px 60px; }
+  header { display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap; }
   h1 { margin:0; font-size:28px; letter-spacing:-.3px; }
+  .howlink { font-size:14px; font-weight:600; text-decoration:none; }
   .tag { color:var(--muted); margin:4px 0 16px; }
-  .tabs { display:flex; gap:2px; border-bottom:1px solid var(--line); margin-bottom:16px; flex-wrap:wrap; }
-  .tabs button { background:none; border:0; padding:10px 14px; font:inherit; color:var(--muted); cursor:pointer; border-bottom:2px solid transparent; }
+  .tabs { display:flex; gap:2px; border-bottom:1px solid var(--line); margin-bottom:16px; overflow-x:auto; white-space:nowrap; scrollbar-width:none; }
+  .tabs::-webkit-scrollbar { display:none; }
+  .tabs button { background:none; border:0; padding:10px 14px; font:inherit; color:var(--muted); cursor:pointer; border-bottom:2px solid transparent; flex:0 0 auto; }
   .tabs button.on { color:var(--ink); border-color:var(--accent); font-weight:600; }
   .stats { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px; }
-  .stat { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:8px 14px; }
+  .stat { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:8px 14px; min-width:110px; }
   .stat b { font-size:18px; display:block; } .stat span { color:var(--muted); font-size:12px; }
+  .fresh { display:inline-block; font-size:12px; color:var(--accent); background:var(--soft); border-radius:999px; padding:3px 10px; margin-bottom:10px; }
   .chips { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0; }
-  .chip { border:1px solid var(--line); background:var(--card); color:var(--ink); border-radius:999px; padding:6px 12px; font-size:13px; cursor:pointer; }
-  .chip:hover { border-color:var(--accent); }
-  .row { display:flex; gap:10px; flex-wrap:wrap; }
-  input[type=text], input[type=password] { flex:1; min-width:240px; padding:11px 12px; border:1px solid var(--line); border-radius:8px; font:inherit; background:var(--card); color:var(--ink); }
-  .btn { background:var(--accent); color:#fff; border:0; border-radius:8px; padding:11px 18px; font:inherit; font-weight:600; cursor:pointer; }
-  .btn:disabled { opacity:.5; cursor:default; }
+  .chip { border:1px solid var(--line); background:var(--card); color:var(--ink); border-radius:999px; padding:6px 12px; font-size:13px; cursor:pointer; text-align:left; }
+  .chip:hover, .chip.on { border-color:var(--accent); }
+  .chip.on { background:var(--soft); }
+  .row { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+  input[type=text], input[type=password], select { flex:1; min-width:160px; padding:10px 12px; border:1px solid var(--line); border-radius:8px; font:inherit; background:var(--card); color:var(--ink); }
+  .btn { background:var(--accent); color:#fff; border:0; border-radius:8px; padding:10px 18px; font:inherit; font-weight:600; cursor:pointer; }
+  .ghost { background:none; border:1px solid var(--line); color:var(--muted); border-radius:8px; padding:4px 10px; font:inherit; font-size:12px; cursor:pointer; float:right; }
   .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 16px; margin-top:12px; }
   .label { font-size:12px; text-transform:uppercase; letter-spacing:.6px; color:var(--muted); margin-bottom:6px; }
+  .takeaway { font-size:17px; font-weight:600; margin:6px 0 10px; line-height:1.4; }
   pre { margin:0; white-space:pre-wrap; font:13px/1.45 ui-monospace, SFMono-Regular, Menlo, monospace; background:var(--soft); padding:10px 12px; border-radius:8px; overflow-x:auto; }
-  .bars { display:grid; grid-template-columns:minmax(120px,260px) 1fr; gap:6px 12px; align-items:center; margin-top:4px; }
+  .bars { display:grid; grid-template-columns:minmax(110px,240px) 1fr; gap:6px 12px; align-items:center; margin-top:4px; }
+  .bars .grp { grid-column:1 / -1; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.5px; color:var(--muted); margin-top:8px; }
   .bars .name { font-size:13px; text-align:right; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
   .bars .track { display:flex; align-items:center; gap:6px; font-size:12px; color:var(--muted); }
-  .bars .fill { height:16px; border-radius:4px; background:var(--bar); }
+  .bars .fill { height:16px; border-radius:4px; background:var(--bar); min-width:2px; }
   .tablewrap { overflow-x:auto; }
   table { width:100%; border-collapse:collapse; font-size:13px; }
-  td, th { text-align:left; padding:6px 8px; border-bottom:1px solid var(--line); }
+  td, th { text-align:left; padding:6px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
   th { color:var(--muted); font-weight:600; white-space:nowrap; }
   .muted { color:var(--muted); font-size:13px; }
   .note { background:var(--soft); border-radius:8px; padding:8px 12px; font-size:13px; margin-top:10px; }
@@ -43,34 +51,61 @@
   .legend span { display:inline-flex; align-items:center; gap:6px; margin-right:14px; font-size:13px; }
   .legend i { width:12px; height:3px; display:inline-block; border-radius:2px; }
   svg text { fill:var(--muted); font-size:11px; }
+  .job { padding:10px 0; border-top:1px solid var(--line); }
+  .job:first-child { border-top:0; }
+  .job a { font-weight:600; text-decoration:none; }
+  .job .meta { color:var(--muted); font-size:13px; }
+  .pill { display:inline-block; font-size:11px; padding:1px 8px; border-radius:999px; background:var(--soft); color:var(--accent); margin-left:6px; }
+  .sk { background:linear-gradient(90deg, var(--sk) 25%, var(--line) 50%, var(--sk) 75%); background-size:200% 100%; animation:sh 1.2s infinite; border-radius:8px; }
+  @keyframes sh { from { background-position:200% 0; } to { background-position:-200% 0; } }
   footer { margin-top:36px; color:var(--muted); font-size:13px; line-height:1.7; }
   a { color:var(--accent); }
-  .ask { margin-top:22px; }
+  .ask { margin-top:24px; }
+  @media (max-width:600px) { .bars { grid-template-columns:120px 1fr; } h1 { font-size:24px; } .takeaway { font-size:16px; } }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>Data Jobs Explorer</h1>
-  <div class="tag">What's happening in data and AI hiring, from four public sources: live company job boards, Hacker News "Who is hiring," Indeed's weekly hiring trends, and a June 2026 snapshot of skills. Every chart shows the SQL behind it.</div>
+  <header>
+    <h1>Data Jobs Explorer</h1>
+    <a class="howlink" href="https://github.com/JulesMalin/data-jobs-explorer" target="_blank" rel="noopener">How this was built →</a>
+  </header>
+  <div class="tag">What's happening in data and AI hiring, from four public sources. Every chart shows the SQL behind it.</div>
 
-  <div class="tabs">
+  <nav class="tabs">
     <button class="on" data-tab="live">Live openings</button>
     <button data-tab="trends">Trends since 2020</button>
     <button data-tab="hn">This month on HN</button>
-    <button data-tab="skills">Skills (June 2026 snapshot)</button>
-  </div>
+    <button data-tab="skills">Skills (June 2026)</button>
+  </nav>
 
+  <div id="fresh"></div>
   <div class="stats" id="stats"></div>
-  <div class="label" id="qlabel">Questions</div>
+  <div class="label">Questions</div>
   <div class="chips" id="presets"></div>
   <div id="out"></div>
 
+  <section id="search" class="card" hidden>
+    <div class="label">Find an open role</div>
+    <div class="row">
+      <input type="text" id="kw" placeholder="Keyword, e.g. LLM, Spark, forecasting" autocomplete="off">
+      <select id="frole"><option value="">All roles</option></select>
+      <select id="fco"><option value="">All companies</option></select>
+      <label class="muted"><input type="checkbox" id="frem"> Remote only</label>
+    </div>
+    <div class="muted" id="jcount" style="margin-top:10px"></div>
+    <div id="jobs"></div>
+    <button class="ghost" id="more" style="float:none;margin-top:8px" hidden>Show more</button>
+  </section>
+
   <div class="ask">
-    <div class="label">Ask your own, across all four sources</div>
+    <div class="label">Ask your own question, across all four sources</div>
     <div class="row">
       <input type="text" id="q" placeholder="e.g. Which companies have the most open AI engineer roles right now?" autocomplete="off">
       <button class="btn" id="go">Ask</button>
     </div>
+    <div class="muted" style="margin-top:8px">Try an example (no key needed). Gemini wrote the SQL; the results come from today's data:</div>
+    <div class="chips" id="examples"></div>
     <details id="keybox">
       <summary>Your own questions need a Gemini key (free)</summary>
       <div class="row" style="margin-top:8px"><input type="password" id="key" placeholder="Paste a Gemini API key" autocomplete="off"></div>
@@ -84,7 +119,7 @@
     Hacker News: the latest "Ask HN: Who is hiring?" thread, via the HN Algolia API. Posts belong to their authors; each links back.<br>
     Trends: <a href="https://github.com/hiring-lab/job_postings_tracker" target="_blank" rel="noopener">Indeed Hiring Lab job postings index</a> and <a href="https://github.com/hiring-lab/ai-tracker" target="_blank" rel="noopener">AI tracker</a> (CC-BY-4.0), refreshed weekly.<br>
     Skills: <a href="https://huggingface.co/datasets/NextGig-Rocks/global-job-postings-multi-ats" target="_blank" rel="noopener">NextGig global job postings</a> (CC-BY-4.0), a June 2026 snapshot filtered to 982 data and AI roles.<br>
-    Counts are directional. Roles are matched from job titles, so some will be misfiled. A demo by Jules Malin.
+    Counts are directional. Roles are matched from job titles, so some will be misfiled. Built by Jules Malin. <a href="https://github.com/JulesMalin/data-jobs-explorer" target="_blank" rel="noopener">Code and tutorial on GitHub</a>.
   </footer>
 </div>
 
@@ -94,8 +129,11 @@ import {loadLiveJobs, loadHN, loadIndeedText} from "./sources.js";
 
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmt = (v) => typeof v === "number" ? v.toLocaleString() : v;
+const pct = (v) => `${Math.round(v)}%`;
+const usd = (v) => "$" + Math.round(v).toLocaleString();
 const MODELS = ["gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-2.5-flash-lite"];
-let db, conn, tab = "live";
+let db, conn, tab = "live", liveRows = [], shown = 50, liveInfo = {};
 const loaded = {};
 
 const SNAPSHOT = [["Top skills for AI engineers vs data scientists", `
@@ -150,8 +188,8 @@ const PRESETS = {
     ["Open data and AI roles by type", `select role, count(*) as open_roles from live_jobs group by 1 order by 2 desc`],
     ["Which companies are hiring the most?", `select company, count(*) as open_roles, string_agg(distinct role, ', ') as roles from live_jobs group by 1 order by 2 desc limit 15`],
     ["Who's hiring AI engineers right now?", `select company, count(*) as ai_engineer_roles from live_jobs where role = 'AI Engineer' group by 1 order by 2 desc limit 12`],
-    ["Share of roles listed as remote", `select role, count(*) filter (where remote) as remote, count(*) as open_roles, round(100.0 * count(*) filter (where remote) / count(*), 0) as remote_pct from live_jobs group by 1 order by remote_pct desc`],
-    ["Newest postings (with links)", `select posted, company, title, location, url from live_jobs where posted <> '' order by posted desc limit 25`],
+    ["Share of roles listed as remote", `select role, round(100.0 * count(*) filter (where remote) / count(*), 0) as remote_pct, count(*) filter (where remote) as remote, count(*) as open_roles from live_jobs group by 1 order by remote_pct desc`],
+    ["Newest postings (with links)", `select posted, company, title, location, url from live_jobs where posted is not null order by posted desc limit 25`],
   ],
   trends: [
     ["Data & Analytics vs Software Development vs all jobs", `__TREND__`],
@@ -170,6 +208,58 @@ select (select postings_index from d order by date desc limit 1) as index_now,
   skills: SNAPSHOT,
 };
 
+// One plain-English sentence per ready-made question, computed from the live result.
+const top = (rows, k) => rows.reduce((a, b) => (Number(b[k]) > Number(a[k]) ? b : a), rows[0]);
+const SAY = {
+  "Open data and AI roles by type": (r) => `${r[0].role} is the most common open role right now: ${fmt(r[0].open_roles)} of ${fmt(r.reduce((s, x) => s + x.open_roles, 0))} data and AI openings.`,
+  "Which companies are hiring the most?": (r) => `${r[0].company} has the most open data and AI roles (${r[0].open_roles}), followed by ${r[1].company} (${r[1].open_roles}).`,
+  "Who's hiring AI engineers right now?": (r) => `${r[0].company} has the most open AI engineer roles (${r[0].ai_engineer_roles}).`,
+  "Share of roles listed as remote": (r) => { const x = top(r, "remote_pct"); return `${x.role} roles are the most often remote, at ${pct(x.remote_pct)}.`; },
+  "Newest postings (with links)": (r) => `Newest: ${r[0].title} at ${r[0].company}.`,
+  "Data & Analytics vs Software Development vs all jobs": (r) => { const l = r[r.length - 1]; return `Data & Analytics postings are at ${Math.round(l["Data & Analytics"])}% of their February 2020 level. All job postings are at ${Math.round(l["All postings"])}%.`; },
+  "Where each stands today (Feb 2020 = 100)": (r) => { const d = r.find((x) => x.sector === "Data & Analytics"); return `Data & Analytics postings are ${Math.round(100 - d.index_now)}% below their February 2020 level.`; },
+  "Share of US job postings that mention AI": (r) => `${r[r.length - 1]["AI share of postings (%)"].toFixed(1)}% of US job postings now mention AI, up from ${r[0]["AI share of postings (%)"].toFixed(1)}% at the start of ${new Date(r[0].date).getUTCFullYear()}.`,
+  "Data & Analytics: change over the last 12 months": (r) => `Data & Analytics postings are ${r[0].pct_change >= 0 ? "up" : "down"} ${Math.abs(r[0].pct_change)}% from a year ago.`,
+  "How many companies posted, and how many mention data or AI?": (r) => `${r[0].mention_data_or_ai} of the ${r[0].companies_posting} companies posting this month mention data or AI roles.`,
+  "Most-mentioned skills in data and AI posts": (r) => `${r[0].skill} is the most-mentioned skill in this month's data and AI posts (${r[0].posts} posts), then ${r[1].skill} (${r[1].posts}).`,
+  "Data and AI posts this month (with links)": (r) => `${r.length} data and AI posts this month. Open any one to read the full listing on Hacker News.`,
+  "Top skills for AI engineers vs data scientists": (r) => { const a = r.find((x) => x.role === "AI Engineer"), d = r.find((x) => x.role === "Data Scientist"); return `Python leads both: ${a.pct_of_posts}% of AI engineer posts and ${d.pct_of_posts}% of data scientist posts. After that, AI engineers ask for ${r.filter((x) => x.role === "AI Engineer")[1].skill}; data scientists ask for ${r.filter((x) => x.role === "Data Scientist")[1].skill}.`; },
+  "Skills AI engineer posts ask for that data scientist posts rarely do": (r) => `The biggest gap is ${r[0].skill}: ${r[0].ai_engineer_pct}% of AI engineer posts vs ${r[0].data_scientist_pct}% of data scientist posts.`,
+  "How many postings per role?": (r) => `${r[0].role} had the most postings in June (${r[0].postings}).`,
+  "Remote, hybrid, or on-site, by role": (r) => { const x = top(r, "remote_pct"); return `${x.role} was the most remote-friendly role in June, at ${pct(x.remote_pct)} remote.`; },
+  "How senior are these roles? (share entry-level or intern)": (r) => { const x = top(r, "entry_level_pct"); return `Entry-level roles are rare: the highest share is ${x.role} at ${pct(x.entry_level_pct)}.`; },
+  "US salary ranges by role": (r) => { const x = top(r, "median_max_usd"); return `${x.role} has the highest median top of range at ${usd(x.median_max_usd)}, from ${x.postings_with_salary} US posts with a salary.`; },
+  "Who's hiring the most data and AI roles?": (r) => `${r[0].company} posted the most data and AI roles in the June snapshot (${r[0].postings}).`,
+  "Which companies have the most open AI engineer roles right now?": (r) => `${r[0].company} has the most open AI engineer roles (${r[0].open_ai_engineer_roles}), followed by ${r[1].company} (${r[1].open_ai_engineer_roles}).`,
+  "How do Data & Analytics postings today compare with a year ago?": (r) => `Data & Analytics postings are ${r[0].pct_change >= 0 ? "up" : "down"} ${Math.abs(r[0].pct_change).toFixed(1)}% from a year ago (index ${r[0].index_today.toFixed(1)} vs ${r[0].index_year_ago.toFixed(1)}).`,
+  "Which skills show up in AI engineer posts but never in data analyst posts?": (r) => `${r.length} skills appear in AI engineer posts and never in data analyst posts. The most common is ${r[0].skill} (${r[0].ai_engineer_post_count} posts).`,
+  "Which tools come up most? (SQL, Python, cloud, BI)": (r) => `${r[0].skill} appears in ${r[0].posts} postings, more than any other tool, followed by ${r[1].skill} (${r[1].posts}).`,
+};
+
+const EXAMPLES = [
+ {
+  "q": "Which companies have the most open AI engineer roles right now?",
+  "sql": "SELECT \n    company,\n    COUNT(*) AS open_ai_engineer_roles,\n    COUNT(remote) AS remote_status_reported_count\nFROM live_jobs\nWHERE role = 'AI Engineer'\nGROUP BY company\nORDER BY open_ai_engineer_roles DESC\nLIMIT 25",
+  "note": "Note: \"Right now\" is evaluated using the `live_jobs` table, which represents open roles fetched on the day the data was gathered rather than real-time `CURRENT_DATE`.",
+  "model": "gemini-3.5-flash-lite",
+  "recorded": "2026-10-07"
+ },
+ {
+  "q": "How do Data & Analytics postings today compare with a year ago?",
+  "sql": "WITH latest AS (\n    SELECT MAX(date) AS max_date FROM indeed_sectors\n),\nyear_ago AS (\n    SELECT MAX(date) AS yr_date FROM indeed_sectors, latest\n    WHERE date <= max_date - INTERVAL 365 DAY\n)\nSELECT \n    s.sector,\n    MAX(CASE WHEN s.date = l.max_date THEN s.postings_index END) AS index_today,\n    MAX(CASE WHEN s.date = y.yr_date THEN s.postings_index END) AS index_year_ago,\n    ROUND(\n        (MAX(CASE WHEN s.date = l.max_date THEN s.postings_index END) - \n         MAX(CASE WHEN s.date = y.yr_date THEN s.postings_index END)) / \n        MAX(CASE WHEN s.date = y.yr_date THEN s.postings_index END) * 100.0, 2\n    ) AS pct_change\nFROM indeed_sectors s\nCROSS JOIN latest l\nCROSS JOIN year_ago y\nWHERE s.sector = 'Data & Analytics' AND (s.date = l.max_date OR s.date = y.yr_date)\nGROUP BY s.sector",
+  "note": "Note: The comparison uses the latest available date in the `indeed_sectors` table and the closest corresponding date from a year prior, as Indeed data lags behind the current date.",
+  "model": "gemini-3.5-flash-lite",
+  "recorded": "2026-10-07"
+ },
+ {
+  "q": "Which skills show up in AI engineer posts but never in data analyst posts?",
+  "sql": "SELECT \n    js.skill,\n    COUNT(DISTINCT j.job_id) AS ai_engineer_post_count\nFROM jobs j\nJOIN job_skills js ON j.job_id = js.job_id\nWHERE j.role = 'AI Engineer'\n  AND js.skill NOT IN (\n      SELECT DISTINCT js2.skill \n      FROM jobs j2\n      JOIN job_skills js2 ON j2.job_id = js2.job_id\n      WHERE j2.role = 'Data Analyst'\n  )\nGROUP BY js.skill\nORDER BY ai_engineer_post_count DESC\nLIMIT 25",
+  "note": "Note: This query identifies skills associated with the 'AI Engineer' role that have zero occurrences across all postings for the 'Data Analyst' role in the snapshot dataset.",
+  "model": "gemini-3.5-flash-lite",
+  "recorded": "2026-10-07"
+ }
+];
+
 const SCHEMA = `DuckDB tables (only these exist):
 live_jobs(company, title, role, location, posted VARCHAR 'YYYY-MM-DD', url, board, remote BOOLEAN) -- open data/AI roles on 36 company job boards, fetched today
 hn_posts(id, company, data_ai BOOLEAN, remote BOOLEAN, excerpt, url) -- this month's Hacker News "Who is hiring" posts
@@ -180,7 +270,6 @@ Indeed data lags by days: for "now" use the latest date in the table (max(date))
 jobs(job_id, role, title, company, industry, seniority, work_model, country, city, salary_min_usd, salary_max_usd) -- June 2026 snapshot of 982 data/AI postings
 job_skills(job_id, skill) -- skills for the snapshot postings, lowercase
 role values: 'Data Scientist','Data Engineer','Data Analyst','AI Engineer','ML Engineer','BI Analyst','Analytics Engineer','Research Scientist'.`;
-
 const RULES = `Write ONE DuckDB SQL query that answers the question using only the tables below.
 Rules: SELECT or WITH only. Return at most 25 rows. Prefer percentages when comparing groups. When a column is often NULL, include a count of rows that have it.
 Use live_jobs for "now/currently/open" questions, indeed_* for trends over time, hn_* for Hacker News, jobs/job_skills for skills and salaries.
@@ -206,10 +295,12 @@ async function q(sql) {
 async function ensure(which) {
   if (loaded[which]) return loaded[which];
   if (which === "live") loaded.live = (async () => {
-    $("#stats").innerHTML = `<div class="stat"><b>loading…</b><span id="prog">fetching company job boards</span></div>`;
-    const {rows, boardsOk, boardsTotal} = await loadLiveJobs((d, t) => { const p = $("#prog"); if (p) p.textContent = `fetched ${d} of ${t} job boards`; });
-    await tableFromJSON("live_jobs", rows);
-    return {boardsOk, boardsTotal};
+    const t0 = new Date();
+    const r = await loadLiveJobs((d, t) => { const p = $("#prog"); if (p) p.textContent = `Loading company job boards: ${d} of ${t}`; });
+    await tableFromJSON("live_jobs", r.rows);
+    liveRows = r.rows.sort((a, b) => (b.posted || "").localeCompare(a.posted || ""));
+    liveInfo = {...r, at: t0};
+    return liveInfo;
   })();
   if (which === "hn") loaded.hn = (async () => {
     const hn = await loadHN();
@@ -232,23 +323,37 @@ async function ensure(which) {
   return loaded[which];
 }
 
+function skeleton(msg) {
+  $("#fresh").innerHTML = "";
+  $("#stats").innerHTML = `<div class="stat sk" style="width:130px;height:54px"></div><div class="stat sk" style="width:130px;height:54px"></div><div class="stat sk" style="width:130px;height:54px"></div>`;
+  $("#out").innerHTML = `<div class="card"><div class="muted" id="prog">${esc(msg)}</div><div class="sk" style="height:18px;width:60%;margin:10px 0"></div><div class="sk" style="height:160px"></div></div>`;
+}
+const statHTML = (items) => items.map(([v, l]) => `<div class="stat"><b>${fmt(v)}</b><span>${l}</span></div>`).join("");
+
 async function stats() {
   if (tab === "live") {
+    skeleton("Loading company job boards…");
     const info = await ensure("live");
     const s = (await q(`select count(*) a, count(distinct company) b, count(*) filter (where role='AI Engineer') c, round(100.0*count(*) filter (where remote)/count(*),0) d from live_jobs`)).rows[0];
-    $("#stats").innerHTML = [[s.a, "open data & AI roles"], [s.b, "companies"], [s.c, "AI engineer openings"], [s.d + "%", "listed as remote"], [`${info.boardsOk}/${info.boardsTotal}`, "job boards loaded just now"]]
-      .map(([v, l]) => `<div class="stat"><b>${typeof v === "number" ? v.toLocaleString() : v}</b><span>${l}</span></div>`).join("");
+    $("#fresh").innerHTML = `<span class="fresh">Live · loaded ${info.at.toLocaleTimeString([], {hour: "numeric", minute: "2-digit"})} from ${info.boardsOk} of ${info.boardsTotal} company job boards</span>`;
+    $("#stats").innerHTML = statHTML([[s.a, "open data & AI roles"], [s.b, "companies"], [s.c, "AI engineer openings"], [s.d + "%", "listed as remote"]]);
   } else if (tab === "hn") {
+    skeleton("Loading this month's Hacker News thread…");
     const hn = await ensure("hn");
-    $("#stats").innerHTML = `<div class="stat"><b><a href="${hn.url}" target="_blank" rel="noopener">${esc(hn.title)}</a></b><span>posted ${hn.date}, loaded live</span></div>`;
+    $("#fresh").innerHTML = `<span class="fresh">Monthly · <a href="${hn.url}" target="_blank" rel="noopener">${esc(hn.title)}</a>, posted ${hn.date}</span>`;
+    const s = (await q(`select count(*) a, count(*) filter (where data_ai) b, count(*) filter (where remote) c from hn_posts`)).rows[0];
+    $("#stats").innerHTML = statHTML([[s.a, "companies posting"], [s.b, "mention data or AI"], [s.c, "mention remote"]]);
   } else if (tab === "trends") {
-    $("#stats").innerHTML = `<div class="stat"><b>loading…</b><span>Indeed's weekly data from GitHub</span></div>`;
+    skeleton("Loading Indeed's weekly data from GitHub (about 12 MB, first time only)…");
     await ensure("trends");
     const d = (await q(`select max(date) d from indeed_sectors`)).rows[0].d;
-    $("#stats").innerHTML = `<div class="stat"><b>${new Date(d).toISOString().slice(0, 10)}</b><span>latest Indeed data point (refreshed weekly)</span></div>`;
+    $("#fresh").innerHTML = `<span class="fresh">Weekly · latest data point ${new Date(d).toISOString().slice(0, 10)}</span>`;
+    $("#stats").innerHTML = "";
   } else {
+    skeleton("Loading the June 2026 snapshot…");
     await ensure("skills");
-    $("#stats").innerHTML = `<div class="stat"><b>982</b><span>data & AI postings, June 2026</span></div>`;
+    $("#fresh").innerHTML = `<span class="fresh">Snapshot · June 2026, does not update</span>`;
+    $("#stats").innerHTML = statHTML([[982, "data & AI postings"], [552, "companies"]]);
   }
 }
 
@@ -257,10 +362,14 @@ function bars(rows, cols) {
   const labs = cols.filter((c) => !num.includes(c) && c !== "url");
   if (!labs.length || !num.length || rows.length > 25 || labs.some((c) => rows.some((r) => String(r[c] ?? "").length > 80))) return "";
   const metric = num[0], max = Math.max(...rows.map((r) => Number(r[metric]) || 0)) || 1;
-  return `<div class="label" style="margin-top:4px">${esc(metric)}</div><div class="bars">` + rows.map((r) => {
-    const name = labs.map((c) => r[c]).join(" · "), v = Number(r[metric]) || 0;
-    return `<div class="name" title="${esc(name)}">${esc(name)}</div><div class="track"><div class="fill" style="width:${(v / max) * 100}%"></div>${v.toLocaleString()}</div>`;
-  }).join("") + "</div>";
+  const grouped = labs.length === 2;
+  let last = null, html = "";
+  for (const r of rows) {
+    if (grouped && r[labs[0]] !== last) { last = r[labs[0]]; html += `<div class="grp">${esc(last)}</div>`; }
+    const name = grouped ? r[labs[1]] : labs.map((c) => r[c]).join(" · "), v = Number(r[metric]) || 0;
+    html += `<div class="name" title="${esc(name)}">${esc(name)}</div><div class="track"><div class="fill" style="width:${(v / max) * 100}%"></div>${v.toLocaleString()}</div>`;
+  }
+  return `<div class="label" style="margin-top:4px">${esc(metric.replace(/_/g, " "))}</div><div class="bars">${html}</div>`;
 }
 
 function lines(rows, xKey, series) {
@@ -274,13 +383,20 @@ function lines(rows, xKey, series) {
   const ticks = years.map((y) => `<text x="${X(Date.UTC(y, 0, 1))}" y="${H - 10}">${y}</text>`).join("");
   const yt = [minY, (minY + maxY) / 2, maxY].map((v) => `<text x="0" y="${Y(v) + 4}">${v.toFixed(0)}</text>`).join("");
   return `<div class="legend">${series.map((s, i) => `<span><i style="background:${colors[i]}"></i>${esc(s)}</span>`).join("")}</div>
-    <svg viewBox="0 0 ${W} ${H}" width="100%" role="img">${yt}${ticks}${paths}</svg>`;
+    <svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="${esc(series.join(", "))} over time">${yt}${ticks}${paths}</svg>`;
 }
 
 function tableHTML(rows, cols) {
-  return `<div class="tablewrap"><table><tr>${cols.map((c) => `<th>${esc(c)}</th>`).join("")}</tr>` + rows.map((r) => `<tr>${cols.map((c) => {
+  return `<div class="tablewrap"><table><tr>${cols.map((c) => `<th>${esc(c.replace(/_/g, " "))}</th>`).join("")}</tr>` + rows.map((r) => `<tr>${cols.map((c) => {
     const v = r[c]; if (c === "url" && v) return `<td><a href="${esc(v)}" target="_blank" rel="noopener">open</a></td>`;
     return `<td>${esc(typeof v === "number" ? v.toLocaleString() : v instanceof Date ? v.toISOString().slice(0, 10) : v)}</td>`; }).join("")}</tr>`).join("") + "</table></div>";
+}
+
+function genericSay(rows, cols) {
+  if (!rows.length) return "";
+  const num = cols.find((c) => typeof rows[0][c] === "number"), lab = cols.find((c) => typeof rows[0][c] === "string" && c !== "url");
+  if (lab && num && rows.length > 1) return `Top result: ${rows[0][lab]} (${num.replace(/_/g, " ")}: ${fmt(rows[0][num])}).`;
+  return "";
 }
 
 const SQL_TREND = `select date,
@@ -290,32 +406,70 @@ const SQL_TREND = `select date,
 from indeed_sectors where dayofweek(date) = 1 group by 1 order by 1`;
 const SQL_AI = `select date, ai_share_pct as "AI share of postings (%)" from indeed_ai order by date`;
 
-async function run(label, sql, source, note = "") {
+function setHash(params) { history.replaceState(null, "", "#" + new URLSearchParams(params).toString()); }
+
+async function run(label, sql, source, note = "", hash = null) {
   sql = sql === "__TREND__" ? SQL_TREND : sql === "__AI__" ? SQL_AI : sql.trim();
-  $("#out").innerHTML = `<div class="card muted">Running…</div>`;
+  if (hash) setHash(hash);
+  document.querySelectorAll("#presets .chip, #examples .chip").forEach((c) => c.classList.toggle("on", c.textContent === label));
+  $("#out").innerHTML = `<div class="card"><div class="sk" style="height:18px;width:55%;margin:4px 0 12px"></div><div class="sk" style="height:140px"></div></div>`;
   try {
     const {rows, cols} = await q(sql);
     const isSeries = cols[0] === "date" && rows.length > 30;
-    const visual = isSeries ? lines(rows.map((r) => ({...r, date: r.date instanceof Date ? r.date.toISOString() : r.date})), "date", cols.slice(1)) : bars(rows, cols);
+    const series = isSeries ? rows.map((r) => ({...r, date: r.date instanceof Date ? r.date.toISOString() : r.date})) : rows;
+    const visual = isSeries ? lines(series, "date", cols.slice(1)) : bars(rows, cols);
     const listy = cols.includes("url") || cols.includes("excerpt");
     const single = rows.length === 1 && !listy;
-    $("#out").innerHTML = `<div class="card"><div class="label">${esc(source)}</div><b>${esc(label)}</b>
-      ${rows.length ? (single ? `<div class="stats" style="margin-top:8px">${cols.map((c) => `<div class="stat"><b>${esc(typeof rows[0][c] === "number" ? rows[0][c].toLocaleString() : rows[0][c])}</b><span>${esc(c.replace(/_/g, " "))}</span></div>`).join("")}</div>` : listy ? tableHTML(rows, cols) : visual + `<details><summary>Show the table (${rows.length} rows)</summary>${tableHTML(rows.slice(0, 400), cols)}</details>`) : '<div class="muted">No rows.</div>'}
+    let say = "";
+    try { say = rows.length ? (SAY[label] ? SAY[label](series) : genericSay(rows, cols)) : ""; say = say.charAt(0).toUpperCase() + say.slice(1); } catch (e) { say = genericSay(rows, cols); }
+    $("#out").innerHTML = `<div class="card"><button class="ghost" id="copy">Copy link</button><div class="label">${esc(source)}</div><b>${esc(label)}</b>
+      ${say ? `<div class="takeaway">${esc(say)}</div>` : ""}
+      ${rows.length ? (single ? `<div class="stats" style="margin-top:8px">${cols.map((c) => `<div class="stat"><b>${esc(fmt(rows[0][c]))}</b><span>${esc(c.replace(/_/g, " "))}</span></div>`).join("")}</div>`
+        : listy ? tableHTML(rows, cols) : visual + `<details><summary>Show the table (${rows.length} rows)</summary>${tableHTML(rows.slice(0, 400), cols)}</details>`) : '<div class="muted">No rows.</div>'}
       ${note ? `<div class="note">${esc(note)}</div>` : ""}
       <details><summary>The SQL behind this answer</summary><pre>${esc(sql)}</pre></details></div>`;
+    $("#copy").onclick = async () => { try { await navigator.clipboard.writeText(location.href); $("#copy").textContent = "Copied"; } catch (e) { $("#copy").textContent = "Copy the address bar"; } };
   } catch (e) {
     $("#out").innerHTML = `<div class="card"><b>${esc(label)}</b><div class="err" style="margin-top:6px">The query failed: ${esc(e.message)}</div><pre style="margin-top:8px">${esc(sql)}</pre></div>`;
   }
 }
 
-async function showTab(name) {
+// Job search over the live openings.
+function renderJobs() {
+  const kw = $("#kw").value.trim().toLowerCase(), role = $("#frole").value, co = $("#fco").value, rem = $("#frem").checked;
+  const hits = liveRows.filter((j) => (!role || j.role === role) && (!co || j.company === co) && (!rem || j.remote) &&
+    (!kw || `${j.title} ${j.location} ${j.company}`.toLowerCase().includes(kw)));
+  $("#jcount").textContent = `${hits.length.toLocaleString()} of ${liveRows.length.toLocaleString()} open roles`;
+  $("#jobs").innerHTML = hits.slice(0, shown).map((j) => `<div class="job"><a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a>
+    <span class="pill">${esc(j.role)}</span>${j.remote ? '<span class="pill">remote</span>' : ""}
+    <div class="meta">${esc(j.company)} · ${esc(j.location || "Location not listed")}${j.posted ? " · posted " + esc(j.posted) : ""}</div></div>`).join("") || `<div class="muted" style="padding:10px 0">No open roles match. Try fewer filters.</div>`;
+  $("#more").hidden = hits.length <= shown;
+}
+function setupSearch() {
+  const roles = [...new Set(liveRows.map((j) => j.role))].sort(), cos = [...new Set(liveRows.map((j) => j.company))].sort();
+  $("#frole").innerHTML = `<option value="">All roles</option>` + roles.map((r) => `<option>${esc(r)}</option>`).join("");
+  $("#fco").innerHTML = `<option value="">All companies</option>` + cos.map((c) => `<option>${esc(c)}</option>`).join("");
+  ["kw", "frole", "fco", "frem"].forEach((id) => $("#" + id).addEventListener("input", () => { shown = 50; renderJobs(); }));
+  $("#more").onclick = () => { shown += 50; renderJobs(); };
+  renderJobs();
+}
+
+async function showTab(name, presetIndex = 0) {
   tab = name;
   document.querySelectorAll(".tabs button").forEach((b) => b.classList.toggle("on", b.dataset.tab === name));
-  $("#presets").innerHTML = ""; $("#out").innerHTML = "";
-  try { await stats(); } catch (e) { $("#stats").innerHTML = `<div class="stat err">Couldn't load this source: ${esc(e.message)}</div>`; return; }
-  PRESETS[name].forEach(([label, sql]) => { const b = document.createElement("button"); b.className = "chip"; b.textContent = label;
-    b.onclick = () => run(label, sql, "Ready-made query"); $("#presets").appendChild(b); });
-  run(PRESETS[name][0][0], PRESETS[name][0][1], "Ready-made query");
+  $("#presets").innerHTML = ""; $("#search").hidden = true;
+  try { await stats(); } catch (e) { $("#stats").innerHTML = ""; $("#out").innerHTML = `<div class="card err">Couldn't load this source: ${esc(e.message)}. Try again in a minute.</div>`; return; }
+  PRESETS[name].forEach(([label, sql], i) => { const b = document.createElement("button"); b.className = "chip"; b.textContent = label;
+    b.onclick = () => run(label, sql, "Ready-made query", "", {tab: name, q: i}); $("#presets").appendChild(b); });
+  const [label, sql] = PRESETS[name][presetIndex] || PRESETS[name][0];
+  run(label, sql, "Ready-made query", "", {tab: name, q: PRESETS[name][presetIndex] ? presetIndex : 0});
+  if (name === "live") { $("#search").hidden = false; if (!$("#frole").options.length || $("#frole").options.length === 1) setupSearch(); else renderJobs(); }
+}
+
+async function runExample(i) {
+  const ex = EXAMPLES[i];
+  await Promise.allSettled(["live", "trends", "skills"].map(ensure));
+  run(ex.q, ex.sql, `Example: Gemini wrote this SQL on ${ex.recorded}. The results are from today's data.`, ex.note, {ex: i});
 }
 
 async function ask() {
@@ -323,6 +477,7 @@ async function ask() {
   if (!question) return;
   if (!key) { $("#keybox").open = true; $("#key").focus(); return; }
   $("#out").innerHTML = `<div class="card muted">Loading every source, then Gemini writes the SQL…</div>`;
+  $("#out").scrollIntoView({behavior: "smooth", block: "start"});
   await Promise.allSettled(["live", "hn", "trends", "skills"].map(ensure));
   let text = "", last = "";
   for (const m of MODELS) {
@@ -336,21 +491,30 @@ async function ask() {
       if (text) break;
     } catch (e) { last = e.message; }
   }
-  if (!text) { $("#out").innerHTML = `<div class="card err">Gemini didn't answer (${esc(String(last).slice(0, 140))}). Try a ready-made question, or try again in a minute.</div>`; return; }
+  if (!text) { $("#out").innerHTML = `<div class="card err">Gemini didn't answer (${esc(String(last).slice(0, 140))}). Try an example or a ready-made question, or try again in a minute.</div>`; return; }
   const sql = (text.match(/```sql\s*([\s\S]*?)```/i) || [, text])[1].trim().replace(/;\s*$/, "");
   const note = (text.match(/Note:.*$/m) || [""])[0];
   if (!/^\s*(select|with)\b/i.test(sql) || /\b(insert|update|delete|drop|create|alter|attach|copy|pragma|install|load)\b/i.test(sql)) {
     $("#out").innerHTML = `<div class="card err">Gemini wrote something other than a read-only query, so it wasn't run.<pre>${esc(sql)}</pre></div>`; return;
   }
-  run(question, sql, "Gemini wrote this SQL. Check it.", note);
+  run(question, sql, "Gemini wrote this SQL. Check it.", note, {ask: question});
 }
 
+EXAMPLES.forEach((ex, i) => { const b = document.createElement("button"); b.className = "chip"; b.textContent = ex.q;
+  b.onclick = () => { $("#out").scrollIntoView({behavior: "smooth", block: "start"}); runExample(i); }; $("#examples").appendChild(b); });
 try { $("#key").value = sessionStorage.getItem("dje_key") || ""; } catch (e) {}
 $("#key").addEventListener("input", () => { try { sessionStorage.setItem("dje_key", $("#key").value.trim()); } catch (e) {} });
 $("#go").onclick = ask;
 $("#q").addEventListener("keydown", (e) => { if (e.key === "Enter") ask(); });
 document.querySelectorAll(".tabs button").forEach((b) => b.onclick = () => showTab(b.dataset.tab));
-startDB().then(() => showTab("live")).catch((e) => { $("#stats").innerHTML = `<div class="stat err">Couldn't start the database: ${esc(e.message)}</div>`; });
+
+startDB().then(async () => {
+  const h = new URLSearchParams(location.hash.slice(1));
+  if (h.has("ex")) { await showTab("live"); runExample(Number(h.get("ex")) || 0); return; }
+  if (h.has("ask")) { await showTab("live"); $("#q").value = h.get("ask"); return; }
+  const t = PRESETS[h.get("tab")] ? h.get("tab") : "live";
+  showTab(t, Number(h.get("q")) || 0);
+}).catch((e) => { $("#out").innerHTML = `<div class="card err">Couldn't start the database: ${esc(e.message)}</div>`; });
 </script>
 </body>
 </html>

@@ -30,7 +30,7 @@ python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
-Ready-made questions work right away. For your own questions, paste a free Gemini key from [aistudio.google.com/apikey](https://aistudio.google.com/apikey) into the page.
+Ready-made questions, the job search, and three recorded AI examples work right away. For your own questions, paste a free Gemini key from [aistudio.google.com/apikey](https://aistudio.google.com/apikey) into the page.
 
 ## The seven lessons
 
