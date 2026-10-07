@@ -1,0 +1,107 @@
+# Data Jobs Explorer: build an AI data tool in one page
+
+**Live demo:** https://huggingface.co/spaces/JulesMalin/data-jobs-explorer
+
+A working app that answers questions about data and AI hiring from four public sources, plus a step-by-step guide to building one like it for yourself or your company. Everything runs in the browser. There's no server, no database to host, and nothing to pay for.
+
+Ask "Which companies have the most open AI engineer roles right now?" and three things happen:
+
+1. Gemini reads a description of the tables and writes a SQL query.
+2. The page checks the query is read-only, then runs it in DuckDB inside your browser.
+3. You get a chart, the table, and the SQL itself, so you can check the work.
+
+## What's inside
+
+| Tab | Source | How fresh |
+|---|---|---|
+| Live openings | Public job-board feeds from Greenhouse, Ashby, and Lever for 36 companies | Pulled live every time the page opens |
+| Trends since 2020 | [Indeed Hiring Lab](https://github.com/hiring-lab) postings index and AI tracker (CC-BY-4.0) | Weekly |
+| This month on HN | The latest "Ask HN: Who is hiring?" thread, via the HN Algolia API | Monthly |
+| Skills | [NextGig job postings](https://huggingface.co/datasets/NextGig-Rocks/global-job-postings-multi-ats) (CC-BY-4.0), filtered to 982 data and AI roles | June 2026 snapshot |
+
+The whole app is three files: [`web/index.html`](web/index.html) (the page and the AI), [`web/sources.js`](web/sources.js) (the data loaders), and [`prepare_data.py`](prepare_data.py) (cleans the snapshot).
+
+## Run it
+
+```bash
+git clone https://github.com/JulesMalin/data-jobs-explorer
+cd data-jobs-explorer/web
+python3 -m http.server 8000
+# open http://localhost:8000
+```
+
+Ready-made questions work right away. For your own questions, paste a free Gemini key from [aistudio.google.com/apikey](https://aistudio.google.com/apikey) into the page.
+
+## The seven lessons
+
+Each lesson is one thing you need to get right, where it lives in the code, and a real mistake this project made along the way.
+
+### 1. Start from a question and a source you're allowed to use
+
+Pick the question first ("what do data jobs ask for?"), then find data you can legally share. Check the license before you write any code. CC-BY means you can share it if you give credit. A scraped site usually means you can't.
+
+**What happened here:** I had 177 job descriptions from my own pipeline, but they came from LinkedIn, so I didn't publish them. The NextGig and Indeed datasets are CC-BY-4.0, and the job boards are public feeds companies publish for their own careers pages.
+
+**Try this:** find one public dataset for a question your team asks every week. Read its license.
+
+### 2. Clean the data, then check it
+
+[`prepare_data.py`](prepare_data.py) filters 112,816 postings down to data and AI roles with a regular expression on the job title, then writes two small tables.
+
+**What happened here:** the first version matched "llm" anywhere in a title. "Fulfillment" contains "llm", so 327 warehouse and retail jobs showed up as AI engineers, and "order picking" ranked as a top skill. The fix was matching whole words (`\bllm\b`). The second surprise: the years-of-experience column was empty for 99.8% of postings, so that question was dropped.
+
+**Try this:** after any filter, look at the top 10 values of every column. That's how both bugs got caught.
+
+### 3. Pull live data straight from the browser
+
+[`web/sources.js`](web/sources.js) fetches job boards, Hacker News, and Indeed's GitHub files directly. That only works when a server sends a CORS header that allows it. Greenhouse, Ashby, Lever, HN's Algolia API, and GitHub's raw files all do.
+
+**What happened here:** one Indeed sector is named "IT Infrastructure, Operations & Support". The comma inside the quotes broke the CSV reader until the quote character was set explicitly.
+
+**Try this:** pick one company's careers page and find its board name. Add it to `BOARDS` in `sources.js`.
+
+### 4. Put the database in the browser
+
+DuckDB compiled to WebAssembly runs real SQL on your laptop's CPU, inside the page. See `startDB()` and `ensure()` in [`web/index.html`](web/index.html). Each source becomes a table the first time a tab needs it, so the 12 MB Indeed file only downloads when someone opens Trends.
+
+**Try this:** open the browser's developer console and time how long a query takes. It's usually a few milliseconds.
+
+### 5. Let the AI write SQL, with guardrails
+
+The prompt (`SCHEMA` and `RULES` in `index.html`) tells Gemini exactly which tables and columns exist, what the values look like, and which table to use for which kind of question. Then the page refuses to run anything that isn't a `SELECT` or `WITH` query.
+
+Three guardrails do most of the work:
+- **A precise schema.** The model only uses tables you describe, so describe them well, including the caveats ("salary is mostly empty").
+- **Read-only.** A check blocks `insert`, `delete`, `drop`, and the rest before anything runs.
+- **Bring your own key.** Each visitor's key stays in their browser tab and goes only to Google. Nobody can run up your bill.
+
+### 6. Show the work, and check it
+
+Every answer shows its SQL. That's the feature that matters most, because the model is confidently wrong in ways you can only see in the query.
+
+**What happened here:**
+- Asked "what share of data scientist roles are remote?", Gemini counted postings with no work model listed in the total, which pushed the percentage down.
+- Asked "how do Data & Analytics postings compare with a year ago?", it compared against today's date. Indeed's data runs a few days behind, so the query returned nothing. One added sentence in the schema fixed it: use the latest date in the table, never today's.
+
+**Try this:** ask five questions you already know the answer to. Read every query before you trust a number.
+
+### 7. Ship it for free
+
+The app is static files, so any static host works. This one runs on a free [Hugging Face static Space](https://huggingface.co/docs/hub/spaces-sdks-static). GitHub Pages works too.
+
+**What happened here:** the first version of a related project used a Python server and local models. Hugging Face now charges for those, and it took hours to get right. Moving everything into the browser made hosting free and made the page load in seconds.
+
+## Make it yours
+
+The pattern works for any question your team keeps asking:
+
+1. Swap the sources in `sources.js` for your own APIs or files.
+2. Rewrite `SCHEMA` to describe your tables, including their caveats.
+3. Replace the ready-made questions in `PRESETS` with the ten your team asks most.
+4. Keep the read-only check and keep showing the SQL.
+
+## Credits and limits
+
+Data: Indeed Hiring Lab and NextGig (both CC-BY-4.0), public job-board feeds from Greenhouse, Ashby, and Lever, and Hacker News posts (which belong to their authors; each result links back). Roles are matched from job titles, so some will be misfiled. Counts are directional, and the job boards cover 36 tech companies, not the whole market.
+
+Code: MIT License. Built by Jules Malin.
