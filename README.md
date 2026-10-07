@@ -119,6 +119,42 @@ The pattern works for any question your team keeps asking:
 3. Replace the ready-made questions in `PRESETS` with the ten your team asks most.
 4. Keep the read-only check and keep showing the SQL.
 
+## Building this at a company: Microsoft, Databricks, and AWS
+
+This demo is an agentic text-to-SQL app: one agent, one read-only SQL tool, a capped loop, and every query shown. Inside a company, each piece maps to a managed product.
+
+| Component | This demo | Microsoft | Databricks | AWS |
+|---|---|---|---|---|
+| Ingestion | `fetch()` in the browser | Fabric Data Factory into OneLake | Lakeflow Connect and Declarative Pipelines | Glue jobs, or Lambda on an EventBridge schedule, into S3 (Iceberg on S3 Tables) |
+| Storage and SQL | DuckDB-WASM | Fabric Lakehouse or Warehouse | Delta tables on a SQL warehouse | Athena on S3, or Redshift Serverless |
+| Table descriptions | Hand-written `SCHEMA` prompt | Power BI semantic model plus agent instructions | Unity Catalog comments, metric views, Genie instructions | Glue Data Catalog / SageMaker Catalog descriptions, QuickSight topics |
+| No-code agent | n/a | Fabric data agent | AI/BI Genie space | Amazon Q in QuickSight (Quick Suite), or Bedrock Knowledge Bases with structured data |
+| Custom agent | Gemini plus a `run_sql` loop | Azure AI Foundry Agent Service | Agent Bricks / Mosaic AI Agent Framework | Bedrock AgentCore (or Bedrock Agents) with the Strands Agents SDK |
+| The SQL tool | `run_sql` | Tool calling the Fabric SQL endpoint | Unity Catalog functions | Lambda or AgentCore Gateway tool calling the Athena or Redshift Data API |
+| Model | Gemini, visitor's own key | Azure OpenAI | Model Serving (open and external models) | Bedrock (Claude, Nova, Llama, and others) through IAM roles, no keys |
+| Access control | Keyword check | Entra ID passthrough, row-level security, Purview | Unity Catalog permissions, row filters, column masks | IAM plus Lake Formation row, column, and cell permissions |
+| Content guardrails | None | Azure AI Content Safety | AI Gateway guardrails | Bedrock Guardrails |
+| Show the work | SQL and trace on the page | Foundry traces | MLflow tracing | AgentCore Observability in CloudWatch |
+| Front end | Static page | Power BI, Teams, Copilot Studio | Databricks One, Slack, Teams, Databricks Apps | Quick Suite, or a custom app on CloudFront with Cognito |
+| Quality check | Questions with known answers | Foundry evaluations | Genie benchmarks, MLflow evaluation | Bedrock and AgentCore evaluations |
+
+What changes beyond the product names:
+
+1. **The user's identity replaces the keyword check.** The agent queries as the person who asked, so the database only returns rows that person is allowed to see.
+2. **A shared semantic layer replaces the prompt.** The definition of a metric lives in one certified model that both the agent and the dashboards use.
+3. **A benchmark set replaces spot checks.** Keep 50 to 100 questions with known-correct SQL and rerun them whenever the model or the tables change.
+4. **Every question gets logged, and use gets capped.** Each question, query, and answer is kept for audit, with spending limits per user or team.
+
+Which to pick:
+
+| If the company... | Start with |
+|---|---|
+| Runs Microsoft 365 and Power BI | A Fabric data agent |
+| Does its data engineering and ML in Databricks | A Genie space on Unity Catalog |
+| Runs on AWS and wants model choice or a custom agent | Bedrock AgentCore with Athena or Redshift |
+
+Start with the no-code agent. Build a custom one when you need more than one tool, such as SQL plus document search plus a forecast model. Product names in this section change often, so check each vendor's docs.
+
 ## Credits and limits
 
 Data: Indeed Hiring Lab and NextGig (both CC-BY-4.0), public job-board feeds from Greenhouse, Ashby, and Lever, and Hacker News posts (which belong to their authors; each result links back). Roles are matched from job titles, so some will be misfiled. Counts are directional, and the job boards cover 36 tech companies, not the whole market.
