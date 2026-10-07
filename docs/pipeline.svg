@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1020" width="1600" height="1020" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3d4a45"/></marker>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4c5fd5"/></marker>
+    <filter id="sh" x="-5%" y="-5%" width="110%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#1d2a25" flood-opacity="0.08"/></filter>
+    <style>
+      .t { font-size:30px; font-weight:800; fill:#14231e; letter-spacing:-0.4px; }
+      .st { font-size:16px; fill:#5f6368; }
+      .h { font-size:12px; font-weight:700; letter-spacing:1.4px; fill:#6b7177; }
+      .bt { font-size:17px; font-weight:700; fill:#1d1f21; }
+      .bd { font-size:13.5px; fill:#4a4f55; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .chip { font-size:11.5px; fill:#1f6f5c; font-weight:600; }
+      .pill { font-size:10.5px; font-weight:700; letter-spacing:0.8px; fill:#1f6f5c; }
+      .lb { font-size:12.5px; font-weight:700; fill:#4c5fd5; }
+      .lg { font-size:12.5px; fill:#4a4f55; }
+      .badge { font-size:13px; font-weight:800; fill:#fff; }
+      .wt { fill:#fff; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1020" fill="#fbfaf7"/>
+
+  <!-- Title -->
+  <text x="40" y="58" class="t">Data Jobs Explorer: 4 data sources, 1 in-browser database, 1 AI agent</text>
+  <text x="40" y="90" class="st">Everything except the Gemini call runs in the visitor's browser. There is no backend server.</text>
+
+  <!-- ============ Sources ============ -->
+  <text x="40" y="152" class="h">PUBLIC DATA SOURCES</text>
+  <g filter="url(#sh)">
+    <rect x="40" y="168" width="280" height="112" rx="10" fill="#fff" stroke="#d9d9d4"/>
+    <rect x="40" y="296" width="280" height="112" rx="10" fill="#fff" stroke="#d9d9d4"/>
+    <rect x="40" y="424" width="280" height="112" rx="10" fill="#fff" stroke="#d9d9d4"/>
+    <rect x="40" y="552" width="280" height="112" rx="10" fill="#fff" stroke="#d9d9d4"/>
+  </g>
+  <g fill="#8a8f98">
+    <rect x="40" y="168" width="5" height="112" rx="2"/><rect x="40" y="296" width="5" height="112" rx="2"/>
+    <rect x="40" y="424" width="5" height="112" rx="2"/><rect x="40" y="552" width="5" height="112" rx="2"/>
+  </g>
+  <text x="62" y="197" class="bt">Company job boards</text>
+  <text x="62" y="219" class="bd">Greenhouse, Ashby, and Lever</text>
+  <text x="62" y="237" class="bd">public APIs for 36 companies</text>
+  <rect x="62" y="250" width="166" height="20" rx="10" fill="#e3f1ec"/><text x="73" y="264" class="pill">LIVE, EVERY PAGE LOAD</text>
+
+  <text x="62" y="325" class="bt">Hacker News</text>
+  <text x="62" y="347" class="bd">The monthly “Who is hiring?”</text>
+  <text x="62" y="365" class="bd">thread, via the Algolia API</text>
+  <rect x="62" y="378" width="76" height="20" rx="10" fill="#e3f1ec"/><text x="73" y="392" class="pill">MONTHLY</text>
+
+  <text x="62" y="453" class="bt">Indeed Hiring Lab</text>
+  <text x="62" y="475" class="bd">Job postings index and AI tracker,</text>
+  <text x="62" y="493" class="bd">CSV files on GitHub</text>
+  <rect x="62" y="506" width="70" height="20" rx="10" fill="#e3f1ec"/><text x="73" y="520" class="pill">WEEKLY</text>
+
+  <text x="62" y="581" class="bt">NextGig job postings</text>
+  <text x="62" y="603" class="bd">112,816 postings cleaned to 982</text>
+  <text x="62" y="621" class="bd">data and AI roles (prepare_data.py)</text>
+  <rect x="62" y="634" width="150" height="20" rx="10" fill="#e3f1ec"/><text x="73" y="648" class="pill">JUNE 2026 SNAPSHOT</text>
+
+  <!-- source arrows converge into the loaders -->
+  <g fill="none" stroke="#3d4a45" stroke-width="1.8">
+    <path d="M320,224 C352,224 352,245 382,245"/>
+    <path d="M320,352 C356,352 352,245 382,245"/>
+    <path d="M320,480 C360,480 352,245 382,245"/>
+    <path d="M320,608 C364,608 352,245 382,245"/>
+    <path d="M382,245 L398,245" marker-end="url(#ag)"/>
+  </g>
+
+  <!-- Legend -->
+  <text x="40" y="704" class="h">KEY</text>
+  <rect x="40" y="716" width="16" height="16" rx="4" fill="#eef6f2" stroke="#1f6f5c" stroke-width="1.5"/><text x="66" y="729" class="lg">Runs in the visitor's browser</text>
+  <rect x="40" y="740" width="16" height="16" rx="4" fill="#eef2ff" stroke="#4c5fd5" stroke-width="1.5"/><text x="66" y="753" class="lg">Google's Gemini API (visitor's own key)</text>
+  <rect x="40" y="764" width="16" height="16" rx="4" fill="#fff6e6" stroke="#c98a2b" stroke-width="1.5"/><text x="66" y="777" class="lg">Guardrail</text>
+  <rect x="40" y="788" width="16" height="16" rx="4" fill="#fff" stroke="#8a8f98" stroke-width="1.5"/><text x="66" y="801" class="lg">Public data source</text>
+  <line x1="40" y1="826" x2="64" y2="826" stroke="#4c5fd5" stroke-width="2"/><text x="72" y="830" class="lg">Agent loop</text>
+
+  <!-- ============ Browser ============ -->
+  <rect x="370" y="130" width="880" height="600" rx="14" fill="#eef6f2" stroke="#1f6f5c" stroke-width="2"/>
+  <path d="M384,131 H1236 A13,13 0 0 1 1249,144 V170 H371 V144 A13,13 0 0 1 384,131 z" fill="#d7e9e1"/>
+  <line x1="371" y1="170" x2="1249" y2="170" stroke="#1f6f5c" stroke-opacity="0.35"/>
+  <circle cx="394" cy="150" r="5.5" fill="#e0776b"/><circle cx="413" cy="150" r="5.5" fill="#e3b54f"/><circle cx="432" cy="150" r="5.5" fill="#62b56a"/>
+  <rect x="456" y="139" width="470" height="22" rx="11" fill="#fff"/>
+  <text x="472" y="154.5" class="mono" font-size="12" fill="#5f6368">huggingface.co/spaces/JulesMalin/data-jobs-explorer</text>
+  <text x="1230" y="155" class="h" text-anchor="end" fill="#1f6f5c">THE VISITOR'S BROWSER</text>
+
+  <!-- 1 loaders -->
+  <rect x="400" y="200" width="570" height="90" rx="10" fill="#fff" stroke="#1f6f5c" stroke-width="1.5" filter="url(#sh)"/>
+  <circle cx="428" cy="226" r="12" fill="#1f6f5c"/><text x="428" y="230.5" class="badge" text-anchor="middle">1</text>
+  <text x="450" y="232" class="bt">sources.js loaders</text>
+  <text x="450" y="256" class="bd">fetch() each feed straight from the browser (CORS),</text>
+  <text x="450" y="275" class="bd">then tag roles with whole-word regex: \bllm\b, never “fulfillment”</text>
+
+  <!-- 2 question -->
+  <rect x="1010" y="200" width="210" height="90" rx="10" fill="#fff" stroke="#1f6f5c" stroke-width="1.5" filter="url(#sh)"/>
+  <circle cx="1036" cy="226" r="12" fill="#1f6f5c"/><text x="1036" y="230.5" class="badge" text-anchor="middle">2</text>
+  <text x="1058" y="232" class="bt">Your question</text>
+  <text x="1030" y="256" class="bd">plus the table descriptions</text>
+  <text x="1030" y="275" class="bd">(the SCHEMA prompt)</text>
+
+  <!-- ready-made -->
+  <rect x="400" y="340" width="220" height="110" rx="10" fill="#fff" stroke="#1f6f5c" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="420" y="370" class="bt">Ready-made questions</text>
+  <text x="420" y="394" class="bd">20 fixed SQL queries</text>
+  <text x="420" y="412" class="bd">across 4 tabs, plus 3</text>
+  <text x="420" y="430" class="bd">recorded agent examples</text>
+
+  <!-- DuckDB -->
+  <rect x="650" y="330" width="320" height="160" rx="12" fill="#fff" stroke="#1f6f5c" stroke-width="2.5" filter="url(#sh)"/>
+  <text x="670" y="362" class="bt" font-size="19">DuckDB-WASM</text>
+  <text x="670" y="385" class="bd">A SQL database compiled to WebAssembly,</text>
+  <text x="670" y="403" class="bd">running inside the page. 7 tables:</text>
+  <g class="mono">
+    <rect x="670" y="416" width="76" height="22" rx="6" fill="#e3f1ec"/><text x="708" y="431" class="chip mono" text-anchor="middle">live_jobs</text>
+    <rect x="752" y="416" width="70" height="22" rx="6" fill="#e3f1ec"/><text x="787" y="431" class="chip mono" text-anchor="middle">hn_posts</text>
+    <rect x="828" y="416" width="78" height="22" rx="6" fill="#e3f1ec"/><text x="867" y="431" class="chip mono" text-anchor="middle">hn_skills</text>
+    <rect x="912" y="416" width="44" height="22" rx="6" fill="#e3f1ec"/><text x="934" y="431" class="chip mono" text-anchor="middle">jobs</text>
+    <rect x="670" y="446" width="112" height="22" rx="6" fill="#e3f1ec"/><text x="726" y="461" class="chip mono" text-anchor="middle">indeed_sectors</text>
+    <rect x="788" y="446" width="78" height="22" rx="6" fill="#e3f1ec"/><text x="827" y="461" class="chip mono" text-anchor="middle">indeed_ai</text>
+    <rect x="872" y="446" width="84" height="22" rx="6" fill="#e3f1ec"/><text x="914" y="461" class="chip mono" text-anchor="middle">job_skills</text>
+  </g>
+
+  <!-- guardrail -->
+  <rect x="1010" y="340" width="210" height="110" rx="10" fill="#fff6e6" stroke="#c98a2b" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="1030" y="370" class="bt">Read-only check</text>
+  <text x="1030" y="394" class="bd">Runs SELECT or WITH only.</text>
+  <text x="1030" y="412" class="bd">Blocks DROP, INSERT,</text>
+  <text x="1030" y="430" class="bd">DELETE, and the rest.</text>
+
+  <!-- output -->
+  <rect x="400" y="590" width="820" height="110" rx="12" fill="#1f6f5c" filter="url(#sh)"/>
+  <text x="426" y="624" class="bt wt" font-size="18">What the visitor sees</text>
+  <text x="426" y="650" class="bd wt" fill-opacity="0.92">A chart, a one-line takeaway computed from the result, and the SQL behind it.</text>
+  <text x="426" y="671" class="bd wt" fill-opacity="0.92">For agent answers: Gemini's one-sentence answer plus every query it ran, including the failed ones.</text>
+
+  <!-- browser arrows -->
+  <g fill="none" stroke="#3d4a45" stroke-width="1.8">
+    <path d="M810,290 V327" marker-end="url(#ag)"/>
+    <path d="M620,395 H647" marker-end="url(#ag)"/>
+    <path d="M810,490 V587" marker-end="url(#ag)"/>
+  </g>
+
+  <!-- ============ Gemini ============ -->
+  <text x="1425" y="190" class="h" text-anchor="middle" fill="#4c5fd5">GOOGLE, OUTSIDE THE BROWSER</text>
+  <rect x="1290" y="200" width="270" height="290" rx="12" fill="#eef2ff" stroke="#4c5fd5" stroke-width="2" filter="url(#sh)"/>
+  <text x="1312" y="236" class="bt" font-size="19">Gemini API</text>
+  <text x="1312" y="261" class="bd">generateContent with</text>
+  <text x="1312" y="279" class="bd">function calling</text>
+  <rect x="1312" y="292" width="176" height="24" rx="6" fill="#fff" stroke="#c9d0f5"/>
+  <text x="1322" y="309" class="mono" font-size="12.5" fill="#33408f">tool: run_sql(sql)</text>
+  <text x="1312" y="340" class="bd">Model fallback:</text>
+  <text x="1312" y="358" class="bd">3.5-flash-lite → 3.5-flash</text>
+  <text x="1312" y="376" class="bd">→ flash-lite-latest</text>
+  <text x="1312" y="400" class="bd">Visitor's own key, kept</text>
+  <text x="1312" y="418" class="bd">in the browser tab only</text>
+  <text x="1312" y="452" class="lb">↻ Repeats until the query works,</text>
+  <text x="1312" y="470" class="lb">max 4 queries</text>
+
+  <!-- agent loop arrows -->
+  <g fill="none" stroke="#4c5fd5" stroke-width="2">
+    <path d="M1220,245 H1287" marker-end="url(#ab)"/>
+    <path d="M1290,395 H1223" marker-end="url(#ab)"/>
+    <path d="M1010,395 H973" marker-end="url(#ab)"/>
+    <path d="M940,490 V522 H1262 V470 H1287" marker-end="url(#ab)"/>
+    <path d="M1425,490 V645 H1223" marker-end="url(#ab)"/>
+  </g>
+  <circle cx="1270" cy="395" r="11" fill="#4c5fd5"/><text x="1270" y="399.5" class="badge" text-anchor="middle" font-size="12">3</text>
+  <circle cx="1000" cy="522" r="11" fill="#4c5fd5"/><text x="1000" y="526.5" class="badge" text-anchor="middle" font-size="12">4</text>
+  <text x="1018" y="514" class="lb">rows or error, back to Gemini</text>
+  <circle cx="1300" cy="645" r="11" fill="#4c5fd5"/><text x="1300" y="649.5" class="badge" text-anchor="middle" font-size="12">5</text>
+  <text x="1318" y="637" class="lb">final answer</text>
+
+  <!-- ============ Hosting ============ -->
+  <rect x="370" y="780" width="880" height="76" rx="12" fill="#f3f1ec" stroke="#b9b5ab" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="394" y="811" class="bt">Hugging Face static Space (free hosting)</text>
+  <text x="394" y="835" class="bd">Serves index.html, sources.js, and the 2 snapshot CSVs. No backend server and no database to run.</text>
+  <path d="M1150,780 V733" fill="none" stroke="#3d4a45" stroke-width="1.8" marker-end="url(#ag)"/>
+  <text x="1160" y="762" class="lg">serves the page</text>
+
+  <!-- ============ Steps ============ -->
+  <line x1="40" y1="884" x2="1560" y2="884" stroke="#e3e3df"/>
+  <text x="40" y="912" class="h">HOW A QUESTION BECOMES AN ANSWER</text>
+  <g>
+    <circle cx="52" cy="942" r="12" fill="#1f6f5c"/><text x="52" y="946.5" class="badge" text-anchor="middle">1</text>
+    <text x="74" y="947" class="bd">Page load. The loaders fetch all four</text>
+    <text x="74" y="965" class="bd">sources into DuckDB tables. Ready-made</text>
+    <text x="74" y="983" class="bd">questions run right away.</text>
+
+    <circle cx="356" cy="942" r="12" fill="#1f6f5c"/><text x="356" y="946.5" class="badge" text-anchor="middle">2</text>
+    <text x="378" y="947" class="bd">A visitor asks a question. The page</text>
+    <text x="378" y="965" class="bd">sends it to Gemini with the table</text>
+    <text x="378" y="983" class="bd">descriptions and one tool, run_sql.</text>
+
+    <circle cx="660" cy="942" r="12" fill="#4c5fd5"/><text x="660" y="946.5" class="badge" text-anchor="middle">3</text>
+    <text x="682" y="947" class="bd">Gemini calls run_sql. The page checks</text>
+    <text x="682" y="965" class="bd">the query only reads data, then</text>
+    <text x="682" y="983" class="bd">DuckDB runs it in the browser.</text>
+
+    <circle cx="964" cy="942" r="12" fill="#4c5fd5"/><text x="964" y="946.5" class="badge" text-anchor="middle">4</text>
+    <text x="986" y="947" class="bd">The rows, or the error, go back to</text>
+    <text x="986" y="965" class="bd">Gemini. It can fix the query and run</text>
+    <text x="986" y="983" class="bd">it again, up to 4 queries in all.</text>
+
+    <circle cx="1268" cy="942" r="12" fill="#4c5fd5"/><text x="1268" y="946.5" class="badge" text-anchor="middle">5</text>
+    <text x="1290" y="947" class="bd">Gemini answers in one sentence. The</text>
+    <text x="1290" y="965" class="bd">page charts the last query that</text>
+    <text x="1290" y="983" class="bd">returned rows and lists every query.</text>
+  </g>
+</svg>

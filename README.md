@@ -10,6 +10,12 @@ Ask "Which companies have the most open AI engineer roles right now?" and three 
 2. The page checks the query is read-only, then runs it in DuckDB inside your browser.
 3. You get a chart, the table, and the SQL itself, so you can check the work.
 
+## How it works
+
+![Data Jobs Explorer pipeline: 4 public data sources load into DuckDB in the browser; ready-made questions run fixed SQL; your own questions go to a Gemini agent that calls a read-only run_sql tool up to 4 times before answering](docs/pipeline.png)
+
+The diagram source is [`docs/pipeline.svg`](docs/pipeline.svg), if you want to edit it for your own project.
+
 ## What's inside
 
 | Tab | Source | How fresh |
