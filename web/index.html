@@ -61,6 +61,8 @@
   footer { margin-top:36px; color:var(--muted); font-size:13px; line-height:1.7; }
   a { color:var(--accent); }
   .ask { margin-top:24px; }
+  ol.trace { padding-left:20px; margin:8px 0 0; } ol.trace li { margin-bottom:8px; font-size:13px; }
+  .how ol { padding-left:20px; margin:8px 0; } .how li { margin-bottom:8px; } .how .stack { color:var(--muted); font-size:13px; }
   @media (max-width:600px) { .bars { grid-template-columns:120px 1fr; } h1 { font-size:24px; } .takeaway { font-size:16px; } }
 </style>
 </head>
@@ -109,9 +111,21 @@
     <details id="keybox">
       <summary>Your own questions need a Gemini key (free)</summary>
       <div class="row" style="margin-top:8px"><input type="password" id="key" placeholder="Paste a Gemini API key" autocomplete="off"></div>
-      <div class="muted" style="margin-top:6px">Get one at aistudio.google.com/apikey. Gemini writes the SQL; the query runs in your browser. The key stays in this tab, goes only to Google, and is cleared when you close the tab.</div>
+      <div class="muted" style="margin-top:6px">Get one at aistudio.google.com/apikey. A Gemini agent writes and runs the queries in your browser. The key stays in this tab, goes only to Google, and is cleared when you close the tab.</div>
     </details>
   </div>
+
+  <section class="card how" id="how">
+    <div class="label">How it works</div>
+    <ol>
+      <li><b>Your browser pulls the data.</b> The page calls the public job-board APIs from Greenhouse, Ashby, and Lever, the Hacker News search API, and Indeed's files on GitHub. No server sits in between.</li>
+      <li><b>A database runs inside the page.</b> DuckDB, compiled to WebAssembly, loads each source as a SQL table the first time a tab needs it.</li>
+      <li><b>Ready-made questions are fixed SQL.</b> The sentence above each chart is computed from the result, so it changes when the data does.</li>
+      <li><b>Your own questions go to a small AI agent.</b> Gemini gets a description of the tables and one tool, run_sql. It writes a query, the page checks that it only reads data and runs it, and Gemini reads the rows or the error. It can fix the query and try again, up to 4 times, then answers in one sentence. Every query it ran is listed under the answer.</li>
+      <li><b>Hosting is free.</b> The app is a handful of static files on a free Hugging Face Space. Your Gemini key stays in your browser tab.</li>
+    </ol>
+    <div class="stack">Built with DuckDB-WASM, the Gemini API with function calling, and plain JavaScript (no framework). <a href="https://github.com/JulesMalin/data-jobs-explorer" target="_blank" rel="noopener">Code and step-by-step tutorial</a>.</div>
+  </section>
 
   <footer>
     <b>Sources</b><br>
@@ -132,7 +146,7 @@ const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({"&":"&amp;","<":"
 const fmt = (v) => typeof v === "number" ? v.toLocaleString() : v;
 const pct = (v) => `${Math.round(v)}%`;
 const usd = (v) => "$" + Math.round(v).toLocaleString();
-const MODELS = ["gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-2.5-flash-lite"];
+const MODELS = ["gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-flash-lite-latest"];
 let db, conn, tab = "live", liveRows = [], shown = 50, liveInfo = {};
 const loaded = {};
 
@@ -270,10 +284,6 @@ Indeed data lags by days: for "now" use the latest date in the table (max(date))
 jobs(job_id, role, title, company, industry, seniority, work_model, country, city, salary_min_usd, salary_max_usd) -- June 2026 snapshot of 982 data/AI postings
 job_skills(job_id, skill) -- skills for the snapshot postings, lowercase
 role values: 'Data Scientist','Data Engineer','Data Analyst','AI Engineer','ML Engineer','BI Analyst','Analytics Engineer','Research Scientist'.`;
-const RULES = `Write ONE DuckDB SQL query that answers the question using only the tables below.
-Rules: SELECT or WITH only. Return at most 25 rows. Prefer percentages when comparing groups. When a column is often NULL, include a count of rows that have it.
-Use live_jobs for "now/currently/open" questions, indeed_* for trends over time, hn_* for Hacker News, jobs/job_skills for skills and salaries.
-Reply with only the SQL in a \`\`\`sql code block, then one short sentence starting with "Note:" about any caveat.`;
 
 async function startDB() {
   const bundle = await duckdb.selectBundle(duckdb.getJsDelivrBundles());
@@ -408,7 +418,7 @@ const SQL_AI = `select date, ai_share_pct as "AI share of postings (%)" from ind
 
 function setHash(params) { history.replaceState(null, "", "#" + new URLSearchParams(params).toString()); }
 
-async function run(label, sql, source, note = "", hash = null) {
+async function run(label, sql, source, note = "", hash = null, extra = {}) {
   sql = sql === "__TREND__" ? SQL_TREND : sql === "__AI__" ? SQL_AI : sql.trim();
   if (hash) setHash(hash);
   document.querySelectorAll("#presets .chip, #examples .chip").forEach((c) => c.classList.toggle("on", c.textContent === label));
@@ -421,12 +431,13 @@ async function run(label, sql, source, note = "", hash = null) {
     const listy = cols.includes("url") || cols.includes("excerpt");
     const single = rows.length === 1 && !listy;
     let say = "";
-    try { say = rows.length ? (SAY[label] ? SAY[label](series) : genericSay(rows, cols)) : ""; say = say.charAt(0).toUpperCase() + say.slice(1); } catch (e) { say = genericSay(rows, cols); }
+    try { say = rows.length ? (SAY[label] ? SAY[label](series) : genericSay(rows, cols)) : ""; if (extra.say) say = extra.say; say = say.charAt(0).toUpperCase() + say.slice(1); } catch (e) { say = genericSay(rows, cols); }
     $("#out").innerHTML = `<div class="card"><button class="ghost" id="copy">Copy link</button><div class="label">${esc(source)}</div><b>${esc(label)}</b>
       ${say ? `<div class="takeaway">${esc(say)}</div>` : ""}
       ${rows.length ? (single ? `<div class="stats" style="margin-top:8px">${cols.map((c) => `<div class="stat"><b>${esc(fmt(rows[0][c]))}</b><span>${esc(c.replace(/_/g, " "))}</span></div>`).join("")}</div>`
         : listy ? tableHTML(rows, cols) : visual + `<details><summary>Show the table (${rows.length} rows)</summary>${tableHTML(rows.slice(0, 400), cols)}</details>`) : '<div class="muted">No rows.</div>'}
       ${note ? `<div class="note">${esc(note)}</div>` : ""}
+      ${extra.trace || ""}
       <details><summary>The SQL behind this answer</summary><pre>${esc(sql)}</pre></details></div>`;
     $("#copy").onclick = async () => { try { await navigator.clipboard.writeText(location.href); $("#copy").textContent = "Copied"; } catch (e) { $("#copy").textContent = "Copy the address bar"; } };
   } catch (e) {
@@ -472,32 +483,80 @@ async function runExample(i) {
   run(ex.q, ex.sql, `Example: Gemini wrote this SQL on ${ex.recorded}. The results are from today's data.`, ex.note, {ex: i});
 }
 
+// Your own questions go to a small agent: Gemini gets one tool, run_sql, sees each result or error, and can fix its query.
+const AGENT_RULES = `You answer questions about data and AI hiring using the tables below. You have one tool, run_sql, which runs a DuckDB query and returns the rows or the error.
+Write a query, read the result, and if it errors, returns no rows, or looks wrong, fix the query and run it again. Use at most 4 queries.
+SQL rules: SELECT or WITH only. Return at most 25 rows. Prefer percentages when comparing groups. When a column is often NULL, include a count of rows that have it.
+Use live_jobs for "now/currently/open" questions, indeed_* for trends over time, hn_* for Hacker News, jobs/job_skills for skills and salaries.
+When you have the answer, reply in plain text: one sentence with the answer and its key number, then a line starting with "Note:" giving any caveat. No markdown.`;
+const TOOLS = [{functionDeclarations: [{name: "run_sql", description: "Run one read-only DuckDB query. Returns row_count and the first 30 rows, or an error message.",
+  parameters: {type: "OBJECT", properties: {sql: {type: "STRING", description: "A SELECT or WITH query"}}, required: ["sql"]}}]}];
+const MAX_QUERIES = 4;
+const readOnly = (sql) => /^\s*(select|with)\b/i.test(sql) && !/\b(insert|update|delete|drop|create|alter|attach|copy|pragma|install|load)\b/i.test(sql);
+
+async function gemini(key, models, body) {
+  let last = "";
+  for (const m of models) {
+    try {
+      const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent`, {method: "POST",
+        headers: {"Content-Type": "application/json", "x-goog-api-key": key}, body: JSON.stringify(body), signal: AbortSignal.timeout(90000)});
+      const j = await r.json();
+      if (!r.ok) { last = j.error?.message || r.status; if (r.status === 400 || r.status === 403) break; continue; }
+      const content = j.candidates?.[0]?.content;
+      if (content?.parts?.length) return {content, model: m};
+      last = "empty reply";
+    } catch (e) { last = e.name === "TimeoutError" ? "Gemini took more than 90 seconds, it may be busy" : e.message; }
+  }
+  throw new Error(String(last).slice(0, 160));
+}
+
+function traceHTML(steps, open = false) {
+  if (!steps.length) return "";
+  return `<details ${open ? "open" : ""}><summary>What the agent did (${steps.length} ${steps.length === 1 ? "query" : "queries"})</summary><ol class="trace">${steps.map((s) =>
+    `<li>${s.error ? `<span class="err">Error: ${esc(s.error)}</span>` : `${s.rows.toLocaleString()} rows back`}<pre>${esc(s.sql)}</pre></li>`).join("")}</ol></details>`;
+}
+
 async function ask() {
   const question = $("#q").value.trim(), key = $("#key").value.trim();
   if (!question) return;
   if (!key) { $("#keybox").open = true; $("#key").focus(); return; }
-  $("#out").innerHTML = `<div class="card muted">Loading every source, then Gemini writes the SQL…</div>`;
+  setHash({ask: question});
+  const steps = [];
+  const status = (msg) => { $("#out").innerHTML = `<div class="card"><b>${esc(question)}</b><div class="muted" style="margin-top:6px">${esc(msg)}</div>${traceHTML(steps, true)}</div>`; };
+  status("Loading every source…");
   $("#out").scrollIntoView({behavior: "smooth", block: "start"});
   await Promise.allSettled(["live", "hn", "trends", "skills"].map(ensure));
-  let text = "", last = "";
-  for (const m of MODELS) {
-    try {
-      const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent`, {method: "POST",
-        headers: {"Content-Type": "application/json", "x-goog-api-key": key},
-        body: JSON.stringify({contents: [{parts: [{text: `${RULES}\n\n${SCHEMA}\n\nQuestion: ${question}`}]}], generationConfig: {temperature: 0}})});
-      const j = await r.json();
-      if (!r.ok) { last = j.error?.message || r.status; if (r.status === 400 || r.status === 403) break; continue; }
-      text = (j.candidates?.[0]?.content?.parts || []).map((p) => p.text).join("");
-      if (text) break;
-    } catch (e) { last = e.message; }
+  const contents = [{role: "user", parts: [{text: `${SCHEMA}\n\nQuestion: ${question}`}]}];
+  let models = MODELS, answer = "", best = null;
+  try {
+    for (let turn = 0; turn < MAX_QUERIES + 2 && !answer; turn++) {
+      status(turn ? "Gemini is reading the result…" : "Gemini is writing a query…");
+      const {content, model} = await gemini(key, models, {systemInstruction: {parts: [{text: AGENT_RULES}]}, contents, tools: TOOLS, generationConfig: {temperature: 0}});
+      models = [model];  // stay on one model for the whole conversation
+      contents.push(content);
+      const calls = content.parts.filter((p) => p.functionCall);
+      if (!calls.length) { answer = content.parts.map((p) => p.text || "").join("").trim(); break; }
+      const replies = [];
+      for (const c of calls) {
+        const sql = String(c.functionCall.args?.sql || "").trim().replace(/;\s*$/, "");
+        let response;
+        if (steps.length >= MAX_QUERIES) response = {error: "Query limit reached. Answer now with what you have."};
+        else if (!readOnly(sql)) { steps.push({sql, error: "blocked, not a read-only query"}); response = {error: "Only SELECT or WITH queries are allowed."}; }
+        else {
+          status(`Running query ${steps.length + 1}…`);
+          try { const res = await q(sql); steps.push({sql, rows: res.rows.length}); if (res.rows.length || !best) best = sql; response = {row_count: res.rows.length, rows: res.rows.slice(0, 30)}; }
+          catch (e) { const msg = e.message.split("\n")[0]; steps.push({sql, error: msg}); response = {error: e.message.slice(0, 500)}; }
+        }
+        replies.push({functionResponse: {name: "run_sql", response}});
+      }
+      contents.push({role: "user", parts: replies});
+    }
+  } catch (e) {
+    $("#out").innerHTML = `<div class="card err">Gemini didn't answer (${esc(e.message)}). Try an example or a ready-made question, or try again in a minute.${traceHTML(steps, true)}</div>`; return;
   }
-  if (!text) { $("#out").innerHTML = `<div class="card err">Gemini didn't answer (${esc(String(last).slice(0, 140))}). Try an example or a ready-made question, or try again in a minute.</div>`; return; }
-  const sql = (text.match(/```sql\s*([\s\S]*?)```/i) || [, text])[1].trim().replace(/;\s*$/, "");
-  const note = (text.match(/Note:.*$/m) || [""])[0];
-  if (!/^\s*(select|with)\b/i.test(sql) || /\b(insert|update|delete|drop|create|alter|attach|copy|pragma|install|load)\b/i.test(sql)) {
-    $("#out").innerHTML = `<div class="card err">Gemini wrote something other than a read-only query, so it wasn't run.<pre>${esc(sql)}</pre></div>`; return;
-  }
-  run(question, sql, "Gemini wrote this SQL. Check it.", note, {ask: question});
+  if (!best) { $("#out").innerHTML = `<div class="card"><b>${esc(question)}</b><div class="err" style="margin-top:6px">The agent couldn't get a query to run. ${esc(answer)}</div>${traceHTML(steps, true)}</div>`; return; }
+  const note = (answer.match(/Note:.*$/m) || [""])[0], say = answer.replace(/Note:.*$/m, "").trim();
+  run(question, best, `Gemini agent, ${steps.length} ${steps.length === 1 ? "query" : "queries"}. Check the SQL.`, note, {ask: question}, {say, trace: traceHTML(steps)});
 }
 
 EXAMPLES.forEach((ex, i) => { const b = document.createElement("button"); b.className = "chip"; b.textContent = ex.q;

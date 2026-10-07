@@ -32,7 +32,7 @@ python3 -m http.server 8000
 
 Ready-made questions, the job search, and three recorded AI examples work right away. For your own questions, paste a free Gemini key from [aistudio.google.com/apikey](https://aistudio.google.com/apikey) into the page.
 
-## The seven lessons
+## The lessons
 
 Each lesson is one thing you need to get right, where it lives in the code, and a real mistake this project made along the way.
 
@@ -74,6 +74,19 @@ Three guardrails do most of the work:
 - **A precise schema.** The model only uses tables you describe, so describe them well, including the caveats ("salary is mostly empty").
 - **Read-only.** A check blocks `insert`, `delete`, `drop`, and the rest before anything runs.
 - **Bring your own key.** Each visitor's key stays in their browser tab and goes only to Google. Nobody can run up your bill.
+
+### 5b. Turn the single call into a small agent
+
+The first version made one call: Gemini wrote a query, and if the query failed, the visitor saw an error. Now Gemini gets one tool, `run_sql`, through the Gemini API's function calling. See `ask()` in [`web/index.html`](web/index.html). The loop:
+
+1. Gemini reads the table descriptions and the question, then calls `run_sql` with a query.
+2. The page checks the query is read-only, runs it in DuckDB, and sends back the first 30 rows or the error message.
+3. Gemini reads that result. If the query failed, returned nothing, or looks wrong, it writes a new one.
+4. After at most 4 queries, Gemini answers in one sentence, and the page charts the last query that returned rows.
+
+The page lists every query the agent ran under the answer, so you can see each wrong turn and the fix. That's the whole idea of an agent: a model, a tool, a loop, and a limit on the loop.
+
+**Try this:** ask a question with a typo in a column name, then open "What the agent did" and watch it recover.
 
 ### 6. Show the work, and check it
 
