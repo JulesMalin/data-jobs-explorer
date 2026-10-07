@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1185" width="1600" height="1185" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs><filter id="sh" x="-5%" y="-10%" width="110%" height="130%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#1d2a25" flood-opacity="0.07"/></filter>
+<style>.t{font-size:30px;font-weight:800;fill:#14231e;letter-spacing:-.4px}.st{font-size:16px;fill:#5f6368}.h{font-size:12px;font-weight:700;letter-spacing:1.4px}
+.l1{font-size:15px;font-weight:700;fill:#1d1f21}.l2{font-size:12.5px;fill:#6b7177}.c1{font-size:14px;font-weight:650;fill:#1d1f21}.c2{font-size:12.5px;fill:#5a6067}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.badge{font-size:13px;font-weight:800;fill:#fff}.r{font-size:13.5px;fill:#3d4248}.f{font-size:12px;fill:#8a8f98}</style></defs>
+<rect width="1600" height="1185" fill="#fbfaf7"/>
+<text x="40" y="58" class="t">One AI data agent, 4 ways to build it: this demo, Microsoft, Databricks, AWS</text>
+<text x="40" y="90" class="st">Each row is one part of the pipeline. Read across to see which product does that job on each platform.</text>
+<g filter="url(#sh)"><rect x="280" y="124" width="312" height="96" rx="12" fill="#fff" stroke="#e3e1db"/></g>
+<path d="M292,124 H580 A12,12 0 0 1 592,136 V130 H280 V136 A12,12 0 0 1 292,124 z" fill="#1f6f5c"/>
+<text x="298" y="162" font-size="21" font-weight="800" fill="#1f6f5c">This demo</text>
+<text x="298" y="185" class="c2" font-size="13.5" fill="#3d4248">Plain JavaScript in a web page</text>
+<text x="298" y="205" class="c2" font-weight="600">Best fit: learning and prototypes, $0</text>
+<g filter="url(#sh)"><rect x="604" y="124" width="312" height="96" rx="12" fill="#fff" stroke="#e3e1db"/></g>
+<path d="M616,124 H904 A12,12 0 0 1 916,136 V130 H604 V136 A12,12 0 0 1 616,124 z" fill="#2b6cb0"/>
+<text x="622" y="162" font-size="21" font-weight="800" fill="#2b6cb0">Microsoft</text>
+<text x="622" y="185" class="c2" font-size="13.5" fill="#3d4248">Fabric + Azure AI Foundry</text>
+<text x="622" y="205" class="c2" font-weight="600">Best fit: Microsoft 365 and Power BI</text>
+<g filter="url(#sh)"><rect x="928" y="124" width="312" height="96" rx="12" fill="#fff" stroke="#e3e1db"/></g>
+<path d="M940,124 H1228 A12,12 0 0 1 1240,136 V130 H928 V136 A12,12 0 0 1 940,124 z" fill="#c84a32"/>
+<text x="946" y="162" font-size="21" font-weight="800" fill="#c84a32">Databricks</text>
+<text x="946" y="185" class="c2" font-size="13.5" fill="#3d4248">Unity Catalog + Mosaic AI</text>
+<text x="946" y="205" class="c2" font-weight="600">Best fit: data and ML on Databricks</text>
+<g filter="url(#sh)"><rect x="1252" y="124" width="312" height="96" rx="12" fill="#fff" stroke="#e3e1db"/></g>
+<path d="M1264,124 H1552 A12,12 0 0 1 1564,136 V130 H1252 V136 A12,12 0 0 1 1264,124 z" fill="#b7791f"/>
+<text x="1270" y="162" font-size="21" font-weight="800" fill="#b7791f">AWS</text>
+<text x="1270" y="185" class="c2" font-size="13.5" fill="#3d4248">Bedrock + Athena or Redshift</text>
+<text x="1270" y="205" class="c2" font-weight="600">Best fit: AWS shops wanting model choice</text>
+<text x="40" y="264" class="h" fill="#1f6f5c">DATA</text>
+<line x1="94" y1="260" x2="1564" y2="260" stroke="#1f6f5c" stroke-opacity="0.25"/>
+<rect x="40" y="284" width="4" height="46" rx="2" fill="#1f6f5c"/>
+<text x="56" y="304" class="l1">Ingest</text>
+<text x="56" y="322" class="l2">Pull data from the sources</text>
+<rect x="280" y="280" width="312" height="52" rx="9" fill="#f1f8f5" stroke="#e6e4de"/>
+<text x="296" y="302" class="c1">fetch() in the browser</text>
+<text x="296" y="321" class="c2">4 public APIs and files</text>
+<rect x="604" y="280" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="620" y="302" class="c1">Fabric Data Factory</text>
+<text x="620" y="321" class="c2">pipelines into OneLake</text>
+<rect x="928" y="280" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="944" y="302" class="c1">Lakeflow Connect</text>
+<text x="944" y="321" class="c2">and Declarative Pipelines</text>
+<rect x="1252" y="280" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="1268" y="302" class="c1">Glue jobs or scheduled Lambda</text>
+<text x="1268" y="321" class="c2">into S3 (Iceberg on S3 Tables)</text>
+<rect x="40" y="342" width="4" height="46" rx="2" fill="#1f6f5c"/>
+<text x="56" y="362" class="l1">Store and query</text>
+<text x="56" y="380" class="l2">Where the SQL runs</text>
+<rect x="280" y="338" width="312" height="52" rx="9" fill="#f1f8f5" stroke="#e6e4de"/>
+<text x="296" y="360" class="c1">DuckDB-WASM</text>
+<text x="296" y="379" class="c2">SQL engine inside the page</text>
+<rect x="604" y="338" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="620" y="360" class="c1">Fabric Lakehouse</text>
+<text x="620" y="379" class="c2">or Fabric Warehouse</text>
+<rect x="928" y="338" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="944" y="360" class="c1">Delta tables</text>
+<text x="944" y="379" class="c2">on a Databricks SQL warehouse</text>
+<rect x="1252" y="338" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="1268" y="360" class="c1">Athena on S3</text>
+<text x="1268" y="379" class="c2">or Redshift Serverless</text>
+<rect x="40" y="400" width="4" height="46" rx="2" fill="#1f6f5c"/>
+<text x="56" y="420" class="l1">Describe the tables</text>
+<text x="56" y="438" class="l2">What the model reads</text>
+<rect x="280" y="396" width="312" height="52" rx="9" fill="#f1f8f5" stroke="#e6e4de"/>
+<text x="296" y="418" class="c1">Hand-written SCHEMA prompt</text>
+<text x="296" y="437" class="c2">with each table&#x27;s caveats</text>
+<rect x="604" y="396" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="620" y="418" class="c1">Power BI semantic model</text>
+<text x="620" y="437" class="c2">plus agent instructions</text>
+<rect x="928" y="396" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="944" y="418" class="c1">Unity Catalog comments</text>
+<text x="944" y="437" class="c2">metric views, Genie instructions</text>
+<rect x="1252" y="396" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="1268" y="418" class="c1">Glue Data Catalog</text>
+<text x="1268" y="437" class="c2">SageMaker Catalog, QuickSight topics</text>
+<text x="40" y="472" class="h" fill="#4c5fd5">AGENT</text>
+<line x1="104" y1="468" x2="1564" y2="468" stroke="#4c5fd5" stroke-opacity="0.25"/>
+<rect x="40" y="492" width="4" height="46" rx="2" fill="#4c5fd5"/>
+<text x="56" y="512" class="l1">The agent</text>
+<text x="56" y="530" class="l2">No-code or custom</text>
+<rect x="280" y="488" width="312" height="52" rx="9" fill="#f1f8f5" stroke="#e6e4de"/>
+<text x="296" y="510" class="c1">Custom loop in JavaScript</text>
+<text x="296" y="529" class="c2">max 4 queries per question</text>
+<rect x="604" y="488" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="620" y="510" class="c1"><tspan fill="#8a8f98" font-weight="600" font-size="12.5">No-code </tspan>Fabric data agent</text>
+<text x="620" y="529" class="c1" font-size="13.5"><tspan fill="#8a8f98" font-weight="600" font-size="12.5">Custom </tspan>Azure AI Foundry Agent Service</text>
+<rect x="928" y="488" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="944" y="510" class="c1"><tspan fill="#8a8f98" font-weight="600" font-size="12.5">No-code </tspan>AI/BI Genie space</text>
+<text x="944" y="529" class="c1" font-size="13.5"><tspan fill="#8a8f98" font-weight="600" font-size="12.5">Custom </tspan>Agent Bricks</text>
+<rect x="1252" y="488" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="1268" y="510" class="c1"><tspan fill="#8a8f98" font-weight="600" font-size="12.5">No-code </tspan>Amazon Q in QuickSight</text>
+<text x="1268" y="529" class="c1" font-size="13.5"><tspan fill="#8a8f98" font-weight="600" font-size="12.5">Custom </tspan>Bedrock AgentCore + Strands</text>
+<rect x="40" y="550" width="4" height="46" rx="2" fill="#4c5fd5"/>
+<text x="56" y="570" class="l1">SQL tool</text>
+<text x="56" y="588" class="l2">What the agent calls</text>
+<rect x="280" y="546" width="312" height="52" rx="9" fill="#f1f8f5" stroke="#e6e4de"/>
+<text x="296" y="568" class="c1 mono">run_sql</text>
+<text x="296" y="587" class="c2">one read-only tool</text>
+<rect x="604" y="546" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="620" y="568" class="c1">Tool on the Fabric SQL endpoint</text>
+<text x="620" y="587" class="c2">called through function calling</text>
+<rect x="928" y="546" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="944" y="568" class="c1">Unity Catalog functions</text>
+<text x="944" y="587" class="c2">registered as agent tools</text>
+<rect x="1252" y="546" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="1268" y="568" class="c1">AgentCore Gateway or Lambda</text>
+<text x="1268" y="587" class="c2">calling the Athena or Redshift Data API</text>
+<rect x="40" y="608" width="4" height="46" rx="2" fill="#4c5fd5"/>
+<text x="56" y="628" class="l1">Model</text>
+<text x="56" y="646" class="l2">The LLM and how it&#x27;s reached</text>
+<rect x="280" y="604" width="312" height="52" rx="9" fill="#f1f8f5" stroke="#e6e4de"/>
+<text x="296" y="626" class="c1">Gemini Flash</text>
+<text x="296" y="645" class="c2">visitor&#x27;s own key</text>
+<rect x="604" y="604" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="620" y="626" class="c1">Azure OpenAI</text>
+<text x="620" y="645" class="c2">inside the company tenant</text>
+<rect x="928" y="604" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="944" y="626" class="c1">Model Serving</text>
+<text x="944" y="645" class="c2">behind Mosaic AI Gateway</text>
+<rect x="1252" y="604" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="1268" y="626" class="c1">Bedrock: Claude, Nova, Llama</text>
+<text x="1268" y="645" class="c2">through IAM roles, no keys</text>
+<text x="40" y="680" class="h" fill="#c98a2b">TRUST</text>
+<line x1="104" y1="676" x2="1564" y2="676" stroke="#c98a2b" stroke-opacity="0.25"/>
+<rect x="40" y="700" width="4" height="46" rx="2" fill="#c98a2b"/>
+<text x="56" y="720" class="l1">Who sees what</text>
+<text x="56" y="738" class="l2" fill="#b26f12" font-weight="700">Biggest change from the demo</text>
+<rect x="280" y="696" width="312" height="52" rx="9" fill="#fffaf0" stroke="#d9a556" stroke-width="1.5"/>
+<text x="296" y="718" class="c1">Keyword check</text>
+<text x="296" y="737" class="c2">read-only queries only</text>
+<rect x="604" y="696" width="312" height="52" rx="9" fill="#fffaf0" stroke="#d9a556" stroke-width="1.5"/>
+<text x="620" y="718" class="c1">Entra ID passthrough</text>
+<text x="620" y="737" class="c2">row-level security, Purview labels</text>
+<rect x="928" y="696" width="312" height="52" rx="9" fill="#fffaf0" stroke="#d9a556" stroke-width="1.5"/>
+<text x="944" y="718" class="c1">Unity Catalog permissions</text>
+<text x="944" y="737" class="c2">row filters, column masks</text>
+<rect x="1252" y="696" width="312" height="52" rx="9" fill="#fffaf0" stroke="#d9a556" stroke-width="1.5"/>
+<text x="1268" y="718" class="c1">IAM + Lake Formation</text>
+<text x="1268" y="737" class="c2">row, column, and cell permissions</text>
+<rect x="40" y="758" width="4" height="46" rx="2" fill="#c98a2b"/>
+<text x="56" y="778" class="l1">Content guardrails</text>
+<text x="56" y="796" class="l2">PII and topic filters</text>
+<rect x="280" y="754" width="312" height="52" rx="9" fill="#f1f8f5" stroke="#e6e4de"/>
+<text x="296" y="776" class="c1">None</text>
+<text x="296" y="795" class="c2">public data only</text>
+<rect x="604" y="754" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="620" y="785" class="c1">Azure AI Content Safety</text>
+<rect x="928" y="754" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="944" y="785" class="c1">AI Gateway guardrails</text>
+<rect x="1252" y="754" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="1268" y="785" class="c1">Bedrock Guardrails</text>
+<rect x="40" y="816" width="4" height="46" rx="2" fill="#c98a2b"/>
+<text x="56" y="836" class="l1">Show the work</text>
+<text x="56" y="854" class="l2">SQL and traces</text>
+<rect x="280" y="812" width="312" height="52" rx="9" fill="#f1f8f5" stroke="#e6e4de"/>
+<text x="296" y="834" class="c1">Every query on the page</text>
+<text x="296" y="853" class="c2">including the failed ones</text>
+<rect x="604" y="812" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="620" y="834" class="c1">Generated query in Copilot</text>
+<text x="620" y="853" class="c2">traces in Azure AI Foundry</text>
+<rect x="928" y="812" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="944" y="834" class="c1">SQL shown in Genie</text>
+<text x="944" y="853" class="c2">MLflow tracing</text>
+<rect x="1252" y="812" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="1268" y="834" class="c1">AgentCore Observability</text>
+<text x="1268" y="853" class="c2">in CloudWatch</text>
+<rect x="40" y="874" width="4" height="46" rx="2" fill="#c98a2b"/>
+<text x="56" y="894" class="l1">Test it</text>
+<text x="56" y="912" class="l2">Evaluation</text>
+<rect x="280" y="870" width="312" height="52" rx="9" fill="#f1f8f5" stroke="#e6e4de"/>
+<text x="296" y="892" class="c1">Questions with known answers</text>
+<text x="296" y="911" class="c2">checked by hand</text>
+<rect x="604" y="870" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="620" y="901" class="c1">Azure AI Foundry evaluations</text>
+<rect x="928" y="870" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="944" y="892" class="c1">Genie benchmarks</text>
+<text x="944" y="911" class="c2">MLflow evaluation</text>
+<rect x="1252" y="870" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="1268" y="892" class="c1">Bedrock evaluations</text>
+<text x="1268" y="911" class="c2">AgentCore evaluations</text>
+<text x="40" y="946" class="h" fill="#6b7177">DELIVERY</text>
+<line x1="134" y1="942" x2="1564" y2="942" stroke="#6b7177" stroke-opacity="0.25"/>
+<rect x="40" y="966" width="4" height="46" rx="2" fill="#6b7177"/>
+<text x="56" y="986" class="l1">Where people use it</text>
+<text x="56" y="1004" class="l2">Front end</text>
+<rect x="280" y="962" width="312" height="52" rx="9" fill="#f1f8f5" stroke="#e6e4de"/>
+<text x="296" y="984" class="c1">A static web page</text>
+<text x="296" y="1003" class="c2">free Hugging Face Space</text>
+<rect x="604" y="962" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="620" y="984" class="c1">Power BI, Teams</text>
+<text x="620" y="1003" class="c2">Copilot Studio</text>
+<rect x="928" y="962" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="944" y="984" class="c1">Databricks One, Slack, Teams</text>
+<text x="944" y="1003" class="c2">Databricks Apps</text>
+<rect x="1252" y="962" width="312" height="52" rx="9" fill="#ffffff" stroke="#e6e4de"/>
+<text x="1268" y="984" class="c1">Quick Suite, or a custom app</text>
+<text x="1268" y="1003" class="c2">CloudFront with Cognito sign-in</text>
+<line x1="40" y1="1040" x2="1564" y2="1040" stroke="#e3e3df"/>
+<text x="40" y="1070" class="h" fill="#6b7177">THE SAME 5 RULES ON EVERY PLATFORM</text>
+<circle cx="52" cy="1102" r="12" fill="#1f6f5c"/><text x="52" y="1106.5" class="badge" text-anchor="middle">1</text>
+<text x="74" y="1100" class="r">Describe every table,</text><text x="74" y="1119" class="r">including its caveats</text>
+<circle cx="358" cy="1102" r="12" fill="#1f6f5c"/><text x="358" y="1106.5" class="badge" text-anchor="middle">2</text>
+<text x="380" y="1100" class="r">Give the model one</text><text x="380" y="1119" class="r">read-only SQL tool</text>
+<circle cx="664" cy="1102" r="12" fill="#1f6f5c"/><text x="664" y="1106.5" class="badge" text-anchor="middle">3</text>
+<text x="686" y="1100" class="r">Let the database decide</text><text x="686" y="1119" class="r">who sees which rows</text>
+<circle cx="970" cy="1102" r="12" fill="#1f6f5c"/><text x="970" y="1106.5" class="badge" text-anchor="middle">4</text>
+<text x="992" y="1100" class="r">Cap the loop and</text><text x="992" y="1119" class="r">show every query</text>
+<circle cx="1276" cy="1102" r="12" fill="#1f6f5c"/><text x="1276" y="1106.5" class="badge" text-anchor="middle">5</text>
+<text x="1298" y="1100" class="r">Rerun a benchmark set</text><text x="1298" y="1119" class="r">when anything changes</text>
+<text x="40" y="1162" class="f">Product names as of October 2026. Vendors rename agent products often, so check current docs. Full table and code: github.com/JulesMalin/data-jobs-explorer</text>
+</svg>

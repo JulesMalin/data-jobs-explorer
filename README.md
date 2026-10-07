@@ -123,6 +123,10 @@ The pattern works for any question your team keeps asking:
 
 This demo is an agentic text-to-SQL app: one agent, one read-only SQL tool, a capped loop, and every query shown. Inside a company, each piece maps to a managed product.
 
+![One AI data agent, 4 ways to build it: this demo, Microsoft, Databricks, and AWS, compared across 11 parts of the pipeline](docs/platforms.png)
+
+The same comparison as a table:
+
 | Component | This demo | Microsoft | Databricks | AWS |
 |---|---|---|---|---|
 | Ingestion | `fetch()` in the browser | Fabric Data Factory into OneLake | Lakeflow Connect and Declarative Pipelines | Glue jobs, or Lambda on an EventBridge schedule, into S3 (Iceberg on S3 Tables) |
