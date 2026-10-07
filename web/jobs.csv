@@ -1,0 +1,983 @@
+job_id,role,title,company,industry,seniority,years_experience,work_model,country,city,salary_min_usd,salary_max_usd
+1,AI Engineer,AI Engineer (Contract role),And Digital,,Mid,,remote,,United Kingdom,,
+2,AI Engineer,LLM Engineer,Usa Vein Clinics,,Senior,,on-site,United States,Northbrook,85000.0,115000.0
+3,AI Engineer,AI Engineer,Gek Terna,,Mid,,on-site,Greece,Athens,,
+4,AI Engineer,Junior AI Engineer,Gek Terna,,Entry,,on-site,Greece,Athens,,
+5,Data Engineer,Infrastructure and Data Engineering Specialist,Gek Terna,,Mid,,on-site,Greece,Athens,,
+6,Data Engineer,Data Engineer II,Mediavine,,Mid,,remote,United States,Atlanta,,
+7,BI Analyst,Business Intelligence Analyst I,Teleperformance,,Entry,,on-site,India,Malad,,
+8,Data Analyst,"Sr. Business Data Analyst, Finance Insights and Technology Engagement",LOBLAW,,Senior,,hybrid,Canada,Brampton,60000.0,82500.0
+9,ML Engineer,MLOps Engineer (AWS) (México Only),Dacodes Mx,,,,hybrid,MX,Mexico City,,
+10,Data Engineer,Clinical Data Engineering Specialist,Merck,,Mid,,hybrid,Colombia,Bogotá,,
+11,Data Analyst,"Associate Director, Data Analytics & AI - Solution Architect",Merck,,Senior,,hybrid,India,Hyderabad,,
+12,Data Scientist,Lead Marketing Data Scientist,One Park Financial,,Lead,,on-site,United States,Salt Lake City,,
+13,Data Scientist,Lead Marketing Data Scientist,One Park Financial,,Senior,,hybrid,United States,Dallas,,
+14,Data Scientist,Lead Marketing Data Scientist,One Park Financial,,Senior,,on-site,United States,Miami,,
+15,Data Analyst,Junior Data Analyst,merkurcasinouk,,,,on-site,United Kingdom,Milton Keynes,,
+16,Data Analyst,Sr. MassHealth Encounter Data Analyst,Mass General Brigham,,Senior,,hybrid,United States,Somerville,79560.0,115720.8
+17,Data Analyst,Data Analyst,A.P. Moller - Maersk,,,,on-site,Germany,Duisburg,,
+19,Data Engineer,Cloud Data Engineer,EXL,,Mid,,hybrid,India,Gurugram,,
+20,Data Engineer,Sr Cloud Data Engineer,EXL,,Mid,,hybrid,India,Gurugram,,
+21,Data Engineer,Lead Cloud Data Engineer,EXL,,Mid,,hybrid,India,Gurugram,,
+22,BI Analyst,BI Analyst,FLEETCOR,,Mid,,on-site,Germany,Berlin,,
+23,Data Engineer,Data Engineer,HOMECENTERS PERUANOS S.A.,,Mid,,on-site,,Peru,,
+24,Data Engineer,Senior Data Engineer (Integration & Azure) - Híbrido - CDMX,Orion Innovation,,Senior,,hybrid,Mexico,Mexico City,,
+25,ML Engineer,"Machine Learning Engineer / MLOps (Python, Cloud, Data) – Híbrido - CDMX",Orion Innovation,,Mid,,hybrid,Mexico,Mexico City,,
+26,Data Engineer,Data Engineer,Orion Innovation,,Mid,,hybrid,Mexico,Mexico City,,
+27,Data Engineer,Senior Data Engineer - ETL,JerseySTEM,,,,remote,,US,,
+28,Data Scientist,"Sr Manager, Data Science",Lennar,,Senior,,hybrid,United States,Miami,,
+29,Data Scientist,Lead Data Scientist,Lennar,"[""Homebuilding""]",Senior,,remote,United States,Boston,152600.0,190700.0
+30,Analytics Engineer,Analytics Engineer,Trolley,,Mid,,hybrid,Canada,Toronto,,
+31,ML Engineer,"Staff Machine Learning Engineer - Game Tech Group, ML Platform",Riot Games,,Senior,,on-site,United States,Los Angeles,,
+32,AI Engineer,Senior AI Engineer,WIZELINE,,Senior,,,,Colombia,,
+33,Research Scientist,Research Scientist,LabCorp,,Entry,,on-site,United Kingdom,Huntingdon,,
+34,Analytics Engineer,Analytics Engineer,Ensco,,Mid,,hybrid,United States,Houston,,
+35,Data Scientist,Data Scientist,PHMG Careers,,Mid,,hybrid,UK,Manchester,,
+36,Research Scientist,Research Scientist I; Analytical Development (NMR),Curia,,Entry,,on-site,United States,Albany,62353.2,62353.2
+37,Data Engineer,Principal Data Engineer/ Technical Lead,Unqork,,Senior,,remote,,,,
+38,AI Engineer,AI Engineer,Version 1,,,,remote,,,,
+39,Data Engineer,"Senior Data Engineer, AI Systems",Movable Ink,,Senior,,on-site,Canada,Toronto,,
+40,AI Engineer,Senior GenAI Software Engineer (North America),Liftoff,,Senior,,,,United States,165000.0,230000.0
+41,Data Analyst,ALTERNANT.E - ACHATS & Data Analyst H/F,Veolia,,Intern,,,,France,,
+42,Research Scientist,"Research Scientist, Associate - Merkle Research Group",University of Wyoming,,Mid,,on-site,United States,Laramie,60000.0,85000.0
+43,AI Engineer,AI Engineer,Unit4,,Mid,,remote,,,,
+44,AI Engineer,AI Engineer,Unit4,,,,,,,,
+45,Data Engineer,Senior Data Engineer,Branch,,Senior,,remote,United States,Remote,160000.0,175000.0
+46,BI Analyst,"Director, Business Intelligence & Analytics (BIA) - USA Remote",Turnitin,,Director,,remote,,,,
+47,BI Analyst,"Director, Business Intelligence & Analytics (BIA) - USA Remote",Turnitin,,Senior,,remote,,,130350.0,217250.0
+48,BI Analyst,"Director, Business Intelligence & Analytics (BIA) - USA Remote",Turnitin,,Senior,,remote,,,,
+49,ML Engineer,Senior Machine Learning Scientist,Turnitin,,Senior,,remote,United States,Remote,112125.0,186875.0
+50,Data Engineer,Data Engineer,Turner & Townsend,,Mid,,on-site,Spain,Madrid,,
+51,AI Engineer,Senior AI Engineer,ChargePoint,,,,remote,,India,,
+52,AI Engineer,Senior AI Engineer,ChargePoint,,Senior,,remote,,India,,
+53,BI Analyst,Sr. Business Intelligence Analyst,Treace Medical Concepts,,Mid,,hybrid,,United States,,
+54,Data Scientist,"Data Scientist, Modeler",The Wonderful Company,,Mid,,hybrid,United States,West Los Angeles,100000.0,135000.0
+55,Data Scientist,"Data Scientist, Modeler",The Wonderful Company,,Mid,,hybrid,United States,Paragould,,
+56,Data Scientist,"Data Scientist, Modeler",The Wonderful Company,,Mid,,hybrid,United States,Oklahoma,,
+57,Data Analyst,"Transportation Data Analyst - Monterey Park, CA",HW LOCHNER INC,,Mid,,hybrid,United States,Orange,90000.0,110000.0
+58,AI Engineer,Senior Fullstack/AI Engineer,INFUSE,Software,Senior,,remote,United States,Georgia,,
+59,AI Engineer,Senior Fullstack/AI Engineer,INFUSE,,Senior,,remote,,Azerbaijan,,
+60,AI Engineer,Senior Fullstack/AI Engineer,INFUSE,,Senior,,remote,,Armenia,,
+61,AI Engineer,Senior Fullstack/AI Engineer,INFUSE,,Senior,,remote,,Poland,,
+62,AI Engineer,Senior Fullstack/AI Engineer,INFUSE,,,,remote,,Ukraine,,
+63,Data Engineer,Lead Data Engineer,Exadel Inc (Website),,,,remote,,Bulgaria,,
+64,Data Engineer,Senior AI Data Engineer,Cortica,,Senior,,remote,United States,San Diego,160000.0,200000.0
+65,AI Engineer,Mid Level AI Engineer,Capco,,Mid,,hybrid,United States,Orlando,,
+66,ML Engineer,"Senior Machine Learning Engineer, Agentic Product - Moveworks",ServiceNow,,Senior,,on-site,,,,
+67,ML Engineer,"Machine Learning Engineer, Agentic Product - Moveworks",ServiceNow,,Mid,,,,,,
+68,ML Engineer,"Senior Machine Learning Engineer, Agentic App Platform - Moveworks",ServiceNow,,Senior,,,,,,
+69,ML Engineer,"Staff Machine Learning Engineer, Agentic Product",ServiceNow,,Senior,,,,,,
+70,ML Engineer,"Staff Machine Learning Engineer, Agentic App Platform",ServiceNow,,Senior,,,,,,
+71,ML Engineer,"Senior Staff Machine Learning Engineer, Agentic Product - Moveworks",ServiceNow,,Senior,,remote,,,,
+72,Data Analyst,Data Analyst,OVO Energy,,,,hybrid,UK,Glasgow,,
+73,Data Engineer,AI Data Engineer III,Sixt,,Mid,,,,,,
+74,Data Analyst,Data Analyst (Data Quality),Navy Federal Financial Group,,,,hybrid,United States,Vienna,,
+75,Analytics Engineer,Senior Data Visualization and Augmented Analytics Engineer,Navy Federal Financial Group,,Mid,,hybrid,United States,Vienna,,
+76,Data Analyst,Senior Data Analyst – AI & Snowflake Cortex,Johnson Controls,,Mid,,on-site,India,Pune,,
+77,Data Engineer,Lead Data Engineer - Audience Measurement,Ipsos,,Mid,,hybrid,United Kingdom,Cambridge,,
+78,Data Scientist,Sr Associate Data Scientist,"JMP Statistical Discovery,",,Senior,,hybrid,United States,Cary,,
+79,Data Scientist,Data Scientist (Computer Vision),"JMP Statistical Discovery,",,Mid,,hybrid,United States,Cary,,
+80,BI Analyst,"Senior Analyst, Business Intelligence",Canaan Valley Institute,,,,remote,,United States,,
+81,Data Analyst,Data Analyst Intern,Ivy Tech Community College,,Intern,,hybrid,United States,Indianapolis,,
+82,Data Scientist,Data Scientist,MV Transportation,,Senior,,on-site,United States,Dallas,,
+83,Data Scientist,Data Science and Business Intelligence Professional III,Iron Mountain,,Senior,,hybrid,India,Bengaluru,,
+84,Data Engineer,Data Engineer,The Fork,,Mid,,hybrid,Spain,Barcelona,,
+85,Data Analyst,Data Analysis Specialist,NielsenIQ,,Entry,,hybrid,Bulgaria,Sofia,,
+86,Research Scientist,"Senior Research Scientist (Applied Research - Agentic AI, SLMs & GenAI Research)",NielsenIQ,,Senior,,hybrid,,,,
+87,Research Scientist,"Senior Research Scientist (Applied Research - Scalable AI/ML Solutions, SLMs & GenAI)",NielsenIQ,,Senior,,hybrid,,,,
+88,Data Analyst,ML / Data Analyst,NielsenIQ,,Mid,,hybrid,Bulgaria,Sofia,,
+89,Data Analyst,Consumer Data Analyst,NielsenIQ,,Mid,,hybrid,Bulgaria,Sofia,,
+90,Data Scientist,"Data Scientist, Tax Transformation Office",BDO Dunwoody,,Mid,,hybrid,Canada,Toronto,64000.0,96000.0
+91,Data Analyst,Data Analyst,Nexton,,Mid,,on-site,France,Paris,,
+92,Data Analyst,Senior Consultant Data Analytics & Network Evaluation,Brown & Brown,,Senior,,remote,United States,Remote,130000.0,180000.0
+93,Data Engineer,Data Engineer,MSX International,,,,,,,,
+94,Data Scientist,SAP Data Scientist,Accenture Federal Services,,Mid,,on-site,United States,Washington,116900.0,243100.0
+95,Data Scientist,Growth Data Science & Analytics Lead (Maternity Cover),Prolific,,Mid,,hybrid,United Kingdom,London,,
+96,Data Analyst,Data Analyst,LinkedIn,,Mid,,hybrid,India,Bengaluru,,
+97,Data Analyst,Master Data Analyst,Wilson Sporting Goods,,,,on-site,United States,Sparta,,
+98,Data Analyst,Senior Data Analyst,Moniepoint,,Senior,,remote,Spain,Remote,,
+99,Data Engineer,Sr Data Engineer (USC & GC only - Max $75/hr W2),Lenmar Consulting,,,,remote,,,,
+100,BI Analyst,"Manager, Business Intelligence and Market Insights",Legal & General,,Mid,,on-site,United Kingdom,Cardiff,,
+101,BI Analyst,"Manager, Business Intelligence and Market Insights",Legal & General,,,,on-site,United Kingdom,Cardiff,,
+102,Data Analyst,Data Analyst (Analytics Engineer),Legal & General,,Mid,,on-site,UK,Hove,,
+103,Data Analyst,Data Analyst (Analytics Engineer),Legal & General,,Mid,,hybrid,UK,Hove,,
+104,AI Engineer,"GenAI Engineer, Associate",Huron Consulting Group,,Entry,,remote,United States,Chicago,85000.0,110000.0
+105,Data Analyst,Senior Data Analyst - Poker,Zynga,,Senior,,on-site,United States,Austin,96400.0,135000.0
+106,Research Scientist,Research Scientist 2,Humana,,Mid,,remote,United States,Remote,78400.0,107800.0
+107,Data Analyst,Technical Communications and Data Analyst,Humana,,Mid,,remote,United States,Louisville,73400.0,100100.0
+108,Data Engineer,Senior Data Engineer - Global People Data,WPP,,Senior,,hybrid,United Kingdom,London,,
+109,Data Analyst,Data Analyst - Non-Profit Social Services,TRANSITION PROJECTS INC,,,,on-site,United States,Portland,72800.0,83200.0
+110,Data Scientist,Data Scientist,SEA LIFE Trust,,,,hybrid,UK,London,,
+111,Data Analyst,Data Analyst,J.S. Held,Consulting,Mid,,remote,,Remote,,
+112,BI Analyst,"Finance BI Developer, Finance Business Intelligence",Autodesk,,Mid,,on-site,Canada,Toronto,,
+113,Data Engineer,Data Engineer (H/F),Inetum,,,,remote,,,,
+114,Data Analyst,Technical Specialist / Data Analyst,"Verista, Inc.",,Mid,,,United States,Foster City,85000.0,145300.0
+115,Data Analyst,Data Analyst II- Credit Risk,Stifel Financial Corp.,,,,on-site,United States,Saint Louis,,
+116,Data Scientist,Senior Data Scientist with AI product mindset,Hiflylabs,,Senior,,on-site,Hungary,Budapest,,
+117,Data Analyst,Data Analyst- Sheriff's Office,Salt Lake County,,,,on-site,United States,Salt Lake City,60136.0,90206.0
+118,Data Scientist,Data Scientist - People Analytics,Home Depot,,,,remote,United States,Atlanta,,
+119,Data Scientist,Senior Data Scientist - MET,Home Depot,,Senior,,on-site,United States,Atlanta,,
+120,Analytics Engineer,"Analytics Engineer, Safety Systems",Openai,,,,hybrid,United States,San Francisco,210000.0,260000.0
+121,Data Engineer,Sr Data Engineer- Data Platform & AI Enablement,Citizens Financial Group,,Mid,,,,,,
+122,Data Analyst,Data Analysis Manager,Citizens Financial Group,,Mid,,,,,,
+123,Data Analyst,Sr. Data Analyst,Seattle Children's Hospital,,,,on-site,United States,Seattle,118174.0,177262.0
+124,Data Analyst,"Senior Data Analyst, Growth Marketing",Rocket Money,,Senior,,,United States,San Francisco,140000.0,180000.0
+125,Data Analyst,"Data Analyst, BuzzBallz",Sazerac,,Mid,,hybrid,United States,Louisville,68000.0,102000.0
+126,Data Engineer,Jr Data Engineer,tires-easy.com,,Junior,,remote,,Argentina,,
+127,Data Analyst,Data Analyst - Insurance,RPM Living,,,,on-site,United States,Austin,,
+128,Research Scientist,Research Scientist - Full Time - Day Shift - Pittsburgh,Highmark Health and Allegheny Health Network,,Mid,,on-site,United States,Pittsburgh,,
+129,Data Analyst,"Sr. Software Engineer, Propulsion Simulation & Data Analysis (Raptor)",SpaceX,,Senior,,on-site,United States,Hawthorne,165000.0,230000.0
+130,Data Analyst,"Software Engineer, Propulsion Simulation & Data Analysis",SpaceX,,Mid,,on-site,United States,Hawthorne,125000.0,175000.0
+131,Data Engineer,Revenue Operations Data Engineer,Smartsheet,,Mid,,hybrid,India,Bangalore,,
+132,AI Engineer,Generative AI Engineering Intern (Graduate),Peraton,,Intern,,remote,United States,Remote,,
+133,Data Analyst,Cyber Data Analyst / Coordinator,Peraton,,Senior,,on-site,United States,Fort Meade,146000.0,234000.0
+134,BI Analyst,"Manager, Business Intelligence & Analytics - Supply Chain",Pactiv,,Senior,,,United States,Lake Forest,135000.0,150000.0
+135,Data Analyst,Data Analyst,Stio,,Mid,,remote,United States,Jackson,85000.0,100000.0
+136,Data Engineer,Senior Data Engineer,New York Blood Center,,,,on-site,United States,Rye,127000.0,137000.0
+137,Data Analyst,Senior Data Analyst,Scopely,,Senior,,hybrid,Spain,Barcelona,,
+138,AI Engineer,People Analytics AI Engineer,Samsara,,Senior,,remote,United States,Seattle,146370.0,221400.0
+139,Data Scientist,"Principal Data Scientist, Predictive AI",Genentech,,Senior,,hybrid,United States,South San Francisco,207480.0,385320.0
+140,Data Scientist,Principal Statistical Methodology Data Scientist,Roche,,Senior,,on-site,Canada,Mississauga,136936.0,179728.5
+141,Data Analyst,Data Analytics Consultant,Navigant,,Entry,,on-site,United States,Boston,65000.0,108000.0
+142,Data Engineer,"Data Engineer, Ads Auction Platform",Roku,,Mid,,hybrid,United Kingdom,Manchester,,
+143,Data Engineer,"Data Engineer, Ads Auction Platform",Roku,,Mid,,hybrid,United Kingdom,Cambridge,,
+144,Data Engineer,Data Engineer - AWS/Databricks - Mid Level,Acuity,,Mid,,remote,United States,Reston,,
+145,Data Analyst,Staff Data Analyst,Quince,,Senior,,on-site,United States,Palo Alto,207000.0,235000.0
+146,Analytics Engineer,Satellite Communication Analytics Engineer - Mid-level,LMI,,Mid,,,United States,Colorado Springs,111000.0,175000.0
+147,AI Engineer,AI/ML Software Developer (req-251),Cathexis,,Mid,,on-site,United States,Redwood City,86000.0,104000.0
+148,ML Engineer,"Machine Learning Scientist, BioML",Profluent,,Mid,,hybrid,United States,Emeryville,200000.0,330000.0
+149,ML Engineer,Machine Learning Platform Engineer,PrizePicks,,Mid,,remote,United States,Atlanta,135000.0,160000.0
+150,Data Scientist,"Assistant Director, Data Science (STP)",Libertymutual,,Senior,,hybrid,United States,Boston,161803.0,174000.0
+151,Data Engineer,Data Engineer (Databricks),GoTo,,,,remote,IN,Bangalore,,
+153,Data Scientist,Data Scientist,Penske Truck Leasing/Transportation Solutions,,Mid,,on-site,United States,Reading,,
+154,ML Engineer,Staff Flight Research Machine Learning Engineer,Joby Aviation,,Senior,,,United States,Santa Cruz,224000.0,245000.0
+155,Data Analyst,Marketing Data Analyst,Internova Travel Group,,Mid,,on-site,Uruguay,Montevideo,,
+156,Data Analyst,Production Data Analyst,Humdinger,,Mid,,on-site,UK,Bromborough,,
+157,AI Engineer,AI Engineer (Global Security),Royal Bank of Canada,,Mid,,on-site,Canada,Toronto,,
+158,AI Engineer,"Director, Security AI/ML Products (Global Security)",Royal Bank of Canada,,Director,,on-site,Canada,Toronto,,
+159,Data Engineer,"Associate Director, Principal Data Engineer",Royal Bank of Canada,,Senior,,on-site,Canada,Toronto,,
+160,Research Scientist,Quantum Topological Qubits Research Scientist,GLOBALFOUNDRIES,,Mid,,,United States,Santa Clara,143000.0,275000.0
+161,AI Engineer,Forward Deployed AI Engineer — Lifecycle Marketing,Adobe,,Mid,,on-site,United States,San Jose,125600.0,234150.0
+162,AI Engineer,Forward-Deployed AI Engineer - Marketing Analytics & Data Science,Adobe,,Senior,,on-site,United States,San Jose,133100.0,236400.0
+163,AI Engineer,AI Engineer I,Rappi,,,,on-site,Colombia,Bogotá,,
+164,AI Engineer,AI Engineer I,Rappi,,Mid,,on-site,CO,Bogotá,,
+165,AI Engineer,AI Engineer I,Rappi,,Mid,,on-site,Colombia,Bogotá,,
+166,ML Engineer,"Senior Machine Learning Scientist, Agentic AI",Natera,,Senior,,remote,,,169800.0,212300.0
+167,Data Analyst,Data Analyst,Woodcraft Rangers,,Mid,,hybrid,United States,Los Angeles,75000.0,88000.0
+168,BI Analyst,Business Intelligence Developer,Two95 International Inc 3,,Mid,,remote,United States,New York,,
+169,Analytics Engineer,Senior Analytics Engineer – Data Governance,Qonto,,Senior,,remote,France,Paris,,
+170,Data Analyst,Data Analyst Intern - Competency Management,GE Vernova,,Intern,,on-site,United Kingdom,Stafford,,
+171,ML Engineer,Machine Learning Engineer II,May Mobility,,,,remote,,,160000.0,210000.0
+172,Data Engineer,Lead data engineer & Team Lead,VML MAP,,Lead,,on-site,Canada,Toronto,,
+173,BI Analyst,Business Intelligence Manager,Manhattan Beer Distributors,,Mid,,,United States,Bronx,95000.0,120000.0
+174,BI Analyst,BI Analyst,Manhattan Beer Distributors,,,,on-site,United States,Bronx,80000.0,90000.0
+175,Data Scientist,Associate Data Science Analyst - Lutgens Lab - Temporary part time,Mayo Clinic,,Entry,,on-site,United States,Rochester,,
+176,Data Engineer,Data Engineer (m/w/d) – Fokus Messdatenmanagement & Ownership,Octoenergy,,,,on-site,Germany,Berlin,,
+177,ML Engineer,Senior Machine Learning Operations Engineer II (AI Native),Life360,,Senior,,remote,United States,Remote,,
+178,ML Engineer,Staff Machine Learning Engineer - ML Training Infrastructure,General Motors,,Senior,,remote,United States,Sunnyvale,185000.0,335300.0
+179,Data Analyst,"Senior Data Analyst (SQL, DBT, PYTHON, TABLEAU and Forecast ML Performance)",Everience,,Senior,,on-site,France,Paris,,
+180,ML Engineer,Machine Learning Engineer,Faculty,,Mid,,hybrid,United Kingdom,London,,
+181,Data Scientist,Data Scientist,Faculty,,Mid,,hybrid,United Kingdom,London,,
+182,ML Engineer,Staff Machine Learning Engineer,GEICO,,Senior,,hybrid,United States,Palo Alto,130000.0,260000.0
+183,ML Engineer,"Director, Machine Learning Engineering",GEICO,,Senior,,on-site,United States,Palo Alto,150000.0,300000.0
+184,Data Analyst,Data Analyst,Edf Uk,,,,remote,,,,
+185,Analytics Engineer,Analytics Engineer (Northern Belgium),Xebia Group,,Mid,,hybrid,Netherlands,Eindhoven,,
+186,Data Engineer,Data Engineer (Northern Belgium),Xebia Group,information_technology,Senior,,hybrid,Belgium,Northern Belgium,,
+187,Data Analyst,Data Analyst 3,Pfs Investments,,Mid,,hybrid,United States,Duluth,85000.0,100000.0
+188,Data Engineer,Team Lead Data Engineering (m|w|d),idealo internet GmbH,E‑commerce,Lead,,on-site,Germany,Berlin,,
+189,Data Analyst,"Senior, Data Analyst",Walmart,,Senior,,on-site,United States,Bentonville,80000.0,155000.0
+190,Analytics Engineer,Senior Engineer (India Office)- Power BI & Analytics Engineer,WESCO International,,Senior,,hybrid,India,Bangalore,,
+191,Analytics Engineer,Senior Engineer (India Office)- Power BI & Analytics Engineer,WESCO International,,Senior,,hybrid,India,Bangalore,,
+192,Data Scientist,"Senior Manager, Data Science – Supply Chain Strategy",Walmart,,Senior,,on-site,United States,Bentonville,110000.0,220000.0
+193,AI Engineer,LLM Platform Engineer (Windchill / Teamcenter),Bright Vision Technologies,,Mid,,remote,United States,Remote,100000.0,150000.0
+194,AI Engineer,LLM Fine-Tuning Engineer,Bright Vision Technologies,,Senior,,remote,United States,Remote,100000.0,150000.0
+195,AI Engineer,Edge AI Engineer,Bright Vision Technologies,,Senior,,remote,,,100000.0,150000.0
+196,Data Engineer,Data Engineer Assoc,PNC Financial Services,,Mid,,remote,United States,Pittsburgh,91000.0,202800.0
+197,AI Engineer,Senior AI Engineer,Bill & Melinda Gates Foundation,,Senior,,on-site,United States,Seattle,186400.0,288800.0
+198,Data Analyst,"Manager, Data Analytics",Gartner,,Mid,,hybrid,United States,Fort Myers,98000.0,133000.0
+199,BI Analyst,"Reporting Specialist, Business Intelligence - Loyalty",InterContinental Chicago Magnificent Mile,,Mid,,on-site,,Philippines,,
+200,Data Analyst,Reliability Data Analyst,Pinnacle,,Mid,,on-site,India,Hyderabad,,
+201,Data Engineer,Senior Data Engineer,Darkroom,,Mid,,remote,Pakistan,Islamabad,,
+202,Data Scientist,"Head of Applied AI, Marketing Data Science",Darkroom,,Lead,,remote,United States,New York,180000.0,180000.0
+203,Analytics Engineer,Analytics Engineer,Guild,,Mid,,remote,United States,Denver,110000.0,159000.0
+204,Data Analyst,Senior Data Analyst,"MIG Real Estate Services, LLC",,,,remote,United States,Newport Beach,,
+205,Analytics Engineer,Business Analytics Engineer,Otis Worldwide,,,,remote,United States,Remote City,,
+206,Data Engineer,Full Stack Data Engineer,USA01 - USA Automotive,,Mid,,hybrid,United States,Dearborn,,
+207,Data Scientist,Senior Data Scientist,USA01 - USA Automotive,Automotive,Senior,,remote,,United States,99600.0,166600.0
+208,Data Scientist,Data Scientist - Gen AI (3 to 5 Years),Fractal Analytics,,Mid,,on-site,India,Bengaluru,,
+209,Data Analyst,Business Data Analyst,Zipline,,Mid,,on-site,United States,South San Francisco,110000.0,135000.0
+210,BI Analyst,Business Intelligence Analyst,Cummins,,Entry,,on-site,United States,Troy,,
+211,Data Engineer,Lead Data Engineer,Exadel,,Lead,,hybrid,,,,
+212,Data Engineer,Data Engineer - Python,Data Intellect,,Mid,,hybrid,,,,
+213,ML Engineer,ML Engineering Intern,Geocomply 2,,Intern,,on-site,Canada,Vancouver,50000.0,62000.0
+214,ML Engineer,Machine Learning Engineer,Marss,,Mid,,,France,Nice,,
+215,Data Engineer,Senior Data Engineer - Power BI,Fidelity,,Mid,,on-site,United States,Durham,,
+216,Data Analyst,Senior Data Analyst,Fidelity,,Mid,,,United States,Merrimack,80000.0,153000.0
+217,Data Scientist,Research Data Scientist,dunnhumby,,Mid,,on-site,UK,London,,
+218,Data Engineer,Data Engineer,NYC Department of City Planning,,,,hybrid,United States,New York,100000.0,125000.0
+219,Data Analyst,"Data Analyst, Bureau of Hepatitis, HIV, and STI",NYC Department of City Planning,,Entry,,hybrid,United States,New York,70000.0,80000.0
+220,Data Engineer,Senior BI Data Engineer,FLEX LTD. Flextronics,,Senior,,remote,GB,Kendal,,
+221,Data Analyst,"Director, Data Analytics, Bureau of Data Technology & Strategy",NYC Department of City Planning,,,,hybrid,United States,New York,125000.0,150000.0
+222,BI Analyst,Manager of Business Intelligence (BI) Platforms,Care Hospice,,Senior,,hybrid,United States,Charlottesville,120000.0,150000.0
+223,AI Engineer,Applied AI Engineer,DeepIntent,,Mid,,remote,United States,New York,105000.0,120000.0
+224,Data Scientist,Staff Applied Scientist - Dashboards,Datadog,,Senior,,hybrid,United States,New York,276000.0,345000.0
+225,Data Engineer,Big Data Engineer,BPS OPS,,Senior,,on-site,,India,,
+226,Data Engineer,Big Data Engineer,BPS OPS,,Mid,,on-site,,India,,
+227,Data Engineer,Big Data Engineer,BPS OPS,,,,on-site,,India,,
+228,AI Engineer,Digital & GenAI Analyst - Consulting,BPS OPS,,Senior,,on-site,,India,,
+229,AI Engineer,Digital & GenAI Architect - Consulting,BPS OPS,,Senior,,on-site,,India,,
+230,AI Engineer,Senior Digital & GenAI Architect - Consulting Partner,BPS OPS,,Senior,,hybrid,,India,,
+231,Data Scientist,Data Scientist Confirmé - H/F,Boulanger Electroménager & Multimédia,,Senior,4.0,hybrid,France,Lesquin,,
+232,Data Engineer,Data Engineer Associate,Robert Bosch,,,,on-site,United States,Roseville,75000.0,85000.0
+233,Data Scientist,Senior Data Scientist,Fidelity National Information Services,,Senior,,hybrid,United States,Atlanta,,
+234,AI Engineer,"Intern, Applied AI Engineer - Business Applications",Fidelity National Information Services,,Intern,,remote,,,,
+235,Data Engineer,Senior Data Engineer,Blend,,Senior,,remote,,,,
+236,Data Engineer,Senior Data Engineer,Blend,,Senior,,remote,,,,
+237,ML Engineer,"VP II AI, Machine Learning",Circana,,VP,,remote,Remote,United States,202000.0,210000.0
+238,ML Engineer,Machine Learning Engineer II - Inference Platform,Beatdapp,,Mid,,on-site,Canada,Vancouver,,
+239,Data Engineer,"Director, Data Engineering & Architecture (Remote)","Ceribell, Inc",,Director,,remote,United States,Sunnyvale,210000.0,272000.0
+240,Data Analyst,Vice President of IT Business Systems and Data Analytics,Sierra Central Credit Union,,VP,,hybrid,United States,Yuba City,172000.0,186000.0
+241,Data Scientist,Junior Data Scientist - brainbay,NVM,,Entry,,hybrid,Netherlands,Utrecht,,
+242,Data Scientist,Senior Data Scientist,Code First Girls,,Senior,,on-site,United Kingdom,Manchester,,
+243,AI Engineer,Senior AI/ML Engineer,Code First Girls,,Mid,,on-site,United Kingdom,Manchester,,
+244,Data Engineer,Senior Data Engineer,Audacy,,Senior,,on-site,United States,Denver,,
+245,Data Scientist,Azure / AWS Cloud Engineer for Data Science,DVT,,Senior,,hybrid,South Africa,Johannesburg,,
+246,Data Scientist,"Data Scientist, Advanced Analytics",Cabify,,Mid,,hybrid,Chile,Santiago,,
+247,Data Scientist,Data Scientist,Booz Allen Hamilton-TEAMS business,,,,on-site,United States,Suffolk,77500.0,176000.0
+248,Data Engineer,Databricks Lead Data Engineer,Perficient,,Senior,,on-site,United States,CHICAGO,73008.0,170640.0
+249,Data Engineer,Lead Data Engineer - R01566080,Brillio 2,,Senior,,hybrid,India,Bangalore,,
+250,Data Scientist,Data Science Program Lead I,AbbVie,,,,,,,84500.0,162000.0
+251,Data Engineer,Data Engineer III,JPMorgan Chase,,,,on-site,Argentina,Ciudad Autónoma de Buenos Aires,,
+252,Research Scientist,Worforce Planning - Operations Research Scientist - Associate,JPMorgan Chase,,Mid,,on-site,India,Mumbai,,
+253,AI Engineer,Applied AI Engineer,Bounteous,,Senior,,hybrid,Canada,Montreal,,
+254,ML Engineer,AI ML Engineering Lead - Vice President - Wholesale Payments Operations,JPMorgan Chase,,Senior,,hybrid,United States,Jersey City,,
+255,Data Analyst,Data Analyst,Columbia Helicopters,,Mid,,on-site,United States,Aurora,,
+256,Research Scientist,"Principal Research Scientist I, siRNA Platform Automation",AbbVie,,Senior,,,,,124500.0,236500.0
+257,Data Scientist,Data Science Vice President - Consumer Bank,JPMorgan Chase,Financial Services,Senior,,on-site,United States,Ohio,,
+258,Research Scientist,"Principal Research Scientist I, siRNA Synthesis & Analytical Development",AbbVie,,Senior,,,,,124500.0,236500.0
+259,Data Engineer,Data Engineer,"Applied Systems, Inc.",,,,on-site,India,Bengaluru,,
+260,Data Engineer,Senior Data Engineer,eSimplicity,,Senior,,remote,United States,Columbia,132400.0,151800.0
+261,Data Engineer,Data Engineer,Focuskpi,,Mid,,remote,United States,New York,,
+262,AI Engineer,AI/ML - Technology & Cybersecurity Risk Management - Vice President,JPMorgan Chase,,Senior,,on-site,United States,Tampa,,
+263,Data Scientist,Data Scientist Associate - Corporate & Investment Banking,JPMorgan Chase,,Mid,,on-site,United States,New York,,
+264,AI Engineer,GenAI Web Engineer – (Contract to Hire) – Tempe AZ - Recent College Grads,"Entisys Solutions, Inc. / e360",,Entry,,hybrid,United States,Tempe,,
+265,ML Engineer,Vice President - Product Manager - Machine Learning & Intelligent Operations,JPMorgan Chase,,Mid,,on-site,India,Mumbai,,
+266,ML Engineer,Product Delivery Manager - Machine Learning & Intelligent Ops,JPMorgan Chase,,Mid,,,India,Hyderabad,,
+267,Data Engineer,Data Engineer (Istanbul - Hybrid),AXON Networks,,Mid,,hybrid,Turkey,Istanbul,,
+268,Data Analyst,Data Analytics Manager (Health Research Team),Milliman,,Mid,,remote,United States,Chicago,104900.0,199065.0
+269,Data Engineer,Lead Data Engineer,AIR Communities,,Senior,,on-site,United States,Denver,135000.0,160000.0
+270,Research Scientist,"Research Scientist, Manipulation for Robotics, DeepMind",Google,,,,on-site,United States,Mountain View,147000.0,211000.0
+271,AI Engineer,"Strategic Planning Manager, GenAI, DeepMind (Fixed-Term Contract)",Google,,,,remote,United States,Mountain View,163000.0,237000.0
+272,AI Engineer,Lead AI Engineer,Srijan,,Lead,,hybrid,India,Gurugram,,
+273,AI Engineer,AI Engineer - Agentic,Srijan,,,,hybrid,India,Gurugram,,
+274,AI Engineer,AI Engineer – SME,Arsiem,,Mid,,on-site,United States,Columbia,,
+275,Data Engineer,"Senior Data Engineer, Analytics",Lovevery,,Senior,,remote,United States,Boise,,
+276,AI Engineer,"Partner Forward Deployed Engineer IV, GenAI, Google Cloud",Google,,Senior,,hybrid,United States,San Francisco,,
+277,Analytics Engineer,Data Analytics Engineer,Astera Labs,,Mid,,on-site,United States,San Jose,160000.0,195000.0
+278,AI Engineer,Senior AI Engineer,Nokia,,Senior,,on-site,,India,,
+279,AI Engineer,Senior AI Engineer,Nokia,,Senior,,on-site,,India,,
+280,ML Engineer,Principal Machine Learning Engineer,Armis Security,,Principal,,remote,,Remote,184000.0,250000.0
+281,Data Analyst,Data Analyst - Supply Chain Warehouse Reporting & Analytics,JND Inc.,,,,on-site,United States,Santa Ana,,
+282,Data Analyst,Senior Data Analyst,Introhive,,Mid,,remote,Canada,Fredericton,,
+283,BI Analyst,Business Intelligence Systems Analyst,Henry Ford College (MI),,Mid,,on-site,United States,Dearborn,65941.0,80999.0
+284,AI Engineer,"Software Engineer III, AI/ML, Gemini Integration/Customisations",Google,,Mid,,on-site,Switzerland,Zürich,,
+285,ML Engineer,Machine Learning Software Engineer Intern - Winter 2027,Rippling,,Intern,,,United States,San Francisco,,
+286,Data Analyst,"Aircraft MXS Research/Data Analyst, Senior WPAFB",Diaconia LLC,,Senior,,on-site,United States,Wright Patterson AFB,65000.0,75000.0
+287,AI Engineer,Applied AI Engineer,Anthropic,,Senior,,hybrid,Australia,Sydney,,
+288,BI Analyst,"Product Manager, Advertiser and Business Intelligence AI",Google,,Mid,,,United States,Irvine,138000.0,198000.0
+289,AI Engineer,"Staff Software Engineer, Google Cloud Storage, AI/ML",Google,,Senior,,,Israel,Tel Aviv,,
+290,Research Scientist,"Senior Staff Research Scientist, Gemini Safety Post-Training, DeepMind",Google,,Senior,,on-site,United States,Mountain View,262000.0,365000.0
+291,Research Scientist,"Research Scientist, Visual Data and Generative Research",Google,,Senior,,on-site,United States,San Francisco,147000.0,211000.0
+292,AI Engineer,"Forward Deployed Engineering Manager III, GenAI, Google Cloud",Google,,Lead,,on-site,Brazil,São Paulo,,
+293,Data Analyst,"Data Analytics Sales Specialist IV, HCLS Google Cloud",Google,,Senior,,hybrid,United States,Chicago,176000.0,245000.0
+294,Data Engineer,Senior AI Data Engineer,Cortica - Neurodevelopmental,,Senior,,remote,United States,San Diego,160000.0,200000.0
+295,Data Scientist,Senior Data Scientist - FDE,Microsoft,,Senior,,on-site,Netherlands,Schiphol,,
+296,Data Scientist,Principal Applied Scientist,Microsoft,,Principal,,on-site,United States,Redmond,,
+297,Research Scientist,"Research Scientist, Qubit Calibration, Benchmarking, Modeling, Quantum AI",Google,,Mid,,on-site,United States,Goleta,147000.0,211000.0
+298,Data Analyst,Data Analyst,WebMD,,,,on-site,India,Navi Mumbai,,
+299,AI Engineer,"Forward Deployed Engineer III, GenAI",Google,,Mid,,on-site,Australia,Sydney,,
+300,Data Analyst,Quality Control Data Analyst Trainee,Santa Fe County,,,,on-site,United States,Santa Fe,45593.6,52395.2
+301,AI Engineer,"Senior Software Engineer, AI/ML, Google Meet",Google,,Senior,,on-site,Sweden,Stockholm,,
+302,Data Analyst,Data Analyst Supporting the FBI,FSA,,Mid,,on-site,United States,Linthicum,,
+303,Data Analyst,Data Analyst Supporting the USMS,FSA,,Mid,,on-site,United States,Los Angeles,,
+304,Data Analyst,Data Analyst (Management Analyst),King County Housing Authority,,,,hybrid,United States,Tukwila,84763.0,99598.23
+305,Analytics Engineer,Data Analytics Engineer,66degrees,,,,on-site,India,Bengaluru,,
+306,ML Engineer,"Machine Learning Engineer, Industrial AI",Advian,,Mid,,hybrid,Finland,Espoo,,
+307,Data Scientist,Data Scientist 3,Gormat,,Senior,,on-site,United States,Annapolis Junction,,
+308,Data Scientist,Data Scientist 3,Gormat,,Senior,,on-site,United States,Annapolis Junction,,
+309,AI Engineer,Senior AI Engineer - LLMs and Finetuning,9fin,,Senior,,hybrid,United Kingdom,London,,
+310,AI Engineer,Senior AI Engineer - Legal AI,9fin,,Senior,,hybrid,United Kingdom,London,,
+311,ML Engineer,Senior Machine Learning Engineer,Disney,,Mid,,hybrid,United States,Glendale,,
+312,Data Engineer,Sr Data Engineer,Disney,,Senior,,,United States,Glendale,,
+313,Data Analyst,"Data Analyst, Voice of Customer",Zelis,,Mid,,hybrid,United States,Plano,86000.0,109250.0
+314,Data Engineer,(Senior) Data Engineer,Dentsu,,Senior,,hybrid,Serbia,Belgrade,,
+315,ML Engineer,Director of Machine Learning Engineering - Agent Factory,Workday,,Director,,hybrid,United States,Seattle,249500.0,374300.0
+316,ML Engineer,Principal Machine Learning Engineer,Workday,,Lead,,hybrid,United States,Seattle,188000.0,282000.0
+317,Data Analyst,Senior Data Analyst,WGU,,Senior,,on-site,United States,Salt Lake City,73000.0,109400.0
+318,AI Engineer,"Lead AI Engineer, Biomedical & Vigilance Innovation",United Therapeutics,,Mid,,hybrid,United States,Durham,,
+319,Data Scientist,"Data Analyst, Senior Specialist / Data Scientist (Decision Analytics / Modeling)",Vanguard Group,,Senior,,hybrid,United States,Dallas/Ft. Worth,,
+320,AI Engineer,Principal Data GENAI Platform Engineer - Senior Vice President,Citigroup,,Principal,,hybrid,India,Chennai,,
+321,Data Analyst,Healthcare Data Analyst - Value Based Care - Remote,Cigna,,Mid,,remote,United States,Bloomfield,107700.0,179500.0
+322,Data Scientist,Data Scientist - Supply Chain Optimisation,Ciena,,Mid,,,,Remote-UK,,
+323,ML Engineer,"Lead Scientist, Machine Learning",Universal Music Group Careers,,Lead,,on-site,United States,Santa Monica,150000.0,175000.0
+324,ML Engineer,Associate Machine Learning Scientist,Universal Music Group Careers,,Entry,,on-site,United States,Santa Monica,90000.0,110000.0
+325,ML Engineer,"Principal Scientist, Machine Learning",Universal Music Group Careers,,Senior,,on-site,United States,Santa Monica,195000.0,250000.0
+326,ML Engineer,Machine Learning Engineer II - Adaptive Application Algorithm,Milwaukee Electric Tool,,Mid,,on-site,United States,Brookfield,,
+327,Data Scientist,Senior Data Scientist,Caterpillar,,Senior,,on-site,United States,Irving,112710.0,183140.0
+328,Data Scientist,"Senior Manager, Data Science",CarMax,,Senior,,on-site,United States,Richmond,,
+329,Data Analyst,Senior Data Analyst,TransUnion,,Senior,,hybrid,United States,Chicago,90000.0,150000.0
+330,ML Engineer,Machine Learning Engineer (AI Foundations),Capital One,,Mid,,on-site,United States,McLean,135600.0,168900.0
+331,Data Engineer,Lead Data Engineer,Capital One,,Senior,,on-site,United States,San Francisco,215200.0,245600.0
+332,Data Scientist,"Senior Manager, Data Scientist - Card DFS Integration",Capital One,,Senior,,on-site,United States,McLean,229900.0,262400.0
+333,AI Engineer,"Lead Software Engineer, Full Stack (Python, Java, AWS, CI/CD, GenAI) (Enterprise Platforms Technology)",Capital One,,Lead,,on-site,United States,McLean,197300.0,225100.0
+334,Data Scientist,"Senior Associate, Data Scientist",Capital One,,Senior,,on-site,United States,McLean,,
+335,Data Analyst,Data Analyst Intern,Thermo Fisher Scientific,,Intern,,on-site,United States,Morrisville,,
+336,Data Analyst,Data Analyst,Yulista Contract Services,,Mid,,on-site,United States,Huntsville,,
+337,Data Scientist,Senior Data Scientist,Thales,,Senior,,hybrid,FR,Rungis,,
+338,Data Engineer,Senior Software Developer - Data Engineering-2,Boeing,,Mid,,hybrid,United States,Seattle,158950.0,215050.0
+339,AI Engineer,"Rust, AI Engineer, Director",BlackRock,,Director,,hybrid,United States,New York,220000.0,275000.0
+340,Data Scientist,Senior Data Scientist (Level I),Sun Life Financial,,Senior,,on-site,United States,Wellesley Hills,97400.0,146100.0
+341,Data Analyst,FINANCIAL DATA ANALYST I (Temporal),BBVA,,Entry,,on-site,Peru,Lima,,
+342,Data Scientist,Health Data Scientist – Medical Evidence (Nordics) – Nordic Marketing Company,AstraZeneca,,,,on-site,Sweden,Stockholm,,
+343,Data Analyst,Senior Financial Data Analyst,SimCorp,,Mid,,hybrid,India,Noida,,
+344,Data Engineer,Data Engineering Lead (Data Acquisition),Shell,,Lead,,on-site,United Kingdom,London,,
+345,Data Analyst,PV and Energy Storage Remote Operator & Data Analyst,Ameresco,,Mid,,remote,United States,Pine Brook,,
+346,Data Analyst,PV and Energy Storage Remote Operator & Data Analyst,Ameresco,,Mid,,remote,United States,Westborough,,
+347,BI Analyst,Business Intelligence Analyst - Global Supply Chain (B3),Applied Materials,,,,on-site,United States,Austin,100000.0,137500.0
+348,Data Engineer,Data Engineer Senior Consultant I,Allstate,,Senior,,hybrid,India,Bangalore,,
+349,Data Engineer,"Data Engineer, Specialist",AIA Group,,,,on-site,Thailand,Bangkok,,
+350,Data Analyst,Senior Data Analyst I (m/f/d),RELX,,Senior,,hybrid,Germany,Frankfurt,,
+351,Data Analyst,Senior Data Analyst I (m/f/d),Elsevier,,Senior,,hybrid,Germany,Frankfurt,,
+352,ML Engineer,Machine Learning Engineer 4,Adobe,,Mid,,on-site,India,Bangalore,,
+353,Data Scientist,"Head of Data Science, Managing Director",NatWest Group,,Director,,on-site,India,Bengaluru,,
+354,Data Engineer,Senior Data Engineer,Royal Bank of Canada,,Senior,,on-site,Canada,Toronto,,
+355,AI Engineer,AI / ML Engineer,Accenture,,Mid,,,India,Indore,,
+356,AI Engineer,AI / ML Engineer,Accenture,,Senior,,,India,Bengaluru,,
+357,AI Engineer,AI / ML Engineer,Accenture,,,,,India,Bengaluru,,
+358,AI Engineer,AI / ML Engineer,Accenture,,Senior,,on-site,India,Bengaluru,,
+359,AI Engineer,AI / ML Engineer,Accenture,,,,on-site,India,Bengaluru,,
+360,AI Engineer,AI / ML Engineer,Accenture,,Mid,,,India,Chennai,,
+361,AI Engineer,AI / ML Engineer,Accenture,,Mid,,on-site,India,Chennai,,
+362,AI Engineer,AI / ML Engineer,Accenture,,Mid,,on-site,India,Chennai,,
+363,AI Engineer,AI / ML Engineer,Accenture,,Mid,,,India,Bengaluru,,
+364,AI Engineer,AI / ML Engineer,Accenture,,Mid,,on-site,India,Bengaluru,,
+365,AI Engineer,AI / ML Engineer,Accenture,,Mid,,,India,Bengaluru,,
+366,AI Engineer,AI / ML Engineer,Accenture,,Mid,,on-site,India,Bengaluru,,
+367,AI Engineer,AI / ML Engineer,Accenture,,Mid,,,India,Chennai,,
+368,Data Engineer,Senior Data Specialist / Data Engineer Freelancer,Priorityquality,,,,hybrid,Finland,Helsinki,,
+369,Data Engineer,Data Engineer,Accenture,,Mid,,on-site,India,Kolkata,,
+370,AI Engineer,AI / ML Engineer,Accenture,,Mid,,,India,Bengaluru,,
+371,AI Engineer,Manager Data Scientist / GenAI Engineer H/F,Accenture,,Senior,,,France,Paris,,
+372,Data Engineer,Associate Azure Data Engineer,PricewaterhouseCoopers,,Mid,,on-site,India,Mumbai,,
+373,Data Scientist,"Senior Associate, Data Scientist",PricewaterhouseCoopers,,Senior,,on-site,India,Bengaluru,,
+374,AI Engineer,"ETIC, AI Engineer - Associate",PricewaterhouseCoopers,,Entry,,,Egypt,Cairo,,
+375,Data Scientist,Senior Associate Data Scientist,PricewaterhouseCoopers,,Senior,,hybrid,India,Bengaluru,,
+376,Data Analyst,Data Analytics / Customer Intelligence Specialist,Tawantech,,Mid,,on-site,Saudi Arabia,Riyadh,,
+377,Data Engineer,Data Modeler / Big Data Engineer,Tawantech,,Mid,,,Saudi Arabia,Riyadh,,
+378,AI Engineer,AI Software Engineer / LLM Engineer,Tawantech,,Mid,,on-site,Saudi Arabia,Riyadh,,
+379,Data Engineer,Data Engineering Specialist,Association of American Medical Colleges (AAMC),,Mid,,hybrid,United States,Washington,95795.0,112700.0
+380,BI Analyst,Business Intelligence Analyst,PropertyGuru,,,,hybrid,Vietnam,Ha Nội,,
+381,Data Scientist,Data Scientist III,Walmart,,Mid,,hybrid,India,Bangalore,,
+382,Data Engineer,Forward Deployed Data Engineer,Ellison Institute Of Technology,,,,hybrid,United Kingdom,Oxford,,
+383,Data Scientist,Senior Forward Deployed Data Scientist,Arkham Technologies,,Senior,,hybrid,MX,Mexico City,,
+384,Data Engineer,Data Engineer Sr,PNC Financial Services,,Mid,,on-site,United States,Pittsburgh,91000.0,202800.0
+385,Data Scientist,Senior Data Scientist,Premier Tax Free,,Senior,,hybrid,Portugal,Porto,,
+386,AI Engineer,AI Engineer Internship (m/f/x),P&G Careers,,Intern,,,ES,MADRID GENERAL OFFICE,,
+387,BI Analyst,"Sr. Associate, Business Intelligence Visualizations and Reporting",Pfizer,,Mid,,hybrid,Greece,Thessaloniki,,
+388,Data Engineer,Data Engineer,Destinusgroup,,,,hybrid,Switzerland,Zürich,,
+389,Data Engineer,"Director, Data Engineering",Mastercard,,Director,,on-site,India,Pune,,
+390,Data Engineer,Senior Data Engineer,Mastercard,,Mid,,,India,Pune,,
+392,Data Engineer,Data Engineer (m/f/d),Alcemy,,Mid,,hybrid,DE,Berlin,,
+393,AI Engineer,AI Engineer,Crypto Finance,,Mid,,hybrid,Switzerland,Zürich,,
+394,Data Analyst,Data Analyst,CACI International,,,,on-site,United States,Chantilly,103800.0,218100.0
+395,Data Analyst,"Data Analyst, Mid",Booz Allen Hamilton-TEAMS business,,Mid,,on-site,United States,Arlington,77600.0,176000.0
+396,BI Analyst,Data and Business Intelligence Analyst (Remote),Siemens Healthineers,,,,remote,,,89220.0,122672.0
+397,ML Engineer,"Senior Machine Learning Engineer, Perception - Autonomous Driving",Nvidia,,Senior,,hybrid,United States,Santa Clara,184000.0,356500.0
+399,Data Analyst,Data Analyst,Octal Philippines Inc 4,,,,on-site,Philippines,Quezon City,,
+400,AI Engineer,Senior AI Engineer,NN Group,,Mid,,hybrid,Czechia,Prague,,
+401,Data Scientist,Data Scientist,Northrop Grumman,,Mid,,on-site,United States,San Diego,101000.0,151400.0
+402,Data Scientist,Principal / Sr. Principal Data Scientist – Machine Learning and Predictive Analytics,Northrop Grumman,,Senior,,on-site,United States,Melbourne,108200.0,162400.0
+403,Data Analyst,Data Analyst,Marriott Vacations Worldwide Corporation,,Mid,,on-site,,,,
+404,Data Engineer,"Associate Principal Scientist, Data Engineer, Digital Insights, DSCS Digital Technologies",Merck,,Senior,,hybrid,United States,Rahway,142400.0,224100.0
+405,Data Analyst,"Business Solutions Group Data Analytics, Associate/Senior Associate, Institutional Securities Management",Morgan Stanley,,Mid,,on-site,India,Mumbai,,
+406,AI Engineer,Senior GenAI Engineer,Architus,,Senior,,hybrid,Lithuania,Vilnius,,
+407,Data Engineer,Data Engineer I,MRI Software,,Entry,,on-site,India,Bangalore,,
+408,Data Analyst,Data Analyst,Ecolab,,,,on-site,India,Pune,,
+409,Data Scientist,Data Scientist,Ecolab,,Mid,,on-site,India,Bangalore,,
+410,AI Engineer,AI Engineer,Ecolab,,Mid,,on-site,India,Bangalore,,
+411,Data Analyst,Lead Data Analyst,Dyson,,Senior,,on-site,India,Bangalore,,
+412,Data Scientist,"Principal Data Scientist, SMAI OI",Micron Technology,,Senior,,,Singapore,Fab 10A,,
+413,Data Scientist,"SR DATA SCIENTIST, SMAI OI",Micron Technology,,Senior,,,Singapore,Fab 10A,,
+414,Data Engineer,Senior Data Engineer,Softeta,,Senior,,hybrid,Lithuania,Vilnius,,
+415,Analytics Engineer,Senior Analytics Engineer,DICK'S Sporting Goods Careers,,Senior,,remote,,,140000.0,160000.0
+416,Research Scientist,Research Scientist,Mercer University,,Senior,,on-site,United States,Atlanta,,
+417,Data Engineer,Senior Scientific Data Engineer,Tetrascience,,,,on-site,Japan,Shonan,,
+418,Data Engineer,Data Engineer,Dentsu,,,,on-site,India,Pune,,
+419,Data Analyst,Lead Revenue and Data Analyst,Wood Mackenzie,,Mid,,,United States,Houston,,
+420,Data Scientist,Senior Data Scientist (Marketing Mix Models),Satori Analytics 1,,,,,Greece,Athens,,
+421,Data Scientist,Senior Data Science Consultant,Wells Fargo,,Senior,,on-site,India,Hyderabad,,
+422,Data Analyst,Data Analyst l,Mass General Brigham,,,,hybrid,United States,Boston,53040.0,75888.8
+423,Research Scientist,Research Fellow or Research Scientist,Mass General Brigham,,,,,United States,Charlestown,,
+424,ML Engineer,Senior Machine Learning Engineer,Manulife Financial,,Mid,,,United States,Boston,107450.0,199550.0
+425,AI Engineer,AI/ML Postdoctoral Fellow – F Rouhani lab,The Francis Crick Institute,,Mid,,,United Kingdom,London,,
+426,Data Engineer,Data Engineer,London Stock Exchange Group (LSEG),,,,on-site,Thailand,Bangkok,,
+427,Data Scientist,Junior Data Scientist,London Stock Exchange Group (LSEG),,,,,PH,Taguig City,,
+428,Data Engineer,Data Engineer,INDEX ANALYTICS LLC,,Senior,,hybrid,United States,Baltimore,126000.0,142000.0
+429,Data Engineer,Associate Data Engineer,Lowe's,,,,on-site,India,Bengaluru,,
+430,Data Engineer,Data Engineer 2,Comcast,,,,,IN,Chennai,,
+431,Data Engineer,Senior Cloud Data Engineer,Elca Informatique,,Senior,,,Switzerland,Basel,,
+432,Data Analyst,Senior Data Analyst,EXL,,,,,,India,,
+433,AI Engineer,Agentic/AI engineers with Claude/code/LLM skills1,EXL,Data Management,Mid,,hybrid,,India,,
+434,Data Scientist,Lead Data Scientist,EXL,,Mid,,hybrid,India,Pune,,
+435,Data Engineer,Data Engineer,EXL,Data Management,Mid,,hybrid,India,Pune,,
+436,Data Analyst,Master Data Analyst LATAM,Clorox,,Mid,,hybrid,Mexico,Tlalnepantla de Baz,,
+437,Data Engineer,Data Engineer,Clio,,,,,United Kingdom,Manchester,,
+438,Data Analyst,Associate Data Analyst,Clarivate,,,,,Serbia,Belgrade,,
+439,Data Scientist,AVP Fraud Analytics - Data Scientist & Gen AI,Citigroup,,,,hybrid,India,Pune,,
+440,Data Scientist,AVP Fraud Analytics - Data Science & Gen AI,Citigroup,,Mid,,,India,Pune,,
+441,Data Scientist,Data Scientist Jr,HOMECENTERS PERUANOS S.A.,,,,,,Peru,,
+442,Data Scientist,Principal Data Scientist,Commonwealth Bank of Australia,,Senior,,on-site,Australia,Eveleigh,,
+443,Data Scientist,Data Scientist II,Caterpillar,,,,on-site,United States,Peoria,97530.0,158480.0
+444,Data Analyst,Data Analytics & Visualization Engineer,Leidos,,Mid,,,United States,Shiloh,92300.0,166850.0
+445,Data Engineer,Data Engineer Software Developer,Leidos,,,,on-site,United States,Shiloh,87100.0,157450.0
+446,Analytics Engineer,Lead Analytics Engineer,LEGO,,Mid,,,Denmark,Billund,,
+447,Data Analyst,Data Analyst – E-Commerce & Martech,ADT,,,,,United States,Irving,,
+448,AI Engineer,Gen AI Engineer,Orion Innovation,,Mid,,on-site,,India,,
+449,Data Engineer,Staff Engineer/Data Engineering,The Hartford,,,,on-site,,India GCC-Puppalaguda Village,,
+450,Data Engineer,Staff Engineer/Data Engineering,The Hartford,,Mid,,,,India GCC-Puppalaguda Village,,
+451,Data Scientist,Senior Software Engineer/Data Scientist,The Hartford,Insurance,Mid,,on-site,,India GCC-Puppalaguda Village,,
+452,Research Scientist,Research Scientist,University of South Florida,,Mid,,,United States,Tampa,,
+453,Data Analyst,Healthcare Data Analyst 2,Franciscan Missionaries of Our Lady Health System,,,,,United States,Lafayette,,
+454,Analytics Engineer,"Engineering Manager - Analytics Engineering - Seattle, WA",Otter,,Mid,,on-site,United States,Seattle,224000.0,283000.0
+455,Data Scientist,"Senior/Staff Data Scientist, EPD",Zip,,Mid,,,United States,San Francisco,180000.0,220000.0
+456,Data Analyst,Research Data Analyst / Data & Analytics,Children's Hospital & Medical Center,,,,,,United States,,
+457,ML Engineer,Principal Machine Learning Engineer,ComplyAdvantage,Technology,Senior,,hybrid,UK,London,,
+458,Data Scientist,Associate Director Data Science & AI,BSI Group,,Mid,,,United Kingdom,Covent Garden,,
+459,ML Engineer,Machine Learning Research Engineer,Windborne Systems,Technology,Mid,,on-site,United States,Palo Alto,,
+460,Data Scientist,Data Scientist Intern,Revance,,,0.0,,,Remote,,
+461,Data Engineer,"Senior Data Engineer, Marketing Customer Profile (f/m/x)",HelloFresh,Technology,Mid,,on-site,Poland,Warszawa,,
+462,BI Analyst,FP&A Business Intelligence Intern,Chep,,Mid,,remote,United Kingdom,London,,
+463,Data Engineer,Senior Data Engineer (Smart Manufacturing),Johnson Electric,,,,on-site,China,Jiangmen,,
+464,AI Engineer,Senior Manufacturing AI Engineer – Machine Learning,Johnson Electric,,,,on-site,China,Jiangmen,,
+465,Data Engineer,Senior/Lead Data Engineer – AI-Native Aftermarket Platform | Mexico,Truelogic,,Senior,,,,Mexico,,
+466,Data Engineer,Senior/Lead Data Engineer – AI-Native Aftermarket Platform | DR,Truelogic,,Senior,,remote,,Dominican Republic,,
+467,Data Engineer,Senior/Lead Data Engineer – AI-Native Aftermarket Platform | Colombia,Truelogic,,,,remote,,Colombia,,
+468,Data Engineer,Senior/Lead Data Engineer – AI-Native Aftermarket Platform | Brazil,Truelogic,Technology,Senior,,remote,Brazil,São Paulo,,
+469,Data Engineer,Senior/Lead Data Engineer – AI-Native Aftermarket Platform,Truelogic,,Senior,,remote,,Panama,,
+470,Data Analyst,Senior Data Analyst,Zeta Global,Marketing,Mid,,on-site,India,Hyderabad,,
+471,Data Analyst,Data Analyst,Texas A&M University,,Mid,,on-site,United States,College Station,58000.0,58000.0
+472,Data Scientist,Data Scientist,Takeda,,,,,Slovakia,Bratislava,,
+473,Data Scientist,Data Science & Analytics Manager,Boeing,,Mid,,on-site,United States,Everett,183600.0,224400.0
+474,Data Engineer,AI & Data Engineer,Tern,,Mid,,remote,,United States,145000.0,175000.0
+475,Data Engineer,"Data Engineer / Data Analyst | SQL, Power BI & Data Warehousing",Synechron,,Mid,,,India,Pune,,
+476,Data Analyst,Data Analyst,XP Power,Engineering,Mid,,,,,,
+477,Data Analyst,Data Analyst (Based in Singapore),XP Power,,Mid,,on-site,,Singapore,,
+478,Data Analyst,Sr Financial & Data Analyst – Healthcare Economics,"Wellmark, Inc.",,Mid,,,United States,Des Moines,,
+479,AI Engineer,Consultant·e Data et AI Engineer – Jeune diplômé·e (H/F),Wavestone,,Entry,,on-site,,France,,
+480,AI Engineer,Manager - Data & AI engineer (H/F),Wavestone,,,,,,France,,
+481,AI Engineer,Senior Consultant.e - Data & AI engineer,Wavestone,,Mid,,on-site,,France,,
+482,AI Engineer,Senior Consultant.e - Generative AI & Agentic Engineer (H/F),Wavestone,,,,,,,,
+483,Data Scientist,"Data Scientist – Time Series, Statistical Modelling & Azure Data Bricks",Capco,,,,on-site,India,Bengaluru,,
+484,Data Scientist,"Data Scientist – Time Series, Statistical Modelling & Azure Data Bricks",Capco,,Mid,,on-site,India,Bengaluru,,
+485,Data Scientist,"Data Scientist – Time Series, Statistical Modelling & Azure Data Bricks",Capco,Financial Services,Mid,,on-site,India,Bengaluru,,
+486,Data Scientist,"Data Scientist – Time Series, Statistical Modelling & Azure Data Bricks",Capco,Consulting,Mid,,on-site,India,Bengaluru,,
+487,BI Analyst,Business Intelligence & Analytics Analyst,Itron,,Mid,,,Hungary,Budapest,53000.0,69000.0
+488,AI Engineer,Stage AI Engineer,Veolia,,Intern,,,,Italy,,
+489,Data Scientist,Data Scientist Specialist,Canadian Natural Resources,,Entry,,,Canada,Fort McMurray,,
+490,Data Engineer,Senior Data Engineer,IQVIA (formally Quintiles IMS),,Mid,,remote,Poland,Warsaw,,
+491,BI Analyst,Business Intelligence Engineer - Power BI- Banking,VAM Systems,"[""Banking"", ""Financial Services""]",Mid,,,,Bahrain,,
+492,Data Engineer,Data Engineer (Offshore),VAM Systems,,,,on-site,,Bahrain,,
+493,BI Analyst,Business Intelligence Analyst (BI) con experiencia en la industria farmacéutica,IQVIA (formally Quintiles IMS),,,,on-site,Argentina,Buenos Aires,,
+494,Data Engineer,Data Engineer,IQVIA (formally Quintiles IMS),,Mid,,on-site,Spain,Madrid,,
+495,Data Scientist,Senior Data Scientist - Growth Marketing,DocuSign,,Mid,,,United States,San Francisco,,
+498,Data Analyst,Thermal data Analysis Engineer,Intel,Semiconductor,Mid,,on-site,United States,Phoenix,164470.0,232190.0
+499,ML Engineer,Ingénieur(e) IA Machine Learning (H/F/X),equans-france,,Mid,,,FR,Nantes,,
+500,ML Engineer,Machine Learning Engineer,ING,,Mid,,,Romania,Bucharest,,
+501,AI Engineer,"Director, AI/ML & Data Science",The Nielsen Company,"[""Media Analytics"", ""Data Science""]",Director,,hybrid,,India,,
+502,Data Scientist,Senior Data Scientist (AI & ML),The Nielsen Company,,,,,,,,
+503,Data Engineer,Senior Data Engineer,The Fork,,,,hybrid,Spain,Barcelona,,
+504,Data Engineer,Consultant Data Engineer Databricks - Confirmé - H/F,Talan,,Senior,,,France,Lyon,,
+505,Data Engineer,Consultant Data Engineer Cloud GCP,Talan,,Senior,,,France,Lyon,,
+506,AI Engineer,Senior Security Architect | Post-Quantum Cryptography (PQC) | AI/LLM Security,TMS,,Senior,,on-site,United States,Frisco,,
+507,Data Engineer,Data Engineer,Expleo,,Mid,,on-site,India,Pune,,
+508,AI Engineer,AI Engineer,RGE (Royal Golden Eagle),,Mid,,on-site,,Singapore,,
+509,AI Engineer,AI Engineer,RGE (Royal Golden Eagle),,Mid,,,,Singapore,,
+510,Data Engineer,Data Engineer Talend / PostgreSQL – Défense & Sécurité – Île-de-France,Sopra Steria,,Mid,,hybrid,France,Paris,,
+511,Research Scientist,Sr. Principal Research Scientist,Autodesk,,Senior,,,CAN,Toronto,128200.0,244200.0
+512,Data Analyst,Graduate Data Analyst,Sika,,,,,,,,
+513,Data Scientist,Senior Consultant - Data Science & Analytics,SIA,,,,on-site,China,Shanghai,,
+514,AI Engineer,AI Engineer - Manager,SIA,,Mid,,,China,Hong Kong,,
+515,Data Scientist,Consultant - Data Science & Analytics,SIA,,,,on-site,China,Hong Kong,,
+516,ML Engineer,"Senior Machine Learning Engineer, Agentic Systems - Moveworks",ServiceNow,AI,Senior,,on-site,United States,San Diego,,
+517,Data Engineer,"VP, Integrated Data Engineering Advancement",Humana,,Mid,,on-site,United States,Frisco,,
+518,Data Analyst,Associate Lecturer - Data Analytics Sys & Processes (HE4),Singapore Institute of Management,,,,,Singapore,Clementi Campus,,
+519,Data Analyst,Data Analyst - H/F,Scalian,,Mid,,hybrid,France,Montpellier,,
+520,ML Engineer,"Staff SW Engineer, Machine Learning Operations",BlackSky,Technology,Mid,,remote,United States,Remote,150000.0,180000.0
+521,AI Engineer,"Product Manager, GenAI 816",Protegrity,,Mid,,,United States,New York,165800.0,183800.0
+522,Data Scientist,Data Science Practitioner,Accenture Federal Services,,Mid,,,United States,Arlington,70500.0,136700.0
+523,Data Engineer,Senior Data Engineer,SGS,,,,,,,,
+524,Data Scientist,Data Scientist,Shell,,Senior,,on-site,India,Chennai,,
+525,Data Scientist,Data Science Engagement Lead,Shell,,Senior,,on-site,India,Chennai,,
+526,Data Analyst,RBS Data Analyst (with Invoicing/Billing experience),SGS,,,,,,Philippines,,
+527,Data Engineer,Data Engineer,SEEK,,,,,,,,
+528,ML Engineer,AI and Machine Learning Manager,Hewlett Packard Enterprise,,Senior,,on-site,India,Bengaluru,,
+529,ML Engineer,Senior AI and Machine Learning Engineer,Hewlett Packard Enterprise,,Senior,,on-site,India,Bengaluru,,
+530,ML Engineer,Senior AI and Machine Learning Engineer,Hewlett Packard Enterprise,,Senior,,,India,Bengaluru,,
+531,Data Scientist,Data Science Manager (Credit),Moniepoint,,Senior,,remote,India,Bangalore,,
+532,Data Scientist,Data Science Manager (Credit),Moniepoint,,Senior,,remote,,Spain,,
+533,Data Scientist,Data Scientist (DSAD),Economic Development Board,,Mid,,on-site,Singapore,Paya Lebar Quarter 2,,
+534,AI Engineer,Senior AI Engineer,RepRisk,,Senior,,hybrid,Switzerland,Zurich,,
+535,ML Engineer,Machine Learning Engineer (Eats Search and Discovery),Coupang Internal,,Mid,,,South Korea,Seoul,,
+536,Data Analyst,Staff Data Analyst (CLS),Coupang Internal,Logistics,Senior,,on-site,KR,Seoul,,
+537,Data Scientist,Director of Data Science,Coupang Internal,,Director,,,United States,Mountain View,174000.0,299000.0
+538,ML Engineer,"Principal Machine Learning Engineer, AI Systems",HP,,Senior,,remote,,,200000.0,340000.0
+539,Data Scientist,Senior Data Scientist,NICE,,Senior,,hybrid,Israel,Raanana,,
+540,Data Scientist,Data Science Researcher,NICE,,Senior,,hybrid,Israel,Raanana,,
+541,Data Engineer,Senior Sports Data Engineer,Red Bull,,,,,,,,
+542,AI Engineer,Staff AI Engineer,Workato,,Senior,,on-site,Spain,Barcelona,,
+543,AI Engineer,Staff AI Engineer,Workato,,Senior,,on-site,Cyprus,Nicosia,,
+544,AI Engineer,Staff AI Engineer,Workato,,Senior,,on-site,Germany,Berlin,,
+545,AI Engineer,Staff AI Engineer,Workato,,Senior,,on-site,Greece,Athens,,
+546,AI Engineer,Staff AI Engineer,Workato,,Senior,,on-site,Netherlands,Amsterdam,,
+547,Data Scientist,"Senior Data Scientist, Consumer Analytics",Wolt - English,,Senior,,,Germany,Berlin,,
+548,Data Analyst,Business/Data Analyst Intern,Rakuna,,Intern,,on-site,United States,Silicon Valley,,
+549,AI Engineer,AI Engineer - Internship,QIMA,,Intern,,on-site,Philippines,Cebu City,,
+550,Data Analyst,Data Analyst Supply Chain,Home Depot,,,,remote,United States,Atlanta,,
+551,Data Scientist,Senior Data Scientist,Murmuration,,Senior,,remote,,United States,183013.0,
+552,Data Scientist,Data Scientist - Network Strategy,Home Depot,,Mid,,on-site,United States,Atlanta,,
+553,Data Scientist,Data Scientist - Applied AI & ML,Sunlighten,,Mid,,on-site,United States,Leawood,,
+554,Data Scientist,Data Scientist - Life Sciences AI / ML,Zifo,,Mid,,hybrid,Mexico,Mexico City,,
+555,BI Analyst,Partner Business Intelligence,Openai,,,,remote,United States,Seattle,293000.0,325000.0
+556,AI Engineer,IT AI ENGINEER,Sally Beauty Holdings,,Mid,,hybrid,United States,Plano,,
+557,Data Analyst,Data Analysis Specialist,NielsenIQ,,,,,,,,
+558,Research Scientist,Research Scientist (AI/ML),NielsenIQ,,,,hybrid,,,,
+559,Research Scientist,Research Scientist (AI/ML),NielsenIQ,,,,hybrid,,,,
+560,Data Scientist,Senior Data Scientist,NielsenIQ,,Senior,,remote,,,,
+561,Data Scientist,Senior Data Scientist,NielsenIQ,,,,,,,,
+562,Data Scientist,Senior Data Scientist,NielsenIQ,,,,,,,,
+563,Data Analyst,"Early Careers Program: Junior Customer Service Associate, Data Analysis",NielsenIQ,,Entry,,hybrid,,,,
+564,ML Engineer,Machine Learning Engineer,Amgen,,Mid,,on-site,India,Hyderabad,,
+565,ML Engineer,Associate Machine Learning Engineer,Amgen,,,,on-site,India,Hyderabad,,
+566,Data Analyst,Data Analyst,NielsenIQ,,,,,,,,
+567,Data Scientist,Data Scientist,Nazarbayevuniversity1,,,,,,,,
+568,ML Engineer,Senior Machine Learning Engineer,Referrals Only,,,,hybrid,India,Bangalore,,
+569,Research Scientist,AL Research Scientist - Algorithm,Applied Materials,,,,on-site,India,Chennai,,
+570,AI Engineer,AI Engineer,Meridianenergy1,,,,remote,New Zealand,Christchurch,,
+571,AI Engineer,AI Engineer,Meridianenergy1,,,,on-site,NZ,Christchurch,,
+572,Data Engineer,"Director, Data Engineering — Customer Success Score",Salesforce,,Director,,hybrid,United States,San Francisco,197300.0,313700.0
+573,Data Analyst,Data Analyst,Probst Electric,,Mid,,hybrid,United States,Sandy Springs,70000.0,80000.0
+574,Data Engineer,Data Engineer,MSX International,,,,remote,,,,
+575,AI Engineer,General Application — Data & AI/ML Engineering,System,,Mid,,remote,,,,
+576,Data Scientist,Senior Data Scientist,Multiverse,,Senior,,hybrid,UK,London,,
+577,Data Scientist,"Data Scientist, Economic Insights & Research",Stripe,,,,remote,,US,,
+578,AI Engineer,AI Engineer,Locinox,,,,,,,,
+579,Analytics Engineer,Analytics Engineer – People Data,LinkedIn,,Mid,,hybrid,United States,Sunnyvale,116000.0,193000.0
+580,Data Analyst,Power BI Finance Data Analyst,Kanadevia Inova,,,,hybrid,,,,
+581,Data Analyst,Power BI Finance Data Analyst,Kanadevia Inova,,,,hybrid,,,,
+582,Data Engineer,Data Engineer,Kanadevia Inova,,,,,,,,
+583,Data Engineer,Data Engineer,Kanadevia Inova,,,,,,,,
+584,Data Analyst,Data Analyst - Supply Chain,Kanadevia Inova,,Mid,,hybrid,,,,
+585,Data Analyst,Data Analyst - Supply Chain,Kanadevia Inova,,,,remote,,,,
+586,Data Analyst,Marketing Data Analyst,SmithRx,,Mid,,remote,,,,
+587,Data Scientist,Data Scientist,Peraton,,,,remote,United States,AZ,66000.0,106000.0
+588,Data Analyst,Technical Data Analyst (Border Security),Navigant,,Mid,,hybrid,United States,Washington,98000.0,163000.0
+589,Data Analyst,Data Analyst,Navigant,,,,on-site,India,Trivandrum,,
+590,BI Analyst,"Business Intelligence, Analyst",AIA Group,,Mid,,on-site,Singapore,Singapore,,
+591,ML Engineer,Senior Machine Learning Engineer - AdTech,Roku,,Senior,,hybrid,United Kingdom,Cambridge,,
+592,ML Engineer,Senior Machine Learning Engineer - AdTech,Roku,,Senior,,hybrid,United Kingdom,Manchester,,
+593,Data Analyst,"Sr. Data Analyst, Product",Kraken,,,,remote,United Kingdom,London,,
+594,Data Analyst,"Sr. Data Analyst, Growth",Kraken,,Senior,,remote,United Kingdom,London,,
+595,ML Engineer,ML Engineer - Verifications,Kodex,,,,remote,,,150000.0,180000.0
+596,Data Engineer,Senior Data Engineer,Cambridge Spark,,,,remote,,UK,,
+597,BI Analyst,Senior BI Analyst II,Relativity Space,,Senior,,on-site,United States,Long Beach,117000.0,160500.0
+598,Data Scientist,Senior Data Scientist II,RELX,,Senior,,,United Kingdom,London,,
+599,Data Scientist,"Senior Manager, Data Science",RELX,,Senior,,remote,,,,
+600,Data Scientist,Computer Scientist / Data Scientist,Geo Owl,,Mid,,on-site,United States,Wright Patterson Air Force Base,,
+601,Data Analyst,Acoustician Level 2 – Part Time - Cetacean Data Analysis & Processing Support,Lynker,,,,hybrid,United States,Honolulu,,
+602,Data Scientist,Senior Data Scientist II,Elsevier,,Senior,,on-site,UK,Oxford,,
+603,Data Scientist,"Senior Manager, Data Science",Elsevier,,Senior,,remote,,,,
+604,Data Scientist,Data Science Intern - Fall 2026,PrizePicks,,Intern,,on-site,UnitedStates,Atlanta,,
+605,Data Engineer,"Senior Data Engineer, Investments Technology (Enterprise Data Management)",Libertymutual,,Senior,,hybrid,United States,Boston,114000.0,197000.0
+606,Data Analyst,Business/Data Analyst,Infinitive,,Mid,,on-site,United States,McLean,,
+607,Data Analyst,Data Analyst - Marketing and Sales Analytics,Window Nation,,Mid,,on-site,United States,Fulton,90000.0,110000.0
+608,Data Scientist,Senior Data Scientist (GrabFin),Grab,,Senior,,,Singapore,Singapore,,
+609,Data Scientist,Data Scientist,Adobe,,Mid,,,United States,San Jose,109000.0,200700.0
+610,Data Scientist,"Senior Manager, Data Science - Acrobat & Express",Adobe,,Senior,,,United States,San Jose,144800.0,284325.0
+611,AI Engineer,"GenAI Product Lead, EMAP",Experian,,Senior,,hybrid,India,Mumbai,,
+612,ML Engineer,Machine Learning Scientist,Experian,,,,hybrid,,,,
+613,Data Engineer,Data Engineer,Accenture,,Mid,,on-site,India,Pune,,
+614,Data Scientist,"Data Scientist - Materials Characterization, Analytical Sciences & AI Agents",Eurofins Scientific,,,,,,,115000.0,180000.0
+615,Data Analyst,Digital Data Analyst,Yum Restaurant Services Group,,Mid,,,United States,Plano,99400.0,115800.0
+616,Data Analyst,Experienced Data Analyst,iPipeline,,Mid,,hybrid,UK,Cheltenham,,
+617,Data Engineer,Data Engineer (Graduate Program),Ogilvy,,,,on-site,Spain,Barcelona,,
+618,AI Engineer,Senior AI Engineer,Octus,,,,on-site,United States,New York,160000.0,170000.0
+619,Data Engineer,AI Data Engineer Intern,Razer,,Mid,,on-site,,Singapore,,
+620,Data Scientist,AI Data Science Lead – Research (Gilead & Kite),Gilead Sciences,,Mid,,hybrid,United States,Raleigh,146200.0,189200.0
+621,Data Scientist,AI Data Science Lead – PDM & Tech Ops (Gilead & Kite),Gilead Sciences,,Mid,,hybrid,United States,Raleigh,146200.0,189200.0
+622,BI Analyst,Business Intelligence Analyst,Palmpay Hr,,Mid,,on-site,Philippines,Taguig City,,
+623,Data Engineer,Data Engineer,Accenture,,Mid,,on-site,India,Gurugram,,
+624,Data Engineer,Data Engineer,AutoSavvy,,,,on-site,United States,Woods Cross,,
+625,Data Analyst,"Data Analyst/Advisory Consultant, Water",T.Y. Lin International,,Mid,,on-site,United States,New York,81200.0,121800.0
+626,ML Engineer,Ingénieur Machine Learning / MLOps,Everience,,,,,,,,
+627,Data Scientist,Senior Data Scientist,New Relic,,Mid,,,India,Bangalore,,
+628,Data Engineer,"Senior Data Engineer (Poland, Contract)",Nearform,,,,remote,,Poland,,
+629,Data Analyst,Senior Data Analyst (AI-Enabled Analytics) (all genders),Gotphoto,Technology,Mid,,remote,Germany,Berlin,,
+630,Data Engineer,Senior Associate Azure Data Engineer,PricewaterhouseCoopers,Data Engineering,Mid,,on-site,India,Gurugram 10 C,,
+631,Analytics Engineer,Associate Data and Analytics Engineering,PricewaterhouseCoopers,,Mid,,on-site,India,Kolkata,,
+632,Analytics Engineer,IN_Associate-Data and Analytics Engineering _Digital Integration_Advisory_Kolkata,PricewaterhouseCoopers,,Mid,,on-site,IN,Kolkata,,
+633,Data Analyst,Data Analyst,Modern Health,Health Tech,Mid,,remote,,Remote-US,106600.0,125400.0
+634,Data Analyst,Senior Data Analyst - Customer Analytics,MNTN,AdTech,Mid,,remote,,United States,,
+635,Data Engineer,Staff Data Engineer,Jobnimbus,Software Engineering,Senior,,hybrid,United States,Lehi,,
+636,AI Engineer,Senior Data Pipeline & AI Engineer,Fullstory,,Mid,,,United States,Atlanta,160000.0,170000.0
+637,ML Engineer,Senior ML Engineer - Mapping,May Mobility,,Mid,,on-site,United States,Ann Arbor,210000.0,250000.0
+638,ML Engineer,Data / Machine Learning Engineer (India),Lynx Analytics,,Mid,,on-site,India,Pune,,
+639,Data Engineer,Data Engineer (Remote - United States),Nextech,,Mid,,remote,United States,Remote,,
+640,Data Scientist,Data Scientist,"Tyto Athene,",,Mid,,hybrid,United States,Washington,130000.0,150000.0
+641,ML Engineer,Applied Machine Learning Engineer,Fireworksai,,,,,,,,
+642,Data Engineer,"Director, Data Engineering (AI Native)",Life360,,Mid,,remote,United States,Remote,216000.0,318000.0
+643,Data Scientist,Data Scientist - Cybersecurity Analyst,KnowBe4,,Mid,,,United Kingdom,Cheltenham,,
+644,Data Engineer,Data Engineer,J5 Holdings,,Mid,,on-site,United States,McLean,,
+645,Data Engineer,Data Engineer,GEA Group,,Mid,,,Colombia,Bogotá D.C.,,
+646,Data Engineer,Cloud Data Engineer,General Dynamics Information Technology,,,,,Germany,Wiesbaden,107744.0,143750.0
+647,Data Engineer,SAP Data Engineer (Freelancer),Mactores,,,,,India,Mumbai,,
+648,AI Engineer,Copilot Developer/AI Engineer,Pyrovio,"[""Consulting"", ""Technology Services""]",Mid,,on-site,United States,Akron,,
+649,ML Engineer,Machine Learning Researcher,Jane Street,,,,on-site,United Kingdom,London,,
+650,ML Engineer,Machine Learning Researcher,Jane Street,,Mid,,on-site,Hong Kong,Hong Kong,,
+651,Data Scientist,"(USA) Senior, Data Scientist",Walmart,,Mid,,hybrid,United States,Bellevue,90000.0,216000.0
+652,Data Scientist,"Distinguished, Data Scientist",Walmart,,Senior,,,United States,Bellevue,156000.0,312000.0
+653,Data Scientist,"Staff, Data Scientist",Walmart,,,,,United States,Bellevue,132000.0,264000.0
+654,Data Scientist,Data Scientist - Credit Risk,BridgeFund,"[""Finance"", ""FinTech""]",Mid,,,NL,Amsterdam,,
+655,Data Scientist,"Staff, Data Scientist",Walmart,,Senior,,on-site,United States,Bentonville,110000.0,220000.0
+656,Data Scientist,Data Scientist (m/w/d),Rewire,,Entry,,,Germany,Heidelberg,,
+657,Data Scientist,Data Scientist,Gartner,,Mid,,on-site,India,Gurgaon,,
+658,Data Analyst,Pensions Research Data Analyst - 12 Month Fixed Term Contract,PHP4 Manila - W City Center,,Entry,,,United Kingdom,Reigate,,
+659,AI Engineer,AI/ML Engineer,Two95 International Inc 3,,Mid,,on-site,India,Bengaluru,,
+660,ML Engineer,Principal Machine Learning Engineer,iHerb,,Principal,,remote,,,205000.0,230000.0
+661,ML Engineer,Machine Learning Engineer Co-Op (Data Labeller),Lendbuzz,,,,hybrid,United States,Boston,,
+662,AI Engineer,Associate Applied AI Engineer,GuidePoint Security,Information Security,Mid,,remote,,Remote,,
+663,Data Engineer,Sr. Data Engineer,Samsung Electronics,,Mid,,on-site,United States,Mountain View,170000.0,210000.0
+664,Data Scientist,Data Scientist,USA01 - USA Automotive,,,,,India,Chennai,,
+665,Data Analyst,Data Analyst – Supply Risk & Automation,USA01 - USA Automotive,,,,hybrid,Mexico,Naucalpan de Juarez,,
+666,Data Engineer,Databricks Data Engineer,Deviq,,,,hybrid,United States,Denver,120000.0,140000.0
+667,Data Scientist,Degree Apprenticeship - Data Scientist Level 6,Cummins,,,,on-site,United Kingdom,Huddersfield,,
+668,Data Analyst,Data Analytics Professional,Freddie Mac,,Mid,,on-site,United States,McLean,85000.0,127000.0
+669,AI Engineer,Lead Software & AI Engineer,G2IT,,,,on-site,United States,San Diego,165000.0,175000.0
+670,Data Engineer,Data Engineer - Python,Data Intellect,,Mid,,hybrid,,,,
+671,Data Engineer,Data Engineer,Dashlabs.ai,,Mid,,remote,,Remote,,
+672,Data Scientist,Data Scientist,First Gen,,,,on-site,Philippines,FPH Rockwell Business Center Tower 3,,
+673,AI Engineer,"Forward Deployed AI Engineer, Talent",Zipline,,Mid,,on-site,United States,South San Francisco,112500.0,300000.0
+674,AI Engineer,"Forward Deployed AI Engineer, Site Acquisition",Zipline,Logistics,Mid,,on-site,United States,South San Francisco,112500.0,300000.0
+675,AI Engineer,"Forward Deployed AI Engineer, Real Estate and Development",Zipline,,Mid,,,United States,South San Francisco,112500.0,300000.0
+676,AI Engineer,"Forward Deployed AI Engineer, People",Zipline,,Mid,,on-site,United States,South San Francisco,112500.0,300000.0
+677,AI Engineer,"Forward Deployed AI Engineer, Operations",Zipline,,Mid,,,United States,South San Francisco,112500.0,300000.0
+678,AI Engineer,"Forward Deployed AI Engineer, Legal Real Estate",Zipline,,,,on-site,United States,South San Francisco,112500.0,300000.0
+679,AI Engineer,"Forward Deployed AI Engineer, Launch, Design, and Construction Handoff",Zipline,,Mid,,on-site,United States,South San Francisco,112500.0,300000.0
+680,AI Engineer,"Forward Deployed AI Engineer, Land Use and Government Affairs",Zipline,,Mid,,,United States,South San Francisco,112500.0,300000.0
+681,AI Engineer,"Forward Deployed AI Engineer, Expansion",Zipline,,Mid,,on-site,United States,South San Francisco,112500.0,300000.0
+682,AI Engineer,"Forward Deployed AI Engineer, Community Engagement",Zipline,,,,on-site,United States,South San Francisco,112500.0,300000.0
+683,AI Engineer,"Forward Deployed AI Engineer, Aviation Regulatory",Zipline,,Mid,,on-site,United States,South San Francisco,112500.0,300000.0
+684,Research Scientist,"Associate Research Scientist, Knowledge Management",Flatiron Health,Healthcare,Mid,,,United States,Durham,,
+685,ML Engineer,Senior Machine Learning Engineer / Data Scientist,"Flagship Pioneering, Inc.",,,,,United States,Boston,96000.0,214500.0
+686,Data Analyst,"Senior Data Analyst, Lending",Figure Lending,,Mid,,remote,,,110000.0,150000.0
+687,Data Scientist,Data Scientist,Diebold Nixdorf,,,,on-site,India,Hyderabad,,
+688,Data Scientist,Bachelor angewandte Mathematik & Data Science – Technomathematik,Continental,,Entry,,,Germany,Hannover,,
+689,Data Engineer,"Vice President, Data Engineering",Goldman Sachs,,Senior,,on-site,United States,New York,166000.0,270000.0
+690,ML Engineer,"Compliance, New York, Vice President, AL/ML Engineer",Goldman Sachs,"[""Financial Services""]",Senior,,,United States,New York,,
+691,Data Engineer,"Corporate Planning & Management, Data Engineering, New York, Associate",Goldman Sachs,,Mid,,,United States,New York,,
+692,Data Scientist,Lead Data Scientist - AgenticAI,McKesson,,Mid,,hybrid,CAN,Mississauga,122100.0,162800.0
+693,AI Engineer,Summer 2026 AI/ML Informatics Intern,BPHC,,Intern,,,United States,Boston,,
+694,Data Engineer,Principal Data Engineer,Mastercard,,Mid,,,India,Pune,,
+695,Data Scientist,"Associate Managing Consultant, Advisors & Consulting Services, Performance Analytics/ Data Scientist",Mastercard,Financial Services,Mid,,on-site,,Singapore,,
+696,Data Scientist,Sr Data Scientist,PayPal,,Mid,,hybrid,United States,Chicago,142210.0,221500.0
+697,Data Scientist,Senior Data Scientist,PayPal,,Mid,,hybrid,United States,Chicago,142210.0,221500.0
+698,Data Scientist,Sr Data Scientist,PayPal,,Mid,,hybrid,United States,Chicago,142210.0,221500.0
+699,Data Scientist,Sr Data Scientist,PayPal,,Senior,,hybrid,United States,Chicago,142210.0,221500.0
+700,Data Scientist,Senior Data Scientist,PayPal,,Mid,,,United States,Chicago,153317.0,221500.0
+701,Data Scientist,Staff Data Scientist,PayPal,,Senior,,hybrid,United States,Chicago,142210.0,221500.0
+702,ML Engineer,Machine Learning Engineer,PayPal,,Mid,,,United States,Austin,117500.0,199500.0
+703,ML Engineer,Sr Machine Learning Engineer,PayPal,,Senior,,hybrid,United States,San Jose,169262.0,243500.0
+704,Data Engineer,Data Engineer III,Raytheon|Websense,,Mid,,on-site,India,Bengaluru,,
+705,Data Scientist,Staff Data Science Engineer - Hardware & Silicon Validation,Marvell Software Solutions Israel,,,,on-site,United States,Santa Clara,108220.0,162100.0
+706,Data Analyst,Risk & Integrity Data Analyst,NYC Department of City Planning,,Mid,,on-site,United States,New York,98159.0,128995.0
+707,Data Analyst,Data Analytics Team Lead,Parsons,,Mid,,,United States,Washington,112200.0,196400.0
+708,BI Analyst,Dashboard Business Intelligence Developer,Parsons,,Mid,,,United States,Washington DC,88400.0,154700.0
+709,ML Engineer,Machine Learning / Data Scientist,Parsons,,,,,United States,Washington,88400.0,154700.0
+710,Analytics Engineer,Director of Analytics Engineering,Ennoble Care,,,,remote,,United States,,
+711,Analytics Engineer,Analytics Engineer,MLG Capital,"[""Real Estate"", ""Financial Services""]",Mid,,,United States,Brookfield,,
+712,Data Analyst,Junior Data Analyst - CRM,Farfetch,,Mid,,hybrid,Portugal,Porto,,
+713,Data Analyst,Business Risk & Controls Data Analyst,CNB,Finance,Mid,,hybrid,,,,
+714,Data Analyst,Development Systems Administrator & Data Analyst,Jewish Community Center of San Francisco,,Mid,,on-site,United States,San Francisco,,
+715,Research Scientist,Senior Research Scientist,GTO Wizard,,,,remote,Czechia,Prague,,
+716,BI Analyst,Business Intelligence Consultant,DEPT®,Marketing & Advertising,Mid,,,UK,London,,
+717,BI Analyst,Business Intelligence Consultant,DEPT®,,,,hybrid,Hungary,Budapest,,
+718,Data Engineer,Big Data Engineer,BPS OPS,,,,,,India,,
+719,Data Engineer,Big Data Engineer,BPS OPS,,,,,,India,,
+720,Data Engineer,Big Data Engineer,BPS OPS,,Mid,,on-site,,India,,
+721,Data Scientist,Analytics Data Science and IoT Lead,BPS OPS,,Mid,,,,India,,
+722,Data Engineer,Data Engineer,Cayuse Holdings,,Mid,,,United States,Austin,108160.0,153920.0
+723,Data Engineer,Data Engineer,NucleusTeq,,,,hybrid,IN,Indore,,
+724,Data Engineer,Lead Data Engineer,Blend,,,,,,,125000.0,140000.0
+725,Data Analyst,Staff Data Analyst (Coupang Logistics Service),Coupang,,Mid,,on-site,South Korea,Seoul,,
+726,ML Engineer,"Senior, Machine Learning Engineer (Eats Search and Discovery)",Coupang,E-commerce,Mid,,on-site,South Korea,Seoul,,
+727,ML Engineer,Machine Learning Engineer (Eats Search and Discovery),Coupang,,,,,South Korea,Seoul,,
+728,Data Analyst,Senior CX Data Analyst & Ops Planner (Merchant),Coupang,E-commerce,Senior,,hybrid,South Korea,Seoul,,
+729,Data Analyst,"Climate Action Data Analytics and Impact Lead - Climate Action, Sustainability and Resiliency",Denver Public Library,,Mid,,hybrid,United States,Downtown Denver,108000.0,125000.0
+730,Data Scientist,Data Scientist (2-5 years experience),Datalabusa,,Mid,,,United States,Westminster,80000.0,125000.0
+731,Data Analyst,Data Analyst - Data Ops,Allied Benefit Systems,Operations,Mid,,,United States,CHICAGO,50000.0,55000.0
+732,Data Scientist,Data Scientist Deal Advisory,BDO,,,,,Netherlands,Utrecht,,
+733,BI Analyst,Business Intelligence Data & Reporting Analyst,Colorado Health Benefit Exchange,Health Care,Mid,,,United States,Denver,72100.0,94760.0
+734,Data Engineer,Principal Data Engineer - MarTech,Constant Contact,,,,remote,United States,Remote,143000.0,178500.0
+735,Research Scientist,Research Scientist - AI(X) Hub,The Ohio State University,,Mid,,on-site,United States,Columbus,140000.0,140000.0
+737,Data Engineer,Sr. Data Engineer,Cohere Health,,Mid,,,India,Hyderabad,,
+738,Data Scientist,Data Scientist,Cohere Health,,Mid,,on-site,India,Hyderabad,,
+739,ML Engineer,Machine Learning Engineer,FunNow,,Mid,,,Taiwan,Taipei City,,
+740,Data Engineer,BI / Data Engineer,Arthur Grand Technologies,,Mid,,hybrid,United States,Chicago,100000.0,110000.0
+741,Data Scientist,Sr. Principal Data Scientist,Clarity Innovations,,,,,United States,MacDill AFB,,
+742,Data Scientist,Senior Data Scientist,Clarity Innovations,,Mid,,on-site,United States,Petersen SFB,,
+743,Data Analyst,"Senior Manager, Product Data Analyst",Backend Software Engineer,,Mid,,hybrid,,Germany,,
+744,Data Analyst,"Senior Manager, Product Data Analyst",Backend Software Engineer,,Mid,,,UK,London,,
+745,Data Engineer,Data Engineer Intern/Co-op,Plymouth Rock Assurance,,,,,United States,Boston,,
+746,Data Scientist,Data Science Intern/Co-op,Plymouth Rock Assurance,,,,,United States,Boston,,
+747,Data Scientist,Data Scientist,Paystone - Formerly Zomaron,,,,remote,,,,
+748,Data Scientist,Senior Principal Applied Scientist (OCI/GEN AI),Oracle,,Senior,,,,United States,169800.0,355400.0
+749,AI Engineer,AI LLM Solutions Architect,DVT,,,,hybrid,South Africa,Cape Town,,
+750,ML Engineer,Agentic AI Machine Learning Engineer,Booz Allen Hamilton-TEAMS business,,Mid,,,DC,Washington,99000.0,225000.0
+751,Data Analyst,Data Analyst,Booz Allen Hamilton-TEAMS business,,Mid,,on-site,United Kingdom,Cambridgeshire,77500.0,176000.0
+752,Data Engineer,Data Engineer,Booz Allen Hamilton-TEAMS business,,Mid,,,United States,Chantilly,77600.0,176000.0
+753,Data Analyst,"Data Analyst, Mid",Booz Allen Hamilton-TEAMS business,,Mid,,,United States,MacDill AFB,61900.0,141000.0
+754,Data Scientist,Data Scientist,Booz Allen Hamilton-TEAMS business,,Mid,,,United States,Alexandria,99000.0,225000.0
+755,Data Engineer,Data Engineer,Booz Allen Hamilton-TEAMS business,,,,on-site,United States,Beavercreek,99000.0,225000.0
+756,Data Scientist,Data Scientist,Booz Allen Hamilton-TEAMS business,,,,on-site,United States,San Antonio,77500.0,176000.0
+757,Data Scientist,Data Science Advisor,Fannie Mae,,Mid,,,United States,Reston,,
+758,Data Engineer,Data Engineer,Booz Allen Hamilton-TEAMS business,,Mid,,,United States,Arlington,62000.0,141000.0
+759,Data Scientist,Data Scientist,Booz Allen Hamilton-TEAMS business,,,,on-site,United States,Arlington,77600.0,176000.0
+760,Data Scientist,Graduate Data Scientist,Abound,,Entry,,hybrid,United Kingdom,London,,
+761,Data Engineer,Senior Lead Data Engineer,JPMorgan Chase,Financial Services,Mid,,on-site,United Kingdom,London,,
+762,Data Scientist,Data Scientist [Multiple Positions Available],JPMorgan Chase,,Mid,,,United States,Jersey City,198000.0,210000.0
+763,AI Engineer,Praktikum / Werkstudent*in (all genders) im Bereich - Information Research - AI/ML & Computer Vision (Rodent Video Analytics),AbbVie,,,,,,,,
+764,AI Engineer,Praktikum / Werkstudent*in (all genders) im Bereich - Information Research - AI/ML & Computer Vision (Rodent Video Analytics),AbbVie,,Intern,,,,,,
+765,ML Engineer,"Staff Applied Machine Learning Engineer - Intelligent Data, Signals & Systems",Block,,Mid,,,United States,Bay Area,,
+766,ML Engineer,Staff Applied Machine Learning Engineer - Fraud & Abuse,Block,Technology,Mid,,remote,United States,Bay Area,,
+767,Research Scientist,"Principal Research Scientist I, tLNP Process Development",AbbVie,,Senior,,,,,,
+768,Data Analyst,Financial Data Analyst,SeQura,,Mid,,,ES,Barcelona,,
+769,Research Scientist,Principal Research Scientist II - Analytical Development,AbbVie,,Principal,,,,,141500.0,268500.0
+770,Data Engineer,Senior Data Engineer,Betty Job Board,,,,on-site,UK,London,,
+771,Data Scientist,AI Activation & Data Science Manager,USANA,Health Sciences,Mid,,hybrid,United States,Salt Lake City,,
+772,Data Analyst,Stage Innovation : Ingénieur Data Analyst / Data Visualisation,ALTEN,,Intern,,,France,Sèvres,,
+773,Data Scientist,Stage Innovation : Ingénieur Data Science / Science Cognitive,ALTEN,,Intern,,on-site,France,Sèvres,,
+774,Data Analyst,Flight Data Analysis Engineer,Edge Autonomy (formerly UAV Factory),,,,,Latvia,Riga,,
+775,Data Scientist,Stage Innovation : Data visualisation / Data science (Bac+4),ALTEN,,Intern,,,France,Sèvres,,
+776,Data Engineer,Senior/Lead Data Engineer,qode.world,,Mid,,hybrid,Vietnam,Ho Chi Minh,,
+777,Data Scientist,Data Scientist (1099),FIRST STOP HEALTH,,,,remote,,,,
+778,Analytics Engineer,Lead Analytics Engineer (6 Month FTC),AJ Bell,,,,hybrid,UK,Manchester,,
+779,Data Analyst,Senior Data Analyst,Axuall,Healthcare,Mid,,remote,United States,Remote,,
+780,Data Engineer,Data Engineer (GCH) - Replacement,Zensar Technologies,,Mid,,,,India,,
+781,Analytics Engineer,Senior Data Analytics Engineer,Axon,Public Safety,Mid,,hybrid,United States,Atlanta,,
+782,Analytics Engineer,Senior Data Analytics Engineer,Axon,,,,,United States,Seattle,99750.0,159600.0
+783,Analytics Engineer,Senior Data Analytics Engineer,Axon,,Mid,,,United States,New York,99750.0,159600.0
+784,Analytics Engineer,Senior Data Analytics Engineer,Axon,Public Safety,Mid,,hybrid,United States,Scottsdale,,
+785,Analytics Engineer,Senior Data Analytics Engineer,Axon,,Mid,,,United States,Sterling,,
+786,Analytics Engineer,Senior Data Analytics Engineer,Axon,Public Safety,Mid,,hybrid,United States,Boston,99750.0,159600.0
+787,Data Analyst,Data Analyst Manager,Entegra LLP,,,,hybrid,MEX,Ciudad de México,,
+788,Data Scientist,Graduate Data Scientist إماراتيين (خلاصة القيد),AECOM,Construction,Mid,,hybrid,UAE,Dubai,,
+789,Data Engineer,Data Engineering- SME,Bart & Associates,,Senior,,remote,,,,
+790,AI Engineer,"Customer Engineer, Platform, AI/ML, Google Cloud",Google,Engineering,Mid,,on-site,,Singapore,,
+791,Data Analyst,Corporate Data Analyst,Onclusive,,Mid,,hybrid,India,Navi Mumbai,,
+792,ML Engineer,"Machine Learning Engineer Manager, TikTok - Trust and Safety",TikTok,"[""Engineering & Technology""]",Mid,,on-site,United States,San Jose,244800.0,450000.0
+793,Analytics Engineer,Data Analytics Engineer,"Ranch and Home Supply, LLC",,,,,United States,Bozeman,100000.0,125000.0
+794,ML Engineer,Senior Machine Learning Engineer Manager,TikTok,Trust & Safety,Mid,,on-site,United States,San Jose,308000.0,588000.0
+795,AI Engineer,Senior LLM Evaluation Researcher,TikTok,,Senior,,on-site,United States,San Jose,108800.0,288000.0
+796,ML Engineer,"Machine Learning Engineer, TikTok Core Feed Recommendation - Dedup",TikTok,,Mid,,,United States,San Jose,156000.0,316800.0
+797,AI Engineer,"GenAI Regional Product Marketing Manager, Creative Product",TikTok,Marketing,Mid,,,Germany,Berlin,,
+798,AI Engineer,"Software Engineer, AI/ML Computer Vision",Google,,Mid,,hybrid,United States,Seattle,147000.0,211000.0
+799,Data Analyst,CCBHC Data Analyst (Gallup),"Santa Fe Recovery Center, Inc",Healthcare,Mid,,,United States,Santa Fe,54760.0,87616.0
+800,Research Scientist,"Research Scientist, Robotics, Embodied AI, DeepMind",Google,Artificial Intelligence,Mid,,on-site,United States,Mountain View,147000.0,211000.0
+801,Data Engineer,Freelance Data Engineer,Incubeta,,,,on-site,South Africa,Cape Town,,
+802,Data Engineer,Director of Data Engineering,Incubeta,,Director,,on-site,South Africa,Cape Town,,
+803,Data Scientist,"Business Data Scientist, Marketing",Google,,Mid,,hybrid,United States,New York,138000.0,198000.0
+804,Data Engineer,Data Engineer,Anteriad,,Mid,,remote,,Remote-India,,
+805,ML Engineer,"Program Manager III, Machine Learning Deployment, Cloud Supply Chain",Google,,Mid,,,United States,Sunnyvale,159000.0,231000.0
+806,AI Engineer,"Forward Deployed Engineer IV, Generative AI, Google Cloud",Google,,Mid,,on-site,United States,San Francisco,,
+807,AI Engineer,"Forward Deployed Engineering Manager, Generative AI, Public Sector and Education",Google,,Mid,,,India,Gurugram,,
+808,Data Scientist,"Data Scientist, Marketing Analytics & Measurement",Staples,,Senior,,,United States,Framingham,,
+809,AI Engineer,"Forward Deployed Engineering Manager, GenAI, Google Cloud",Google,,Mid,,on-site,United States,San Francisco,,
+810,Data Scientist,"Associate Data Scientist – Modeling, Analytics & Pipelines",Aera Technology,Technology,Mid,,hybrid,India,Pune,,
+811,Data Scientist,Senior Data Scientist,Microsoft,,Mid,,on-site,United States,Redmond,,
+812,AI Engineer,"Partner Forward Deployed Engineer, Generative AI, Google Cloud (Japanese, English)",Google,Technology,Mid,,on-site,Japan,Tokyo,,
+813,Data Scientist,Senior Data Scientist,Microsoft,,Mid,,remote,United States,United States,,
+814,AI Engineer,"Forward Deployed Engineering Manager, GenAI, FSI Google Cloud",Google,Technology,Mid,,on-site,United States,San Francisco,,
+815,Data Scientist,"Principal, Data Science & Analytics",Microsoft,,Principal,,on-site,United States,Redmond,,
+816,BI Analyst,Business Intelligence Analyst- Clinical Operations,Mms Holdings,Clinical Research,Mid,,hybrid,,India,,
+817,Analytics Engineer,Analytics Engineer/Data Analyst,DATAMAXIS,,,,on-site,United States,Okemos,,
+818,AI Engineer,Senior AI Engineer,Ness,,,,remote,Romania,Timisoara,,
+819,Data Engineer,"Senior Data Engineer, GTM",Google,Technology,Senior,,hybrid,United States,Mountain View,156000.0,227000.0
+820,Data Scientist,"Dean, Applied Science and Business",College of the Desert (CA),,,,on-site,United States,Palm Desert,140802.48,203902.56
+821,Data Analyst,Senior Data Analyst (AI-Enabled Analytics) (all genders),Gotphoto,,,,remote,Germany,Berlin,,
+822,Data Scientist,"Business Data Scientist, Marketing",Google,Marketing,Mid,,hybrid,United States,New York,138000.0,198000.0
+823,Data Scientist,Data Science and Informatics Specialist 2 (DSIS2/SPI),State of Washington,,Mid,,,United States,Olympia,93804.0,126168.0
+824,Data Analyst,Data Analyst Supporting the USMS,FSA,,,,,United States,Buffalo,,
+825,Data Scientist,Associate Data Scientist - AI Submission Analysis,Accela,,,,,,Remote US,85000.0,106000.0
+826,ML Engineer,"Product Manufacturing Test Lead, Machine Learning",Google,,Mid,,,United States,Sunnyvale,144000.0,209000.0
+827,BI Analyst,"Business Intelligence Manager, Cloud Finance",Google,,Mid,,on-site,United States,Kirkland,180000.0,261000.0
+828,AI Engineer,"Senior Software Engineer, Vertex 1P GenAI SRE",Google,Technology,Mid,,on-site,Poland,Warsaw,,
+829,ML Engineer,"Senior Software Engineer, Machine Learning, Payments",Google,Payments,Mid,,on-site,,Singapore,,
+830,Data Analyst,Data Analyst/Senior Data Analyst,City of Mesa,,Mid,,on-site,United States,Mesa,67797.81,113033.02
+831,AI Engineer,"Senior Software Engineer, Storage AI/ML",Google,,Mid,,on-site,United States,Seattle,174000.0,253000.0
+832,AI Engineer,LLM Fine‑Tuning Engineer,Bright Vision Technologies,Technology,Senior,,,,United States,100000.0,150000.0
+833,AI Engineer,LLM Fine‑Tuning Engineer,Bright Vision Technologies,,Senior,,,,United States,100000.0,150000.0
+834,AI Engineer,LLM Fine‑Tuning Engineer,Bright Vision Technologies,,Senior,,,,United States,100000.0,150000.0
+835,AI Engineer,LLM Fine‑Tuning Engineer,Bright Vision Technologies,,Senior,,remote,,United States,100000.0,150000.0
+836,Data Analyst,MHN Data Analyst,Cabell Huntington Hospital,,,,on-site,United States,Huntington,,
+837,AI Engineer,Edge AI Engineer,Bright Vision Technologies,,Mid,,remote,United States,Remote,100000.0,150000.0
+838,AI Engineer,Edge AI Engineer,Bright Vision Technologies,,Senior,,,,United States,100000.0,150000.0
+839,AI Engineer,Edge AI Engineer,Bright Vision Technologies,,Mid,,,,,100000.0,150000.0
+840,AI Engineer,Edge AI Engineer,Bright Vision Technologies,,Mid,,,Continental United States,Remote,100000.0,150000.0
+841,Data Analyst,Senior Actuarial Data Analyst - Healthcare,Village Care,,Mid,,,United States,New York,87647.11,98603.0
+842,AI Engineer,AI/ML Engineer with Drone Imagery,Bright Vision Technologies,,,,hybrid,United States,Houston,,
+843,AI Engineer,Senior AI Engineer - Recommendation and Personalisation,9fin,,Mid,,hybrid,United Kingdom,London,,
+844,AI Engineer,Senior AI Engineer - Knowledge Graphs,9fin,,Senior,,hybrid,United Kingdom,London,,
+845,AI Engineer,LLM Fine‑Tuning Engineer,Bright Vision Technologies,,Senior,,,,United States,,
+846,AI Engineer,LLM Fine‑Tuning Engineer,Bright Vision Technologies,,Mid,,,,United States,100000.0,150000.0
+847,AI Engineer,Edge AI Engineer,Bright Vision Technologies,,Mid,,,,United States,100000.0,150000.0
+848,AI Engineer,AI/ML Engineer,Equinix,,,,hybrid,India,Bangalore,,
+849,AI Engineer,AI/ML Engineer - Senior Associate,Equinix,,Mid,,hybrid,India,Bangalore,,
+850,AI Engineer,"Sr. Program Manager, Generative AI",Early Warning,,Senior,,,United States,San Francisco,173000.0,200000.0
+851,Data Engineer,Sr Data Engineer I,Disney,Data Engineering,Mid,,on-site,India,Bangalore,,
+852,Analytics Engineer,"VP, Analytics Engineering & DnA Operations",Disney,,Mid,,on-site,United States,Glendale,277500.0,372100.0
+853,Data Scientist,Lead Data Scientist,Vizient,,Mid,,on-site,United States,Irving,117600.0,206000.0
+854,ML Engineer,Ingénieur MLOps,Crakmedia,,Mid,,on-site,Canada,Montreal,,
+855,ML Engineer,Machine Learning Lead Engineer,Cox Communications,,Mid,,hybrid,United States,Atlanta,134900.0,224900.0
+856,Data Engineer,Senior Data Engineer,CoStar Group,,Mid,,,United States,San Diego,124000.0,190000.0
+857,Data Engineer,Forward Deployed Data Engineer,COORSTEK,,Mid,,on-site,United States,Golden,115000.0,155000.0
+858,Data Analyst,Subsurface Data Analyst,ConocoPhillips,,Mid,,on-site,United States,Anchorage,,
+859,ML Engineer,"Manager, Machine Learning Engineer",Vanguard Group,,Mid,,hybrid,PA,Malvern,,
+860,Data Analyst,Sales & Data Analytics Intern,Valeo,,,,,United States,Troy,,
+861,ML Engineer,"Research Associate, Machine Learning",University of New Hampshire,,Mid,,,United States,Durham,,
+862,Data Analyst,Master Data Analyst,Clorox,,Mid,,hybrid,Mexico,Tlalnepantla de Baz,,
+863,Data Analyst,"Director of Strategic Data Analysis and Planning, Penn GSE",University of Pennsylvania (Penn),,Mid,,,United States,Philadelphia,101750.0,120000.0
+864,Data Scientist,Senior Data Scientist - AI & People Analytics,Unum Group,,Mid,,hybrid,United States,Chattanooga,,
+865,Data Engineer,Senior AI & Data Engineering Lead - Senior Vice President,Citigroup,Technology,Senior,,,United States,Jersey City,176720.0,265080.0
+866,Data Scientist,Data Scientist II,Truist,,Mid,,on-site,United States,Atlanta,,
+867,Data Scientist,Data Scientist I - Card Fraud Analytics,Truist,,,,on-site,United States,Atlanta,,
+868,Data Analyst,Senior Quantitative Data Analyst,Cboe Global Markets,,Senior,,,United States,Chicago,116875.0,151250.0
+869,Data Scientist,Associate Product Data Scientist,TreeHouse Foods,,Mid,,on-site,United States,De Pere,52000.0,78000.0
+870,Data Engineer,"Data Engineer I (TM1, Python, AWS)",Travelers,,Mid,,,United States,St. Paul,109300.0,180200.0
+871,Data Scientist,Lead Data Scientist,Caterpillar,"Technology, Digital and Data",Mid,,on-site,United States,Mossville,128470.0,208770.0
+872,Data Scientist,Lead Data Scientist - Gen AI & Digital Twin,Caterpillar,,,,,United States,Chicago,128470.0,208770.0
+873,Data Analyst,"Data Analyst, Data Analytics",Cardinal Health,,,,,United States,Ohio,80900.0,115500.0
+874,Data Analyst,"Manager, Data Analysis - Card Data",Capital One,,Mid,,,VA,McLean,149800.0,188100.0
+875,Data Analyst,"Sr. Manager, Data Analyst - Network Compliance",Capital One,Finance,Senior,,on-site,United States,Richmond,182500.0,208300.0
+876,Data Analyst,Supply Chain Data Analyst,Thermo Fisher Scientific,Supply Chain,Mid,,hybrid,United States,Grand Island,76000.0,90000.0
+877,BI Analyst,Business Intelligence Analyst,Brown Advisory,,,,on-site,United States,Baltimore,72000.0,80000.0
+878,BI Analyst,Senior Business Intelligence Analyst,Toronto-Dominion Bank,,,,,Canada,Toronto,,
+879,BI Analyst,Senior Business Intelligence Analyst,Toronto-Dominion Bank,,Mid,,hybrid,Canada,Toronto,,
+880,Data Scientist,"Audit Analytics and AI Analyst - Data Science, 6 Month Contract (New or Recent Graduate Opportunity) Immediate Start Date",BMO Bank of Montreal,,,,,Canada,Toronto,54600.0,
+881,Data Scientist,"Audit Analytics and AI Analyst - Data Science, 6 Month Contract",Bmo Capital Markets,,,,,Canada,Toronto,54600.0,101400.0
+882,Data Engineer,Data Engineer,Synechron,,,,hybrid,Canada,Mississauga,,
+883,Data Analyst,Product Data Analyst,BetMGM,,Entry,,,United States,Jersey City,72320.0,94920.0
+884,Data Analyst,Senior Data Analyst,Stride,,Mid,,remote,,US - VA - Remote,81045.75,148000.0
+885,Data Engineer,Senior Data Engineer-Onsite,State Street,,,,,United States,Quincy,90000.0,157500.0
+886,AI Engineer,AI/ML Engineer II,Sierra Nevada,,Mid,,on-site,United States,Lone Tree,108496.89,149183.22
+887,AI Engineer,AI/ML Engineer III,Sierra Nevada,,Mid,,,United States,Lone Tree,124771.42,171560.71
+888,Analytics Engineer,Analytics Engineer,Silicon Laboratories,,Mid,,hybrid,Finland,Espoo,,
+889,Data Analyst,Admin. Data Analyst - Generational Health - Full-Time,Sharp HealthCare,,Mid,,,United States,San Diego,,
+890,Data Analyst,Sr. Data Analytics Specialist - Audit and Compliance,Sharp HealthCare,,Mid,,remote,,,,
+891,Data Engineer,Data Engineer,Amgen,Manufacturing,Mid,,on-site,India,Hyderabad,,
+892,Data Engineer,Sr Data Engineer,Amgen,,Mid,,on-site,India,Hyderabad,,
+893,Data Scientist,"Sr. Associate, Data Scientist",Revantage Corporate Services,,,,hybrid,United States,Chicago,123684.0,164868.0
+894,AI Engineer,AI Engineer,Adobe,,Mid,,on-site,India,Bangalore,,
+895,Data Engineer,Lead Data Engineer,Royal Bank of Canada,,Mid,,on-site,Canada,Toronto,,
+896,AI Engineer,AI / ML Engineer,Accenture,,Mid,,on-site,India,Bengaluru,,
+897,AI Engineer,AI / ML Engineer,Accenture,,,,on-site,India,Bengaluru,,
+898,AI Engineer,AI/ML Computational Science Specialist,Accenture,,,,,India,Hyderabad,,
+899,AI Engineer,Senior Associate Azure AI/ML/Agentic AI Engineer,PricewaterhouseCoopers,,,,on-site,India,Bengaluru,,
+900,Data Engineer,Senior Associate AWS Data Engineer,PricewaterhouseCoopers,,,,on-site,India,Bengaluru,,
+901,Data Engineer,Senior Associate AWS Data Engineer,PricewaterhouseCoopers,,Mid,,on-site,India,Bengaluru,,
+902,Data Engineer,IN_Senior Associate_ AWS Data Engineer_GCC_Advisory_Bangalore,PricewaterhouseCoopers,,,,on-site,India,Bengaluru,,
+903,Data Engineer,Senior Associate Data Engineer,PricewaterhouseCoopers,,Mid,,,India,Gurugram,,
+904,Data Analyst,"Director, Operations and Health Data Analytics",Prudential Financial,,Mid,,on-site,,Hong Kong,,
+905,Data Engineer,Data Engineer III,Walmart,,Mid,,hybrid,India,Bangalore,,
+906,Data Scientist,"Data Scientist - Purchasing Power (Open to Relocation | Hybrid - Atlanta, GA)",Progressive Leasing,,Mid,,hybrid,United States,Atlanta,,
+907,Data Analyst,Data Analyst Senior,PNC Financial Services,Finance,Mid,,on-site,United States,Birmingham,,
+908,Data Analyst,Enterprise Data Operations Analyst (Senior) / Data Analyst Senior,PNC Financial Services,,,,,United States,Pittsburgh,,
+909,Data Scientist,Senior Data Scientist I,ChoicePoint,,,,on-site,United Kingdom,London,,
+910,Data Analyst,Data Analyst II,ChoicePoint,,,,on-site,United States,Alpharetta,59200.0,98600.0
+911,Data Scientist,Data Scientist II,Mastercard,,Mid,,,India,Gurgaon,,
+912,Analytics Engineer,Senior Analytics Engineer,Mastercard,,,,on-site,Mexico,Mexico City,,
+913,Data Engineer,Data Engineer 2,Jones Lang LaSalle,,Mid,,on-site,India,Bengaluru,,
+914,Data Engineer,Senior Data Engineer,Jones Lang LaSalle,,Mid,,,India,Bengaluru,,
+915,ML Engineer,Machine Learning Scientist III,Expedia Group,,Mid,,on-site,Switzerland,Geneva,,
+916,AI Engineer,AI Engineer,OneMagnify,,Mid,,remote,,Remote,,
+917,AI Engineer,AI LLM Engineer,Siemens Healthineers,,Mid,,hybrid,United States,Atlanta,93680.0,128810.0
+918,Data Scientist,"Data Scientist, Mid",Booz Allen Hamilton-TEAMS business,,Mid,,on-site,United States,Springfield,77600.0,176000.0
+919,Data Engineer,Senior IT Data Engineer - R&D IT,NXP Semiconductors,,,,,India,Bangalore,,
+920,ML Engineer,"Machine Learning Intern, Humanoid Robotics - 2026",Nvidia,,Intern,,on-site,China,Shanghai,,
+921,AI Engineer,"Senior Solutions Architect, Physical AI, Generative AI and Physical AI at NVAITC",Nvidia,,,,,Germany,Munich,,
+922,Data Analyst,Supply Chain Data Analyst,3M,,Mid,,,IN,Bangalore,,
+923,Research Scientist,Sr Research Scientist,Northeastern University,,,,,United States,Burlington,113865.0,165105.0
+924,Research Scientist,Research Scientist,Northeastern University,,Mid,,,United States,Burlington,76335.0,107823.75
+925,Research Scientist,Senior Research Scientist,Northeastern University,,Senior,,,United States,Burlington,113865.0,165105.0
+926,Data Scientist,Lead Data Scientist Mortgages,NN Group,,Senior,,,Netherlands,Rotterdam,,
+927,Data Scientist,Principal Data Scientist,Northrop Grumman,,Principal,,on-site,United States,San Diego,125300.0,187900.0
+928,Data Analyst,"Senior Analyst, Data Analyst",National Australia Bank (NAB),,Mid,,,Vietnam,29 Lieu Giai Street,,
+929,Data Analyst,"Analyst, Data Analyst",National Australia Bank (NAB),,,,on-site,Vietnam,Ngoc Ha Ward,,
+930,Data Scientist,"Senior Data Scientist, Neuroscience Biomarker Discovery",Merck,,Senior,,hybrid,United States,Cambridge,144800.0,227900.0
+931,Data Engineer,"Specialist, QA Engineer, Data Engineering",Merck,,Mid,,hybrid,India,Hyderabad,,
+932,BI Analyst,Analyst Business Intelligence Analytics,Empower Retirement,,,,,India,KA Bangalore,,
+933,Data Analyst,Senior Process & Data Analyst,Marsh,,Mid,,hybrid,United States,New York,74600.0,139100.0
+934,Data Analyst,Lead Investment Data Analyst,Marsh,,Mid,,,United States,Boston,108000.0,216000.0
+935,AI Engineer,AI Engineer,Ecolab,,,,on-site,India,Bangalore,,
+936,AI Engineer,Sr. AI Engineer - Obsidian,eBay,Technology,Mid,,,Japan,Tokyo,,
+937,BI Analyst,"C# and Business Intelligence Developer",Carl Zeiss,,,,on-site,South Africa,Randburg,,
+938,Data Analyst,Finance Data Analyst,DraftKings,,,,on-site,BG,Plovdiv,,
+939,Data Analyst,Senior Data Analyst,Warner Music Group,Music & Entertainment,Mid,,on-site,United Kingdom,London,,
+940,Data Analyst,Spatial Data Analyst - SPO,Cushman & Wakefield,,,,on-site,India,Hyderabad,,
+941,Data Scientist,Data Scientist,Vopak,,,,on-site,NL,Rotterdam,,
+942,BI Analyst,Business Intelligence Consultant,Vopak,,Mid,,on-site,Netherlands,Rotterdam,65000.0,95000.0
+943,AI Engineer,Agentic/AI lead/architect with Claude/code/LLM skills,EXL,,,,,India,Bengaluru,,
+944,Data Engineer,Lead AWS Data Engineer,EXL,,Mid,,hybrid,India,Pune,,
+945,Data Analyst,Healthcare Data Analyst,EXL,,Mid,,,United States,New York,168000.0,170000.0
+946,Data Scientist,Data Scientist,EXL,,Mid,,hybrid,India,Gurugram,,
+947,Data Engineer,Data Engineer,EXL,,Mid,,,,India,,
+948,Data Engineer,Data Engineer,CureMD,,,,on-site,Pakistan,Lahore,,
+949,Data Analyst,"Analyst, Data Analytics",LPL Financial,,,,on-site,United States,Fort Mill,,
+950,Data Analyst,Digital Data Analyst,Verisure Securitas Direct,,Mid,,,Netherlands,Amsterdam,,
+951,Data Scientist,Data Scientist,Lowe's,,,,on-site,India,Bengaluru,,
+952,Data Scientist,Data Scientist,Lowe's,,Mid,,on-site,,IND D3 STPI,,
+953,Data Scientist,Data Scientist,Lowe's,,Mid,,on-site,,IND D3 STPI,,
+954,Data Scientist,Data Scientist,Lowe's,,Mid,,on-site,India,Bengaluru,,
+955,Data Engineer,Data Engineer (AI Adoption),Westpac,,Mid,,on-site,Australia,Sydney,,
+956,Data Engineer,Lead Product AI Data Engineer & Architect,Clarivate,,,,hybrid,India,Bangalore,,
+957,AI Engineer,Senior LLM & Agentic AI Engineer - Assistant Vice President,Citigroup,,Mid,,hybrid,India,Shivaji Gardens,,
+958,Data Analyst,Data Analytics VP,Citigroup,,Mid,,,Poland,Warsaw,,
+959,Data Engineer,Senior Data Engineer,Uline,,,,on-site,United States,Waukegan,96000.0,148000.0
+960,Data Analyst,Data Analytics Operations Lead Engineer -HIH- Evernorth,Cigna,,Mid,,hybrid,India,Hyderabad,,
+961,Data Scientist,Principal Data Scientist,Philips Lighting,,Senior,,,India,Bangalore,,
+962,Data Engineer,Senior Data Engineer,Expleo Group,,Mid,,,United States,Minneapolis,,
+963,Research Scientist,Research Scientist,Leidos,,,,on-site,United States,Huntsville,92300.0,166850.0
+964,Data Engineer,Senior Data Engineer (AWS) - 12 Months Fixed Term Contract,Commonwealth Bank of Australia,,,,,Australia,Sydney,,
+965,Data Scientist,Principal Data Scientists,T-Mobile,,Mid,,hybrid,United States,Bellevue,196914.0,224000.0
+966,Data Engineer,"Data Engineer or Senior Data Engineer, Research Informatics",Kymera Therapeutics,,Mid,,,United States,Watertown,115000.0,215000.0
+967,Data Scientist,Data Scientist,Caterpillar,,Mid,,on-site,India,Bangalore,,
+968,Research Scientist,"Research Scientist, Biopharma (Core Shift)",Thermo Fisher Scientific,,,,,Ireland,Athlone,,
+969,Research Scientist,Senior Research Scientist,74000070 FlexStaff S - Commercial,,,,on-site,United States,Manhasset,,
+970,BI Analyst,Senior Business Intelligence Specialist,74000070 FlexStaff S - Commercial,,,,on-site,United States,Great Neck,,
+971,Data Engineer,Lead Data Engineer (Intelligent Foundations and Experiences),Capital One,,Mid,,,United States,McLean,179400.0,225100.0
+972,ML Engineer,Technical Product Owner – AI & Machine Learning,Tradeweb,,Mid,,,United States,Jersey City,130000.0,140000.0
+973,AI Engineer,AI/ML Lead,Tradeweb,,Mid,,hybrid,SG,Singapore,,
+974,Data Engineer,Senior Data Engineer – Analytics & Reporting,Apex Fund Services,,,,on-site,Philippines,Manila,,
+975,AI Engineer,"Software engineer, generative AI (UK)",Writer,,Mid,,,United Kingdom,London,,
+976,AI Engineer,"Software engineer, generative AI",Writer,,Mid,,,United States,San Francisco,111700.0,304100.0
+977,Data Engineer,Senior Data Engineer,Kemper,,Mid,,hybrid,United States,Chicago,99000.0,164800.0
+978,Data Scientist,Data Scientist III,Uber Freight,,Mid,,,United States,Chicago,99000.0,151000.0
+979,Data Analyst,Stage Data Analyst Prévisions & Supply Chain E-commerce (F/H),Carrefour,,,,on-site,France,Massy,,
+980,Data Analyst,Stage Data Analyst Prévisions & Supply Chain E-commerce,Carrefour,,Intern,,on-site,France,Massy,,
+981,ML Engineer,Senior ML Engineer,Clutch,,Senior,,remote,,Brazil,,
+982,ML Engineer,Staff Machine Learning Engineer,Charlie Health,,Mid,,on-site,United States,New York,185000.0,247500.0
+983,Data Scientist,Staff Data Scientist (Product & Ops),Charlie Health,,Mid,,on-site,United States,New York,190000.0,270000.0
+984,Data Scientist,Staff Data Scientist (Growth & Marketing),Charlie Health,,Mid,,,United States,New York,190000.0,270000.0
+985,ML Engineer,Senior Machine Learning Engineer,Charlie Health,Healthcare,Mid,,on-site,United States,New York,170000.0,220000.0
+986,Data Engineer,Senior Data Engineer,Charlie Health,Engineering,Mid,,,United States,New York,150000.0,220000.0
+987,Data Engineer,"Lead Data Engineer, Revenue Engine",Charlie Health,,,,,United States,New York,175000.0,255000.0
+988,AI Engineer,Distinguished AI Engineer,Charlie Health,HealthTech,Mid,,,United States,New York,350000.0,600000.0
+989,Analytics Engineer,"Director, Data & Analytics Engineering",Charlie Health,,Director,,on-site,United States,New York,250000.0,325000.0

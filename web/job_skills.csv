@@ -1,0 +1,6741 @@
+job_id,skill
+2,python
+2,sql
+2,prompt engineering
+2,cloud
+2,workflow automation
+2,llm deployment
+2,ai integration
+2,rag
+3,python
+3,generative ai
+3,llm frameworks
+3,api integration
+3,cloud platforms
+3,devops
+3,multi-agent systems
+3,documentation
+4,python
+4,ml
+4,genai
+4,api integration
+4,workflow automation
+4,feature engineering
+4,model deployment
+4,low-code platforms
+5,python
+5,vba
+5,sql
+5,scripting
+5,apis
+5,etl
+5,data scraping
+5,automation
+6,python
+6,sql
+6,aws
+6,dbt
+6,snowflake
+6,data pipelines
+6,data quality
+6,etl
+7,data analysis
+7,bi reporting
+7,trend analysis
+7,stakeholder partnership
+8,sql
+8,gcp
+8,python
+8,vba
+8,microstrategy
+8,powerbi
+8,etl
+8,dataanalysis
+9,mlops
+9,python
+9,aws
+9,docker
+9,ci/cd
+9,iac
+9,git
+9,testing
+10,sql
+10,python
+10,sas
+10,data modeling
+10,etl automation
+10,dashboard development
+10,clinical data standards
+11,solution architecture
+11,data lakehouse
+11,genai
+11,cloud platforms
+11,ci/cd
+11,devsecops
+11,regulated industries
+11,leadership
+12,python
+12,sql
+12,marketing mix modeling
+12,incrementality testing
+12,cloud data platform
+12,digital media analytics
+12,visualization
+12,causal inference
+13,python
+13,sql
+13,mmm
+13,incrementality testing
+13,geo‑lift experiments
+13,aws
+13,snowflake
+13,data visualization
+14,python
+14,sql
+14,marketing mix modeling
+14,incrementality testing
+14,cloud data platforms
+14,data visualization
+14,statistical modeling
+14,experiment design
+15,excel
+15,power query
+15,power bi
+15,sap analytics cloud
+15,sql
+15,data visualization
+15,reporting
+15,business analysis
+16,sql
+16,ssrs
+16,ssis
+16,tableau
+16,data visualization
+16,healthcare analytics
+16,data modeling
+16,reporting
+17,data analysis
+17,excel
+17,wms
+17,logistics
+17,reporting
+17,stakeholder communication
+17,bilingual german
+17,presentation
+19,pyspark
+19,python
+19,sql
+19,azure data factory
+19,databricks
+19,delta lake
+19,data modeling
+19,etl
+20,azure
+20,databricks
+20,pyspark
+20,sql
+20,data modeling
+20,adf
+20,delta lake
+20,data governance
+22,sql
+22,python
+22,aws
+22,tableau
+22,powerbi
+22,datagovernance
+22,reporting
+22,automation
+23,etl
+23,airflow
+23,matillion
+23,sql
+23,bigquery
+23,python
+23,data modeling
+23,dataops
+24,python
+24,sql
+24,azure data factory
+24,kafka
+24,spark
+24,databricks
+24,etl/elt
+24,api integration
+25,ml pipelines
+25,ci/cd
+25,cloud platforms
+25,docker
+25,kubernetes
+25,airflow
+25,spark
+26,data pipelines
+26,cloud data platforms
+26,sql
+26,python
+26,spark
+26,airflow
+26,data modeling
+26,agile
+27,etl pipelines
+27,mysql
+27,python
+27,cdc implementation
+27,dimensional modeling
+27,data warehousing
+27,api integration
+27,monitoring
+28,supervised learning
+28,time‑series forecasting
+28,pricing optimization
+28,python
+28,ml stack
+28,sql
+28,mlops
+28,aws sagemaker
+29,ai agents
+29,machine vision
+29,data pipelines
+29,experiment design
+29,model deployment
+29,observability
+29,stakeholder communication
+29,production engineering
+30,sql
+30,data pipelines
+30,elt
+30,bi reporting
+30,version control
+30,test‑driven development
+30,cloud services
+30,ai tool adoption
+31,mlops
+31,model serving
+31,gpu orchestration
+31,ci/cd
+31,infrastructure as code
+31,distributed systems
+31,inference optimization
+31,terraform
+32,python
+32,aws bedrock
+32,llm
+32,generative ai
+32,rag
+32,mlops
+32,data pipelines
+32,vector databases
+33,patch‑clamp
+33,cell culture
+33,data analysis
+33,qc checking
+33,electrophysiology
+34,python
+34,sql
+34,dax
+34,etl pipelines
+34,data modeling
+34,microsoft fabric
+34,data engineering
+35,python
+35,scikit‑learn
+35,pandas
+35,sql
+35,statistical analysis
+35,predictive modeling
+35,data visualization
+35,stakeholder communication
+36,analytical chemistry
+36,nmr spectroscopy
+36,method development
+36,data interpretation
+36,safety compliance
+37,data access layer
+37,mongodb
+37,node.js
+37,kafka
+37,spark
+37,cloud architecture
+37,microservices
+37,mentorship
+38,python
+38,tensorflow
+38,pytorch
+38,azure ml
+38,react
+38,graphql
+38,mlops
+38,prompt engineering
+39,data engineering
+39,apache spark
+39,gcp dataproc
+39,python
+39,kafka
+39,delta lake
+39,ci/cd
+39,kubernetes
+40,ai systems
+40,generative ai
+40,llm
+40,multimodal generation
+40,python
+40,javascript
+40,system design
+40,evaluation infrastructure
+41,data reporting
+41,cost control
+41,procurement analytics
+41,google suite
+41,english communication
+42,r programming
+42,python scripting
+42,gis analysis
+42,spatial data
+42,disease ecology
+42,movement ecology
+43,azure openai
+43,microsoft copilot
+43,python async
+43,mlops
+43,api design
+43,llm orchestration
+43,enterprise integration
+43,security compliance
+45,data pipelines
+45,streaming data
+45,airflow
+45,kubernetes
+45,python
+45,sql
+45,snowflake
+45,dbt
+46,bi strategy
+46,analytics engineering
+46,data modeling
+46,ai‑augmented analytics
+46,sql
+46,python
+46,dbt
+46,dagster
+47,bi strategy
+47,dashboard design
+47,data governance
+47,sql
+47,tableau
+47,power bi
+47,alteryx
+47,team leadership
+48,bi engineering
+48,data modeling
+48,sql
+48,python
+48,dbt
+48,dagster
+48,airbyte
+48,llm‑assisted development
+49,deep learning
+49,nlp
+49,llm
+49,model training
+49,data annotation
+49,aws
+49,pytorch
+49,experiment tracking
+51,python
+51,fastapi
+51,llm engineering
+51,rag
+51,elasticsearch
+51,vector databases
+51,distributed systems
+51,cloud platforms
+52,python
+52,llms
+52,generative ai
+52,rag
+52,vector search
+52,docker/kubernetes
+52,cloud platforms
+52,distributed systems
+53,data modeling
+53,dashboard development
+53,sql
+53,etl processes
+53,bi tools
+53,data governance
+53,cross‑functional collaboration
+53,stakeholder communication
+54,python
+54,sql
+54,forecasting
+54,ltv modeling
+54,ai/llm
+54,gcp
+54,bigquery
+54,experimentation
+55,forecasting
+55,ltv modeling
+55,python
+55,sql
+55,gcp
+55,llm apis
+55,executive communication
+55,a/b testing
+56,forecasting
+56,ltv modeling
+56,python
+56,sql/bigquery
+56,llm integration
+56,a/b testing
+56,executive storytelling
+56,hybrid collaboration
+57,gis
+57,traffic modeling
+57,python
+57,excel
+57,benefit‑cost analysis
+57,grant writing
+57,data visualization
+57,spatial analysis
+58,fullstack development
+58,node.js
+58,typescript
+58,python
+58,llm integration
+58,vector search
+58,kafka streaming
+58,cloud aws
+59,node.js
+59,nestjs
+59,python
+59,fastapi
+59,typescript
+59,vue
+59,kafka
+59,qdrant
+60,fullstack development
+60,node.js
+60,python
+60,llm integration
+60,vector search
+60,kafka
+60,docker/kubernetes
+60,typescript
+61,node.js
+61,nestjs
+61,typescript
+61,python
+61,fastapi
+61,llm integration
+61,vector search
+61,kafka
+62,fullstack
+62,node.js
+62,nestjs
+62,python
+62,fastapi
+62,llm integration
+62,langchain
+62,vector search
+64,python etl
+64,sql optimization
+64,aws glue
+64,snowflake
+64,power bi
+64,api integration
+64,kimball modeling
+64,ai‑first workflows
+65,python
+65,llm integration
+65,rag architecture
+65,rest apis
+65,microservices
+65,cloud platforms
+65,docker/kubernetes
+65,vector databases
+66,machine learning
+66,generative ai
+66,llms
+66,conversational ui
+66,scalable systems
+66,product engineering
+66,cross‑functional collaboration
+66,tech leadership
+68,scalable systems
+68,api design
+68,performance optimization
+68,logging & tracing
+68,metrics
+68,multilingual translation
+68,generative ai
+69,machine learning
+69,generative ai
+69,llm
+69,conversational ui
+69,scalable systems
+69,product engineering
+69,cross‑functional collaboration
+69,technical leadership
+70,scalable apis
+70,performance optimization
+70,logging & tracing
+70,metrics & monitoring
+70,multilingual translation
+70,system architecture
+70,cross‑functional collaboration
+70,clean code
+73,aws
+73,big data
+73,dbt
+73,airflow
+73,llm
+73,rag
+73,python
+73,sql
+75,tableau
+75,power bi
+75,ui/ux
+75,sql
+75,python
+75,agile
+75,data visualization
+75,augmented analytics
+76,data integration
+76,predictive modeling
+76,dashboard development
+76,snowflake cortex
+76,sql
+76,python
+76,stakeholder communication
+76,mentorship
+77,python
+77,serverless
+77,aws
+77,gcp
+77,iac
+77,terraform
+77,pulumi
+77,data pipelines
+78,computer vision
+78,deep learning
+78,model evaluation
+78,python
+78,3d vision
+78,transformers
+79,computer vision
+79,deep learning
+79,3d vision
+79,transformer models
+79,python
+79,model evaluation
+79,data pipeline
+79,collaboration
+80,sql
+80,power bi
+80,tableau
+80,looker
+80,kpi design
+80,data visualization
+80,stakeholder communication
+80,metric governance
+81,sql
+81,snowflake
+81,tableau
+81,data governance
+81,reporting
+81,visualization
+82,optimization
+82,simulation
+82,machine learning
+82,python
+82,azure
+82,fabric
+82,agentic ai
+82,operations research
+83,python
+83,sql
+83,predictive modeling
+83,llm integration
+83,mlops
+83,data visualization
+83,google cloud
+83,prompt engineering
+84,data pipelines
+84,etl
+84,cloud data warehouse
+84,orchestration
+84,data modeling
+84,ci/cd
+84,python
+84,sql
+85,data modeling
+85,sql
+85,python
+85,data visualization
+85,power bi
+85,excel
+85,stakeholder communication
+86,applied ml
+86,genai
+86,slm fine‑tuning
+86,experiment design
+86,python
+86,pytorch
+86,transformers
+86,agentic ai
+87,python
+87,pytorch
+87,transformers
+87,hugging face
+87,model deployment
+87,scalable ml
+87,genai
+87,slms
+88,sql
+88,regex
+88,data quality
+88,ml model monitoring
+88,data pipelines
+88,communication
+88,problem solving
+89,sql
+89,data visualization
+89,bi tools
+89,data analysis
+89,process automation
+89,stakeholder communication
+90,python
+90,machine learning
+90,nlp
+90,cloud platforms
+90,mlops
+90,data engineering
+90,ai
+90,analytics
+91,sql
+91,python
+91,power bi
+91,tableau
+91,data visualization
+91,statistical analysis
+91,agile methodology
+91,data cleaning
+92,data analysis
+92,predictive modeling
+92,sql
+92,python
+92,etl
+92,data visualization
+92,healthcare analytics
+93,sql
+93,airflow
+93,azure
+93,python
+93,data warehousing
+93,etl
+93,data security
+93,cloud integration
+94,data wrangling
+94,predictive modeling
+94,sap analytics cloud
+94,python
+94,sql
+94,data visualization
+94,statistical analysis
+94,machine learning
+95,data leadership
+95,sql
+95,analytics roadmap
+95,stakeholder management
+95,growth analytics
+95,bi reporting
+95,team management
+95,executive communication
+96,data analytics
+96,data visualization
+96,sql
+96,bi tools
+96,trend analysis
+96,stakeholder communication
+97,data management
+97,erp
+97,sap
+97,excel
+97,sql
+97,vba
+97,reporting
+97,automation
+98,sql
+98,python
+98,tableau
+98,looker
+98,a/b testing
+98,statistical modeling
+98,data visualization
+98,stakeholder management
+99,data engineering
+99,sql
+99,python
+99,typescript
+99,aws
+99,databricks
+99,tableau
+99,ai-enabled tools
+100,business intelligence
+100,market insights
+100,data visualization
+100,stakeholder management
+100,competitive analysis
+100,excel
+100,tableau
+100,power bi
+101,business intelligence
+101,market insights
+101,data visualization
+101,excel
+101,tableau
+101,powerbi
+101,stakeholder management
+101,commercial awareness
+102,sql
+102,dbt
+102,snowflake
+102,data modeling
+102,elt pipelines
+102,power bi
+102,python
+102,git
+104,generative ai
+104,api integration
+104,automation
+104,technical documentation
+104,version control
+104,microsoft 365
+104,copilot
+104,agile methodologies
+105,python
+105,sql
+105,tableau
+105,etl pipelines
+105,a/b testing
+105,fraud detection
+105,data visualization
+105,llm integration
+106,data analysis
+106,epidemiology
+106,sql
+106,sas
+106,python
+106,clinical research
+106,statistical modeling
+106,visualization
+107,data analysis
+107,technical writing
+107,sql
+107,python
+107,tableau
+107,ai basics
+107,communication
+107,process improvement
+108,sql
+108,python
+108,pyspark
+108,databricks
+108,azure
+108,data governance
+108,hr data
+108,pipeline design
+109,data analysis
+109,sql
+109,python
+109,excel
+109,statistics
+109,reporting
+109,dashboard
+110,python
+110,machine learning
+110,data visualization
+110,statistical analysis
+110,cloud platforms
+110,sql
+110,feature engineering
+110,stakeholder communication
+111,power bi
+111,azure
+111,sql
+111,data modeling
+111,dax
+111,power query
+111,data governance
+111,predictive analytics
+112,powerbi
+112,data visualization
+112,dashboard design
+112,sql
+112,user experience
+112,business reporting
+112,analytical thinking
+112,stakeholder communication
+113,scala
+113,spark
+113,aws
+113,data pipelines
+113,git
+113,agile
+113,cloud
+113,etl
+114,change control
+114,project management
+114,veeva vault
+114,cgmp
+114,risk management
+114,data analysis
+114,regulatory compliance
+115,sql
+115,powerbi
+115,data modeling
+115,financial analysis
+115,automation
+116,python
+116,sql
+116,machine learning
+116,llm
+116,cloud
+116,git
+116,nlp
+116,deep learning
+117,data analysis
+117,data visualization
+117,statistical reporting
+117,database management
+117,training delivery
+117,quality control
+117,survey design
+117,financial analysis
+118,python
+118,mlops
+118,nlp
+118,recommendation systems
+118,generative ai
+118,sql
+118,tableau
+118,git
+119,python
+119,sql
+119,bigquery
+119,tableau
+119,statistical modeling
+119,prescriptive modeling
+119,predictive modeling
+119,data visualization
+120,sql
+120,etl workflows
+120,tableau
+120,looker
+120,data visualization
+120,agentic data tools
+120,llm analytics
+120,stakeholder collaboration
+121,data pipelines
+121,streaming
+121,sql optimization
+121,cloud data platforms
+121,ai‑ready data
+121,data modeling
+121,ci/cd
+121,mlops
+122,analytical reasoning
+122,business data analysis
+122,critical thinking
+122,data analysis
+122,data cleansing
+122,data gathering
+122,programming languages
+122,customer empowerment
+123,sql
+123,data visualization
+123,ehr systems
+123,statistical analysis
+123,project management
+123,healthcare analytics
+123,data modeling
+123,dashboard development
+124,sql
+124,looker
+124,marketing analytics
+124,data visualization
+124,experimentation
+124,attribution
+124,bi tools
+124,growth metrics
+125,excel
+125,power bi
+125,tableau
+125,netsuite
+125,oracle
+125,predictive modeling
+125,data governance
+125,supply chain analytics
+126,python
+126,powerbi
+126,etl
+126,data modeling
+126,cloud platforms
+126,sql
+126,analytics
+127,power bi
+127,yardi
+127,data analysis
+127,risk management
+127,insurance reporting
+127,dashboard development
+127,excel
+127,stakeholder collaboration
+128,computer vision
+128,robotics
+128,medical imaging
+128,software development
+128,hardware integration
+128,grant writing
+128,scientific publishing
+128,team leadership
+129,physics modeling
+129,data pipelines
+129,full‑stack web
+129,python
+129,c++
+129,control systems
+129,numerical analysis
+129,signal processing
+130,thermofluid modeling
+130,physics simulation
+130,data pipelines
+130,full stack development
+130,control systems
+130,numerical analysis
+130,version control
+130,python
+132,python
+132,llm frameworks
+132,prompt engineering
+132,rag pipelines
+132,vector databases
+132,cloud ai services
+132,git
+132,agile
+133,data analytics
+133,cyber risk
+133,trend analysis
+133,operational research
+133,reporting
+134,data architecture
+134,bi development
+134,data governance
+134,dashboard design
+134,power bi
+134,tableau
+134,etl processes
+134,supply chain analytics
+135,sql
+135,dbt
+135,snowflake
+135,power bi
+135,git
+135,python
+135,ai-assisted development
+136,sql
+136,python
+136,azure data factory
+136,databricks
+136,synapse analytics
+136,data modeling
+136,data governance
+136,agile
+138,python
+138,large language models
+138,prompt engineering
+138,api integration
+138,data modeling
+138,automation platforms
+138,aws cloud
+138,hr tech integration
+139,recommender systems
+139,predictive modeling
+139,deep learning
+139,causal inference
+139,big data
+139,aws
+139,python
+139,data visualization
+140,statistical modeling
+140,trial simulations
+140,estimand frameworks
+140,advanced analytics
+140,methodology development
+140,cross‑functional collaboration
+140,regulatory strategy
+140,mentorship
+141,data analysis
+141,sql
+141,python
+141,excel
+141,presentation skills
+141,client communication
+142,sql
+142,python
+142,airflow
+142,etl
+142,streaming
+142,cloud
+142,data modeling
+142,adtech
+143,sql
+143,python
+143,airflow
+143,etl
+143,streaming
+143,cloud
+143,data modeling
+143,adtech
+145,sql
+145,python
+145,attribution
+145,experimentation
+145,marketing analytics
+145,forecasting
+145,mmm
+145,data visualization
+146,python
+146,c++
+146,matlab
+146,stk
+146,network modeling
+146,graph theory
+146,simulation
+146,technical reporting
+147,ai development
+147,machine learning
+147,javascript
+147,python
+147,java
+147,llm integration
+147,data structures
+147,optimization
+148,generative modeling
+148,protein language models
+148,deep learning
+148,data curation
+148,cloud computing
+148,experimental validation
+148,scientific publication
+148,interdisciplinary collaboration
+149,python
+149,go
+149,docker
+149,kubernetes
+149,kafka
+149,feature store
+149,mlops
+149,ci/cd
+150,python
+150,ml ops
+150,glm
+150,shapley values
+150,predictive modeling
+150,insurance pricing
+150,data visualization
+150,statistical analysis
+151,data pipelines
+151,databricks
+151,aws
+151,etl
+151,sql
+151,cloud
+151,terraform
+151,python
+153,python
+153,sql
+153,power bi
+153,machine learning
+153,predictive modeling
+153,etl
+153,data visualization
+154,ml perception
+154,c++
+154,python
+154,pytorch
+154,geometric vision
+154,ros 2
+154,mlops
+154,simulation
+155,smartsheet administration
+155,data visualization
+155,powerbi
+155,marketing analytics
+155,workflow automation
+155,project management
+155,excel
+155,reporting
+156,data analysis
+156,manufacturing ops
+156,erp
+156,qad
+156,excel
+156,process improvement
+156,variance analysis
+156,reporting
+157,python
+157,llm
+157,rag
+157,spark
+157,kubernetes
+157,ci/cd
+157,docker
+157,langchain
+158,ai product strategy
+158,threat detection ai
+158,rag pipelines
+158,vector search
+158,fastapi development
+158,agentic ai frameworks
+158,regulated environment compliance
+158,team leadership
+159,databricks
+159,apache spark
+159,delta lake
+159,python
+159,scala
+159,mlflow
+159,cloud platforms
+159,ci/cd
+161,ai development
+161,python
+161,sql
+161,azure
+161,aws
+161,agentic systems
+161,workflow automation
+162,ai development
+162,python
+162,sql
+162,agentic systems
+162,marketing analytics
+162,prototyping
+162,communication
+162,ml models
+164,python
+164,cloud
+164,langchain
+164,pytorch
+164,mlops
+164,llms
+164,genai
+164,rag
+165,python
+165,mlops
+165,llms
+165,genai
+165,rag
+165,cloud
+165,pytorch
+165,langchain
+166,agentic ai
+166,multi-modal models
+166,llm fine-tuning
+166,pytorch
+166,distributed training
+166,genomics
+166,reinforcement learning
+166,production ml
+167,data analysis
+167,excel
+167,power bi
+167,sql
+167,ferpa compliance
+167,education data systems
+167,reporting automation
+167,bilingual spanish
+168,python
+168,mysql
+168,power bi
+168,docker
+168,azure
+168,git
+168,etl
+168,data visualization
+169,dbt
+169,sql
+169,python
+169,data governance
+169,automation
+169,stakeholder management
+170,excel
+170,python
+170,tableau
+170,data analysis
+170,reporting
+170,visualization
+170,powerpoint
+171,ml pipelines
+171,distributed training
+171,ci/cd
+171,terraform
+171,gpu scheduling
+171,data engineering
+171,pytorch
+171,linux
+172,data pipelines
+172,dbt
+172,airflow
+172,terraform
+172,gcp
+172,snowflake
+172,sql
+172,python
+173,excel
+173,sql
+173,power bi
+173,tableau
+173,microstrategy
+173,salesforce
+173,alteryx
+173,anaplan
+174,data visualization
+174,sql
+174,excel advanced
+174,power bi
+174,tableau
+174,salesforce
+174,alteryx
+174,reporting
+175,data analysis
+175,data mining
+175,visualization
+175,forecasting
+175,scripting
+175,reporting
+175,data management
+175,predictive modeling
+176,python
+176,sql
+176,apache airflow
+176,dbt
+176,databricks
+176,data lakes
+176,api development
+176,etl
+177,mlops
+177,python
+177,kubernetes
+177,docker
+177,ci/cd
+177,cloud
+177,terraform
+177,monitoring
+178,python
+178,pytorch
+178,distributed training
+178,cloud platforms
+178,gpu computing
+178,ml infrastructure
+178,performance optimization
+178,mentorship
+179,sql
+179,dbt
+179,tableau
+179,data visualization
+179,github
+179,databricks
+179,apache airflow
+179,aws
+180,python
+180,ml lifecycle
+180,cloud platforms
+180,docker
+180,kubernetes
+180,scikit‑learn
+180,tensorflow
+180,pytorch
+181,python
+181,tensorflow
+181,pytorch
+181,statistical modeling
+181,machine learning
+181,data architecture
+181,client consulting
+181,leadership
+183,ai/ml
+183,platform engineering
+183,personalization
+183,rag
+183,real-time inference
+183,observability
+183,leadership
+183,cross-functional
+184,data analysis
+184,sql
+184,google analytics
+184,tableau
+184,marketing analytics
+184,dashboard automation
+184,stakeholder communication
+186,data pipelines
+186,cloud infrastructure
+186,airflow
+186,spark
+186,terraform
+186,docker
+186,fabric
+187,power bi
+187,advanced excel
+187,data modeling
+187,automation
+187,dashboard design
+187,data governance
+187,executive reporting
+187,o365
+188,data engineering
+188,process optimization
+188,team leadership
+188,budget management
+188,hiring
+188,stakeholder management
+188,operational excellence
+188,cross‑functional collaboration
+189,sql
+189,tableau
+189,data modeling
+189,data visualization
+189,project management
+189,supply chain
+189,transportation planning
+189,cross‑functional collaboration
+190,power bi
+190,dax
+190,semantic modeling
+190,rls
+190,data modeling
+190,business partnership
+190,performance optimization
+190,communication
+191,power bi
+191,dax
+191,semantic modeling
+191,rls
+191,data governance
+191,stakeholder management
+191,performance optimization
+191,communication
+192,supply chain
+192,strategy
+192,ai
+192,data analysis
+192,business case
+192,ecommerce
+192,transportation
+192,leadership
+193,plm administration
+193,windchill
+193,teamcenter
+193,linux
+193,python
+193,ansible
+193,performance tuning
+193,automation
+194,llm fine-tuning
+194,pytorch
+194,distributed training
+194,rlhf
+194,lora
+194,model evaluation
+194,gpu clusters
+194,python
+195,edge ai
+195,model compression
+195,quantization
+195,c++
+195,python
+195,tensorflow lite
+195,onnx runtime
+195,core ml
+196,etl
+196,sql
+196,python
+196,data warehousing
+196,agile
+196,data validation
+196,data security
+197,llm engineering
+197,backend services
+197,azure cloud
+197,python ai
+197,vector search
+197,mlops
+197,evaluation pipelines
+197,devops
+198,data analysis
+198,project management
+198,stakeholder management
+198,presentation design
+198,service delivery
+198,quantitative analysis
+198,qualitative analysis
+198,process improvement
+199,tableau
+199,sql
+199,python
+199,data visualization
+199,dashboard design
+199,data validation
+199,powerpoint automation
+200,reliability analysis
+200,risk assessment
+200,data organization
+200,technical documentation
+200,microsoft office
+200,database management
+200,p&id interpretation
+200,customer communication
+201,sql
+201,python
+201,bigquery
+201,etl
+201,data modeling
+201,api integration
+201,observability
+201,soc2
+202,ai coordination
+202,marketing analytics
+202,sql
+202,python
+202,statistical modeling
+202,schema design
+202,data pipelines
+202,growth marketing
+203,sql
+203,dbt
+203,looker
+203,omni
+203,data modeling
+203,python
+203,data governance
+203,visualization
+204,power bi
+204,sql
+204,microsoft fabric
+204,data modeling
+204,etl
+204,sharepoint
+204,real estate analytics
+204,dax
+206,java
+206,spring boot
+206,react
+206,angular
+206,kafka
+206,google cloud
+206,openshift
+206,ci/cd
+207,python
+207,machine learning
+207,nlp
+207,llm
+207,mlops
+207,cloud
+207,fraud detection
+207,forecasting
+208,llm development
+208,nlp
+208,computer vision
+208,python
+208,docker
+208,fastapi
+208,cloud ai
+208,prompt engineering
+209,sql
+209,tableau
+209,sigma
+209,looker
+209,power bi
+209,snowflake
+209,redshift
+209,python
+210,excel
+210,sql
+210,blue yonder
+210,data visualization
+210,reporting
+210,demand planning
+211,data engineering
+211,etl/elt
+211,cloud platforms
+211,azure
+211,databricks
+211,aws
+211,data quality
+211,architecture
+212,python
+212,kubernetes
+212,airflow
+212,pandas
+212,polars
+212,data engineering
+212,sdlc
+212,agile
+213,python
+213,pyspark
+213,databricks
+213,data pipelines
+213,ml engineering
+213,ai‑assisted workflows
+215,sql
+215,snowflake
+215,python
+215,powerbi
+215,aws
+215,data modeling
+215,ci/cd
+215,agile
+216,data analysis
+216,sql
+216,oracle
+216,data modeling
+216,agile
+216,data profiling
+216,snowflake
+216,data quality
+217,machine learning
+217,statistical modeling
+217,python
+217,spark
+217,data visualization
+217,nlp
+217,generative ai
+217,graph analytics
+218,data pipelines
+218,etl processes
+218,geospatial data
+218,python
+218,sql
+218,cloud services
+218,automation
+218,data quality
+219,data analysis
+219,sas
+219,tableau
+219,data visualization
+219,reporting
+219,public health
+220,data pipelines
+220,lakehouse architecture
+220,sql
+220,pyspark
+220,power bi
+220,data governance
+220,azure fabric
+220,etl
+221,python
+221,sql
+221,dbt core
+221,gitops
+221,cloud data platforms
+221,data governance
+221,epidemiology
+221,ci/cd
+222,bi governance
+222,kpi design
+222,self‑service analytics
+222,sql
+222,data quality
+222,healthcare compliance
+222,dashboard design
+222,team leadership
+223,ai agents
+223,llm integration
+223,python scripting
+223,rest apis
+223,prompt engineering
+223,automation workflows
+224,ml evaluation
+224,genai
+224,metrics analysis
+224,tool selection
+224,regression testing
+224,product mindset
+224,cross-functional leadership
+224,data visualization
+225,snowflake
+225,dbt
+225,python
+225,aws glue
+225,emr
+225,lambda
+225,data vault
+225,ci/cd
+226,adb
+226,pyspark
+226,sql
+226,python
+227,azure databricks
+227,pyspark
+227,sql
+227,data warehouse
+227,python
+227,data ingestion
+227,data architecture
+227,etl
+228,business analysis
+228,data science
+228,digital architecture
+228,digital strategy
+228,emerging tech
+228,genai
+228,process assessments
+228,r scripting
+229,ai/ml
+229,genai
+229,llm
+229,rag
+229,agent frameworks
+229,vector db
+229,mlops
+229,prompt engineering
+230,business analysis
+230,data science
+230,digital architecture
+230,digital strategy
+230,emerging tech
+230,genai
+230,process management
+230,r scripting
+231,predictive modeling
+231,data engineering
+231,machine learning
+231,python
+231,sql
+231,pyspark
+231,snowflake
+231,databricks
+232,data pipelines
+232,etl/elt
+232,devops
+232,cloud platforms
+232,sql databases
+232,nosql databases
+232,mlops
+232,docker
+233,python
+233,sql
+233,spark
+233,databricks
+233,mlflow
+233,tableau
+233,nlp
+233,mlops
+234,prompt engineering
+234,power apps
+234,power automate
+234,api integration
+234,ai model deployment
+234,data‑driven solutions
+234,agile methodology
+234,supply chain knowledge
+235,snowflake
+235,aws
+235,airflow
+235,sql
+235,elt pipelines
+235,data governance
+235,ci/cd for data
+235,data validation
+236,data pipelines
+236,snowflake
+236,aws
+236,airflow
+236,elt
+236,data governance
+236,ci/cd
+236,dbt
+238,containerization
+238,gpu optimization
+238,cloud infrastructure
+238,api development
+238,data pipelines
+238,observability
+238,terraform
+238,ci/cd
+239,enterprise architecture
+239,data engineering
+239,ai/ml integration
+239,cloud‑native
+239,data governance
+239,pipeline design
+239,vendor management
+239,strategic planning
+240,application modernization
+240,data governance
+240,cloud migration
+240,vendor management
+240,agile delivery
+240,api integration
+240,financial services
+240,team leadership
+241,python
+241,sql
+241,ml ops
+241,statistical modeling
+241,cloud platforms
+241,ci/cd
+241,data visualization
+241,research collaboration
+242,ai/ml
+242,generative ai
+242,python
+242,java
+242,data analysis
+242,model evaluation
+242,research writing
+242,technical leadership
+244,python
+244,sql
+244,airflow
+244,bigquery
+244,snowflake
+244,data modeling
+244,gcp
+244,etl
+245,azure
+245,aws
+245,terraform
+245,python
+245,sql
+245,ssis
+245,ci/cd
+245,git
+246,sql
+246,tableau
+246,powerbi
+246,data visualization
+246,bigquery
+246,redshift
+246,analytics
+246,product analytics
+247,data exploration
+247,predictive modeling
+247,sql
+247,python
+247,machine learning
+247,data visualization
+247,nlp
+247,secret clearance
+248,python
+248,sql
+248,pyspark
+248,databricks
+248,ci/cd
+248,aws
+248,azure
+248,agile
+251,qlik sense
+251,java
+251,spring boot
+251,sql
+251,data pipelines
+251,agile
+252,operations research
+252,optimization
+252,simulation
+252,python
+252,scala
+252,gurobi
+252,sql
+253,genai
+253,llmops
+253,rag
+253,vector search
+253,python
+253,java
+253,security compliance
+253,enterprise platforms
+254,python
+254,aws
+254,mlops
+254,nlp
+254,llm
+254,ocr
+254,distributed systems
+254,cloud
+255,excel
+255,sql
+255,python
+255,power bi
+255,tableau
+255,data modeling
+255,forecasting
+255,supply chain analytics
+256,sirna design
+256,high‑throughput automation
+256,liquid handling
+256,qrt‑pcr
+256,elisa
+256,flow cytometry
+256,cell culture
+256,team leadership
+257,sql
+257,python
+257,machine learning
+257,statistical modeling
+257,experiment design
+257,data visualization
+257,leadership
+257,tableau
+258,sirna synthesis
+258,oligonucleotide chemistry
+258,analytical methods
+258,project leadership
+258,cross‑functional collaboration
+258,team management
+259,data pipelines
+259,gcp
+259,bigquery
+259,python
+259,dbt
+259,airflow
+259,etl
+259,data modeling
+260,aws data services
+260,spark
+260,hive
+260,databricks
+260,airflow
+260,python
+260,sql
+260,data governance
+261,spark
+261,scala
+261,python
+261,aws
+261,airflow
+261,kafka
+261,dbt
+261,terraform
+263,python
+263,sql
+263,snowflake
+263,tableau
+263,llm
+263,generative ai
+263,data pipelines
+263,analytics
+264,full‑stack
+264,react
+264,next.js
+264,nosql
+264,openai
+264,python
+264,devops
+264,cloud services
+265,product management
+265,ai/ml
+265,agile
+265,customer experience
+265,data analytics
+265,strategy
+265,risk management
+265,cloud ai
+267,python
+267,sql
+267,mongodb
+267,clickhouse
+267,tableau
+267,powerbi
+267,machine learning
+267,data analysis
+268,data quality
+268,sql
+268,python
+268,sas
+268,etl
+268,healthcare analytics
+268,team leadership
+269,sql
+269,python
+269,cloud data platforms
+269,etl pipelines
+269,data modeling
+269,ci/cd
+269,data governance
+269,performance tuning
+271,strategic planning
+271,headcount management
+271,opex forecasting
+271,automation design
+271,data analysis
+271,stakeholder management
+271,sql
+271,python
+272,agentic ai
+272,rag
+272,mlops
+272,aws
+272,azure
+272,docker
+272,kubernetes
+272,python
+273,llm development
+273,langchain
+273,autogen
+273,docker
+273,kubernetes
+273,aws
+273,azure
+273,ci/cd
+274,ai architecture
+274,llm integration
+274,agentic workflows
+274,prompt engineering
+274,orchestration frameworks
+274,python development
+274,system integration
+274,technical advisory
+275,dbt
+275,sql
+275,data modeling
+275,cloud warehousing
+275,ci/cd
+275,ai automation
+275,data visualization
+275,python
+276,python
+276,ai systems
+276,google cloud
+276,genai
+276,rag pipelines
+276,multi‑agent systems
+276,observability
+276,production deployment
+277,data analytics
+277,machine learning
+277,python
+277,sql
+277,tableau
+277,semiconductor testing
+277,predictive modeling
+277,diagnostics
+278,python
+278,reactjs
+278,typescript
+278,kubernetes
+278,kubeflow
+278,llm
+278,mlops
+278,cloud
+279,python
+279,kubernetes
+279,kubeflow
+279,llm fine‑tuning
+279,langchain
+279,aws/gcp/azure
+279,ci/cd
+279,mlops
+281,data mining
+281,sql
+281,excel
+281,sap
+281,wms
+281,bi tools
+281,reporting
+281,dashboard
+282,sql
+282,python
+282,tableau
+282,powerbi
+282,api integration
+282,data visualization
+282,client communication
+282,agile methodology
+283,sql
+283,etl
+283,data visualization
+283,dashboard development
+283,programming
+283,data forensics
+283,reporting
+283,erp
+285,python
+285,pytorch
+285,ml pipelines
+285,llms
+285,data preprocessing
+285,model training
+285,research
+285,collaboration
+287,python
+287,llm deployment
+287,prompt engineering
+287,evaluation frameworks
+287,api integration
+287,customer engineering
+287,technical workshops
+287,ai safety
+288,product management
+288,generative ai
+288,business intelligence
+288,ai chat
+288,data analytics
+288,cross-functional
+288,roadmapping
+288,launch
+289,storage systems
+289,performance optimization
+289,distributed computing
+289,ai/ml workloads
+289,system architecture
+289,benchmarking
+289,cross‑functional collaboration
+290,ml research
+290,reinforcement learning
+290,supervised fine‑tuning
+290,safety alignment
+290,metrics evaluation
+290,production deployment
+290,cross‑functional leadership
+290,ai safety
+292,ai/ml
+292,generative ai
+292,cloud
+292,mlops
+292,python
+292,system architecture
+292,team leadership
+292,customer engagement
+293,sales
+293,cloud
+293,data analytics
+293,healthcare
+293,strategy
+293,relationship management
+294,python etl
+294,sql optimization
+294,aws glue
+294,snowflake
+294,power bi
+294,api integration
+294,kimball modeling
+294,ai‑first workflows
+295,data acquisition
+295,data preparation
+295,model development
+295,model evaluation
+295,customer strategy
+295,code development
+295,industry research
+295,best practices
+296,machine learning
+296,deep learning
+296,llm training
+296,tensorflow
+296,pytorch
+296,big data
+296,research publication
+296,mentorship
+298,sql
+298,excel
+298,tableau
+298,data visualization
+298,dashboard development
+298,marketing analytics
+298,automation
+298,stakeholder communication
+299,python
+299,ai pipelines
+299,vector databases
+299,rag architectures
+299,multi‑agent systems
+299,gcp
+299,vertex ai
+300,data analysis
+300,report generation
+300,office software
+300,detail oriented
+300,organizational skills
+301,ml infrastructure
+301,video processing
+301,super‑resolution
+301,denoising
+301,deblurring
+301,color correction
+301,segmentation
+301,video understanding
+302,data entry
+302,excel
+302,powerpoint
+302,word
+302,database management
+302,legal document review
+302,communication
+302,organization
+303,data entry
+303,microsoft excel
+303,microsoft word
+303,microsoft powerpoint
+303,database management
+303,legal document review
+303,communication
+303,organization
+304,data analysis
+304,policy analysis
+304,stata
+304,powerbi
+304,dashboard development
+304,statistical modeling
+304,project management
+305,power bi
+305,data visualization
+305,dax
+305,m code
+305,bigquery
+305,gcp
+305,analytics governance
+305,data literacy
+306,time series
+306,anomaly detection
+306,iot data
+306,model deployment
+306,industrial ai
+307,python
+307,nlp
+307,statistical modeling
+307,data visualization
+307,machine learning
+307,data cleaning
+307,jupyter notebook
+307,model evaluation
+308,python
+308,spark
+308,etl
+308,data engineering
+308,machine learning
+308,statistics
+308,networking
+308,visualization
+309,llm
+309,fine-tuning
+309,synthetic data
+309,model evaluation
+309,financial ai
+309,distributed training
+309,python
+309,aws
+310,llms
+310,nlp
+310,document extraction
+310,python
+310,aws
+310,mlops
+310,data annotation
+310,legal tech
+311,distributed systems
+311,data streaming
+311,python
+311,cloud native
+311,kubernetes
+311,observability
+311,feature stores
+311,real-time ml
+312,python
+312,java
+312,sql
+312,kafka
+312,spark
+312,airflow
+312,vector stores
+312,data modeling
+313,data visualization
+313,ai-enabled analytics
+313,dashboarding
+313,qualtrics
+313,pendo
+313,user behavior analysis
+313,survey design
+313,cross‑functional communication
+314,python
+314,sql
+314,cloud data services
+314,big data platforms
+314,streaming
+314,etl orchestration
+314,ci/cd
+314,data modeling
+315,ai agents
+315,llms
+315,rag
+315,orchestration frameworks
+315,enterprise ai architecture
+315,cloud systems
+315,team leadership
+315,product collaboration
+316,machine learning
+316,llm
+316,rag
+316,cloud computing
+316,python
+316,pytorch
+316,tensorflow
+316,distributed systems
+317,sql
+317,tableau
+317,powerbi
+317,data modeling
+317,etl
+317,data visualization
+317,project management
+317,excel
+318,machine learning
+318,natural language processing
+318,generative ai
+318,cloud computing
+318,data engineering
+318,regulatory compliance
+318,biomedical informatics
+318,leadership
+319,python
+319,causal inference
+319,predictive modeling
+319,optimization
+319,statistical modeling
+319,decision analytics
+320,python
+320,pyspark
+320,databricks
+320,kubernetes
+320,kafka
+320,ai/genai
+320,microservices
+320,regulatory reporting
+321,sql
+321,sas
+321,python
+321,statistical modeling
+321,healthcare data
+321,value‑based care
+321,tableau
+322,python
+322,sql
+322,optimization
+322,machine learning
+322,statistical modeling
+322,data visualization
+322,supply chain
+323,machine learning
+323,generative ai
+323,python
+323,pytorch
+323,aws sagemaker
+323,model deployment
+323,data governance
+323,llm integration
+324,machine learning
+324,python
+324,data analysis
+324,model deployment
+324,nlp
+324,generative ai
+325,python
+325,pytorch
+325,tensorflow
+325,generative ai
+325,llms
+325,aws
+325,model ops
+325,stakeholder management
+326,machine learning
+326,ai
+326,mlops
+326,computer vision
+326,nlp
+326,data engineering
+326,cloud
+326,edge
+327,sql
+327,python
+327,snowflake
+327,power bi
+327,aws
+327,alteryx
+327,forecasting
+327,ml
+328,python
+328,machine learning
+328,statistical modeling
+328,data lakes
+328,sql
+328,a/b testing
+328,nlp
+328,team leadership
+330,python
+330,scala
+330,java
+330,aws
+330,kubernetes
+330,tensorflow
+330,pytorch
+330,ci/cd
+331,java
+331,scala
+331,python
+331,redshift
+331,snowflake
+331,kafka
+331,spark
+331,aws
+332,python
+332,aws
+332,spark
+332,h2o
+332,machine learning
+332,statistical modeling
+332,big data
+332,data science
+334,python
+334,aws
+334,spark
+334,h2o
+334,machine learning
+334,statistical modeling
+334,data engineering
+334,cloud computing
+335,sql
+335,power query
+335,power bi
+335,dax
+335,powerapps
+335,power automate
+336,data analysis
+336,sql
+336,python
+336,power bi
+336,data governance
+336,data cataloging
+336,excel
+336,dashboarding
+337,machine learning
+337,deep learning
+337,python
+337,data engineering
+337,model deployment
+337,a/b testing
+337,kubernetes
+337,mentorship
+338,aws
+338,data lakehouse
+338,etl
+338,spark
+338,glue
+338,palantir
+338,govcloud
+338,data modeling
+339,ai platform
+339,kubernetes
+339,cloud‑native
+339,rust
+339,ci/cd
+339,terraform
+339,monitoring
+339,data science
+340,machine learning
+340,predictive modeling
+340,python
+340,sql
+340,time series
+340,data visualization
+340,mlops
+340,model governance
+342,sql
+342,python
+342,sas
+342,data integration
+342,statistical analysis
+342,healthcare coding
+342,data visualization
+343,financial analysis
+343,data modeling
+343,reporting
+343,reconciliation
+343,stakeholder management
+343,regulatory compliance
+343,mentorship
+344,azure data services
+344,python
+344,sql
+344,spark
+344,data modeling
+344,ci/cd
+344,agile
+344,leadership
+346,data analysis
+346,predictive maintenance
+346,solar operations
+346,energy storage
+346,scada
+346,python
+346,sql
+346,powerbi
+347,sql
+347,powerbi
+347,data warehousing
+347,dashboard design
+347,reporting
+347,analytics
+347,excel
+347,data modeling
+348,data engineering
+348,apache spark
+348,python
+348,sql
+348,etl
+348,cloud data
+348,ci/cd
+348,lakehouse
+349,etl
+349,data warehousing
+349,data lakes
+349,api development
+349,data quality
+349,data cataloguing
+350,sql
+350,python
+350,java
+350,cloud
+350,genai
+350,data visualization
+350,mentoring
+350,agile
+351,sql
+351,python
+351,java
+351,cloud platforms
+351,genai
+351,data analysis
+351,mentoring
+352,machine learning
+352,deep learning
+352,transformers
+352,gpu training
+352,spark
+352,databricks
+352,mlops
+352,python
+354,python
+354,sql
+354,etl
+354,snowflake
+354,cloud
+354,kubernetes
+354,ci/cd
+354,data modeling
+355,python
+355,machine learning
+355,generative ai
+355,deep learning
+355,chatbots
+355,image processing
+355,cloud ai services
+355,on‑prem deployment
+356,generative ai
+356,machine learning
+356,cloud ai
+356,deep learning
+356,nlp
+356,image processing
+356,model deployment
+356,team leadership
+357,generative ai
+357,cloud ai
+357,deep learning
+357,neural networks
+357,chatbots
+357,image processing
+357,model deployment
+357,performance optimization
+358,generative ai
+358,machine learning
+358,cloud ai
+358,deep learning
+358,neural networks
+358,conversational ai
+358,image processing
+358,model optimization
+359,generative ai
+359,cloud ai
+359,deep learning
+359,neural networks
+359,chatbots
+359,image processing
+359,ai pipelines
+359,mentorship
+360,python
+360,ai models
+360,cloud ai
+360,generative ai
+360,deep learning
+360,deployment
+360,nlp
+360,image processing
+361,python
+361,ai/ml
+361,cloud ai
+361,generative ai
+361,deep learning
+361,chatbots
+361,image processing
+362,python
+362,cloud ai
+362,generative ai
+362,deep learning
+362,neural networks
+362,chatbots
+362,image processing
+363,python
+363,cloud ai
+363,deep learning
+363,generative ai
+363,model deployment
+363,pipelines
+363,chatbots
+363,image processing
+364,python
+364,cloud ai
+364,generative ai
+364,deep learning
+364,nlp
+364,computer vision
+364,mlops
+364,model deployment
+365,python
+365,cloud ai
+365,generative ai
+365,deep learning
+365,neural networks
+365,chatbots
+365,image processing
+365,model deployment
+366,python
+366,cloud ai
+366,generative ai
+366,deep learning
+366,model deployment
+366,production pipelines
+366,chatbots
+366,image processing
+367,python
+367,cloud ai
+367,generative ai
+367,deep learning
+367,neural networks
+367,chatbots
+367,image processing
+368,data pipelines
+368,spark
+368,azure data factory
+368,sql
+368,python
+368,streaming
+368,data quality
+368,observability
+369,azure data services
+369,data pipelines
+369,etl processes
+369,cloud data storage
+369,data quality
+369,data migration
+369,team leadership
+369,mentoring
+370,machine learning
+370,cloud ai
+370,generative ai
+370,deep learning
+370,neural networks
+370,chatbots
+370,image processing
+370,production pipelines
+371,python
+371,tensorflow
+371,pytorch
+371,llmops
+371,rag
+371,multi‑agent systems
+371,cloud ai services
+371,data engineering
+372,spark
+372,delta lake
+372,sql
+372,python
+372,azure
+372,databricks
+372,ci/cd
+372,sre
+373,python
+373,sql
+373,predictive modeling
+373,dashboarding
+373,insurance analytics
+373,databricks
+373,aws
+374,python
+374,machine learning
+374,pytorch
+374,hugging face
+374,langchain
+374,rag
+374,data engineering
+374,api development
+375,python
+375,sql
+375,predictive modeling
+375,data visualization
+375,insurance analytics
+375,machine learning
+375,databricks
+375,aws
+376,sql
+376,python
+376,power bi
+376,tableau
+376,predictive modeling
+376,behavioral analytics
+376,data visualization
+376,data engineering
+377,data modeling
+377,big data
+377,cloudera
+377,hadoop
+377,apache iceberg
+377,sql
+377,data governance
+377,lakehouse
+378,python
+378,llms
+378,generative ai
+378,prompt engineering
+378,langchain
+378,llamaindex
+378,vector databases
+378,rag
+379,data pipelines
+379,data modeling
+379,aws
+379,snowflake
+379,etl
+379,data quality
+381,python
+381,sql
+381,tensorflow
+381,pytorch
+381,scikit‑learn
+381,spark
+381,gcp
+381,mlflow
+382,python
+382,kafka
+382,mqtt
+382,data pipelines
+382,edge‑to‑cloud
+382,schema design
+382,linux containers
+382,time‑series data
+383,data science
+383,ml engineering
+383,forecasting
+383,generative ai
+383,llm
+383,time series
+383,stakeholder management
+383,python
+384,etl pipelines
+384,sql
+384,python
+384,spark
+384,azure
+384,aws
+384,data modeling
+384,mentoring
+385,sql
+385,python
+385,snowflake
+385,aws sagemaker
+385,statistical modeling
+385,experiment design
+385,model productionisation
+385,stakeholder communication
+386,python
+386,machine learning
+386,pytorch
+386,tensorflow
+386,ide
+386,git
+386,collaboration
+386,prototyping
+387,python
+387,sql
+387,power bi
+387,tableau
+387,dataiku
+387,alteryx
+387,ai/ml concepts
+387,data visualization
+388,sql
+388,etl
+388,data pipelines
+388,cloud storage
+388,git
+388,metadata
+388,data visualization
+388,c++
+389,cloud architecture
+389,data lakehouse
+389,devops
+389,security & governance
+389,terraform
+389,spark
+389,python
+389,kubernetes
+392,python
+392,fastapi
+392,postgresql
+392,aws
+392,kubernetes
+392,terraform
+392,argoworkflows
+392,sqlalchemy
+393,python
+393,llm
+393,data engineering
+393,dagster
+393,sqlmesh
+393,gcp
+393,bigquery
+393,ai governance
+394,python
+394,sql
+394,tableau
+394,machine learning
+394,data visualization
+394,data governance
+394,data warehousing
+395,data mining
+395,predictive modeling
+395,python
+395,sql
+395,data visualization
+395,machine learning
+395,air force domain
+396,qlik
+396,sql
+396,data modeling
+396,dashboard development
+396,requirement analysis
+396,documentation
+396,stakeholder communication
+396,quality assurance
+397,deep learning
+397,computer vision
+397,autonomous driving
+397,python
+397,c++
+397,data simulation
+397,embedded deployment
+397,transformers
+400,python
+400,tensorflow
+400,pytorch
+400,langchain
+400,mlops
+400,azure
+400,docker
+400,kubernetes
+401,data modeling
+401,statistical analysis
+401,data visualization
+401,python
+401,sql
+401,tableau
+401,machine learning
+401,data governance
+402,python
+402,sql
+402,machine learning
+402,deep learning
+402,ci/cd
+402,docker
+402,git
+402,mlops
+403,sql
+403,python
+403,data modeling
+403,power bi
+403,tableau
+403,looker
+403,aws
+403,azure
+404,python programming
+404,sql querying
+404,etl pipelines
+404,cloud data platforms
+404,data visualization
+404,dashboard development
+404,metadata management
+404,scientific data integration
+405,data analysis
+405,data visualization
+405,sql
+405,python
+405,automation
+405,project management
+405,financial markets
+405,stakeholder communication
+406,python
+406,fastapi
+406,postgres
+406,redis
+406,kubernetes
+406,langgraph
+406,llm orchestration
+406,agentic ai
+407,python
+407,pyspark
+407,sql
+407,azure
+407,data pipelines
+408,procurement analytics
+408,power bi
+408,sap
+408,data governance
+408,dashboarding
+408,stakeholder management
+408,process improvement
+409,statistical modeling
+409,machine learning
+409,data analysis
+409,python
+409,sql
+409,project management
+410,llm integration
+410,agent orchestration
+410,embedding retrieval
+410,cloud‑native
+410,genai integration
+411,sql
+411,python
+411,data visualization
+411,agile methodologies
+411,data governance
+411,ai integration
+411,cloud platforms
+411,stakeholder communication
+412,optimization
+412,discrete event simulation
+412,reinforcement learning
+412,cplex
+412,gurobi
+412,data analytics
+412,production scheduling
+412,ai solutions
+413,scheduling
+413,optimization
+413,simulation
+413,data analytics
+413,reinforcement learning
+413,discrete event simulation
+413,manufacturing ai
+413,global collaboration
+414,python
+414,postgresql
+414,aws
+414,data integration
+414,etl
+414,sql
+415,data modeling
+415,dbt
+415,sql
+415,python
+415,analytics engineering
+415,data pipelines
+415,version control
+415,agile
+416,cardiovascular research
+416,ion channel
+416,gpcr
+416,animal models
+416,molecular dynamics
+416,grant writing
+416,microscopy
+416,flow cytometry
+417,python
+417,sql
+417,data pipelines
+417,react
+417,streamlit
+417,jupyter
+417,data modeling
+417,agile
+418,azure
+418,databricks
+418,sql
+418,python
+418,pyspark
+418,datalake
+418,datafactory
+418,synapse
+419,excel
+419,sql
+419,power bi
+419,bi tools
+419,crm
+419,billing platforms
+419,data warehousing
+419,etl
+420,marketing mix modeling
+420,econometrics
+420,python
+420,sql
+420,pandas
+420,scikit-learn
+420,time series
+420,data visualization
+421,ai
+421,genai
+421,powerapps
+421,power automate
+421,automation
+421,data science
+421,credit decisioning
+421,risk management
+422,statistics
+422,data analysis
+422,sql
+422,excel
+422,project management
+422,communication
+422,problem solving
+422,database
+423,tissue engineering
+423,organ‑on‑chip
+423,3d modeling
+423,statistical analysis
+423,computational tools
+423,grant writing
+423,mentorship
+423,experimental design
+424,azure databricks
+424,azure ai search
+424,kubernetes
+424,python
+424,sql
+424,llm
+424,generative ai
+424,recommendation systems
+426,sql
+426,python
+426,etl
+426,data modeling
+426,automation
+426,data governance
+426,ai/ml
+426,analytics
+428,snowflake
+428,azure sql
+428,etl
+428,data governance
+428,python
+428,sql
+428,ci/cd
+428,data quality
+431,data engineering
+431,cloud architecture
+431,python
+431,spark
+431,sql
+431,kafka
+431,terraform
+431,kubernetes
+432,sql
+432,python
+432,data analysis
+432,dashboarding
+432,predictive modeling
+432,digital analytics
+432,ga4
+432,data cleaning
+433,llm
+433,genai
+433,claude
+433,rag
+433,langchain
+433,langgraph
+433,fastapi
+433,flask
+433,vector db
+433,python
+433,azure
+433,aws
+433,gcp
+434,python
+434,pyspark
+434,sql
+434,eda
+434,ml
+434,feature engineering
+434,model monitoring
+434,agile
+435,python
+435,flask
+435,fastapi
+435,rest
+435,graphql
+435,aws
+435,llm
+435,langchain
+435,langgraph
+435,langfuse
+435,dynamodb
+435,s3
+435,unit testing
+435,git
+436,data governance
+436,sap ecc
+436,plm
+436,power bi
+436,excel macros
+436,supply chain
+436,cross‑functional collaboration
+436,process improvement
+437,python
+437,spark
+437,airflow
+437,azure
+437,sql
+437,power bi
+437,data modeling
+437,etl
+438,sql
+438,python
+438,powerquery
+438,etl
+438,data pipelines
+438,textual data analysis
+438,data validation
+438,root cause analysis
+439,generative ai
+439,rag
+439,prompt engineering
+439,nlp
+439,nlg
+439,tensorflow
+439,pytorch
+439,python
+439,model risk
+439,team leadership
+440,generative ai
+440,rag
+440,prompt engineering
+440,python
+440,tensorflow
+440,pytorch
+440,nlp
+440,model deployment
+441,python
+441,gcp
+441,databricks
+441,bigquery
+441,airflow
+441,apache beam
+441,data fusion
+441,matillion
+442,genai
+442,machine learning
+442,python
+442,spark
+442,sql
+442,aws
+442,azure
+442,docker
+443,python
+443,sql
+443,powerbi
+443,machine learning
+443,data visualization
+443,snowflake
+443,business analysis
+443,data engineering
+444,kibana
+444,python
+444,sql
+444,etl
+444,agile
+444,git
+444,data visualization
+444,security clearance
+446,sql
+446,python
+446,databricks
+446,ci/cd
+446,git
+446,unity catalog
+446,data governance
+446,data engineering
+449,python
+449,spark
+449,kafka
+449,aws
+449,gcp
+449,azure
+449,docker
+449,kubernetes
+449,snowflake
+449,rag
+449,graphdb
+449,genai
+449,datagovernance
+450,data engineering
+450,aws
+450,gcp
+450,azure
+450,snowflake
+450,python
+450,spark
+450,genai
+450,rag
+450,graph db
+451,python
+451,sql
+451,git
+451,mlflow
+451,cloud ml
+451,model monitoring
+451,data validation
+451,statistical modeling
+452,molecular biology
+452,histology
+452,behavioral neuroscience
+452,electrochemistry
+452,rodent surgery
+452,data analysis
+452,scientific documentation
+452,project management
+454,analytics engineering
+454,data modeling
+454,semantic layer
+454,dbt
+454,sqlmesh
+454,cube
+454,react
+454,ai insights
+455,sql
+455,python
+455,statistics
+455,data visualization
+455,pipeline
+455,dashboards
+455,project management
+455,communication
+456,sql
+456,python
+456,sas
+456,tableau
+456,power bi
+456,epic
+456,data visualization
+456,data wrangling
+456,clinical terminologies
+457,mlops
+457,llm
+457,multi‑agent
+457,graph neural networks
+457,kubernetes
+457,kafka
+457,python
+457,statistical modeling
+458,python
+458,sql
+458,data science
+458,machine learning
+458,large language models
+458,azure
+458,databricks
+458,power bi
+459,deep learning
+459,pytorch
+459,distributed training
+459,data assimilation
+459,weather forecasting
+459,hardware optimization
+459,scientific rigor
+459,research
+460,python
+460,sql
+460,snowflake
+460,machine learning
+460,data analysis
+460,feature engineering
+460,data engineering
+460,data governance
+461,data engineering
+461,python
+461,pyspark
+461,aws
+461,kafka
+461,kubernetes
+461,airflow
+461,databricks
+462,excel
+462,power bi
+462,tableau
+462,sap analytics cloud
+462,data analysis
+462,financial reporting
+462,data quality
+462,bi modeling
+463,sql
+463,hive
+463,presto
+463,clickhouse
+463,python
+463,pandas
+463,airflow
+463,mes
+464,python
+464,scikit-learn
+464,xgboost
+464,lightgbm
+464,tensorflow
+464,pytorch
+464,sql
+464,docker
+464,kubernetes
+465,sql
+465,python
+465,spark
+465,delta lake
+465,dbt
+465,databricks
+465,azure data factory
+465,git
+466,python
+466,sql
+466,dbt
+466,databricks
+466,delta lake
+466,azure data factory
+466,git
+466,spark
+467,python
+467,sql
+467,dbt
+467,spark
+467,delta lake
+467,databricks
+467,git
+468,sql
+468,python
+468,spark
+468,delta lake
+468,dbt
+468,databricks
+468,azure
+468,git
+469,python
+469,sql
+469,spark
+469,delta lake
+469,dbt
+469,databricks
+469,azure data factory
+469,git
+470,sql
+470,excel
+470,bi
+470,marketing analytics
+470,test design
+470,attribution
+470,incrementality
+470,stakeholder management
+471,emr
+471,data analysis
+471,sql
+471,reporting
+471,dashboards
+471,data visualization
+471,project coordination
+471,stakeholder communication
+472,ai/ml
+472,time-series
+472,signal processing
+472,python
+472,sql
+472,mlops
+472,dashboards
+472,communication
+473,leadership
+473,data science
+473,analytics
+473,sql
+473,python
+473,bi
+473,tableau
+473,powerbi
+474,data pipelines
+474,ml systems
+474,evaluation harnesses
+474,monitoring
+474,sql
+474,python
+474,bigquery
+474,dbt
+474,thoughtspot
+475,sql
+475,t‑sql
+475,power bi
+475,azure synapse
+475,databricks
+475,python
+475,data modeling
+475,etl
+476,python
+476,sql
+476,power bi
+476,azure data factory
+476,plm/erp
+476,data cleansing
+476,etl
+476,data visualization
+477,etl
+477,sql
+477,power bi
+477,azure data factory
+477,plm
+477,erp
+477,bom
+477,data cleansing
+478,data analysis
+478,excel macros
+478,power bi
+478,tableau
+478,sas eg
+478,sql
+478,financial modeling
+478,mentoring
+479,python
+479,ml
+479,data engineering
+479,data lake
+479,lakehouse
+479,cloud
+479,azure
+479,aws
+479,gcp
+479,genai
+479,mlops
+479,dataops
+479,ci/cd
+479,rag
+479,llm
+480,data engineering
+480,mlops
+480,llmops
+480,data architecture
+480,data pipeline
+480,cloud platforms
+480,data governance
+480,ai engineering
+481,sql
+481,python
+481,pyspark
+481,databricks
+481,snowflake
+481,terraform
+481,docker
+481,mlops
+482,genai
+482,agentic
+482,python
+482,langchain
+482,llamaindex
+482,fastmcp
+482,mlops
+482,cloud
+483,python
+483,sql
+483,azure
+483,databricks
+483,time‑series
+483,geospatial
+483,machine learning
+483,model explainability
+484,python
+484,sql
+484,azure databricks
+484,time‑series
+484,geospatial
+484,machine learning
+484,feature engineering
+484,model explainability
+485,python
+485,sql
+485,azure
+485,databricks
+485,time‑series
+485,geospatial
+485,model explainability
+485,ml
+486,python
+486,sql
+486,databricks
+486,azure
+486,time‑series
+486,geospatial
+486,ml
+486,explainability
+487,financial analysis
+487,cost modeling
+487,excel
+487,power bi
+487,data analysis
+487,stakeholder management
+487,reporting
+487,business intelligence
+489,python
+489,sql
+489,power bi
+489,tableau
+489,data engineering
+489,statistical analysis
+489,machine learning
+489,data visualization
+490,python
+490,sql
+490,etl
+490,data modeling
+490,data quality
+490,on‑premise
+490,devops
+490,healthcare
+491,power bi
+491,sql
+491,python
+491,data modeling
+491,etl
+491,azure
+491,aws
+491,statistical analysis
+492,data engineering
+492,big data architecture
+492,cloud data engineering
+492,sql
+492,python
+492,spark
+492,hadoop
+492,data governance
+493,data analysis
+493,bi tools
+493,sql
+493,power bi
+493,tableau
+493,qlik
+493,excel
+493,reporting
+494,python
+494,sql
+494,prefect
+494,airflow
+494,luigi
+494,dagster
+494,tdd
+494,fhir/omop
+495,data modeling
+495,sql
+495,python
+495,snowflake
+495,dbt
+495,bi
+495,attribution
+495,incrementality
+498,thermal simulation
+498,cfd
+498,fea
+498,thermal metrology
+498,experimental testing
+498,heat transfer
+498,data analysis
+498,thermal instrumentation
+499,machine learning
+499,deep learning
+499,time series
+499,python
+499,microsoft ai foundry
+499,palantir foundry
+499,model deployment
+499,production monitoring
+500,python
+500,vertex ai
+500,dataproc
+500,azure devops
+500,linux
+500,jupyter
+500,bigquery
+500,google cloud storage
+501,python
+501,spark
+501,sas
+501,scala
+501,sql
+501,aws
+501,nlp
+501,computer vision
+501,genai
+501,mlops
+501,data pipelines
+501,visualization
+501,team leadership
+502,python
+502,sql
+502,spark
+502,kafka
+502,airflow
+502,deeplearning
+502,nlp
+502,computervision
+503,data engineering
+503,airflow
+503,snowflake
+503,databricks
+503,aws
+503,terraform
+503,ci/cd
+503,data modeling
+505,gcp
+505,bigquery
+505,dataflow
+505,pub/sub
+505,spark
+505,scala
+505,python
+505,sql
+506,cryptography
+506,post-quantum
+506,ebpf
+506,rasp
+506,tee
+506,ai security
+506,kubernetes
+506,finops
+507,sql
+507,python
+507,gcp
+507,bigquery
+507,cloud composer
+507,airflow
+507,tableau
+507,power bi
+508,llm
+508,prompt engineering
+508,automation platforms
+508,low-code tools
+508,business translation
+508,pilot testing
+508,impact measurement
+508,stakeholder communication
+510,talend
+510,postgresql
+510,sql
+510,batch
+510,api
+510,data lake
+510,data quality
+510,data governance
+511,human-computer interaction
+511,artificial intelligence
+511,generative ai
+511,research design
+511,quantitative analysis
+511,qualitative analysis
+511,patent development
+511,cross‑functional collaboration
+512,power bi
+512,data analysis
+512,automation
+512,ai
+512,reporting
+512,data visualization
+512,business insight
+512,cross‑functional collaboration
+513,python
+513,sql
+513,data modeling
+513,machine learning
+513,data engineering
+513,data visualization
+513,project management
+513,cloud platforms
+515,python
+515,sql
+515,machine learning
+515,data visualization
+515,statistical analysis
+515,business analytics
+515,data engineering
+516,ml infra
+516,llm
+516,pytorch
+516,huggingface
+516,vllm
+516,tensorrt-llm
+516,python
+516,c++
+517,data engineering
+517,data architecture
+517,cloud platforms
+517,etl
+517,data warehousing
+517,bi tools
+517,agile delivery
+517,governance
+518,data analytics
+518,teaching
+518,assessment
+518,student engagement
+518,online learning
+518,workshop facilitation
+518,feedback
+518,consultation
+519,sql
+519,microstrategy
+519,teradata
+519,data analysis
+519,dashboard design
+519,data governance
+519,business intelligence
+519,data visualization
+520,python3
+520,go
+520,aws
+520,kubernetes
+520,postgresql
+520,mlops
+520,geospatial
+520,computer vision
+521,product management
+521,ai/ml
+521,security compliance
+521,user research
+521,roadmap planning
+521,stakeholder collaboration
+521,market analysis
+521,documentation
+522,python
+522,spark
+522,pandas
+522,numpy
+522,streamlit
+522,github
+522,monte carlo
+522,discrete event simulation
+523,"c#"
+523,asp.net
+523,sql server
+523,cosmos db
+523,power bi
+523,api development
+523,data integration
+523,database design
+524,process mining
+524,machine learning
+524,optimization
+524,mlops
+524,python
+524,sql
+524,azure
+524,celonis
+525,process mining
+525,ai/ml
+525,python
+525,sql
+525,agile
+525,mlops
+525,data storytelling
+525,process modeling
+526,data entry
+526,lims
+526,sap
+526,excel
+526,invoice management
+526,qc protocols
+526,reporting
+526,communication
+527,aws
+527,sql
+527,etl
+527,data modeling
+527,spark
+527,presto
+527,hadoop
+527,ci/cd
+528,ai strategy
+528,machine learning
+528,leadership
+528,cloud platforms
+528,big data
+528,python
+528,project management
+529,machine learning
+529,deep learning
+529,python
+529,tensorflow
+529,pytorch
+529,statistical modeling
+529,model deployment
+529,technical leadership
+530,machine learning
+530,deep learning
+530,python
+530,tensorflow
+530,pytorch
+530,statistical modeling
+530,data engineering
+530,model deployment
+531,credit modeling
+531,a/b testing
+531,python
+531,sql
+531,risk analytics
+531,experimentation
+531,churn management
+531,collections modeling
+532,credit modelling
+532,risk analytics
+532,a/b testing
+532,machine learning
+532,sql
+532,python
+532,experiment design
+533,statistical analysis
+533,machine learning
+533,predictive modelling
+533,python
+533,sql
+533,tableau
+533,aws
+533,ci/cd
+534,ai agents
+534,langchain
+534,fastapi
+534,mcp protocol
+534,observability
+534,aws bedrock
+534,python backend
+534,prompt engineering
+535,machine learning
+535,python
+535,java
+535,llm
+535,a/b testing
+535,data analysis
+535,search ranking
+535,collaboration
+536,sql
+536,etl
+536,tableau
+536,powerbi
+536,a/b testing
+536,data modeling
+536,python
+536,hadoop
+537,machine learning
+537,statistical modeling
+537,experimentation
+537,model deployment
+537,data strategy
+537,team leadership
+537,cross‑functional collaboration
+537,ai trends
+538,ml modeling
+538,llm development
+538,model optimization
+538,distributed systems
+538,python
+538,c++
+538,hardware acceleration
+538,technical leadership
+539,python
+539,pytorch
+539,ml-ops
+539,aws
+539,gurobi
+539,agentic ai
+539,time-series
+539,optimization
+540,python
+540,pytorch
+540,ml‑ops
+540,aws
+540,gurobi
+540,agentic ai
+540,time‑series
+540,optimization
+541,gcp
+541,bigquery
+541,data modeling
+541,etl/elt
+541,dbt
+541,dagster
+541,terraform
+541,data governance
+542,python
+542,fastapi
+542,llm apis
+542,vector databases
+542,kubernetes
+542,ci/cd
+542,observability
+542,distributed systems
+543,python
+543,fastapi
+543,llm apis
+543,qdrant
+543,elasticsearch
+543,kubernetes
+543,ci/cd
+543,observability
+544,python
+544,fastapi
+544,llm apis
+544,qdrant
+544,postgresql
+544,elasticsearch
+544,kubernetes
+544,github actions
+545,python
+545,fastapi
+545,llm apis
+545,vector db
+545,kubernetes
+545,ci/cd
+545,observability
+545,distributed systems
+546,python
+546,fastapi
+546,llm apis
+546,vector db
+546,kubernetes
+546,ci/cd
+546,observability
+546,distributed systems
+547,data analysis
+547,statistical modeling
+547,a/b testing
+547,data visualization
+547,sql
+547,python
+547,product analytics
+547,ai automation
+549,data analysis
+549,process mapping
+549,root cause analysis
+549,excel
+549,continuous improvement
+550,data analysis
+550,sql
+550,dashboarding
+550,statistical modeling
+550,supply chain analytics
+550,communication
+551,machine learning
+551,predictive modeling
+551,data pipelines
+551,python
+551,sql
+551,data visualization
+551,mentorship
+551,ai research
+552,data modeling
+552,predictive analytics
+552,python
+552,sql
+552,tableau
+552,optimization
+552,machine learning
+552,business intelligence
+553,python
+553,sql
+553,machine learning
+553,llm ops
+553,data engineering
+553,experimentation
+553,mlops
+553,business analytics
+554,python
+554,machine learning
+554,statistics
+554,optimization
+554,aws
+554,docker
+554,git
+554,data engineering
+556,python
+556,azure ai
+556,llm
+556,ci/cd
+556,prompt engineering
+556,rag
+556,terraform
+556,fastapi
+557,data cleaning
+557,data analysis
+557,python
+557,excel
+557,fmcg knowledge
+557,automation
+557,cross‑team collaboration
+558,machine learning
+558,nlp
+558,generative ai
+558,mlops
+558,python
+558,pytorch
+558,azure
+558,time series
+559,machine learning
+559,nlp
+559,llms
+559,genai
+559,python
+559,pytorch
+559,mlops
+559,azure
+560,python
+560,machine learning
+560,statistical modeling
+560,sampling design
+560,data visualization
+560,git
+560,large‑scale data processing
+560,collaboration
+561,python
+561,machine learning
+561,statistical modeling
+561,time series
+561,sampling design
+561,git
+561,data visualization
+561,collaboration
+562,python
+562,machine learning
+562,statistical analysis
+562,time series
+562,sampling
+562,geospatial data
+562,git
+562,data visualization
+563,ms office
+563,data delivery
+563,quality assurance
+563,client communication
+563,analytical thinking
+563,problem solving
+564,python
+564,tensorflow
+564,pytorch
+564,langchain
+564,aws
+564,azure
+564,gcp
+564,docker
+565,machine learning
+565,mlops
+565,python
+565,aws
+565,databricks
+565,spark
+565,llm
+565,devsecops
+567,machine learning
+567,deep learning
+567,tensorflow
+567,pytorch
+567,linux
+567,data preprocessing
+567,nlp
+567,computer vision
+568,python
+568,tensorflow
+568,pytorch
+568,mlflow
+568,kubeflow
+568,mlops
+568,aws
+568,azure
+569,machine learning
+569,deep learning
+569,nlp
+569,generative ai
+569,python
+569,pytorch
+569,tensorflow
+569,scientific data
+571,python
+571,cloud‑native
+571,llm integration
+571,prompt engineering
+571,ai system design
+571,automation workflows
+571,production deployment
+571,risk governance
+572,spark
+572,snowflake
+572,kafka
+572,flink
+572,dbt
+572,aws
+572,data modeling
+572,platform strategy
+573,power bi
+573,sql
+573,python
+573,etl
+573,azure
+573,data modeling
+573,analytics
+573,dashboarding
+574,data pipelines
+574,etl
+574,cloud platforms
+574,sql
+574,python
+574,airflow
+574,data governance
+574,security
+575,data pipelines
+575,ml infrastructure
+575,cloud platforms
+575,python
+575,sql
+575,spark
+575,airflow
+575,dbt
+576,predictive modeling
+576,forecasting
+576,optimisation
+576,python
+576,sql
+576,aws
+576,airflow
+576,snowflake
+577,econometrics
+577,causal inference
+577,time series
+577,data pipelines
+577,python
+577,sql
+577,economic research
+577,statistical modeling
+578,c programming
+578,python scripting
+578,embedded ai
+578,llm integration
+578,ci/cd pipelines
+578,hardware interfacing
+580,sql
+580,power bi
+580,data modeling
+580,dax
+580,financial analysis
+580,dashboard development
+581,sql
+581,power bi
+581,dax
+581,financial reporting
+581,data modeling
+581,dashboard development
+581,ms office
+581,english
+582,snowflake
+582,sql
+582,dbt
+582,python
+582,elt
+582,power bi
+582,streamlit
+582,ci/cd
+583,snowflake
+583,sql
+583,dbt
+583,python
+583,elt
+583,power bi
+583,streamlit
+583,ci/cd
+584,power bi
+584,sql
+584,python
+584,data visualization
+584,data modeling
+584,supply chain analytics
+586,sql
+586,snowflake
+586,data validation
+586,phi
+586,hipaa
+586,data quality
+586,cross-functional
+586,healthcare
+588,data integration
+588,data visualization
+588,sql
+588,python
+588,databricks
+588,tableau
+588,power bi
+588,data governance
+589,excel
+589,power bi
+589,vba
+589,data modeling
+589,dashboard design
+589,process automation
+589,stakeholder communication
+589,pmo management
+590,data analysis
+590,dashboard design
+590,sql
+590,python
+590,tableau
+590,powerbi
+590,stakeholder management
+590,automation
+591,ml platform
+591,feature engineering
+591,model training
+591,distributed computing
+591,spark
+591,python
+591,java
+591,ad tech
+592,ml infrastructure
+592,feature engineering
+592,model training
+592,real‑time serving
+592,spark
+592,tensorflow
+592,python
+592,java
+593,dbt
+593,airflow
+593,sql
+593,python
+593,a/b testing
+593,causal inference
+593,llm pipelines
+593,dashboards
+594,dbt
+594,sql
+594,python
+594,airflow
+594,experimentation
+594,ai tooling
+594,data pipelines
+594,metrics
+595,ml modeling
+595,data pipelines
+595,anomaly detection
+595,model deployment
+595,monitoring
+595,evaluation
+595,security analytics
+595,reliability
+596,postgres
+596,gcp
+596,bigquery
+596,looker
+596,data governance
+596,stakeholder management
+596,edtech
+596,sql
+598,python
+598,machine learning
+598,nlp
+598,llm
+598,rag
+598,retrieval augmented generation
+598,cloud platforms
+598,technical leadership
+599,ai strategy
+599,team leadership
+599,llm deployment
+599,rag systems
+599,semantic search
+599,generative ai
+599,stakeholder management
+599,production ml
+600,python
+600,java
+600,c++
+600,tensorflow
+600,pytorch
+600,data analysis
+600,visualization
+600,ai/ml
+601,matlab
+601,python
+601,passive acoustic analysis
+601,statistical modeling
+601,github
+601,acoustic detection algorithms
+601,data visualization
+603,ai strategy
+603,ml lifecycle
+603,nlp
+603,generative ai
+603,llm deployment
+603,rag
+603,semantic search
+603,team leadership
+604,python
+604,sql
+604,statistical modeling
+604,probabilistic forecasting
+604,sports analytics
+606,sql
+606,python
+606,data visualization
+606,risk analysis
+606,data governance
+606,audit support
+606,process documentation
+606,ai tools
+607,excel
+607,power bi
+607,tableau
+607,sql
+607,python
+607,crm platforms
+607,data visualization
+608,ml models
+608,python
+608,spark
+608,feature engineering
+608,model deployment
+608,distributed processing
+608,deep learning
+608,agent systems
+609,statistical analysis
+609,a/b testing
+609,data visualization
+609,data engineering
+609,python
+609,sql
+609,big data platforms
+609,data storytelling
+610,sql
+610,python
+610,tableau
+610,power bi
+610,segmentation
+610,forecasting
+610,predictive modeling
+611,product strategy
+611,generative ai
+611,monetization
+611,go-to-market
+611,regulatory compliance
+611,cross-functional leadership
+612,python
+612,pyspark
+612,aws
+612,generative ai
+612,model deployment
+612,prompt engineering
+612,reinforcement learning
+612,graph analytics
+613,google bigquery
+613,microsoft sql server
+613,python
+613,airflow
+613,github
+613,sql
+613,gcp
+613,shell scripting
+614,python
+614,machine learning
+614,ai agents
+614,spectroscopy
+614,data pipelines
+614,statistical analysis
+614,pytorch
+614,tensorflow
+616,sql
+616,python
+616,power bi
+616,tableau
+616,data visualization
+616,statistical analysis
+616,data governance
+617,sql
+617,nosql
+617,python
+617,data integration
+617,data quality
+617,database management
+617,incident resolution
+617,data modeling
+618,python
+618,pytorch
+618,tensorflow
+618,aws
+618,docker
+618,kafka
+618,ci/cd
+618,datadog
+620,ai
+620,ml
+620,prompt engineering
+620,llm
+620,bioinformatics
+620,imaging
+620,omics
+620,data science
+621,ai
+621,ml
+621,prompt engineering
+621,llm
+621,process design
+621,gxp
+621,gmp
+621,erp
+622,sql
+622,power bi
+622,tableau
+622,excel
+622,data visualization
+622,risk analytics
+622,collections analytics
+622,fraud detection
+623,spark
+623,etl
+623,big data
+623,data pipelines
+623,data governance
+623,distributed computing
+623,data modeling
+623,troubleshooting
+624,azure sql
+624,python
+624,etl
+624,data modeling
+624,power bi
+624,git
+624,azure functions
+624,blob storage
+626,python
+626,kubernetes
+626,docker
+626,mlflow
+626,ci/cd
+626,aws
+626,gcp
+626,genai
+627,python
+627,sql
+627,time‑series
+627,mlops
+627,llm
+627,telemetry
+627,statistical modeling
+627,ci/cd
+628,data engineering
+628,databricks
+628,spark
+628,sql
+628,python
+628,ci/cd
+628,data warehousing
+628,data governance
+629,snowflake
+629,sql
+629,data modeling
+629,metabase
+629,ai integration
+629,business logic
+629,data architecture
+629,stakeholder communication
+632,python
+632,pyspark
+632,azure databricks
+633,sql
+633,python
+633,dbt
+633,bi
+633,data modeling
+633,data visualization
+633,statistical analysis
+633,data quality
+634,sql
+634,python
+634,tableau
+634,etl
+634,data modeling
+634,statistical analysis
+634,forecasting
+634,cohort analysis
+635,aws
+635,terraform
+635,spark
+635,kafka
+635,snowflake
+635,lambda
+635,step functions
+635,event‑driven
+636,go
+636,python
+636,dbt
+636,snowflake
+636,bigquery
+636,llm evaluation
+636,observability
+636,architecture
+637,computer vision
+637,neural networks
+637,pytorch
+637,tensorflow
+637,python
+637,c++
+637,linux
+637,hd maps
+638,data engineering
+638,machine learning
+638,sql
+638,python
+638,java
+638,scala
+638,aws
+638,gcp
+639,azure sql
+639,t‑sql
+639,powershell
+639,python
+639,"c#"
+639,terraform
+639,bicep
+639,arm templates
+640,python
+640,powerbi
+640,sql
+640,splunk
+640,spark
+640,hadoop
+640,linux
+640,data mining
+642,databricks
+642,dbt
+642,snowflake
+642,bigquery
+642,data lake
+642,pipeline orchestration
+642,ai tools
+642,ml workloads
+644,spark
+644,python
+644,sql
+644,aws
+644,airflow
+644,docker
+644,agile
+644,scrum
+645,sql
+645,databricks
+645,azure data factory
+645,data warehouse
+645,data lake
+645,etl/elt
+645,data modeling
+645,data governance
+646,terraform
+646,ansible
+646,python
+646,bash
+646,powershell
+646,sql
+646,bigquery
+646,cloud functions
+646,dataflow
+646,kubernetes
+646,aws s3
+646,athena
+646,glue
+646,redshift
+646,quicksight
+646,power bi
+646,tableau
+647,sap hana
+647,slt
+647,odp
+647,cds
+647,sdi
+647,sqlscript
+647,abap
+647,sap bw
+647,aws s3
+647,parquet
+647,delta
+647,cdc
+647,spark
+647,glue data catalog
+648,powerapps
+648,power automate
+648,copilot studio
+648,teams
+648,microsoft 365
+648,azure ad
+648,microsoft graph
+648,rest apis
+649,deep learning
+649,distributed training
+649,hyperparameter tuning
+649,model debugging
+649,python
+649,pytorch
+649,tensorflow
+649,ml research
+650,deep learning
+650,reinforcement learning
+650,llm
+650,distributed training
+650,hyperparameter tuning
+650,model debugging
+650,python
+650,ml frameworks
+651,python
+651,machine learning
+651,statistical modeling
+651,big data
+651,hadoop
+651,spark
+651,sql
+651,git
+652,ai/ml
+652,big data
+652,mlops
+652,python
+652,spark
+652,scala
+652,statistical modeling
+653,python
+653,java
+653,scala
+653,sql
+653,spark
+653,machine learning
+653,deep learning
+653,e‑commerce
+654,credit risk modeling
+654,python
+654,sql
+654,model deployment
+654,feature engineering
+654,explainable ai
+654,portfolio analysis
+654,data engineering
+655,python
+655,spark
+655,sql
+655,machine learning
+655,deep learning
+655,model deployment
+655,stakeholder management
+655,mentoring
+657,machine learning
+657,nlp
+657,python
+657,sql
+657,powerbi
+657,mlops
+657,llm
+657,data engineering
+658,excel
+658,powerpoint
+658,data analysis
+658,data reconciliation
+658,lookup formulas
+658,power bi
+658,process improvement
+658,time management
+659,python
+659,tensorflow
+659,pytorch
+659,mlops
+659,aws
+659,azure
+659,docker
+659,kubernetes
+660,python
+660,java
+660,"c#"
+660,spark
+660,hadoop
+660,bigquery
+660,kafka
+660,pub/sub
+660,kinesis
+660,docker
+660,kubernetes
+660,aws
+660,gcp
+660,ci/cd
+660,ooa
+660,ood
+661,python
+661,data analysis
+661,computer vision
+661,machine learning
+661,prompt engineering
+661,retrieval‑augmented generation
+661,data annotation
+661,linux
+662,python
+662,llm integration
+662,prompt engineering
+662,api integration
+662,cloud services
+662,vector databases
+662,workflow automation
+662,evaluation frameworks
+663,python
+663,snowflake
+663,spark
+663,sql
+663,kafka
+663,airflow
+663,aws
+663,ci/cd
+665,python
+665,sql
+665,excel
+665,data analysis
+665,financial metrics
+665,dashboarding
+665,communication
+665,learning
+666,databricks
+666,delta lake
+666,spark
+666,python
+666,sql
+666,dataops
+666,etl
+666,data modeling
+667,machine learning
+667,artificial intelligence
+667,data engineering
+667,data visualisation
+667,power bi
+667,python
+667,sql
+667,statistical analysis
+668,tableau
+668,snowflake
+668,python
+668,sql
+668,data visualization
+668,business analysis
+668,reporting
+668,ai tools
+669,cloud-native
+669,ai/ml
+669,llm
+669,kubernetes
+669,devsecops
+669,terraform
+669,python
+669,aws
+670,python
+670,kubernetes
+670,airflow
+670,pandas
+670,polars
+670,data pipelines
+670,integration patterns
+670,mentoring
+671,etl
+671,bigquery
+671,mongodb
+671,typescript
+671,node.js
+671,sql
+671,bi
+671,data security
+672,python
+672,scikit-learn
+672,etl
+672,tableau
+672,google cloud
+672,talend
+672,snowflake
+672,mulesoft
+673,genai
+673,llm
+673,python
+673,typescript
+673,ml ops
+673,data pipelines
+673,automation
+673,analytics
+674,python
+674,llm
+674,data pipelines
+674,geospatial
+674,real estate
+674,sales
+674,analytics
+674,c++
+675,genai
+675,llms
+675,python
+675,data pipelines
+675,geospatial
+675,construction coordination
+675,workflow systems
+675,ml fundamentals
+676,genai
+676,llm
+676,ml
+676,python
+676,data pipelines
+676,analytics
+676,software engineering
+676,product integration
+677,python
+677,typescript
+677,java
+677,c++
+677,llm
+677,data pipelines
+677,production ai
+677,collaboration
+678,python
+678,llm
+678,data pipelines
+678,contract automation
+678,legal tech
+678,production ai
+678,collaboration
+678,problem decomposition
+680,genai
+680,llm
+680,data pipelines
+680,python
+680,typescript
+680,java
+680,c++
+680,production ai
+683,genai
+683,llm
+683,data pipelines
+683,python
+683,javascript
+683,c++
+683,faa regulations
+683,aviation
+684,documentation
+684,webinars
+684,data analysis
+684,stakeholder engagement
+684,facilitation
+684,cross‑functional collaboration
+684,teaching
+685,python
+685,langchain
+685,hugging face
+685,pytorch
+685,graph databases
+685,vector databases
+685,rag
+685,llm
+686,sql
+686,bigquery
+686,tableau
+686,data modeling
+686,statistical analysis
+686,a/b testing
+686,data engineering
+686,dashboard design
+687,python
+687,sql
+687,etl
+687,azure
+687,pyspark
+687,data modeling
+687,ci/cd
+687,agile
+689,tableau
+689,alteryx
+689,sql
+689,excel
+689,vba
+689,data governance
+689,dashboard design
+689,automation
+690,genai
+690,rag
+690,llm
+690,mlops
+690,docker
+690,kubernetes
+690,python
+690,tensorflow
+691,java
+691,python
+691,pyspark
+691,pandas
+691,aws
+691,ai tools
+691,knowledge graphs
+691,distributed databases
+692,generative ai
+692,llm
+692,rag
+692,mlops
+692,python
+692,cloud
+692,ml
+692,data science
+693,ai
+693,ml
+693,data
+693,equity
+693,testing
+693,documentation
+693,open-source
+693,responsible ai
+694,databricks
+694,snowflake
+694,aws
+694,azure
+694,open formats
+694,governance
+694,automation
+694,ci/cd
+695,data science
+695,analytics
+695,python
+695,sql
+695,tableau
+695,power bi
+695,project management
+696,fraud prevention
+696,identity risk
+696,device data
+696,bot detection
+696,sql analytics
+696,bigquery
+696,looker
+696,network security
+697,python
+697,sql
+697,spark
+697,aws
+697,snowflake
+697,tableau
+697,machine learning
+697,agile
+698,credit risk
+698,predictive modeling
+698,a/b testing
+698,machine learning
+698,sql
+698,python
+698,tableau
+698,bigquery
+699,python
+699,sql
+699,bigquery
+699,tableau
+699,statistical modeling
+699,a/b testing
+699,data visualization
+699,hadoop
+700,python
+700,sql
+700,bigquery
+700,spark
+700,machine learning
+700,fraud detection
+700,data engineering
+700,model deployment
+701,python
+701,sql
+701,machine learning
+701,statistical modeling
+701,causal inference
+701,experimentation
+701,pricing science
+701,data engineering
+702,python
+702,sql
+702,tableau
+702,generative ai
+702,nlp
+702,ml
+702,data analysis
+702,feature engineering
+704,sql
+704,python
+704,databricks
+704,aws
+704,fivetran
+704,api ingestion
+704,github
+704,agile
+705,python
+705,pandas
+705,numpy
+705,scikit‑learn
+705,tableau
+705,power bi
+705,sql
+705,aws
+706,sql
+706,python
+706,data analysis
+706,reporting
+706,data visualization
+706,tableau
+706,excel
+706,statistical analysis
+707,data analytics
+707,power bi
+707,sql
+707,dashboarding
+707,kpi development
+707,data modeling
+707,data quality
+707,mentoring
+708,power bi
+708,tableau
+708,sql
+708,data visualization
+708,kpi dashboards
+708,semantic modeling
+708,executive reporting
+708,stakeholder collaboration
+709,machine learning
+709,data science
+709,python
+709,statistics
+709,feature engineering
+709,model evaluation
+709,bi integration
+710,azure sql
+710,data factory
+710,databricks
+710,python
+710,t‑sql
+710,ai‑llm
+710,ci/cd
+710,data modeling
+711,sql
+711,power bi
+711,azure data factory
+711,etl
+711,data modeling
+711,python
+711,data governance
+711,cloud architecture
+712,sql
+712,bigquery
+712,looker
+712,tableau
+712,powerbi
+712,excel
+712,a/b testing
+712,data visualization
+713,data analysis
+713,sql
+713,power bi
+713,excel
+713,data visualization
+713,reporting
+713,analytics
+713,communication
+715,reinforcement learning
+715,game theory
+715,machine learning
+715,optimization
+715,python
+715,tensorflow
+715,research leadership
+715,communication
+716,data modeling
+716,dashboard design
+716,sql
+716,powerbi
+716,looker
+716,tableau
+716,python
+717,sql
+717,powerbi
+717,looker
+717,tableau
+717,data modeling
+717,dashboard design
+717,stakeholder management
+717,automation
+718,pyspark
+718,adf
+718,adb
+718,sql
+718,data engineering
+718,etl
+718,big data
+718,cloud
+719,pyspark
+719,azure databricks
+719,sql
+719,data warehousing
+719,python
+719,data lakes
+719,etl
+719,data integration
+720,pyspark
+720,sql
+720,python
+720,data lakes
+720,data warehouses
+720,data marts
+720,etl
+720,data integration
+721,data science
+721,python
+721,sql
+721,scikit-learn
+721,pytorch
+721,tensorflow
+721,keras
+721,pyspark
+722,snowflake
+722,informatica
+722,sql
+722,etl
+722,python
+722,java
+722,ci/cd
+722,agile
+723,python
+723,pyspark
+723,airflow
+723,aws
+723,azure
+723,gcp
+723,etl
+723,data modeling
+724,data engineering
+724,snowflake
+724,sql
+724,ai integration
+724,data modeling
+724,pipeline optimization
+724,consulting
+724,stakeholder management
+725,sql
+725,etl
+725,tableau
+725,power bi
+725,data modeling
+725,a/b testing
+725,data visualization
+725,python
+726,machine learning
+726,deep learning
+726,llm tuning
+726,python
+726,java
+726,a/b testing
+726,feature engineering
+726,large‑scale data
+727,machine learning
+727,deep learning
+727,python
+727,java
+727,a/b testing
+727,feature engineering
+727,llm fine‑tuning
+727,data analysis
+728,data analysis
+728,sql
+728,power bi
+728,process improvement
+728,cx analytics
+728,data visualization
+728,stakeholder communication
+728,project management
+729,powerbi
+729,data visualization
+729,kpi
+729,data stewardship
+729,cloud
+729,analytics
+729,supervision
+729,dashboards
+730,data modeling
+730,sql
+730,python
+730,tableau
+730,excel
+730,statistical analysis
+730,data visualization
+731,edi mapping
+731,data integration
+731,sql
+731,power bi
+731,data quality
+731,etl
+731,data warehousing
+731,project coordination
+733,power bi
+733,sql
+733,snowflake
+733,dax
+733,python
+733,agile
+734,data engineering
+734,api integration
+734,cdp architecture
+734,data privacy
+734,data lineage
+734,etl
+734,python
+734,sql
+735,ai research
+735,machine learning
+735,data analysis
+735,scientific writing
+735,interdisciplinary collaboration
+735,grant writing
+735,project management
+735,mentoring
+737,etl
+737,sql
+737,aws glue
+737,lakehouse
+737,data governance
+737,ci/cd
+737,python
+737,scalable architecture
+738,python
+738,sql
+738,aws
+738,ml/dl
+738,genai
+738,data modeling
+738,data engineering
+738,statistical analysis
+741,python
+741,spark
+741,hadoop
+741,sql
+741,tableau
+741,power bi
+741,cloud
+742,data mining
+742,natural language processing
+742,machine learning
+742,statistical modeling
+742,data engineering
+742,distributed sql
+742,cloud platforms
+742,data visualization
+744,sql
+744,dbt
+744,tableau
+744,data modeling
+744,statistical analysis
+744,data visualization
+744,project management
+744,stakeholder communication
+745,python
+745,sql
+745,aws glue
+745,aws step functions
+745,s3
+745,data lake
+745,sagemaker
+745,linux
+746,data analysis
+746,predictive modeling
+746,sql
+746,python
+746,sas
+746,bayesian statistics
+746,insurance analytics
+747,machine learning
+747,python
+747,sql
+747,model production
+747,churn prediction
+747,segmentation
+747,ltv modeling
+747,recommender systems
+750,machine learning
+750,llm
+750,mlops
+750,docker
+750,kubernetes
+750,langchain
+750,langgraph
+750,pydanticai
+751,python
+751,java
+751,spark
+751,databricks
+751,azure
+751,data modeling
+751,etl
+752,aws
+752,data lake
+752,data warehouse
+752,etl
+752,spark
+752,python
+752,sql
+752,git
+753,data analysis
+753,sql
+753,python
+753,data visualization
+753,powerpoint
+753,communication
+753,stakeholder engagement
+754,python
+754,sql
+754,spark
+754,data visualization
+754,statistical modeling
+754,machine learning
+754,data engineering
+755,data engineering
+755,etl
+755,sql
+755,python
+755,spark
+755,data modeling
+755,data quality
+755,cloud
+756,python
+756,pandas
+756,sql
+756,tableau
+756,seaborn
+756,data pipelines
+756,algorithm optimization
+756,project management
+757,python
+757,aws
+757,data science
+757,machine learning
+757,ai
+757,genai
+757,model risk
+757,regulated environments
+758,python
+758,etl
+758,spark
+758,aws
+758,terraform
+758,data engineering
+758,cloud
+758,security
+759,data modeling
+759,python
+759,sql
+759,machine learning
+759,data visualization
+759,ai
+759,nlp
+759,data cleaning
+760,python
+760,machine learning
+760,open banking
+760,feature development
+760,cross‑functional collaboration
+760,data transformation
+760,model deployment
+760,communication
+761,python
+761,aws
+761,airflow
+761,dbt
+761,data modeling
+761,distributed systems
+761,testing
+761,stakeholder communication
+762,python
+762,sql
+762,machine learning
+762,aws
+762,snowflake
+762,tableau
+762,alteryx
+762,git
+767,conjugation chemistry
+767,lnp formulation
+767,process development
+767,scale‑up
+767,gmp manufacturing
+767,technology transfer
+767,biologics
+767,nanoparticle systems
+768,financial modeling
+768,data engineering
+768,ai automation
+768,excel
+768,netsuite
+768,abacum
+768,python
+768,sql
+769,hplc
+769,capillary electrophoresis
+769,mass spectrometry
+769,elisa
+769,regulatory writing
+769,process analytics
+769,project management
+769,team leadership
+770,python
+770,sql
+770,snowflake
+770,redshift
+770,airflow
+770,dagster
+770,ci/cd
+770,data modeling
+771,python
+771,sql
+771,microsoft fabric
+771,power bi
+771,copilot
+771,power automate
+771,azure ai
+771,machine learning
+773,python
+773,data analysis
+773,statistical modeling
+773,experimental data
+773,predictive modeling
+773,cognitive science
+773,neuroscience
+774,telemetry analysis
+774,data visualization
+774,python
+774,matlab
+774,signal processing
+774,root cause analysis
+774,reliability engineering
+774,mechanical systems
+775,data visualization
+775,multimodal data
+775,health informatics
+775,prototyping
+775,cloud integration
+775,data structuring
+775,user‑centered design
+775,scientific communication
+776,pyspark
+776,sql
+776,databricks
+776,aws s3
+776,delta lake
+776,parquet
+776,ci/cd
+776,git
+777,python
+777,sql
+777,machine learning
+777,data visualization
+777,experimentation
+777,predictive modeling
+777,database design
+777,communication
+779,sql
+779,tableau
+779,looker
+779,data visualization
+779,data wrangling
+779,healthcare claims
+779,presales analytics
+779,python
+780,etl
+780,data warehousing
+780,aws
+780,python
+780,java
+780,sql
+780,spark
+780,cloud architecture
+781,sql
+781,power bi
+781,data modeling
+781,dashboard design
+781,ai-assisted development
+781,public safety analytics
+781,instructional design
+781,mentoring
+782,sql
+782,power bi
+782,data modeling
+782,ai‑assisted development
+782,dashboard design
+782,performance tuning
+782,instructional design
+782,mentoring
+783,sql
+783,power bi
+783,data modeling
+783,ai tools
+783,public safety
+783,dashboard design
+783,mentoring
+783,instructional design
+784,sql
+784,power bi
+784,data modeling
+784,ai tools
+784,public safety
+784,mentoring
+784,communication
+784,performance optimization
+785,sql
+785,power bi
+785,data modeling
+785,ai tools
+785,mentoring
+785,performance optimization
+785,reporting
+785,training
+786,sql
+786,power bi
+786,data modeling
+786,dashboard design
+786,ai‑assisted development
+786,instructional design
+786,public safety analytics
+786,mentoring
+787,data analysis
+787,project management
+787,team leadership
+787,stakeholder communication
+787,microsoft office
+787,mfl technology
+787,analytical thinking
+787,customer focus
+788,python
+788,sql
+788,power bi
+788,bim
+788,automation
+788,data visualization
+788,project management
+788,communication
+789,python
+789,databricks
+789,sql
+789,scala
+789,java
+789,spark
+789,machine learning
+790,cloud architecture
+790,gcp
+790,solutions architecture
+790,demos
+790,workshops
+790,technical account management
+790,cross‑pillar
+790,customer engagement
+791,data analysis
+791,financial markets
+791,research
+791,attention to detail
+791,team collaboration
+792,python
+792,pytorch
+792,tensorflow
+792,nlp
+792,cv
+792,multimodal
+792,large models
+792,deployment
+793,microsoft fabric
+793,power bi
+793,pyspark
+793,sql
+793,data modeling
+793,ci/cd
+793,data governance
+793,performance tuning
+794,deep learning
+794,llm
+794,nlp
+794,computer vision
+794,python
+794,model deployment
+794,scalable systems
+794,data analysis
+797,product marketing
+797,ai landscape
+797,data analysis
+797,project management
+797,cross‑functional collaboration
+797,competitive benchmarking
+797,go‑to‑market strategy
+797,partner management
+798,python
+798,c++
+798,computer vision
+798,ml infrastructure
+798,model deployment
+798,data processing
+798,debugging
+798,system design
+799,data analysis
+799,grant reporting
+799,ehr integration
+799,data entry
+799,hipaa compliance
+799,critical thinking
+799,problem solving
+799,time management
+800,vision language models
+800,embodied reasoning
+800,simulation
+800,reinforcement learning
+800,python
+800,robotics
+800,transformer models
+800,video generation
+801,sql
+801,python
+801,gcp
+801,aws
+801,azure
+801,etl
+801,data pipeline
+801,dashboarding
+802,sql
+802,python
+802,gcp
+802,snowflake
+802,redshift
+802,looker
+802,tableau
+803,data analysis
+803,statistical modeling
+803,machine learning
+803,causal inference
+803,a/b testing
+803,sql
+803,python
+804,azure data factory
+804,azure databricks
+804,sql server
+804,python
+804,pyspark
+804,etl
+804,data modeling
+804,data quality
+805,project management
+805,cross‑functional coordination
+805,risk management
+805,stakeholder communication
+805,sql
+805,data analysis
+805,supply chain planning
+805,capacity planning
+806,python
+806,gcp
+806,vertex ai
+806,llm
+806,vector db
+806,rag
+806,observability
+806,api integration
+807,python
+807,ai/genai
+807,multi-agent systems
+807,rag
+807,mlops
+807,tool-calling
+807,secure design
+807,observability
+808,marketing analytics
+808,mmm
+808,mta
+808,clv
+808,personalization
+808,a/b testing
+808,sql
+808,python
+810,python
+810,pandas
+810,numpy
+810,scikit-learn
+810,sql
+810,eda
+810,feature engineering
+810,model training
+811,python
+811,sql
+811,machine learning
+811,data engineering
+811,statistical modeling
+811,feature engineering
+811,model deployment
+811,data visualization
+812,generative ai
+812,gcp
+812,vertex ai
+812,rag
+812,vector databases
+812,agent systems
+812,llm metrics
+812,observability
+813,python
+813,sql
+813,azure
+813,generative ai
+813,ml ops
+813,responsible ai
+813,consulting
+813,model deployment
+814,genai
+814,mlops
+814,python
+814,rag
+814,multi‑agent
+814,data sovereignty
+814,tool‑calling
+814,secure design
+815,machine learning
+815,statistical modeling
+815,experiment design
+815,data engineering
+815,python
+815,azure ml
+815,data governance
+815,leadership
+816,power bi
+816,dax
+816,r shiny
+816,tableau
+816,data modeling
+816,version control
+816,mentoring
+817,sql
+817,snowflake
+817,dbt
+817,tableau
+817,data modeling
+817,data quality
+817,etl
+817,analytics
+818,python
+818,pytorch
+818,hugging face
+818,langchain
+818,vector db
+818,ml ops
+818,ci/cd
+818,docker
+819,python
+819,sql
+819,mlops
+819,llmops
+819,tensorflow
+819,tpus
+819,nlp
+819,data pipelines
+820,academic leadership
+820,budget management
+820,program development
+820,faculty evaluation
+820,community outreach
+820,accreditation
+820,strategic planning
+820,stakeholder engagement
+821,snowflake
+821,sql
+821,dimensional modeling
+821,metabase
+821,ai coding assistants
+821,data product architecture
+821,bi
+821,data engineering
+822,data analysis
+822,statistical modeling
+822,machine learning
+822,sql
+822,python
+822,causal inference
+822,digital marketing
+823,sas
+823,sql
+823,python
+823,power bi
+823,tableau
+823,data visualization
+823,data modeling
+825,python
+825,sql
+825,nlp
+825,llm
+825,prompt engineering
+825,etl
+825,azure openai
+825,data visualization
+826,test planning
+826,hardware integration
+826,pcba
+826,dft
+826,project management
+826,budgeting
+826,stakeholder communication
+826,documentation
+827,data engineering
+827,sql
+827,python
+827,machine learning
+827,analytics
+827,automation
+827,forecasting
+828,distributed systems
+828,sre
+828,python
+828,c++
+828,go
+828,performance tuning
+828,capacity planning
+828,system architecture
+829,java
+829,python
+829,c/c++
+829,go
+829,ml infrastructure
+829,data pipelines
+829,distributed systems
+829,security
+829,privacy
+829,experimentation
+829,metrics
+829,statistical analysis
+829,batch processing
+829,high‑volume traffic
+829,reliability
+830,power bi
+830,sql
+830,python
+830,data modeling
+830,predictive analytics
+830,data visualization
+830,statistical analysis
+830,business intelligence
+831,rust
+831,java
+831,python
+831,tensorflow
+831,distributed systems
+831,performance engineering
+831,file systems
+831,ai/ml
+832,python
+832,pytorch
+832,distributed training
+832,rlhf
+832,dpo
+832,lora
+832,qlora
+832,evaluation
+833,python
+833,pytorch
+833,distributed training
+833,rlhf
+833,dataset curation
+833,evaluation
+833,gpu ops
+833,model deployment
+834,python
+834,pytorch
+834,llm fine‑tuning
+834,distributed training
+834,rlhf
+834,dataset curation
+834,evaluation
+834,mentoring
+835,python
+835,pytorch
+835,distributed training
+835,rlhf
+835,dpo
+835,lora
+835,qlora
+835,evaluation
+835,gpu clusters
+836,sql
+836,etl
+836,python
+836,tableau
+836,power bi
+836,snowflake
+836,cerner ccl
+837,edge ai
+837,model compression
+837,quantization
+837,tensorflow lite
+837,onnx runtime
+837,core ml
+837,c++
+837,python
+837,performance engineering
+838,edge ai
+838,model compression
+838,quantization
+838,tensorflow lite
+838,onnx runtime
+838,core ml
+838,c++
+838,python
+838,performance engineering
+839,python
+839,c++
+839,tensorflow lite
+839,onnx runtime
+839,core ml
+839,model compression
+839,quantization
+839,hardware optimization
+840,edge ai
+840,model compression
+840,quantization
+840,pruning
+840,tensorflow lite
+840,onnx runtime
+840,core ml
+840,c++
+841,sql
+841,tableau
+841,redshift
+841,python
+841,excel
+841,access
+841,data analysis
+841,dashboard
+842,python
+842,pytorch
+842,tensorflow
+842,opencv
+842,yolo
+842,mlops
+842,cloud
+842,computer vision
+844,knowledge graph
+844,graph ml
+844,python
+844,aws
+844,entity resolution
+844,graph databases
+844,model lifecycle
+844,mentoring
+845,python
+845,pytorch
+845,llm fine‑tuning
+845,distributed training
+845,rlhf
+845,dataset curation
+845,evaluation methodology
+845,gpu cluster ops
+846,python
+846,pytorch
+846,llm fine‑tuning
+846,distributed training
+846,rlhf
+846,dpo
+846,lora
+846,evaluation
+847,edge ai
+847,model compression
+847,quantization
+847,tensorflow lite
+847,onnx runtime
+847,core ml
+847,c++
+847,python
+847,performance profiling
+849,python
+849,javascript
+849,typescript
+849,openai
+849,langchain
+849,llamaindex
+849,autogen
+849,crewai
+849,rag
+849,docker
+849,aws
+849,gcp
+849,azure
+849,vector databases
+850,program management
+850,ai/ml
+850,data governance
+850,compliance
+850,vendor management
+850,stakeholder communication
+850,budgeting
+850,dashboarding
+852,sql
+852,python
+852,looker
+852,tableau
+852,snowflake
+852,databricks
+852,airflow
+852,aws
+852,semantic layer
+852,metric governance
+852,ai analytics
+852,program management
+852,international analytics
+852,llm
+852,data quality
+852,observability
+852,project management
+853,machine learning
+853,generative ai
+853,agentic ai
+853,llm prompt engineering
+853,rag
+853,vector databases
+853,cloud analytics
+853,responsible ai
+854,docker
+854,kubernetes
+854,aws
+854,mlflow
+854,python
+854,airflow
+854,snowflake
+854,ci/cd
+855,deep learning
+855,generative ai
+855,aws agentsquad
+855,langchain
+855,responsible ai
+855,github copilot
+855,model deployment
+855,jira
+856,data engineering
+856,etl
+856,spark
+856,databricks
+856,"c#"
+856,sql
+856,aws
+856,ai tools
+857,databricks
+857,delta lake
+857,pyspark
+857,sql
+857,data modeling
+857,etl/elt
+857,data governance
+857,manufacturing analytics
+858,petrel
+858,arcgis
+858,python
+858,sql
+858,sharepoint
+858,snowflake
+858,data governance
+858,workflow automation
+859,machine learning
+859,data engineering
+859,model deployment
+859,automation
+859,observability
+859,feature engineering
+859,statistical modeling
+859,experimentation
+860,data analytics
+860,crm management
+860,excel pivot
+860,sales forecasting
+860,client engagement
+860,cross‑functional collaboration
+860,documentation management
+860,powerpoint
+861,machine learning
+861,species distribution
+861,data integration
+861,predictive modeling
+861,field research
+861,statistical analysis
+861,python
+862,data governance
+862,sap
+862,power bi
+862,excel
+862,supply chain
+862,data maintenance
+862,reporting
+862,project management
+864,machine learning
+864,statistical modeling
+864,sql
+864,data engineering
+864,llm
+864,rag
+864,web app development
+864,git
+865,data engineering
+865,data architecture
+865,big data
+865,cloud
+865,data governance
+865,python
+865,sql
+865,spark
+866,python
+866,sql
+866,machine learning
+866,data visualization
+866,statistical modeling
+866,fraud detection
+866,hadoop
+866,spark
+867,python
+867,sas
+867,sql
+867,spark
+867,hive
+867,pig
+867,data visualization
+869,data analysis
+869,sap
+869,pdm
+869,microsoft office
+869,microsoft access
+869,structured data
+869,process improvement
+869,cross‑functional collaboration
+870,tm1
+870,python
+870,aws
+870,pandas
+870,cloud
+870,data engineering
+870,etl
+870,data governance
+871,python
+871,snowflake
+871,powerbi
+871,nlp
+871,machine learning
+871,sql
+871,data modeling
+871,statistical analysis
+872,gpu ml
+872,digital twins
+872,generative ai
+872,time‑series
+872,edge deployment
+872,nvidia
+872,python
+872,statistical analysis
+873,tableau
+873,alteryx
+873,sql
+873,data visualization
+873,dashboard
+873,data modeling
+873,process automation
+873,cross-functional collaboration
+874,data analysis
+874,sql
+874,python
+874,spark
+874,tableau
+874,aws
+874,leadership
+875,data analytics
+875,risk management
+875,compliance
+875,python
+875,spark
+875,sql
+875,snowflake
+876,sql
+876,power bi
+876,excel
+876,data analysis
+876,root cause analysis
+876,mrp
+876,erp
+876,lean
+877,excel
+877,vba
+877,tableau
+877,factset
+877,bloomberg
+877,mpi
+877,advent
+877,sql
+878,python
+878,sql
+878,sas
+878,power bi
+878,tableau
+878,spark
+878,scala
+878,hive
+879,tableau
+879,power bi
+879,azure
+879,sql
+879,python
+879,databricks
+879,github
+879,agile
+880,data querying
+880,data visualization
+880,ai prompt engineering
+880,low‑code automation
+880,audit analytics
+880,power bi
+880,power platform
+880,excel
+884,sql
+884,python
+884,dbt
+884,snowflake
+884,data modeling
+884,data visualization
+884,stakeholder communication
+884,github
+885,snowflake
+885,azure
+885,dbt
+885,airflow
+885,sql
+885,data modeling
+885,etl
+885,performance tuning
+886,machine learning
+886,deep learning
+886,computer vision
+886,signal processing
+886,data engineering
+886,python
+886,tensorflow
+886,pytorch
+886,cuda
+886,agile
+886,devops
+887,python
+887,tensorflow
+887,pytorch
+887,c++
+887,"c#"
+887,reinforcement learning
+887,generative ai
+887,gpu programming
+890,sql
+890,alteryx
+890,tableau
+890,google looker
+890,data warehousing
+890,data visualization
+890,audit analytics
+890,mentoring
+891,data engineering
+891,databricks
+891,pyspark
+891,scala
+891,sql
+891,aws
+891,agile
+896,databricks
+896,pyspark
+896,sql
+896,azure
+896,aws
+896,gcp
+896,ci/cd
+896,generative ai
+897,databricks
+897,pyspark
+897,sql
+897,azure
+897,generative ai
+897,deep learning
+897,neural networks
+897,ci/cd
+898,prompt engineering
+898,large language models
+898,rlhf
+898,llm
+898,azure
+898,aws
+898,google cloud
+898,nlp
+899,python
+899,azure ai
+899,rag
+899,langgraph
+899,langchain
+899,crewai
+899,llmops
+899,azure functions
+900,aws glue
+900,aws lambda
+900,aws redshift
+900,azure data factory
+900,python
+900,sql
+900,terraform
+900,etl
+903,azure databricks
+903,azure data factory
+903,azure data lake
+903,google cloudsql
+903,postgres
+903,t-sql
+903,ci/cd
+903,docker
+903,kubernetes
+904,data strategy
+904,predictive modeling
+904,data infrastructure
+904,azure
+904,aws
+904,python
+904,sql
+906,machine learning
+906,data mining
+906,python
+906,sql
+906,ai tools
+906,model deployment
+906,experiment design
+908,data quality
+908,pii compliance
+908,etl
+908,sql
+908,agile
+908,jira
+908,data governance
+908,data integration
+909,python
+909,llm
+909,rag
+909,retrieval
+909,evaluation
+909,databricks
+909,langgraph
+909,langchain
+910,sql
+910,data profiling
+910,data validation
+910,xml
+910,unix/linux
+910,data analysis
+910,problem solving
+910,communication
+911,sql
+911,big data
+911,data visualization
+911,python
+911,tableau
+911,powerbi
+911,looker
+915,machine learning
+915,statistical modeling
+915,experimental design
+915,python
+915,pyspark
+915,tensorflow
+915,pytorch
+915,sql
+916,mlops
+916,model serving
+916,databricks
+916,python
+916,sql
+916,ci/cd
+916,monitoring
+916,data pipelines
+917,python
+917,llm
+917,rag
+917,azure
+917,snowflake
+917,power bi
+917,agentic
+917,prompt
+918,tableau
+918,excel
+918,sql
+918,python
+918,data visualization
+918,data mining
+918,analytics
+919,python
+919,sql
+919,aws glue
+919,databricks
+919,delta lake
+919,ci/cd
+919,gitlab
+919,ansible
+920,deep learning
+920,physics simulation
+920,robot learning
+920,sim‑to‑real
+920,reinforcement learning
+920,c++
+920,python
+920,foundation models
+921,generative ai
+921,agentic ai
+921,physical ai
+921,llms
+921,vlms
+921,sim‑to‑real
+921,grant writing
+921,research collaboration
+922,sql
+922,python
+922,power bi
+922,tableau
+922,snowflake
+922,data modelling
+922,ai tools
+922,data visualization
+924,python
+924,pytorch
+924,c++
+924,java
+924,postgresql
+924,neo4j
+924,aws
+924,azure
+925,python
+925,pytorch
+925,c++
+925,java
+925,hpc
+925,sql
+925,azure
+925,aws
+926,ai solutions
+926,llms
+926,nlp
+926,foundation models
+926,azure
+926,aws
+926,python
+926,api development
+927,python
+927,sql
+927,tableau
+927,powerbi
+927,plotly
+927,data modeling
+927,statistical analysis
+927,data governance
+930,proteomics
+930,multi‑omics
+930,python
+930,hpc
+930,cloud
+930,git
+930,data integration
+931,robot framework
+931,python
+931,aws glue
+931,apache airflow
+931,databricks
+931,ci/cd
+931,git
+931,jira
+931,xray
+933,data analytics
+933,process improvement
+933,lean
+933,agile
+933,sql
+933,power bi
+933,excel
+933,communication
+934,data engineering
+934,sql
+934,python
+934,cloud platforms
+934,data governance
+934,data quality
+934,team leadership
+934,api development
+935,large language models
+935,agent orchestration
+935,embedding retrieval
+935,cloud‑native delivery
+935,genai integration
+935,scalable workflows
+935,data science
+935,forecasting
+936,java
+936,nodejs
+936,python
+936,distributed systems
+936,apis
+936,cloud
+936,containerization
+936,ai workflows
+937,"c#"
+937,sql server
+937,business intelligence
+937,data analysis
+937,unit testing
+937,documentation
+937,stakeholder management
+937,performance tuning
+938,sql
+938,snowflake
+938,tableau
+938,data reconciliation
+938,data governance
+938,financial analysis
+938,dashboard development
+938,process automation
+939,data visualization
+939,sql
+939,tableau
+939,powerpoint
+939,python
+939,generative ai
+939,dashboarding
+939,data storytelling
+942,snowflake
+942,dbt
+942,qlik
+942,sql
+942,agile
+942,data modeling
+942,data visualization
+942,data governance
+944,aws s3
+944,iceberg
+944,pyspark
+944,airflow
+944,snowflake
+944,python
+944,data governance
+944,team leadership
+945,etl
+945,azure databricks
+945,spark
+945,sql
+945,pyspark
+945,data warehousing
+945,data cleansing
+945,azure synapse
+946,python
+946,mlops
+946,feature engineering
+946,model deployment
+946,explainability
+946,bias detection
+946,performance monitoring
+947,aws
+947,python
+947,sql
+947,spark
+947,terraform
+947,ci/cd
+947,data engineering
+947,etl
+948,python
+948,pyspark
+948,aws s3
+948,aws emr
+948,sql
+948,etl
+948,data warehousing
+948,ci/cd
+949,tableau
+949,alteryx
+949,excel
+949,sql
+949,data visualization
+949,data preparation
+949,process improvement
+949,automation
+950,ga4
+950,gtm
+950,a/b testing
+950,sql
+950,html/css
+950,ai tools
+950,data analysis
+950,reporting
+951,machine learning
+951,deep learning
+951,statistics
+951,predictive modeling
+951,sql
+951,python
+951,data mining
+951,model deployment
+953,machine learning
+953,deep learning
+953,statistics
+953,predictive modeling
+953,prescriptive modeling
+953,sql
+953,python
+953,data extraction
+954,machine learning
+954,deep learning
+954,statistical analysis
+954,sql
+954,python
+954,data mining
+954,predictive modeling
+954,data engineering
+955,python
+955,sql
+955,kafka
+955,azure synapse
+955,azure data lake
+955,azure event hubs
+955,azure cosmos db
+955,snowflake
+955,teradata
+955,java
+955,scala
+955,spring boot
+955,jenkins
+955,ci/cd
+955,ai/genai
+955,responsible ai
+955,data governance
+956,sql
+956,dimensional modeling
+956,etl/elt
+956,snowflake
+956,databricks
+956,python
+956,dbt
+956,airflow
+959,etl
+959,informatica
+959,t‑sql
+959,ssis
+959,python
+959,azure
+959,snowflake
+959,databricks
+960,databricks
+960,lakehouse
+960,data pipeline
+960,lineage
+960,metadata
+960,observability
+960,governance
+960,dataops
+961,genai
+961,llm
+961,mlops
+961,python
+961,sql
+961,spark
+961,hadoop
+961,dataiku
+962,microsoft fabric
+962,lakehouse
+962,delta lake
+962,sql
+962,python
+962,pyspark
+962,azure data factory
+962,azure synapse
+963,python
+963,matlab
+963,c++
+963,data analysis
+963,simulation
+963,radar systems
+963,air defense
+963,linux
+967,power bi
+967,tableau
+967,power apps
+967,power automate
+967,sql
+967,snowflake
+967,data modeling
+967,data visualization
+968,method development
+968,validation
+968,gmp
+968,glp
+968,hplc
+968,gc
+968,uplc
+968,icp‑ms
+968,lc/ms
+968,gc/ms
+968,sops
+968,root cause analysis
+968,technical writing
+968,project management
+968,mentoring
+968,collaboration
+969,experimental studies
+969,clinical research
+969,data analysis
+969,manuscript submission
+969,conference presentation
+969,collaboration
+969,database maintenance
+969,independent research
+970,bi dashboards
+970,data analysis
+970,sql
+970,power bi
+970,tableau
+970,data modeling
+970,etl
+970,visualization
+971,java
+971,scala
+971,python
+971,snowflake
+971,redshift
+971,spark
+971,kafka
+971,agile
+972,ai/ml
+972,product strategy
+972,agile
+972,python
+972,sql
+972,data science
+972,stakeholder management
+972,project management
+973,llm integration
+973,prompt engineering
+973,python
+973,nlp
+973,explainable ai
+973,regulated industry
+973,statistical benchmarking
+973,data governance
+974,sql
+974,snowflake
+974,dbt
+974,ssrs
+974,powerbi
+974,git
+974,ci/cd
+974,azure
+975,python
+975,generative ai
+975,llms
+975,vector databases
+975,microservices
+975,rest apis
+975,cloud
+975,docker
+975,kubernetes
+975,fastapi
+975,react
+975,typescript
+975,security
+976,python
+976,fastapi
+976,asyncio
+976,docker
+976,kubernetes
+976,aws
+976,gcp
+976,azure
+976,react
+976,typescript
+977,sql
+977,informatica
+977,snowflake
+977,oracle
+977,power bi
+977,aws
+977,data modeling
+977,etl
+978,data mining
+978,machine learning
+978,statistical analysis
+978,exploratory data analysis
+978,sql
+978,python
+978,java
+980,python
+980,sql
+980,bigquery
+980,looker
+980,data modeling
+980,forecasting
+980,data visualization
+980,time series
+981,python
+981,fastapi
+981,aws
+981,docker
+981,github
+981,llm tool design
+981,agent evals
+981,observability
+982,python
+982,sql
+982,ml ops
+982,model deployment
+982,experimentation
+982,data pipelines
+982,mentoring
+982,collaboration
+984,data modeling
+984,causal inference
+984,sql
+984,python
+984,snowflake
+984,dbt
+984,tableau
+984,experimentation
+985,python
+985,ml
+985,sql
+985,fastapi
+985,pandas
+985,scikit-learn
+985,causal inference
+985,experimentation
+988,llm
+988,ml
+988,agentic systems
+988,observability
+988,regulatory compliance
+988,healthcare ai
+988,product partnership
+988,mentorship
