@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Jobs Explorer</title>
+<style>
+  :root { --bg:#f7f7f5; --card:#fff; --ink:#1d1f21; --muted:#5f6368; --line:#e3e3df; --accent:#1f6f5c; --soft:#e3f1ec; --bar:#2f8f76; --bar2:#c98a2b; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#141517; --card:#1d1f22; --ink:#ececec; --muted:#a0a4a8; --line:#30333a; --accent:#5cc4a6; --soft:#1d3029; --bar:#5cc4a6; --bar2:#e0a84a; } }
+  * { box-sizing:border-box; }
+  body { margin:0; font:15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif; background:var(--bg); color:var(--ink); }
+  .wrap { max-width:920px; margin:0 auto; padding:28px 20px 60px; }
+  h1 { margin:0; font-size:28px; letter-spacing:-.3px; }
+  .tag { color:var(--muted); margin:4px 0 18px; }
+  .stats { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:16px; }
+  .stat { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:8px 14px; }
+  .stat b { font-size:18px; display:block; }
+  .stat span { color:var(--muted); font-size:12px; }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; margin:10px 0; }
+  .chip { border:1px solid var(--line); background:var(--card); color:var(--ink); border-radius:999px; padding:6px 12px; font-size:13px; cursor:pointer; }
+  .chip:hover { border-color:var(--accent); }
+  .row { display:flex; gap:10px; flex-wrap:wrap; }
+  input[type=text], input[type=password] { flex:1; min-width:240px; padding:11px 12px; border:1px solid var(--line); border-radius:8px; font:inherit; background:var(--card); color:var(--ink); }
+  .btn { background:var(--accent); color:#fff; border:0; border-radius:8px; padding:11px 18px; font:inherit; font-weight:600; cursor:pointer; }
+  .btn:disabled { opacity:.5; cursor:default; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 16px; margin-top:14px; }
+  .label { font-size:12px; text-transform:uppercase; letter-spacing:.6px; color:var(--muted); margin-bottom:6px; }
+  pre { margin:0; white-space:pre-wrap; font:13px/1.45 ui-monospace, SFMono-Regular, Menlo, monospace; background:var(--soft); padding:10px 12px; border-radius:8px; overflow-x:auto; }
+  .bars { display:grid; grid-template-columns:minmax(120px,240px) 1fr; gap:6px 12px; align-items:center; margin-top:4px; }
+  .bars .name { font-size:13px; text-align:right; color:var(--ink); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .bars .track { display:flex; align-items:center; gap:6px; font-size:12px; color:var(--muted); }
+  .bars .fill { height:16px; border-radius:4px; background:var(--bar); }
+  .tablewrap { overflow-x:auto; }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  td, th { text-align:left; padding:6px 8px; border-bottom:1px solid var(--line); white-space:nowrap; }
+  th { color:var(--muted); font-weight:600; }
+  .muted { color:var(--muted); font-size:13px; }
+  .note { background:var(--soft); border-radius:8px; padding:8px 12px; font-size:13px; margin-top:10px; }
+  details summary { cursor:pointer; color:var(--muted); font-size:14px; margin-top:12px; }
+  .err { color:#c0392b; }
+  footer { margin-top:36px; color:var(--muted); font-size:13px; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Data Jobs Explorer</h1>
+  <div class="tag">What do 2026 data and AI job postings actually ask for? Click a question, or ask your own in plain English. Every answer shows the SQL that produced it, so you can check the work.</div>
+
+  <div class="stats" id="stats"><div class="stat"><b>loading…</b><span>starting the in-browser database</span></div></div>
+
+  <div class="label">Ready-made questions (no key needed)</div>
+  <div class="chips" id="presets"></div>
+
+  <div class="label" style="margin-top:14px">Ask your own</div>
+  <div class="row">
+    <input type="text" id="q" placeholder="e.g. Which skills show up in AI engineer posts but not data analyst posts?" autocomplete="off">
+    <button class="btn" id="go" disabled>Ask</button>
+  </div>
+  <details id="keybox">
+    <summary>Your own questions need a Gemini key (free)</summary>
+    <div class="row" style="margin-top:8px"><input type="password" id="key" placeholder="Paste a Gemini API key" autocomplete="off"></div>
+    <div class="muted" style="margin-top:6px">Get one at aistudio.google.com/apikey. Gemini writes the SQL; the query runs in your browser. The key stays in this tab, goes only to Google, and is cleared when you close the tab.</div>
+  </details>
+
+  <div id="out"></div>
+
+  <footer>
+    Data: <a href="https://huggingface.co/datasets/NextGig-Rocks/global-job-postings-multi-ats" target="_blank" rel="noopener">NextGig global job postings</a> (CC-BY-4.0), filtered to 982 data and AI roles collected in 2026. It is one snapshot, not the whole market: treat counts as directional.
+    Built with DuckDB running in the browser and Gemini for text-to-SQL. A demo by Jules Malin.
+  </footer>
+</div>
+
+<script type="module">
+import * as duckdb from "https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.32.0/+esm";
+
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const MODELS = ["gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-2.5-flash-lite"];
+let conn;
+
+const PRESETS = [
+  ["Top skills for AI engineers vs data scientists", `
+with by_role as (
+  select j.role, s.skill, count(distinct j.job_id) as posts
+  from jobs j join job_skills s using (job_id)
+  where j.role in ('AI Engineer', 'Data Scientist')
+  group by 1, 2),
+totals as (select role, count(*) as n from jobs where role in ('AI Engineer','Data Scientist') group by 1)
+select b.role, b.skill, round(100.0 * b.posts / t.n, 1) as pct_of_posts
+from by_role b join totals t using (role)
+qualify row_number() over (partition by b.role order by b.posts desc) <= 8
+order by b.role, pct_of_posts desc`],
+  ["Skills AI engineer posts ask for that data scientist posts rarely do", `
+with p as (
+  select s.skill,
+    count(distinct case when j.role = 'AI Engineer' then j.job_id end) * 100.0 / (select count(*) from jobs where role = 'AI Engineer') as ai_pct,
+    count(distinct case when j.role = 'Data Scientist' then j.job_id end) * 100.0 / (select count(*) from jobs where role = 'Data Scientist') as ds_pct
+  from jobs j join job_skills s using (job_id) group by 1)
+select skill, round(ai_pct, 1) as ai_engineer_pct, round(ds_pct, 1) as data_scientist_pct
+from p where ai_pct >= 5 order by ai_pct - ds_pct desc limit 12`],
+  ["How many postings per role?", `
+select role, count(*) as postings from jobs group by 1 order by 2 desc`],
+  ["Remote, hybrid, or on-site, by role", `
+select role,
+  round(100.0 * count(*) filter (where work_model = 'remote') / count(work_model), 0) as remote_pct,
+  round(100.0 * count(*) filter (where work_model = 'hybrid') / count(work_model), 0) as hybrid_pct,
+  round(100.0 * count(*) filter (where work_model = 'on-site') / count(work_model), 0) as onsite_pct,
+  count(work_model) as postings_with_info
+from jobs group by 1 order by remote_pct desc`],
+  ["How senior are these roles? (share entry-level or intern)", `
+select role,
+  round(100.0 * count(*) filter (where seniority in ('Entry','Intern','Junior')) / count(seniority), 0) as entry_level_pct,
+  round(100.0 * count(*) filter (where seniority in ('Senior','Lead','Principal','Director','VP')) / count(seniority), 0) as senior_or_above_pct,
+  count(seniority) as postings_with_info
+from jobs group by 1 order by entry_level_pct desc`],
+  ["US salary ranges by role", `
+select role, count(*) as postings_with_salary,
+  round(median(salary_min_usd), -3) as median_min_usd, round(median(salary_max_usd), -3) as median_max_usd
+from jobs where country = 'United States' and salary_min_usd is not null
+group by 1 having count(*) >= 5 order by median_max_usd desc`],
+  ["Who's hiring the most data and AI roles?", `
+select company, count(*) as postings, string_agg(distinct role, ', ') as roles
+from jobs group by 1 order by 2 desc limit 12`],
+  ["Which tools come up most? (SQL, Python, cloud, BI)", `
+select skill, count(distinct job_id) as posts from job_skills
+where skill in ('python','sql','aws','azure','gcp','spark','databricks','snowflake','tableau','power bi','dbt','airflow','pytorch','tensorflow','docker','kubernetes','langchain')
+group by 1 order by 2 desc`],
+];
+
+const SCHEMA = `DuckDB tables:
+jobs(job_id INTEGER, role VARCHAR, title VARCHAR, company VARCHAR, industry VARCHAR, seniority VARCHAR,
+     years_experience DOUBLE, work_model VARCHAR, country VARCHAR, city VARCHAR,
+     salary_min_usd DOUBLE, salary_max_usd DOUBLE)
+  role is one of: 'Data Scientist','Data Engineer','Data Analyst','AI Engineer','ML Engineer','BI Analyst','Analytics Engineer','Research Scientist'
+  work_model is 'remote', 'hybrid', 'on-site', or NULL. country uses 'United States' for the US.
+  salary columns are annual USD and mostly NULL; always report how many rows have a salary.
+  years_experience is almost always NULL; use seniority instead ('Intern','Entry','Junior','Mid','Senior','Lead','Principal','Director','VP').
+job_skills(job_id INTEGER, skill VARCHAR)  -- one row per skill per posting, skill is lowercase, e.g. 'python', 'sql', 'aws'
+982 postings, collected in 2026. No posting dates.`;
+
+const RULES = `Write ONE DuckDB SQL query that answers the question using only the tables below.
+Rules: SELECT or WITH only. Return at most 25 rows. Prefer percentages of postings over raw counts when comparing roles.
+When a column is often NULL, include a count of rows that have it. Use lowercase skill names.
+Reply with only the SQL in a \`\`\`sql code block, then one short sentence starting with "Note:" about any caveat.`;
+
+async function start() {
+  const bundle = await duckdb.selectBundle(duckdb.getJsDelivrBundles());
+  const workerUrl = URL.createObjectURL(new Blob([`importScripts("${bundle.mainWorker}");`], {type: "text/javascript"}));
+  const db = new duckdb.AsyncDuckDB(new duckdb.VoidLogger(), new Worker(workerUrl));
+  await db.instantiate(bundle.mainModule, bundle.pthreadWorker);
+  for (const f of ["jobs.csv", "job_skills.csv"]) await db.registerFileText(f, await (await fetch(f)).text());
+  conn = await db.connect();
+  await conn.query(`create table jobs as select * from read_csv_auto('jobs.csv')`);
+  await conn.query(`create table job_skills as select * from read_csv_auto('job_skills.csv')`);
+  const s = (await conn.query(`select (select count(*) from jobs) a, (select count(distinct company) from jobs) b,
+     (select count(*) from jobs where role='AI Engineer') c, (select count(distinct skill) from job_skills) d`)).toArray()[0];
+  $("#stats").innerHTML = [[s.a, "data & AI postings"], [s.b, "companies"], [s.c, "AI engineer posts"], [s.d, "distinct skills"]]
+    .map(([v, l]) => `<div class="stat"><b>${Number(v).toLocaleString()}</b><span>${l}</span></div>`).join("");
+  PRESETS.forEach(([label, sql]) => { const b = document.createElement("button"); b.className = "chip"; b.textContent = label;
+    b.onclick = () => run(label, sql.trim(), "Ready-made query"); $("#presets").appendChild(b); });
+  $("#go").disabled = false;
+  run(PRESETS[0][0], PRESETS[0][1].trim(), "Ready-made query");
+}
+
+function render(rows, cols) {
+  const num = cols.filter((c) => rows.every((r) => r[c] === null || typeof r[c] === "number" || typeof r[c] === "bigint"));
+  const lab = cols.find((c) => !num.includes(c));
+  let chart = "";
+  if (lab && num.length && rows.length <= 25) {
+    const metric = num[0];
+    const max = Math.max(...rows.map((r) => Number(r[metric]) || 0)) || 1;
+    const multi = cols.filter((c) => !num.includes(c)).length > 1;
+    chart = `<div class="label" style="margin-top:4px">${esc(metric)}</div><div class="bars">` + rows.map((r) => {
+      const name = multi ? cols.filter((c) => !num.includes(c)).map((c) => r[c]).join(" · ") : r[lab];
+      const v = Number(r[metric]) || 0;
+      return `<div class="name" title="${esc(name)}">${esc(name)}</div><div class="track"><div class="fill" style="width:${(v / max) * 100}%"></div>${v.toLocaleString()}</div>`;
+    }).join("") + "</div>";
+  }
+  const table = `<div class="tablewrap"><table><tr>${cols.map((c) => `<th>${esc(c)}</th>`).join("")}</tr>` +
+    rows.map((r) => `<tr>${cols.map((c) => `<td>${esc(typeof r[c] === "number" ? r[c].toLocaleString() : r[c])}</td>`).join("")}</tr>`).join("") + "</table></div>";
+  return chart + `<details><summary>Show the table (${rows.length} rows)</summary>${table}</details>`;
+}
+
+async function run(question, sql, source, note = "") {
+  $("#out").innerHTML = `<div class="card muted">Running…</div>`;
+  try {
+    const res = await conn.query(sql);
+    const rows = res.toArray().map((r) => Object.fromEntries(Object.entries(r.toJSON()).map(([k, v]) => [k, typeof v === "bigint" ? Number(v) : v])));
+    const cols = res.schema.fields.map((f) => f.name);
+    $("#out").innerHTML = `<div class="card"><div class="label">${esc(source)}</div><b>${esc(question)}</b>
+      ${rows.length ? render(rows, cols) : '<div class="muted">The query returned no rows.</div>'}
+      ${note ? `<div class="note">${esc(note)}</div>` : ""}
+      <details open><summary>The SQL behind this answer</summary><pre>${esc(sql)}</pre></details></div>`;
+  } catch (e) {
+    $("#out").innerHTML = `<div class="card"><b>${esc(question)}</b><div class="err" style="margin-top:6px">The query failed: ${esc(e.message)}</div><pre style="margin-top:8px">${esc(sql)}</pre></div>`;
+  }
+}
+
+async function ask() {
+  const question = $("#q").value.trim();
+  const key = $("#key").value.trim();
+  if (!question) return;
+  if (!key) { $("#keybox").open = true; $("#key").focus(); return; }
+  $("#out").innerHTML = `<div class="card muted">Gemini is writing the SQL…</div>`;
+  let text = "", last = "";
+  for (const m of MODELS) {
+    try {
+      const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent`, {method: "POST",
+        headers: {"Content-Type": "application/json", "x-goog-api-key": key},
+        body: JSON.stringify({contents: [{parts: [{text: `${RULES}\n\n${SCHEMA}\n\nQuestion: ${question}`}]}], generationConfig: {temperature: 0}})});
+      const j = await r.json();
+      if (!r.ok) { last = j.error?.message || r.status; if (r.status === 400 || r.status === 403) break; continue; }
+      text = (j.candidates?.[0]?.content?.parts || []).map((p) => p.text).join("");
+      if (text) break;
+    } catch (e) { last = e.message; }
+  }
+  if (!text) { $("#out").innerHTML = `<div class="card err">Gemini didn't answer (${esc(String(last).slice(0, 140))}). Try a ready-made question, or try again in a minute.</div>`; return; }
+  const sql = (text.match(/```sql\s*([\s\S]*?)```/i) || [, text])[1].trim().replace(/;\s*$/, "");
+  const note = (text.match(/Note:.*$/m) || [""])[0];
+  if (!/^\s*(select|with)\b/i.test(sql) || /\b(insert|update|delete|drop|create|alter|attach|copy|pragma|install|load)\b/i.test(sql)) {
+    $("#out").innerHTML = `<div class="card err">Gemini wrote something other than a read-only query, so it wasn't run.<pre>${esc(sql)}</pre></div>`; return;
+  }
+  run(question, sql, "Gemini wrote this SQL. Check it.", note);
+}
+
+try { $("#key").value = sessionStorage.getItem("dje_key") || ""; } catch (e) {}
+$("#key").addEventListener("input", () => { try { sessionStorage.setItem("dje_key", $("#key").value.trim()); } catch (e) {} });
+$("#go").onclick = ask;
+$("#q").addEventListener("keydown", (e) => { if (e.key === "Enter") ask(); });
+start().catch((e) => { $("#stats").innerHTML = `<div class="stat err">Couldn't start the database: ${esc(e.message)}</div>`; });
+</script>
+</body>
+</html>
