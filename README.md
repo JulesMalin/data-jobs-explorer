@@ -1,31 +1,39 @@
-# Data Jobs Explorer: build an AI data tool in one page
+# Data Jobs Explorer
 
-**Live demo:** https://huggingface.co/spaces/JulesMalin/data-jobs-explorer
+**An AI agent that answers questions about the data and AI job market. It runs in one web page with no server, costs $0, and comes with a step-by-step tutorial so you can build your own.**
 
-A working app that answers questions about data and AI hiring from four public sources, plus a step-by-step guide to building one like it for yourself or your company. Everything runs in the browser. There's no server, no database to host, and nothing to pay for.
+[![Live demo](https://img.shields.io/badge/Live_demo-Hugging_Face_Space-1f6f5c?style=for-the-badge)](https://huggingface.co/spaces/JulesMalin/data-jobs-explorer)
+[![Hosting cost](https://img.shields.io/badge/Hosting-%240-1f6f5c?style=for-the-badge)](#7-ship-it-for-free)
+[![License: MIT](https://img.shields.io/badge/License-MIT-555?style=for-the-badge)](LICENSE)
 
-Ask "Which companies have the most open AI engineer roles right now?" and three things happen:
+![DuckDB-WASM](https://img.shields.io/badge/DuckDB--WASM-SQL_in_the_browser-fff000?labelColor=333)
+![Gemini](https://img.shields.io/badge/Gemini-function_calling-4c5fd5?labelColor=333)
+![JavaScript](https://img.shields.io/badge/JavaScript-no_framework-f7df1e?labelColor=333)
+![Sources](https://img.shields.io/badge/Data-4_public_sources-1f6f5c?labelColor=333)
 
-1. Gemini reads a description of the tables and writes a SQL query.
-2. The page checks the query is read-only, then runs it in DuckDB inside your browser.
-3. You get a chart, the table, and the SQL itself, so you can check the work.
+[![The Data Jobs Explorer page: live stats on 562 open data and AI roles at 36 companies, ready-made questions, and a heatmap of which roles each company is hiring for](docs/screenshot.png)](https://huggingface.co/spaces/JulesMalin/data-jobs-explorer)
+
+## The problem it solves
+
+Data scientists and AI engineers do the same job: solve a business problem. This project starts with one.
+
+| | |
+|---|---|
+| **User** | Someone in data deciding which role to target next |
+| **Decision** | Which role to aim for and which skills to build first, based on which jobs are growing and where the openings are now |
+| **How it's done today** | Open 36 company career pages one at a time, read the monthly Hacker News hiring thread, and guess which skills keep coming up |
+| **Why AI** | The questions change every day, and a dashboard only answers the ones someone built it for |
+| **Success** | Plain answers to "which roles are growing?" and "what do they ask for?", with the query shown so you can check them |
 
 ## How it works
 
 ![Data Jobs Explorer pipeline: 4 public data sources load into DuckDB in the browser; ready-made questions run fixed SQL; your own questions go to a Gemini agent that calls a read-only run_sql tool up to 4 times before answering](docs/pipeline.png)
 
-The diagram source is [`docs/pipeline.svg`](docs/pipeline.svg), if you want to edit it for your own project.
+## Build it at work: Microsoft, Databricks, and AWS
 
-## What's inside
+The same agent, mapped to the products a company would use. [What changes at a company](#what-changes-at-a-company) is below.
 
-| Tab | Source | How fresh |
-|---|---|---|
-| Live openings | Public job-board feeds from Greenhouse, Ashby, and Lever for 36 companies | Pulled live every time the page opens |
-| Trends since 2020 | [Indeed Hiring Lab](https://github.com/hiring-lab) postings index and AI tracker (CC-BY-4.0) | Weekly |
-| This month on HN | The latest "Ask HN: Who is hiring?" thread, via the HN Algolia API | Monthly |
-| Skills | [NextGig job postings](https://huggingface.co/datasets/NextGig-Rocks/global-job-postings-multi-ats) (CC-BY-4.0), filtered to 982 data and AI roles | June 2026 snapshot |
-
-The whole app is three files: [`web/index.html`](web/index.html) (the page and the AI), [`web/sources.js`](web/sources.js) (the data loaders), and [`prepare_data.py`](prepare_data.py) (cleans the snapshot).
+![One AI data agent, 4 ways to build it: this demo, Microsoft, Databricks, and AWS, compared across 11 parts of the pipeline](docs/platforms.png)
 
 ## Run it
 
@@ -38,7 +46,31 @@ python3 -m http.server 8000
 
 Ready-made questions, the job search, and three recorded AI examples work right away. For your own questions, paste a free Gemini key from [aistudio.google.com/apikey](https://aistudio.google.com/apikey) into the page.
 
-## The lessons
+## What's inside
+
+| Tab | Source | How fresh |
+|---|---|---|
+| Live openings | Public job-board feeds from Greenhouse, Ashby, and Lever for 36 companies | Pulled live every time the page opens |
+| Trends since 2020 | [Indeed Hiring Lab](https://github.com/hiring-lab) postings index and AI tracker (CC-BY-4.0) | Weekly |
+| This month on HN | The latest "Ask HN: Who is hiring?" thread, via the HN Algolia API | Monthly |
+| Skills | [NextGig job postings](https://huggingface.co/datasets/NextGig-Rocks/global-job-postings-multi-ats) (CC-BY-4.0), filtered to 982 data and AI roles | June 2026 snapshot |
+
+The whole app is three files: [`web/index.html`](web/index.html) (the page and the AI), [`web/sources.js`](web/sources.js) (the data loaders), and [`prepare_data.py`](prepare_data.py) (cleans the snapshot). The diagram sources are in [`docs/`](docs/).
+
+## The lessons at a glance
+
+| # | Lesson | The real bug or decision behind it |
+|---|---|---|
+| 1 | [Check the license first](#1-start-from-a-question-and-a-source-youre-allowed-to-use) | Left out 177 job descriptions collected from LinkedIn |
+| 2 | [Clean the data, then check it](#2-clean-the-data-then-check-it) | "llm" inside "fulfillment" filed 327 warehouse jobs as AI engineers |
+| 3 | [Pull live data from the browser](#3-pull-live-data-straight-from-the-browser) | A comma inside quotes broke the Indeed CSV reader |
+| 4 | [Put the database in the browser](#4-put-the-database-in-the-browser) | The 12 MB Indeed file loads only when someone opens Trends |
+| 5 | [Let the AI write SQL, with guardrails](#5-let-the-ai-write-sql-with-guardrails) | Only SELECT and WITH queries run |
+| 5b | [Turn one call into a small agent](#5b-turn-the-single-call-into-a-small-agent) | One failed query used to end the answer |
+| 6 | [Show the work](#6-show-the-work-and-check-it) | Comparing against today's date returned nothing |
+| 7 | [Ship it for free](#7-ship-it-for-free) | The Python-server version needed a paid hosting plan |
+
+## The lessons in detail
 
 Each lesson is one thing you need to get right, where it lives in the code, and a real mistake this project made along the way.
 
@@ -119,13 +151,9 @@ The pattern works for any question your team keeps asking:
 3. Replace the ready-made questions in `PRESETS` with the ten your team asks most.
 4. Keep the read-only check and keep showing the SQL.
 
-## Building this at a company: Microsoft, Databricks, and AWS
+## What changes at a company
 
-This demo is an agentic text-to-SQL app: one agent, one read-only SQL tool, a capped loop, and every query shown. Inside a company, each piece maps to a managed product.
-
-![One AI data agent, 4 ways to build it: this demo, Microsoft, Databricks, and AWS, compared across 11 parts of the pipeline](docs/platforms.png)
-
-What changes beyond the product names:
+This demo is an agentic text-to-SQL app: one agent, one read-only SQL tool, a capped loop, and every query shown. The [platform diagram](#build-it-at-work-microsoft-databricks-and-aws) maps each piece to a managed product.
 
 1. **The user's identity replaces the keyword check.** The agent queries as the person who asked, so the database only returns rows that person is allowed to see.
 2. **A shared semantic layer replaces the prompt.** The definition of a metric lives in one certified model that both the agent and the dashboards use.
