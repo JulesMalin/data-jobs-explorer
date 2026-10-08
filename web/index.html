@@ -40,6 +40,14 @@
   .bars .name { font-size:13px; text-align:right; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
   .bars .track { display:flex; align-items:center; gap:6px; font-size:12px; color:var(--muted); }
   .bars .fill { height:16px; border-radius:4px; background:var(--bar); min-width:2px; }
+  .rtrack { position:relative; height:22px; margin-right:160px; }
+  .rbar { position:absolute; top:3px; height:16px; border-radius:8px; background:var(--bar); }
+  .rtrack span { position:absolute; top:2px; font-size:12px; color:var(--muted); white-space:nowrap; }
+  .axis { display:flex; justify-content:space-between; font-size:11px; color:var(--muted); border-top:1px solid var(--line); padding-top:3px; margin-right:160px; }
+  table.heat { border-collapse:separate; border-spacing:3px; width:auto; }
+  table.heat th { font-size:11px; font-weight:600; white-space:normal; vertical-align:bottom; text-align:center; max-width:76px; border:0; padding:4px; }
+  table.heat th.rh { text-align:right; white-space:nowrap; vertical-align:middle; max-width:none; font-size:12.5px; color:var(--ink); }
+  table.heat td { min-width:52px; height:30px; text-align:center; font-size:12px; font-weight:600; border:0; border-radius:5px; padding:0 6px; }
   .tablewrap { overflow-x:auto; }
   table { width:100%; border-collapse:collapse; font-size:13px; }
   td, th { text-align:left; padding:6px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
@@ -204,6 +212,13 @@ const PRESETS = {
     ["Who's hiring AI engineers right now?", `select company, count(*) as ai_engineer_roles from live_jobs where role = 'AI Engineer' group by 1 order by 2 desc limit 12`],
     ["Share of roles listed as remote", `select role, round(100.0 * count(*) filter (where remote) / count(*), 0) as remote_pct, count(*) filter (where remote) as remote, count(*) as open_roles from live_jobs group by 1 order by remote_pct desc`],
     ["Newest postings (with links)", `select posted, company, title, location, url from live_jobs where posted is not null order by posted desc limit 25`],
+    ["Which roles each company is hiring for (heatmap)", `with top as (select company, count(*) as total from live_jobs group by 1 order by 2 desc limit 12)
+select l.company, l.role, count(*) as open_roles from live_jobs l join top using (company) group by l.company, l.role, top.total order by top.total desc, l.role`],
+    ["Top cities for data and AI roles (not remote)", `with l as (select trim(regexp_replace(split_part(split_part(location, ';', 1), '|', 1), '^Remote\\s*·\\s*', '')) as loc from live_jobs),
+c as (select case when loc ilike 'new york%' or loc ilike 'nyc%' then 'New York' when loc ilike 'sf%' or loc ilike 'san francisco%' then 'San Francisco'
+  else trim(split_part(loc, ',', 1)) end as city from l where loc <> '' and not loc ilike 'remote%')
+select city, count(*) as open_roles from c where city not ilike '%remote%' and city not in ('United States', 'USA', 'US', 'Canada', 'United Kingdom', 'UK', 'Europe', 'Anywhere', 'N/A')
+group by 1 order by 2 desc limit 15`],
   ],
   trends: [
     ["Data & Analytics vs Software Development vs all jobs", `__TREND__`],
@@ -213,13 +228,20 @@ const PRESETS = {
 select (select postings_index from d order by date desc limit 1) as index_now,
        (select postings_index from d where date <= (select max(date) from d) - interval 365 day order by date desc limit 1) as index_a_year_ago,
        round(100.0 * ((select postings_index from d order by date desc limit 1) / (select postings_index from d where date <= (select max(date) from d) - interval 365 day order by date desc limit 1) - 1), 1) as pct_change`],
+    ["All sectors ranked: where postings stand vs Feb 2020", `select sector, round(arg_max(postings_index, date), 1) as index_now from indeed_sectors group by 1 order by 2 desc`],
   ],
   hn: [
     ["How many companies posted, and how many mention data or AI?", `select count(*) as companies_posting, count(*) filter (where data_ai) as mention_data_or_ai, count(*) filter (where remote) as mention_remote from hn_posts`],
     ["Most-mentioned skills in data and AI posts", `select s.skill, count(*) as posts from hn_skills s join hn_posts p using (id) where p.data_ai group by 1 order by 2 desc limit 15`],
     ["Data and AI posts this month (with links)", `select company, excerpt, url from hn_posts where data_ai order by id limit 40`],
   ],
-  skills: SNAPSHOT,
+  skills: [...SNAPSHOT,
+    ["Skills by role (heatmap, % of posts)", `with top as (select skill from job_skills group by 1 order by count(*) desc limit 10),
+n as (select role, count(*) as posts from jobs group by 1)
+select j.role, s.skill, round(100.0 * count(distinct j.job_id) / any_value(n.posts)) as pct_of_posts
+from jobs j join job_skills s using (job_id) join top using (skill) join n using (role)
+group by 1, 2 order by any_value(n.posts) desc, 3 desc`],
+  ],
 };
 
 // One plain-English sentence per ready-made question, computed from the live result.
@@ -249,6 +271,21 @@ const SAY = {
   "Which skills show up in AI engineer posts but never in data analyst posts?": (r) => `${r.length} skills appear in AI engineer posts and never in data analyst posts. The most common is ${r[0].skill} (${r[0].ai_engineer_post_count} posts).`,
   "Which tools come up most? (SQL, Python, cloud, BI)": (r) => `${r[0].skill} appears in ${r[0].posts} postings, more than any other tool, followed by ${r[1].skill} (${r[1].posts}).`,
 };
+
+// Charts that need something other than plain bars or lines.
+const CHART = {
+  "Which roles each company is hiring for (heatmap)": {type: "heat"},
+  "Skills by role (heatmap, % of posts)": {type: "heat", unit: "%"},
+  "US salary ranges by role": {type: "range"},
+  "All sectors ranked: where postings stand vs Feb 2020": {highlight: {"Data & Analytics": "var(--c2)", "All postings": "var(--c3)"}, maxRows: 60},
+};
+Object.assign(SAY, {
+  "Which roles each company is hiring for (heatmap)": (r) => { const x = top(r, "open_roles"); return `The biggest single cell: ${x.company} has ${x.open_roles} open ${x.role} roles.`; },
+  "Top cities for data and AI roles (not remote)": (r) => `${r[0].city} has the most open data and AI roles (${r[0].open_roles}), then ${r[1].city} (${r[1].open_roles}).`,
+  "All sectors ranked: where postings stand vs Feb 2020": (r) => { const s = r.filter((x) => x.sector !== "All postings"), i = s.findIndex((x) => x.sector === "Data & Analytics");
+    return `Data & Analytics ranks ${i + 1} of ${s.length} sectors, at ${Math.round(s[i].index_now)} (February 2020 = 100). All postings are at ${Math.round(r.find((x) => x.sector === "All postings").index_now)}.`; },
+  "Skills by role (heatmap, % of posts)": (r) => { const x = top(r, "pct_of_posts"); return `The highest share on the chart: ${x.skill} appears in ${x.pct_of_posts}% of ${x.role} posts.`; },
+});
 
 const EXAMPLES = [
  {
@@ -367,19 +404,42 @@ async function stats() {
   }
 }
 
-function bars(rows, cols) {
+function bars(rows, cols, opt = {}) {
   const num = cols.filter((c) => rows.every((r) => r[c] === null || typeof r[c] === "number"));
   const labs = cols.filter((c) => !num.includes(c) && c !== "url");
-  if (!labs.length || !num.length || rows.length > 25 || labs.some((c) => rows.some((r) => String(r[c] ?? "").length > 80))) return "";
+  if (!labs.length || !num.length || rows.length > (opt.maxRows || 25) || labs.some((c) => rows.some((r) => String(r[c] ?? "").length > 80))) return "";
   const metric = num[0], max = Math.max(...rows.map((r) => Number(r[metric]) || 0)) || 1;
   const grouped = labs.length === 2;
   let last = null, html = "";
   for (const r of rows) {
     if (grouped && r[labs[0]] !== last) { last = r[labs[0]]; html += `<div class="grp">${esc(last)}</div>`; }
     const name = grouped ? r[labs[1]] : labs.map((c) => r[c]).join(" · "), v = Number(r[metric]) || 0;
-    html += `<div class="name" title="${esc(name)}">${esc(name)}</div><div class="track"><div class="fill" style="width:${(v / max) * 100}%"></div>${v.toLocaleString()}</div>`;
+    html += `<div class="name" title="${esc(name)}">${esc(name)}</div><div class="track"><div class="fill" style="width:${(v / max) * 100}%${opt.highlight?.[name] ? `;background:${opt.highlight[name]}` : ""}"></div>${v.toLocaleString()}</div>`;
   }
   return `<div class="label" style="margin-top:4px">${esc(metric.replace(/_/g, " "))}</div><div class="bars">${html}</div>`;
+}
+
+// Heatmap: first column = rows, second = columns, first number = cell value.
+function heat(rows, cols, opt = {}) {
+  const [rk, ck] = cols, vk = cols.find((c) => typeof rows[0][c] === "number");
+  const rkeys = [...new Set(rows.map((r) => r[rk]))], tot = {};
+  rows.forEach((r) => (tot[r[ck]] = (tot[r[ck]] || 0) + r[vk]));
+  const ckeys = Object.keys(tot).sort((a, b) => tot[b] - tot[a]);
+  const cell = Object.fromEntries(rows.map((r) => [r[rk] + "\u0000" + r[ck], r[vk]])), max = Math.max(...rows.map((r) => r[vk])) || 1;
+  return `<div class="label" style="margin-top:4px">${esc(vk.replace(/_/g, " "))}, darker = more</div><div class="tablewrap"><table class="heat"><tr><th></th>${ckeys.map((c) => `<th>${esc(c)}</th>`).join("")}</tr>` +
+    rkeys.map((rkey) => `<tr><th class="rh">${esc(rkey)}</th>${ckeys.map((c) => { const v = cell[rkey + "\u0000" + c] || 0, a = v / max;
+      return `<td style="background:color-mix(in srgb, var(--bar) ${Math.round(a * 100)}%, transparent);color:${a > 0.55 ? "#fff" : "var(--ink)"}">${v ? v.toLocaleString() + (opt.unit || "") : ""}</td>`; }).join("")}</tr>`).join("") + "</table></div>";
+}
+
+// Range: one bar per row from the low column to the high column, on a shared axis.
+function range(rows, cols) {
+  const lab = cols.find((c) => typeof rows[0][c] === "string"), lo = cols.find((c) => /min|low/.test(c)), hi = cols.find((c) => /max|high/.test(c));
+  const n = cols.find((c) => c !== lo && c !== hi && typeof rows[0][c] === "number");
+  const k = (v) => "$" + Math.round(v / 1000) + "k", a = Math.floor(Math.min(...rows.map((r) => r[lo])) / 50000) * 50000, b = Math.ceil(Math.max(...rows.map((r) => r[hi])) / 50000) * 50000;
+  const X = (v) => ((v - a) / (b - a)) * 100;
+  return `<div class="label" style="margin-top:4px">typical posted range: median low end to median top end</div><div class="bars">` + rows.map((r) =>
+    `<div class="name" title="${esc(r[lab])}">${esc(r[lab])}</div><div class="rtrack"><div class="rbar" style="left:${X(r[lo])}%;width:${X(r[hi]) - X(r[lo])}%"></div><span style="left:calc(${X(r[hi])}% + 6px)">${k(r[lo])} to ${k(r[hi])}${n ? ` · ${r[n]} posts` : ""}</span></div>`).join("") +
+    `<div></div><div class="axis"><span>${k(a)}</span><span>${k((a + b) / 2)}</span><span>${k(b)}</span></div></div>`;
 }
 
 function lines(rows, xKey, series) {
@@ -427,7 +487,8 @@ async function run(label, sql, source, note = "", hash = null, extra = {}) {
     const {rows, cols} = await q(sql);
     const isSeries = cols[0] === "date" && rows.length > 30;
     const series = isSeries ? rows.map((r) => ({...r, date: r.date instanceof Date ? r.date.toISOString() : r.date})) : rows;
-    const visual = isSeries ? lines(series, "date", cols.slice(1)) : bars(rows, cols);
+    const chart = CHART[label] || {};
+    const visual = chart.type === "heat" ? heat(rows, cols, chart) : chart.type === "range" ? range(rows, cols) : isSeries ? lines(series, "date", cols.slice(1)) : bars(rows, cols, chart);
     const listy = cols.includes("url") || cols.includes("excerpt");
     const single = rows.length === 1 && !listy;
     let say = "";

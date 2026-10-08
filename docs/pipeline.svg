@@ -100,7 +100,7 @@
   <!-- ready-made -->
   <rect x="400" y="340" width="220" height="110" rx="10" fill="#fff" stroke="#1f6f5c" stroke-width="1.5" filter="url(#sh)"/>
   <text x="420" y="370" class="bt">Ready-made questions</text>
-  <text x="420" y="394" class="bd">20 fixed SQL queries</text>
+  <text x="420" y="394" class="bd">24 fixed SQL queries</text>
   <text x="420" y="412" class="bd">across 4 tabs, plus 3</text>
   <text x="420" y="430" class="bd">recorded agent examples</text>
 
