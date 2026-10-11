@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 735" width="1600" height="735" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<style>.t{font-size:29px;font-weight:800;fill:#14231e;letter-spacing:-.4px}.st{font-size:16px;fill:#5f6368}.rl{font-size:11.5px;font-weight:700;letter-spacing:1.3px;fill:#7d8b97}.fn{font-size:13.5px;fill:#33383d}.dm{font-size:13.5px;fill:#1d1f21;font-weight:600}.bz{font-size:11.5px;fill:#4a4f55;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.bt{font-size:13.5px;fill:#33383d}</style>
+<rect width="1600" height="735" fill="#fbfaf7"/>
+<text x="40" y="56" class="t">The AI pipeline in this demo: 7 stages and 2 layers under all of them</text>
+<text x="40" y="88" class="st">Data moves left to right into an answer. Every stage is built with free, open tools and runs in the browser except the Gemini call.</text>
+<polygon points="40,120 250,120 262,148 250,176 40,176" fill="#1c7a52"/>
+<text x="54" y="142" font-size="11" font-weight="700" fill="#fff" fill-opacity=".85">1</text><text x="54" y="164" font-size="19" font-weight="800" fill="#fff">Data</text>
+<rect x="40" y="186" width="210" height="78" rx="6" fill="#f0f2f0"/><rect x="40" y="186" width="4" height="78" fill="#1c7a52"/>
+<text x="54" y="210" class="fn">Get the source data in one</text>
+<text x="54" y="228" class="fn">place</text>
+<rect x="40" y="274" width="210" height="128" rx="6" fill="#fff" stroke="#1c7a52" stroke-width="1.8"/>
+<text x="54" y="298" class="dm">Job boards from 36</text>
+<text x="54" y="316" class="dm">companies, Hacker News,</text>
+<text x="54" y="334" class="dm">Indeed, and a June</text>
+<text x="54" y="352" class="dm">snapshot, fetched by the</text>
+<text x="54" y="370" class="dm">browser</text>
+<rect x="40" y="420" width="109.60000000000001" height="22" rx="11" fill="#fff" stroke="#d3dbe3"/><text x="48" y="435" class="bz">AI-ready data</text>
+<polygon points="260,120 470,120 482,148 470,176 260,176" fill="#0d8a8a"/>
+<text x="274" y="142" font-size="11" font-weight="700" fill="#fff" fill-opacity=".85">2</text><text x="274" y="164" font-size="19" font-weight="800" fill="#fff">Prepare</text>
+<rect x="260" y="186" width="210" height="78" rx="6" fill="#f0f2f0"/><rect x="260" y="186" width="4" height="78" fill="#0d8a8a"/>
+<text x="274" y="210" class="fn">Clean it, define each</text>
+<text x="274" y="228" class="fn">metric once, split text</text>
+<text x="274" y="246" class="fn">into chunks</text>
+<rect x="260" y="274" width="210" height="128" rx="6" fill="#fff" stroke="#0d8a8a" stroke-width="1.8"/>
+<text x="274" y="298" class="dm">Whole-word role tags.</text>
+<text x="274" y="316" class="dm">Metric views (m_*) in</text>
+<text x="274" y="334" class="dm">DuckDB. Posts split into</text>
+<text x="274" y="352" class="dm">search chunks.</text>
+<rect x="260" y="420" width="116.8" height="22" rx="11" fill="#fff" stroke="#d3dbe3"/><text x="268" y="435" class="bz">semantic layer</text>
+<rect x="260" y="448" width="73.6" height="22" rx="11" fill="#fff" stroke="#d3dbe3"/><text x="268" y="463" class="bz">chunking</text>
+<polygon points="480,120 690,120 702,148 690,176 480,176" fill="#0d5eae"/>
+<text x="494" y="142" font-size="11" font-weight="700" fill="#fff" fill-opacity=".85">3</text><text x="494" y="164" font-size="19" font-weight="800" fill="#fff">Retrieve</text>
+<rect x="480" y="186" width="210" height="78" rx="6" fill="#f0f2f0"/><rect x="480" y="186" width="4" height="78" fill="#0d5eae"/>
+<text x="494" y="210" class="fn">Find the passages or rows</text>
+<text x="494" y="228" class="fn">that answer a question</text>
+<rect x="480" y="274" width="210" height="128" rx="6" fill="#fff" stroke="#0d5eae" stroke-width="1.8"/>
+<text x="494" y="298" class="dm">BM25 keyword search over</text>
+<text x="494" y="316" class="dm">the post chunks, as the</text>
+<text x="494" y="334" class="dm">search_posts tool</text>
+<rect x="480" y="420" width="80.8" height="22" rx="11" fill="#fff" stroke="#d3dbe3"/><text x="488" y="435" class="bz">grounding</text>
+<rect x="480" y="448" width="138.4" height="22" rx="11" fill="#fff" stroke="#d3dbe3"/><text x="488" y="463" class="bz">agentic retrieval</text>
+<polygon points="700,120 910,120 922,148 910,176 700,176" fill="#6b4fa3"/>
+<text x="714" y="142" font-size="11" font-weight="700" fill="#fff" fill-opacity=".85">4</text><text x="714" y="164" font-size="19" font-weight="800" fill="#fff">Model</text>
+<rect x="700" y="186" width="210" height="78" rx="6" fill="#f0f2f0"/><rect x="700" y="186" width="4" height="78" fill="#6b4fa3"/>
+<text x="714" y="210" class="fn">Pick a model and generate</text>
+<text x="714" y="228" class="fn">the answer</text>
+<rect x="700" y="274" width="210" height="128" rx="6" fill="#fff" stroke="#6b4fa3" stroke-width="1.8"/>
+<text x="714" y="298" class="dm">Gemini. Lookups go to</text>
+<text x="714" y="316" class="dm">flash-lite, comparisons to</text>
+<text x="714" y="334" class="dm">flash, with a fallback</text>
+<text x="714" y="352" class="dm">when busy.</text>
+<rect x="700" y="420" width="102.4" height="22" rx="11" fill="#fff" stroke="#d3dbe3"/><text x="708" y="435" class="bz">model router</text>
+<polygon points="920,120 1130,120 1142,148 1130,176 920,176" fill="#a8620d"/>
+<text x="934" y="142" font-size="11" font-weight="700" fill="#fff" fill-opacity=".85">5</text><text x="934" y="164" font-size="19" font-weight="800" fill="#fff">Orchestrate</text>
+<rect x="920" y="186" width="210" height="78" rx="6" fill="#f0f2f0"/><rect x="920" y="186" width="4" height="78" fill="#a8620d"/>
+<text x="934" y="210" class="fn">Plan steps and call tools</text>
+<text x="934" y="228" class="fn">in a loop</text>
+<rect x="920" y="274" width="210" height="128" rx="6" fill="#fff" stroke="#a8620d" stroke-width="1.8"/>
+<text x="934" y="298" class="dm">Agent loop with run_sql</text>
+<text x="934" y="316" class="dm">and search_posts, 6 tool</text>
+<text x="934" y="334" class="dm">calls at most, memory of 2</text>
+<text x="934" y="352" class="dm">questions</text>
+<rect x="920" y="420" width="109.60000000000001" height="22" rx="11" fill="#fff" stroke="#d3dbe3"/><text x="928" y="435" class="bz">agent harness</text>
+<rect x="920" y="448" width="102.4" height="22" rx="11" fill="#fff" stroke="#d3dbe3"/><text x="928" y="463" class="bz">tool calling</text>
+<rect x="920" y="476" width="59.2" height="22" rx="11" fill="#fff" stroke="#d3dbe3"/><text x="928" y="491" class="bz">memory</text>
+<polygon points="1140,120 1350,120 1362,148 1350,176 1140,176" fill="#0d8a8a"/>
+<text x="1154" y="142" font-size="11" font-weight="700" fill="#fff" fill-opacity=".85">6</text><text x="1154" y="164" font-size="19" font-weight="800" fill="#fff">Evaluate</text>
+<rect x="1140" y="186" width="210" height="78" rx="6" fill="#f0f2f0"/><rect x="1140" y="186" width="4" height="78" fill="#0d8a8a"/>
+<text x="1154" y="210" class="fn">Test answers against known</text>
+<text x="1154" y="228" class="fn">results</text>
+<rect x="1140" y="274" width="210" height="128" rx="6" fill="#fff" stroke="#0d8a8a" stroke-width="1.8"/>
+<text x="1154" y="298" class="dm">Gold set of 8 scored on</text>
+<text x="1154" y="316" class="dm">today&#x27;s data: number</text>
+<text x="1154" y="334" class="dm">check, Gemini as judge, 2</text>
+<text x="1154" y="352" class="dm">red-team prompts</text>
+<rect x="1140" y="420" width="102.4" height="22" rx="11" fill="#fff" stroke="#d3dbe3"/><text x="1148" y="435" class="bz">eval harness</text>
+<rect x="1140" y="448" width="102.4" height="22" rx="11" fill="#fff" stroke="#d3dbe3"/><text x="1148" y="463" class="bz">LLM-as-judge</text>
+<rect x="1140" y="476" width="95.2" height="22" rx="11" fill="#fff" stroke="#d3dbe3"/><text x="1148" y="491" class="bz">red teaming</text>
+<polygon points="1360,120 1570,120 1570,176 1360,176" fill="#1c7a52"/>
+<text x="1374" y="142" font-size="11" font-weight="700" fill="#fff" fill-opacity=".85">7</text><text x="1374" y="164" font-size="19" font-weight="800" fill="#fff">Serve</text>
+<rect x="1360" y="186" width="210" height="78" rx="6" fill="#f0f2f0"/><rect x="1360" y="186" width="4" height="78" fill="#1c7a52"/>
+<text x="1374" y="210" class="fn">Put it where people work,</text>
+<text x="1374" y="228" class="fn">with limits</text>
+<rect x="1360" y="274" width="210" height="128" rx="6" fill="#fff" stroke="#1c7a52" stroke-width="1.8"/>
+<text x="1374" y="298" class="dm">A free static page. 15</text>
+<text x="1374" y="316" class="dm">questions an hour.</text>
+<text x="1374" y="334" class="dm">Optional approval before</text>
+<text x="1374" y="352" class="dm">each query.</text>
+<rect x="1360" y="420" width="138.4" height="22" rx="11" fill="#fff" stroke="#d3dbe3"/><text x="1368" y="435" class="bz">human-in-the-loop</text>
+<rect x="1360" y="448" width="88.0" height="22" rx="11" fill="#fff" stroke="#d3dbe3"/><text x="1368" y="463" class="bz">rate limit</text>
+<rect x="40" y="520" width="1530" height="74" rx="8" fill="#fbeeec" stroke="#b23a2f" stroke-width="2"/>
+<text x="60" y="548" font-size="12.5" font-weight="800" letter-spacing="1.3" fill="#b23a2f">SECURE AND GOVERN</text>
+<text x="60" y="572" class="bt">Read-only SQL with no file or URL reads. A prompt-injection shield on the question and on retrieved text. The Gemini key stays in the browser tab.</text>
+<rect x="243.2" y="533" width="88.0" height="22" rx="11" fill="#fff" stroke="#d3dbe3"/><text x="251.2" y="548" class="bz">guardrails</text>
+<rect x="339.2" y="533" width="109.60000000000001" height="22" rx="11" fill="#fff" stroke="#d3dbe3"/><text x="347.2" y="548" class="bz">prompt shield</text>
+<rect x="40" y="606" width="1530" height="74" rx="8" fill="#eef1f4" stroke="#3d4f61" stroke-width="2"/>
+<text x="60" y="634" font-size="12.5" font-weight="800" letter-spacing="1.3" fill="#3d4f61">OBSERVE AND COST</text>
+<text x="60" y="658" class="bt">Every model call and tool call is traced with its time and tokens. Session totals show the cost of each question in tokens.</text>
+<rect x="233.6" y="619" width="109.60000000000001" height="22" rx="11" fill="#fff" stroke="#d3dbe3"/><text x="241.6" y="634" class="bz">observability</text>
+<rect x="351.2" y="619" width="80.8" height="22" rx="11" fill="#fff" stroke="#d3dbe3"/><text x="359.2" y="634" class="bz">AI FinOps</text>
+<text x="40" y="716" font-size="12" fill="#8a8f98">The same 7 stages apply on Microsoft, Databricks, or AWS. Only the product names change. See the platform comparison in the README. github.com/JulesMalin/data-jobs-explorer</text>
+</svg>

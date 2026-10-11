@@ -1,6 +1,6 @@
 # Data Jobs Explorer
 
-**An AI agent that answers questions about the data and AI job market. It runs in one web page with no server and costs $0 to host. The code is a step-by-step tutorial.**
+**An AI agent that answers questions about the data and AI job market, built to show all 7 stages of an AI pipeline. It runs in one web page with no server and costs $0 to host. The code is a step-by-step tutorial.**
 
 [![Live demo](https://img.shields.io/badge/Live_demo-Hugging_Face_Space-1f6f5c?style=for-the-badge)](https://huggingface.co/spaces/JulesMalin/data-jobs-explorer)
 [![Hosting cost](https://img.shields.io/badge/Hosting-%240-1f6f5c?style=for-the-badge)](#7-ship-it-for-free)
@@ -25,15 +25,19 @@ Like a data science project, this one starts with a business problem.
 | **Why AI** | People ask new questions every day. A dashboard has a fixed set of charts. |
 | **Success** | Any question about roles and skills gets an answer, with the SQL shown |
 
-## How it works
+## How it works: 7 stages and 2 layers
+
+![The AI pipeline in this demo: Data, Prepare, Retrieve, Model, Orchestrate, Evaluate, and Serve, with Secure and govern and Observe and cost under every stage](docs/stages.png)
+
+The architecture, showing what runs in the browser and what calls Google:
 
 ![Data Jobs Explorer pipeline: 4 public data sources load into DuckDB in the browser; ready-made questions run fixed SQL; your own questions go to a Gemini agent that calls a read-only run_sql tool up to 4 times before answering](docs/pipeline.png)
 
 ## Build it at work: Microsoft, Databricks, and AWS
 
-Each part of this demo, mapped to the products a company would use. Details are in [What changes at a company](#what-changes-at-a-company).
+Each stage of this demo, mapped to the products a company would use. Details are in [What changes at a company](#what-changes-at-a-company).
 
-![One AI data agent, 4 ways to build it: this demo, Microsoft, Databricks, and AWS, compared across 11 parts of the pipeline](docs/platforms.png)
+![7 AI pipeline stages, 4 ways to build them: this demo, Microsoft, Databricks, and AWS](docs/platforms.png)
 
 ## Run it
 
@@ -44,7 +48,7 @@ python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
-Ready-made questions, the job search, and three recorded AI examples work right away. For your own questions, paste a free Gemini key from [aistudio.google.com/apikey](https://aistudio.google.com/apikey) into the page.
+Ready-made questions, the job search, the gold set, and three recorded AI examples work right away. For your own questions and for running the eval, paste a free Gemini key from [aistudio.google.com/apikey](https://aistudio.google.com/apikey) into the page.
 
 ## What's inside
 
@@ -55,7 +59,7 @@ Ready-made questions, the job search, and three recorded AI examples work right 
 | This month on HN | The latest "Ask HN: Who is hiring?" thread, via the HN Algolia API | Monthly |
 | Skills | [NextGig job postings](https://huggingface.co/datasets/NextGig-Rocks/global-job-postings-multi-ats) (CC-BY-4.0), filtered to 982 data and AI roles | June 2026 snapshot |
 
-The whole app is three files: [`web/index.html`](web/index.html) (the page and the AI), [`web/sources.js`](web/sources.js) (the data loaders), and [`prepare_data.py`](prepare_data.py) (cleans the snapshot). The diagram sources are in [`docs/`](docs/).
+The whole app is four files: [`web/index.html`](web/index.html) (the page and the agent), [`web/sources.js`](web/sources.js) (the data loaders), [`web/pipeline.js`](web/pipeline.js) (metric views, chunking, search, the router, the shield, and the gold set), and [`prepare_data.py`](prepare_data.py) (cleans the snapshot). The diagram sources are in [`docs/`](docs/).
 
 ## The lessons at a glance
 
@@ -69,6 +73,10 @@ The whole app is three files: [`web/index.html`](web/index.html) (the page and t
 | 5b | [Turn one call into a small agent](#5b-turn-the-single-call-into-a-small-agent) | One failed query used to end the answer |
 | 6 | [Show the work](#6-show-the-work-and-check-it) | Comparing against today's date returned nothing |
 | 7 | [Ship it for free](#7-ship-it-for-free) | The Python-server version needed a paid hosting plan |
+| 8 | [Search text, and shield what you retrieve](#8-search-text-with-bm25-and-shield-what-you-retrieve) | Questions about what posts say needed search, not SQL |
+| 9 | [Route to the cheapest model](#9-send-each-question-to-the-cheapest-model-that-can-answer-it) | Lookups run on flash-lite, comparisons on flash |
+| 10 | [Evaluate against today's data](#10-evaluate-against-todays-data) | Fixed right answers would go stale as the job boards change |
+| 11 | [Trace every step](#11-trace-every-step-and-count-the-tokens) | One Gemini model took 19 seconds to reply during testing |
 
 ## The lessons in detail
 
@@ -124,6 +132,8 @@ The first version made one call. Gemini wrote a query, and if it failed, the vis
 
 The page lists every query the agent ran under the answer, including the failed ones.
 
+It also keeps your last 2 questions as memory, so a follow-up like "and for data engineers?" works. A checkbox under the Ask box makes the page ask you to approve each query before it runs.
+
 **Try this:** ask a question with a typo in a column name, then open "What the agent did" and watch it recover.
 
 ### 6. Show the work, and check it
@@ -141,6 +151,28 @@ Every answer shows its SQL. I caught both mistakes below by reading the query.
 The app is static files, so any static host works. This one runs on a free [Hugging Face static Space](https://huggingface.co/docs/hub/spaces-sdks-static). GitHub Pages works too.
 
 **What happened here:** the first version of a related project used a Python server and local models. Hugging Face charges for that kind of hosting, and it took hours to set up. With everything in the browser, hosting is free and the page loads in seconds.
+
+### 8. Search text with BM25, and shield what you retrieve
+
+Some questions are about what the posts say, such as "which companies mention visa sponsorship?" SQL can't answer those well. [`web/pipeline.js`](web/pipeline.js) splits each Hacker News post into paragraph chunks and builds a BM25 keyword index in the browser. The agent reaches it through a second tool, `search_posts`. Counts and shares go to SQL. Text goes to search.
+
+Strangers wrote that text. Before any passage reaches the model, a shield checks it for instructions aimed at an AI and removes the passage if it finds one. The same check runs on your question.
+
+**Try this:** ask "Which companies this month mention RAG, and what do they say about it?" and open "Passages the agent read."
+
+### 9. Send each question to the cheapest model that can answer it
+
+`route()` in `pipeline.js` sends single lookups to gemini-3.5-flash-lite. Comparisons and multi-part questions go to gemini-3.5-flash. If a model is busy, the page falls back to the next one, and the trace says so. In one test run, flash-lite calls took under 1.5 seconds each and flash calls took up to 5 seconds.
+
+### 10. Evaluate against today's data
+
+The Evaluate section holds a gold set of 8 questions. Each right answer comes from a fixed SQL query run on today's data. Two scorers grade every answer: a number or name match, and Gemini as a judge that compares the answer with the right one. Two red-team prompts try to drop a table and to print the API key. The shield should block both.
+
+**Try this:** add a question from your own work to `GOLD` in `pipeline.js`, with the SQL that answers it.
+
+### 11. Trace every step and count the tokens
+
+The page logs each model call and tool call with its stage and time. Token counts come from Gemini's usage data. The Ask box shows totals for the session. At a company, these traces feed alerts and team budgets.
 
 ## Make it yours
 

@@ -121,10 +121,10 @@
 
   <!-- guardrail -->
   <rect x="1010" y="340" width="210" height="110" rx="10" fill="#fff6e6" stroke="#c98a2b" stroke-width="1.8" filter="url(#sh)"/>
-  <text x="1030" y="370" class="bt">Read-only check</text>
-  <text x="1030" y="394" class="bd">Runs SELECT or WITH only.</text>
-  <text x="1030" y="412" class="bd">Blocks DROP, INSERT,</text>
-  <text x="1030" y="430" class="bd">DELETE, and the rest.</text>
+  <text x="1030" y="370" class="bt">Shield and SQL policy</text>
+  <text x="1030" y="394" class="bd">SELECT or WITH only, no</text>
+  <text x="1030" y="412" class="bd">file reads. Injection check</text>
+  <text x="1030" y="430" class="bd">on questions and passages.</text>
 
   <!-- output -->
   <rect x="400" y="590" width="820" height="110" rx="12" fill="#1f6f5c" filter="url(#sh)"/>
@@ -145,15 +145,15 @@
   <text x="1312" y="236" class="bt" font-size="19">Gemini API</text>
   <text x="1312" y="261" class="bd">generateContent with</text>
   <text x="1312" y="279" class="bd">function calling</text>
-  <rect x="1312" y="292" width="176" height="24" rx="6" fill="#fff" stroke="#c9d0f5"/>
-  <text x="1322" y="309" class="mono" font-size="12.5" fill="#33408f">tool: run_sql(sql)</text>
-  <text x="1312" y="340" class="bd">Model fallback:</text>
-  <text x="1312" y="358" class="bd">3.5-flash-lite → 3.5-flash</text>
-  <text x="1312" y="376" class="bd">→ flash-lite-latest</text>
+  <rect x="1312" y="292" width="232" height="24" rx="6" fill="#fff" stroke="#c9d0f5"/>
+  <text x="1322" y="309" class="mono" font-size="12.5" fill="#33408f">tools: run_sql, search_posts</text>
+  <text x="1312" y="340" class="bd">Router: flash-lite for lookups,</text>
+  <text x="1312" y="358" class="bd">flash for comparisons,</text>
+  <text x="1312" y="376" class="bd">fallback when busy</text>
   <text x="1312" y="400" class="bd">Visitor's own key, kept</text>
   <text x="1312" y="418" class="bd">in the browser tab only</text>
   <text x="1312" y="452" class="lb">↻ Repeats until the query works,</text>
-  <text x="1312" y="470" class="lb">max 4 queries</text>
+  <text x="1312" y="470" class="lb">max 6 tool calls</text>
 
   <!-- agent loop arrows -->
   <g fill="none" stroke="#4c5fd5" stroke-width="2">
@@ -198,7 +198,7 @@
     <circle cx="964" cy="942" r="12" fill="#4c5fd5"/><text x="964" y="946.5" class="badge" text-anchor="middle">4</text>
     <text x="986" y="947" class="bd">The rows, or the error, go back to</text>
     <text x="986" y="965" class="bd">Gemini. It can fix the query and run</text>
-    <text x="986" y="983" class="bd">it again, up to 4 queries in all.</text>
+    <text x="986" y="983" class="bd">it again, up to 6 tool calls in all.</text>
 
     <circle cx="1268" cy="942" r="12" fill="#4c5fd5"/><text x="1268" y="946.5" class="badge" text-anchor="middle">5</text>
     <text x="1290" y="947" class="bd">Gemini answers in one sentence. The</text>
