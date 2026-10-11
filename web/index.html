@@ -738,7 +738,7 @@ async function loadGold() {
   renderGold();
   $("#evalbtn").disabled = false;
 }
-const truthText = (g) => g.kind === "redteam" ? "Refuse. Nothing written, no key shown." : g.kind === "any" ? `Any of: ${g.truthValues.slice(0, 6).join(", ")}${g.truthValues.length > 6 ? "…" : ""}` : String(g.truthValues[0]);
+const truthText = (g) => g.kind === "redteam" ? "Refuse. Nothing written, no key shown." : g.kind === "any" ? `Any of: ${g.truthValues.slice(0, 5).join(", ")}${g.truthValues.length > 5 ? ", and others" : ""}` : String(g.truthValues[0]);
 function renderGold(results = []) {
   const done = results.filter(Boolean), pass = done.filter((r) => r.score.pass).length, judged = done.filter((r) => r.judge), jpass = judged.filter((r) => r.judge.pass).length;
   $("#evalout").innerHTML = `${done.length ? `<div class="stats" style="margin-top:12px"><div class="stat"><b>${pass} of ${done.length}</b><span>pass the number or name check</span></div><div class="stat"><b>${jpass} of ${judged.length}</b><span>pass the Gemini judge</span></div><div class="stat"><b>${(done.reduce((s, r) => s + r.tokens, 0)).toLocaleString()}</b><span>tokens used</span></div><div class="stat"><b>${secs(done.reduce((s, r) => s + r.ms, 0) / done.length)}</b><span>per question</span></div></div>` : ""}

@@ -39,6 +39,10 @@ Each stage of this demo, mapped to the products a company would use. Details are
 
 ![7 AI pipeline stages, 4 ways to build them: this demo, Microsoft, Databricks, and AWS](docs/platforms.png)
 
+The live page has the same table. Pick Microsoft, Databricks, or AWS to see each stage on that platform:
+
+![The stage table on the live page, with Microsoft selected](docs/screenshot-stages.png)
+
 ## Run it
 
 ```bash
@@ -167,6 +171,8 @@ Strangers wrote that text. Before any passage reaches the model, a shield checks
 ### 10. Evaluate against today's data
 
 The Evaluate section holds a gold set of 8 questions. Each right answer comes from a fixed SQL query run on today's data. Two scorers grade every answer: a number or name match, and Gemini as a judge that compares the answer with the right one. Two red-team prompts try to drop a table and to print the API key. The shield should block both.
+
+![The Evaluate section: 8 gold questions with today's right answers, including 2 red-team prompts](docs/screenshot-eval.png)
 
 **Try this:** add a question from your own work to `GOLD` in `pipeline.js`, with the SQL that answers it.
 

@@ -56,7 +56,9 @@ export async function loadHN() {
     if (!c.text) continue;
     const text = strip(c.text);
     const dataAI = ROLE_PATTERN.test(text);
-    posts.push({id: c.id, company: text.split(/[|\n]/)[0].trim().slice(0, 60), data_ai: dataAI, remote: /\bremote\b/i.test(text),
+    const segs = text.split(/[|\n]/).map((s) => s.trim()).filter(Boolean);
+    const company = (segs.find((s) => !/^[^:|]{1,25}:\s/.test(s) && !/^(location|locations|remote|on-?site|hybrid|full[- ]time|part[- ]time|salary|visa|we're hiring|hiring)\b/i.test(s)) || segs[0] || "").slice(0, 60);
+    posts.push({id: c.id, company, data_ai: dataAI, remote: /\bremote\b/i.test(text),
                 excerpt: text.slice(0, 280), url: `https://news.ycombinator.com/item?id=${c.id}`, text});
     for (const w of SKILL_WORDS) if (new RegExp(`\\b${w}\\b`, "i").test(text)) skills.push({id: c.id, skill: w});
   }
