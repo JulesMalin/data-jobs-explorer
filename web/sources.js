@@ -57,7 +57,7 @@ export async function loadHN() {
     const text = strip(c.text);
     const dataAI = ROLE_PATTERN.test(text);
     posts.push({id: c.id, company: text.split(/[|\n]/)[0].trim().slice(0, 60), data_ai: dataAI, remote: /\bremote\b/i.test(text),
-                excerpt: text.slice(0, 280), url: `https://news.ycombinator.com/item?id=${c.id}`});
+                excerpt: text.slice(0, 280), url: `https://news.ycombinator.com/item?id=${c.id}`, text});
     for (const w of SKILL_WORDS) if (new RegExp(`\\b${w}\\b`, "i").test(text)) skills.push({id: c.id, skill: w});
   }
   return {title: story.title, date: story.created_at.slice(0, 10), url: `https://news.ycombinator.com/item?id=${story.objectID}`, posts, skills};
