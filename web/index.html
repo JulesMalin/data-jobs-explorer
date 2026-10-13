@@ -42,7 +42,7 @@
   .bars .fill { height:16px; border-radius:4px; background:var(--bar); min-width:2px; }
   .rtrack { position:relative; height:22px; margin-right:160px; }
   .rbar { position:absolute; top:3px; height:16px; border-radius:8px; background:var(--bar); }
-  .rtrack span { position:absolute; top:2px; font-size:12px; color:var(--muted); white-space:nowrap; }
+  .rtrack span { position:absolute; top:2px; font-size:12px; color:var(--muted); white-space:nowrap; } .rn { font-style:normal; }
   .axis { display:flex; justify-content:space-between; font-size:11px; color:var(--muted); border-top:1px solid var(--line); padding-top:3px; margin-right:160px; }
   table.heat { border-collapse:separate; border-spacing:3px; width:auto; }
   table.heat th { font-size:11px; font-weight:600; white-space:normal; vertical-align:bottom; text-align:center; max-width:76px; border:0; padding:4px; }
@@ -87,7 +87,7 @@
   table.ev td, table.ev th { font-size:12.5px; } .ok { color:#1c7a52; font-weight:700; } .no { color:#c0392b; font-weight:700; }
   .psg { border-left:3px solid #0d5eae; padding:4px 10px; margin:6px 0; font-size:13px; }
   @media (max-width:820px) { .pipe { grid-template-columns:1fr; } .pipe .rl { display:none; } .pipe .st { margin-top:10px; } .pipe .dm::before { content:"In this demo: "; font-weight:700; } .pipe .co::before { content:"On " attr(data-p) ": "; font-weight:700; } }
-  @media (max-width:600px) { .bars { grid-template-columns:120px 1fr; } h1 { font-size:24px; } .takeaway { font-size:16px; } }
+  @media (max-width:600px) { .rtrack, .axis { margin-right:92px; } .axis span:nth-child(2) { display:none; } .rn { display:none; } .rtrack span em { font-style:normal; } .bars { grid-template-columns:120px 1fr; } h1 { font-size:24px; } .takeaway { font-size:16px; } }
 </style>
 </head>
 <body>
@@ -478,7 +478,7 @@ function range(rows, cols) {
   const k = (v) => "$" + Math.round(v / 1000) + "k", a = Math.floor(Math.min(...rows.map((r) => r[lo])) / 50000) * 50000, b = Math.ceil(Math.max(...rows.map((r) => r[hi])) / 50000) * 50000;
   const X = (v) => ((v - a) / (b - a)) * 100;
   return `<div class="label" style="margin-top:4px">typical posted range: median low end to median top end</div><div class="bars">` + rows.map((r) =>
-    `<div class="name" title="${esc(r[lab])}">${esc(r[lab])}</div><div class="rtrack"><div class="rbar" style="left:${X(r[lo])}%;width:${X(r[hi]) - X(r[lo])}%"></div><span style="left:calc(${X(r[hi])}% + 6px)">${k(r[lo])} to ${k(r[hi])}${n ? ` · ${r[n]} posts` : ""}</span></div>`).join("") +
+    `<div class="name" title="${esc(r[lab])}">${esc(r[lab])}</div><div class="rtrack"><div class="rbar" style="left:${X(r[lo])}%;width:${X(r[hi]) - X(r[lo])}%"></div><span style="left:calc(${X(r[hi])}% + 6px)">${k(r[lo])} to ${k(r[hi])}${n ? `<em class="rn"> · ${r[n]} posts</em>` : ""}</span></div>`).join("") +
     `<div></div><div class="axis"><span>${k(a)}</span><span>${k((a + b) / 2)}</span><span>${k(b)}</span></div></div>`;
 }
 
